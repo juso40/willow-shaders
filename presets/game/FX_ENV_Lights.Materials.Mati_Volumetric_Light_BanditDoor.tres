@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_ENV_Lights.MasterShaders.Mat_Volume_Cone_MS.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_ENV_Lights.Materials.Mati_Volumetric_Light_BanditDoor"
+source_object = "FX_ENV_Lights.Materials.Mati_Volumetric_Light_BanditDoor"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_ENV_Lights.MasterShaders.Mat_Volume_Cone_MS"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Contrast": 0.35,
+"SmokePanSpeed": 0.023,
+"p_DepthBias": -80.0,
+"p_SpecksAlpha": 3.0,
+"p_alpha": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_LightColor": Vector4(5.0, 0.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

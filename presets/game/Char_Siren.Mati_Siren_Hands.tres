@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Player.Master_Player.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Siren.Mati_Siren_Hands"
+source_object = "Char_Siren.Mati_Siren_Hands"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Player.Master_Player"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_DigiStructEnable": 0.0,
+"p_EnablePowerEmissive": 0.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.182236, 0.17375, 1.0, 1.0),
+"p_AColorMidtone": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_AColorShadow": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_BColorHilight": Vector4(0.659534, 0.657367, 0.713483, 1.0),
+"p_BColorMidtone": Vector4(0.882023, 0.940844, 1.0, 1.0),
+"p_BColorShadow": Vector4(0.124594, 0.124132, 0.129213, 1.0),
+"p_CColorHilight": Vector4(0.477417, 0.488764, 0.120818, 1.0),
+"p_CColorMidtone": Vector4(0.230337, 0.169358, 0.06461, 1.0),
+"p_CColorShadow": Vector4(0.477528, 0.430069, 0.08273, 1.0),
+"p_DecalChannelScale": Vector4(1.0, 1.0, 1.0, 0.0),
+"p_DecalColor": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_DecalScalePosition": Vector4(1.0, 1.0, 0.0, 0.0),
+"p_EmissiveColor": Vector4(0.023174, 9.047319, 1.309347, 1.0),
+"p_PatternChannelScale": Vector4(1.0, 1.0, 1.0, 0.0),
+"p_PatternColor": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_PatternScalePosition": Vector4(1.0, 1.0, 0.0, 0.0),
+"p_PowerEmissiveColor": Vector4(0.0, 14.554461, 20.0, 0.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_Siren.Texture.SirenHands_Dif",
+"p_Masks": "Char_Siren.Texture.SirenHands_Msk",
+"p_Normal": "Char_Siren.Texture.SirenHands_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

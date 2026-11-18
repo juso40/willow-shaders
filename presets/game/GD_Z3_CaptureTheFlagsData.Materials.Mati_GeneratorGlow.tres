@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Generators.Materials.Generator01_INST.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_Z3_CaptureTheFlagsData.Materials.Mati_GeneratorGlow"
+source_object = "GD_Z3_CaptureTheFlagsData.Materials.Mati_GeneratorGlow"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Generators.Materials.Generator01_INST"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

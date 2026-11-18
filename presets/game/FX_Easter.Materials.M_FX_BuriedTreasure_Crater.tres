@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Easter.Materials.M_FX_BuriedTreasure_Crater"
+source_object = "FX_Easter.Materials.M_FX_BuriedTreasure_Crater"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"Opc": 0.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"D_Mod": Vector4(0.801, 0.801, 0.801, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Terrain": null,
+"crater": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Terrain": "Prop_Terrain.Textures.InterludeSandClean_Dif",
+"crater": "Prop_Terrain.Textures.InterludeSandClean_Dif"
+})
+texture_object_classes = Dictionary[String, String]({
+"Terrain": "Texture2D",
+"crater": "Texture2D"
+})

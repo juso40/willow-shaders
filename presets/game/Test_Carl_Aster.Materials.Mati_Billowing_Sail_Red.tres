@@ -1,0 +1,52 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Aster_Prop_Airship.Materials.Mat_Billowing_Sail_MS.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Test_Carl_Aster.Materials.Mati_Billowing_Sail_Red"
+source_object = "Test_Carl_Aster.Materials.Mati_Billowing_Sail_Red"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Aster_Prop_Airship.Materials.Mat_Billowing_Sail_MS"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Obj Sway Wind Speed Mult": 0.5,
+"Object Sway Amount": 3.0,
+"Object Sway World Sine Divider": 1024.0,
+"Offset": 3500.0,
+"PerLeafBendSpeedScale": 1.25,
+"PerLeafBendStrength": 12.0,
+"PerLeafBendWaveSize": 80.0,
+"PerLeafWaveSize": 40.0,
+"PerLeafWaveSpeedScale": 1.0,
+"PerLeafWaveStrength": 0.5,
+"SineMult": 0.0,
+"p_MainSwayVerticalOffset": 0.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Object Sway_R_Sine1Rate_G_Sine1Amount_B_Sine2Rate_A_Sine2Amount": Vector4(0.758, 40.0, 1.125, 40.0),
+"p_AColorHilight": Vector4(0.745829, 0.0, 0.002096, 1.0),
+"p_AColorMidtone": Vector4(1.0, 0.160252, 0.162862, 1.0),
+"p_BColorMidtone": Vector4(1.0, 0.008634, 0.0, 1.0),
+"p_CColorMidtone": Vector4(1.0, 0.221019, 0.204449, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null,
+"p_OpacityMaskColor": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Aster_Prop_Airship.Textures.BoatSails_D",
+"p_Masks": "Aster_Prop_Airship.Textures.BoatSails_Comp",
+"p_Normal": "Aster_Prop_Airship.Textures.BoatSails_N",
+"p_OpacityMaskColor": "Aster_Prop_Airship.Textures.BoatSails_Mask"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D",
+"p_OpacityMaskColor": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

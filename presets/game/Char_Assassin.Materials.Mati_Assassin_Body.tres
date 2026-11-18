@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Player.Master_Player.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Assassin.Materials.Mati_Assassin_Body"
+source_object = "Char_Assassin.Materials.Mati_Assassin_Body"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Player.Master_Player"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_EnablePowerEmissive": 2.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.151117, 0.168137, 0.202247, 1.0),
+"p_AColorMidtone": Vector4(0.051035, 0.051167, 0.061798, 1.0),
+"p_AColorShadow": Vector4(0.275281, 0.261337, 0.235071, 1.0),
+"p_BColorHilight": Vector4(0.325843, 0.325843, 0.325843, 1.0),
+"p_BColorMidtone": Vector4(0.311072, 0.318925, 0.359551, 1.0),
+"p_BColorShadow": Vector4(0.752809, 0.697389, 0.625931, 1.0),
+"p_CColorHilight": Vector4(1.0, 0.962572, 0.870787, 1.0),
+"p_CColorMidtone": Vector4(0.853933, 0.824539, 0.757985, 1.0),
+"p_CColorShadow": Vector4(0.213483, 0.190705, 0.163111, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_Assassin.Textures.AssassinBody_Dif",
+"p_Masks": "Char_Assassin.Textures.AssassinBody_Msk",
+"p_Normal": "Char_Assassin.Textures.AssassinBody_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

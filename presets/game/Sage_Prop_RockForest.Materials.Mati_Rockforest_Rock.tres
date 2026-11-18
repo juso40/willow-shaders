@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Sage_Prop_RockForest.Materials.Master_RockForest_Rocks.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Sage_Prop_RockForest.Materials.Mati_Rockforest_Rock"
+source_object = "Sage_Prop_RockForest.Materials.Mati_Rockforest_Rock"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Sage_Prop_RockForest.Materials.Master_RockForest_Rocks"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_SnowUVScale": 3.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_SnowAmount": Vector4(0.938696, 1.034284, 0.869834, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Normal": null,
+"p_SnowDiffuse": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Prop_Rocks_03.Textures.ShaleRock_Dif",
+"p_Normal": "Prop_Rocks_03.Textures.ShaleRock_Nrm",
+"p_SnowDiffuse": "Prop_Terrain.Textures.GrasslandsSlateMoss_Dif"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Normal": "Texture2D",
+"p_SnowDiffuse": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

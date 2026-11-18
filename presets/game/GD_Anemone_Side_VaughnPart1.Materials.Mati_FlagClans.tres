@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Environment.Master_Wind.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_Anemone_Side_VaughnPart1.Materials.Mati_FlagClans"
+source_object = "GD_Anemone_Side_VaughnPart1.Materials.Mati_FlagClans"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Environment.Master_Wind"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_WaveScale": 5.0,
+"p_WindSpeed": 10.0,
+"p_WindWaveLength": 0.5
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.244707, 0.505435, 0.139636, 1.0),
+"p_AColorMidtone": Vector4(0.085243, 0.690217, 0.011631, 1.0),
+"p_AColorShadow": Vector4(0.190217, 0.047344, 0.109013, 1.0),
+"p_BColorHilight": Vector4(0.75, 0.46636, 0.330973, 1.0),
+"p_BColorMidtone": Vector4(0.288043, 0.138793, 0.090987, 1.0),
+"p_BColorShadow": Vector4(0.777174, 0.350573, 0.415182, 1.0),
+"p_CColorHilight": Vector4(0.701087, 0.255287, 0.255287, 1.0),
+"p_CColorMidtone": Vector4(0.391304, 0.115663, 0.080813, 1.0),
+"p_CColorShadow": Vector4(0.25, 0.126781, 0.098458, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "GD_Anemone_Side_VaughnPart1.Textures.VaughnguardFlags_Dif",
+"p_Masks": "Common_Textures.Stub.StubBlack_Gray",
+"p_Normal": "GD_Anemone_Side_VaughnPart1.Textures.ClanFlags_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

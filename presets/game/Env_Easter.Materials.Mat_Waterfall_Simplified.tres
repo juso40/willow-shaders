@@ -1,0 +1,37 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_Easter.Materials.Mat_Waterfall_Simplified"
+source_object = "Env_Easter.Materials.Mat_Waterfall_Simplified"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"WaveB_Intensity": 0.15,
+"p_FoamOpacity": 0.7,
+"p_Inshadow": 0.0,
+"p_RiverSpeed": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_FoamColor_ReflScale": Vector4(0.694462, 0.729917, 0.795551, 0.2),
+"p_FoamDensity": Vector4(-1.8, -1.05, 0.0, 1.0),
+"p_SpecColor": Vector4(0.547316, 0.747142, 0.767928, 0.4),
+"p_TexCoordOffset": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_TexCoordScale": Vector4(1.0, 1.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"P_SimpleReflect": null,
+"P_SimpleReflectSpec": null,
+"p_WaterNormal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"P_SimpleReflect": "Prop_Water.Textures.WaterReflectZone2",
+"P_SimpleReflectSpec": "Prop_Water.Textures.FakeSpec_Dif",
+"p_WaterNormal": "Prop_Water.Textures.Water_Nm_3"
+})
+texture_object_classes = Dictionary[String, String]({
+"P_SimpleReflect": "Texture2D",
+"P_SimpleReflectSpec": "Texture2D",
+"p_WaterNormal": "Texture2D"
+})

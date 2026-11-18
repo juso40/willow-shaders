@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Environment.Master_World.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Aster_Lootables.Materials.Mati_TreasureChest_Green"
+source_object = "Aster_Lootables.Materials.Mati_TreasureChest_Green"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Environment.Master_World"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.403322, 1.0, 0.368782, 1.0),
+"p_AColorMidtone": Vector4(0.992553, 1.0, 0.337799, 1.0),
+"p_AColorShadow": Vector4(0.818892, 1.0, 0.351341, 1.0),
+"p_BColorHilight": Vector4(1.0, 0.6592, 0.311249, 1.0),
+"p_BColorMidtone": Vector4(1.0, 0.205638, 0.131684, 1.0),
+"p_BColorShadow": Vector4(0.558027, 0.848453, 1.0, 1.0),
+"p_EmissiveScale": Vector4(0.0, 16.445185, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null,
+"p_emissive": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Aster_Lootables.Textures.TreasureChest_Wood_D",
+"p_Masks": "Aster_Lootables.Textures.TreasureChest_Wood_Comp",
+"p_Normal": "Common_Textures.Stub.StubFlat_Nrm",
+"p_emissive": "Aster_Lootables.Textures.TreasureChest_Wood_Comp"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D",
+"p_emissive": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

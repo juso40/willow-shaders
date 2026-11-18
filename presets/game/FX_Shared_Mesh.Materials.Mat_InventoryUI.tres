@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Shared_Mesh.Materials.Mat_InventoryUI"
+source_object = "FX_Shared_Mesh.Materials.Mat_InventoryUI"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"Base_Rate": 1.0,
+"GlowLine_Rate": 0.0,
+"Outline_Rate": 0.0,
+"ScanLine_Rate": 0.0,
+"Text_Rate": 0.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Base_Color": Vector4(0.0, 0.8, 2.0, 1.0),
+"TextColor": Vector4(0.6, 2.2, 2.6, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

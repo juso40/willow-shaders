@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Char_Anemone_Uranus.Creature.Master_CreatureDigistruct.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Anemone_Uranus.Materials.Mati_Attachment_Uranus_HOT"
+source_object = "Char_Anemone_Uranus.Materials.Mati_Attachment_Uranus_HOT"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Char_Anemone_Uranus.Creature.Master_CreatureDigistruct"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_DigiStructEnable": 0.0,
+"p_HighlightsIntensity": 2.0,
+"p_ShadowsIntensity": 4.0,
+"p_fade": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.505618, 0.302508, 0.070614, 1.0),
+"p_AColorMidtone": Vector4(0.325955, 0.08254, 0.054036, 1.0),
+"p_AColorShadow": Vector4(0.050562, 0.038586, 0.019835, 1.0),
+"p_BColorHilight": Vector4(1.0, 0.716401, 0.149203, 1.0),
+"p_BColorMidtone": Vector4(0.182314, 0.152105, 0.126917, 1.0),
+"p_BColorShadow": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_CColorHilight": Vector4(0.370152, 0.140298, 0.087947, 1.0),
+"p_CColorMidtone": Vector4(0.607712, 0.103011, 0.081648, 1.0),
+"p_CColorShadow": Vector4(0.24861, 0.114153, 0.019048, 1.0),
+"p_ColorD": Vector4(0.381957, 0.38764, 0.355882, 1.0),
+"p_EmissiveScale": Vector4(0.0, 0.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "HyperionBotAttachments.Tex.HyperionBotAttachments_Dif",
+"p_Masks": "HyperionBotAttachments.Tex.HyperionBotAttachments_Comp",
+"p_Normal": "HyperionBotAttachments.Tex.HyperionBotAttachments_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

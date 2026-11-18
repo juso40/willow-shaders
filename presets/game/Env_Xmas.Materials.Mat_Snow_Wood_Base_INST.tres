@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Env_Xmas.Materials.Mat_Snow_Wood.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_Xmas.Materials.Mat_Snow_Wood_Base_INST"
+source_object = "Env_Xmas.Materials.Mat_Snow_Wood_Base_INST"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Env_Xmas.Materials.Mat_Snow_Wood"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_Diff_UVMod": Vector4(1.15, 1.25, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

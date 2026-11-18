@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_CHAR_Siren.Materials.Mat_SirenOrbBlackMOD.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_CHAR_Siren.Materials.Mati_Black_Orb_Mod_Hand"
+source_object = "FX_CHAR_Siren.Materials.Mati_Black_Orb_Mod_Hand"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_CHAR_Siren.Materials.Mat_SirenOrbBlackMOD"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"DepthBias": -2.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

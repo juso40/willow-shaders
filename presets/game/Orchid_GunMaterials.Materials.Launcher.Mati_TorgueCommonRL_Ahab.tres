@@ -1,0 +1,50 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_GunMaterials.Materials.Shotgun.Mati_TorgueEpic_SG.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Orchid_GunMaterials.Materials.Launcher.Mati_TorgueCommonRL_Ahab"
+source_object = "Orchid_GunMaterials.Materials.Launcher.Mati_TorgueCommonRL_Ahab"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_GunMaterials.Materials.Shotgun.Mati_TorgueEpic_SG"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.319885, 0.346715, 0.441973, 1.0),
+"p_AColorMidtone": Vector4(0.13707, 0.163108, 0.212044, 1.0),
+"p_AColorShadow": Vector4(0.065507, 0.096322, 0.204412, 1.0),
+"p_BColorHilight": Vector4(0.859174, 0.766064, 0.560135, 1.0),
+"p_BColorMidtone": Vector4(0.358654, 0.325037, 0.311181, 1.0),
+"p_BColorShadow": Vector4(0.415148, 0.293216, 0.197516, 1.0),
+"p_CColorHilight": Vector4(0.598942, 0.415148, 0.280124, 1.0),
+"p_CColorMidtone": Vector4(0.139022, 0.193972, 0.311181, 1.0),
+"p_CColorShadow": Vector4(0.21952, 0.151058, 0.108711, 1.0),
+"p_DecalChannel": Vector4(1.0, 0.0, 0.0, 0.0),
+"p_DecalColor": Vector4(1.885355, 1.356663, 1.064735, 1.0),
+"p_DecalScalePosition": Vector4(8.588902, 24.606205, 0.584, 0.555),
+"p_PatternChannelScale": Vector4(0.0, 0.0, 0.0, 0.0),
+"p_ReflectColor": Vector4(3.120446, 3.120446, 3.120446, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"P_SimpleReflect": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_NormalScopesEmissive": null
+})
+texture_object_paths = Dictionary[String, String]({
+"P_SimpleReflect": "Common_GunMaterials.Env.Chrome",
+"p_Diffuse": "Common_GunMaterials.CompTextures.Weap_LauncherShotgunPistol_Comp",
+"p_Masks": "Weap_Launchers.Tex.Weap_Launchers_Comp",
+"p_NormalScopesEmissive": "Weap_Launchers.Tex.Weap_Launchers_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"P_SimpleReflect": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_NormalScopesEmissive": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

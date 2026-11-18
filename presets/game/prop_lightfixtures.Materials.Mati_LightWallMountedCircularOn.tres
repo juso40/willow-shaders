@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/prop_lightfixtures.Materials.Mat_LightWallMountedCircular.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "prop_lightfixtures.Materials.Mati_LightWallMountedCircularOn"
+source_object = "prop_lightfixtures.Materials.Mati_LightWallMountedCircularOn"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "prop_lightfixtures.Materials.Mat_LightWallMountedCircular"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Brightness": 20.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"LightColor": Vector4(0.524843, 0.522403, 0.350868, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

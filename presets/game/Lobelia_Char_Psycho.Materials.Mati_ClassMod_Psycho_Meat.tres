@@ -1,0 +1,50 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Items.Master_ClassMod_02.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Lobelia_Char_Psycho.Materials.Mati_ClassMod_Psycho_Meat"
+source_object = "Lobelia_Char_Psycho.Materials.Mati_ClassMod_Psycho_Meat"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Items.Master_ClassMod_02"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_ReplaceDecal": 11.0,
+"p_UseFullColorDecal": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.625213, 0.63024, 0.65191, 1.0),
+"p_AColorMidtone": Vector4(0.540006, 0.908341, 0.988914, 1.0),
+"p_AColorShadow": Vector4(0.147844, 0.153413, 0.16574, 1.0),
+"p_BColorHilight": Vector4(0.972716, 0.996418, 1.0, 1.0),
+"p_BColorMidtone": Vector4(0.976878, 1.0, 0.961865, 1.0),
+"p_BColorShadow": Vector4(0.055247, 0.055247, 0.055247, 1.0),
+"p_CColorHilight": Vector4(0.977865, 0.487177, 0.337759, 1.0),
+"p_CColorMidtone": Vector4(0.988914, 0.164981, 0.104654, 1.0),
+"p_CColorShadow": Vector4(1.0, 3.7e-05, 0.056584, 1.0),
+"p_DecalChannel": Vector4(1.0, 0.0, 0.0, 1.0),
+"p_DecalColor": Vector4(1.5, 2.0, 2.0, 1.0),
+"p_DecalScalePosition": Vector4(0.8156, 0.7987, -0.3901, -0.3252),
+"p_EmissiveColor": Vector4(0.0, 0.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Decal": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Decal": "Lobelia_Char_Psycho.Textures.Psycho_ClassMod_Decal_01",
+"p_Diffuse": "Lobelia_Char_Psycho.Textures.Psycho_ClassMod_D",
+"p_Masks": "Lobelia_Char_Psycho.Textures.Psycho_ClassMod_Comp",
+"p_Normal": "Lobelia_Char_Psycho.Textures.Psycho_ClassMod_N"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Decal": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

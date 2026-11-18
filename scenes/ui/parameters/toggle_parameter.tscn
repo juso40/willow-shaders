@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://4ics1diycqtn"]
+
+[ext_resource type="PackedScene" uid="uid://dik0r5pgbrwg7" path="res://scenes/ui/parameters/parameter_control.tscn" id="1"]
+[ext_resource type="Script" uid="uid://dwdgkbm3vml47" path="res://scripts/ui/parameters/toggle_parameter.gd" id="2"]
+
+[node name="ToggleParameter" unique_id=1394336092 instance=ExtResource("1")]
+script = ExtResource("2")
+
+[node name="Value" type="CheckButton" parent="." index="1" unique_id=1470778965]
+unique_name_in_owner = true
+layout_mode = 2

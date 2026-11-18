@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Water.Materials.Mat_Water_Day_Cycle.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Water.Materials.mati_water_day_cycle"
+source_object = "Prop_Water.Materials.mati_water_day_cycle"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Water.Materials.Mat_Water_Day_Cycle"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"arid_water_tod_1": 1.0,
+"arid_water_tod_2": 0.0,
+"arid_water_tod_brightness": 1.0,
+"arid_water_tod_desaturation": 0.5
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

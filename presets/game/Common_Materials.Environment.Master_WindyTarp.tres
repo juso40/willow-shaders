@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Common_Materials.Environment.Master_WindyTarp"
+source_object = "Common_Materials.Environment.Master_WindyTarp"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"AO_Map_Brightness": 1.0,
+"p_WaveScale": 1.0,
+"p_WindSpeed": 1.0,
+"p_WindWaveLength": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Tarp_Color": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_RopeColor": Vector4(1.0, 0.922599, 0.590929, 1.0),
+"p_TransmissionColor": Vector4(0.5, 0.5, 0.5, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Diffuse": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Diffuse": "Common_Textures.Stub.StubGray_Gray"
+})
+texture_object_classes = Dictionary[String, String]({
+"Diffuse": "Texture2D"
+})

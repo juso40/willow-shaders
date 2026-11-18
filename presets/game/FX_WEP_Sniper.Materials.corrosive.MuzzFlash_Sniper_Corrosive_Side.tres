@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_WEP_Assault.Materials.MS.Muzzle_Flash_MS.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_WEP_Sniper.Materials.corrosive.MuzzFlash_Sniper_Corrosive_Side"
+source_object = "FX_WEP_Sniper.Materials.corrosive.MuzzFlash_Sniper_Corrosive_Side"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_WEP_Assault.Materials.MS.Muzzle_Flash_MS"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"DistortAmount": 0.0125
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Mask": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Mask": "FX_WEP_Sniper.Textures.Tex_Sniper_Muzzle_Flash_Side_DSC_GP"
+})
+texture_object_classes = Dictionary[String, String]({
+"Mask": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

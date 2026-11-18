@@ -1,0 +1,57 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Items.Master_ClassMod_02.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Item_ClassMods.Mat.Mati_ClassMod_Soldier_ShockTrooper"
+source_object = "Item_ClassMods.Mat.Mati_ClassMod_Soldier_ShockTrooper"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Items.Master_ClassMod_02"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_ReflectColorScale": 0.8,
+"p_ReplaceDecal": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.224832, 0.361004, 0.453022, 1.0),
+"p_AColorMidtone": Vector4(0.090496, 0.114727, 0.204412, 1.0),
+"p_AColorShadow": Vector4(0.099881, 0.151003, 0.436448, 1.0),
+"p_BColorHilight": Vector4(0.496671, 0.94469, 1.0, 1.0),
+"p_BColorMidtone": Vector4(0.192283, 0.334284, 0.392251, 1.0),
+"p_BColorShadow": Vector4(0.042604, 0.061314, 0.110493, 1.0),
+"p_CColorHilight": Vector4(1.0, 0.27617, 0.228088, 1.0),
+"p_CColorMidtone": Vector4(1.302144, 0.047284, 0.035129, 1.0),
+"p_CColorShadow": Vector4(1.0, 0.069876, 0.0, 1.0),
+"p_ColorD": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_DecalChannel": Vector4(1.0, 1.0, 0.0, 1.0),
+"p_DecalColor": Vector4(6.950684, 13.916454, 13.606866, 1.0),
+"p_DecalScalePosition": Vector4(6.0, 3.0, -0.0212, -0.0611),
+"p_PatternChannelScale": Vector4(1.0, 1.0, 0.0, 0.0),
+"p_PatternScalePosition": Vector4(5.0, 5.0, 0.0, 0.0),
+"p_ReflectColor": Vector4(1.019112, 0.846222, 2.701323, 1.0),
+"p_ReflectionChannelScale": Vector4(0.0, 0.0, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"P_SimpleReflect": null,
+"p_Decal": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"P_SimpleReflect": "Common_GunMaterials.Env.Gold",
+"p_Decal": "Item_ClassMods.Textures.Soldier_ClassMod_Pattern_Lighting",
+"p_Diffuse": "Item_ClassMods.Textures.SoldierClassMod01_Diff",
+"p_Masks": "Item_ClassMods.Textures.SoldierClassMod01_Msk",
+"p_Normal": "Item_ClassMods.Textures.SoldierClassMod01_Norm"
+})
+texture_object_classes = Dictionary[String, String]({
+"P_SimpleReflect": "Texture2D",
+"p_Decal": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

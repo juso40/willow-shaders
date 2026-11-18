@@ -1,0 +1,38 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Environment.Master_Rocks.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_Cliffs.Materials.Mati_SlateRock_Cliffs_3x"
+source_object = "Env_Cliffs.Materials.Mati_SlateRock_Cliffs_3x"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Environment.Master_Rocks"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_VertexNoiseUVMod": 4.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_BounceA": Vector4(0.014678, 0.021739, 0.005932, 1.0),
+"p_BounceB": Vector4(0.006328, 0.016304, 0.009758, 1.0),
+"p_Diff_UVMod": Vector4(4.0, 4.0, 5.0, 5.0),
+"p_Normal_UVMod": Vector4(4.0, 4.0, 5.0, 5.0),
+"p_VertexPaintDifMod": Vector4(0.4, 0.5, 0.35, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_DiffuseVertexPaint": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Prop_Rocks.Textures.SlateRock_Dif",
+"p_DiffuseVertexPaint": "Prop_Terrain.Textures.GrasslandsSlateMoss_Dif",
+"p_Normal": "Prop_Rocks.Textures.SlateRock_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_DiffuseVertexPaint": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

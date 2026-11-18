@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Co_MoonInstDecor.Materials.Mati_Co_TechContainer_01.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Co_MoonInstDecor.Materials.Mati_Co_TechContainerHelios"
+source_object = "Prop_Co_MoonInstDecor.Materials.Mati_Co_TechContainerHelios"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Co_MoonInstDecor.Materials.Mati_Co_TechContainer_01"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorMidtone": Vector4(7.0, 6.766305, 5.880356, 1.0),
+"p_AColorShadow": Vector4(10.0, 6.114798, 0.799394, 1.0),
+"p_BColorHilight": Vector4(0.790026, 0.782655, 0.74638, 1.0),
+"p_BColorMidtone": Vector4(7.624029, 7.296699, 6.113386, 1.0),
+"p_BColorShadow": Vector4(0.790026, 0.752435, 0.56743, 1.0),
+"p_CColorHilight": Vector4(0.856322, 0.8163, 0.233136, 1.0),
+"p_CColorMidtone": Vector4(7.0, 3.299883, 0.327647, 1.0),
+"p_CColorShadow": Vector4(0.662959, 0.018996, 0.0, 1.0),
+"p_Color_D": Vector4(1.0, 1.0, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Prop_Co_MoonInstDecor.Textures.Co_TechContainer_01_Diff"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

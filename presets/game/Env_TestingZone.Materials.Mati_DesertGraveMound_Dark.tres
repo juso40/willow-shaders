@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Environment.Master_WorldMasked.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_TestingZone.Materials.Mati_DesertGraveMound_Dark"
+source_object = "Env_TestingZone.Materials.Mati_DesertGraveMound_Dark"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Environment.Master_WorldMasked"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_DiffMod_DiffPow": Vector4(0.729919, 0.363604, 0.170138, 1.0),
+"p_Diff_UVMod": Vector4(1.0, 1.0, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masked": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Prop_Terrain.Textures.InterludeSandDisturbed_Dif",
+"p_Masked": "Prop_Rocks_02.Textures.DesertGraveMound_Opac",
+"p_Normal": "Common_Textures.Stub.StubFlat_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masked": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

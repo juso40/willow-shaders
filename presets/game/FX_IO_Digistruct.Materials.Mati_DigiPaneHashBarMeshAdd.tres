@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_IO_Digistruct.Materials.Mat_DigistructPaneMasterAdditive.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_IO_Digistruct.Materials.Mati_DigiPaneHashBarMeshAdd"
+source_object = "FX_IO_Digistruct.Materials.Mati_DigiPaneHashBarMeshAdd"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_IO_Digistruct.Materials.Mat_DigistructPaneMasterAdditive"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"GradientStrength": 1.0,
+"PannerSpeed": 0.02,
+"RotatorTimeInRadians": 2.356194
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"RGTilingBAOffset": Vector4(0.1, 0.13, 0.0, 0.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_WEP_Assault.Materials.MS.Muzzle_Flash_MS.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_WEP_Assault.Materials._Default.Mati_MuzzFlash_Assault_Front"
+source_object = "FX_WEP_Assault.Materials._Default.Mati_MuzzFlash_Assault_Front"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_WEP_Assault.Materials.MS.Muzzle_Flash_MS"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"TexMultiplier": 2.0,
+"TexPower": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Mask": null,
+"Tex_SubUV": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Mask": "FX_WEP_Assault.Textures.Tex_Assault_Muzzle_Flash_Front",
+"Tex_SubUV": "FX_WEP_Assault.Textures.Tex_Assault_Muzzle_Flash_Front"
+})
+texture_object_classes = Dictionary[String, String]({
+"Mask": "Texture2D",
+"Tex_SubUV": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

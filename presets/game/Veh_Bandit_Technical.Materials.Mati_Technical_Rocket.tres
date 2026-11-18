@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Vehicle.Master_Vehicle.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Veh_Bandit_Technical.Materials.Mati_Technical_Rocket"
+source_object = "Veh_Bandit_Technical.Materials.Mati_Technical_Rocket"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Vehicle.Master_Vehicle"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_PatternInvert": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.553545, 0.856322, 0.82062, 1.0),
+"p_AColorMidtone": Vector4(0.876405, 0.946062, 1.0, 1.0),
+"p_AColorShadow": Vector4(0.758427, 0.815729, 1.0, 1.0),
+"p_BColorHilight": Vector4(0.654842, 0.856947, 0.876405, 1.0),
+"p_BColorMidtone": Vector4(0.654842, 0.856947, 0.876405, 1.0),
+"p_BColorShadow": Vector4(0.316707, 0.439006, 0.533708, 1.0),
+"p_ColorD": Vector4(0.469596, 0.426915, 0.306151, 1.0),
+"p_PatternChannelScale": Vector4(0.876405, 0.876405, 0.876405, 0.0),
+"p_PatternColor": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_PatternScalePosition": Vector4(8.870421, 3.0, 6.67126, 12.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_CustomPattern": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_CustomPattern": "CD_Skins_BanditTech_MainGame.Textures.Decal_TechnicalPollock",
+"p_Diffuse": "Veh_Bandit_Technical.Textures.BanditTechnical_D",
+"p_Masks": "Veh_Bandit_Technical.Textures.BanditTechnical_Comp",
+"p_Normal": "Veh_Bandit_Technical.Textures.BanditTechnical_N"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_CustomPattern": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Tarps_Px.Materials.Mat_FlatTarp_Parent"
+source_object = "Prop_Tarps_Px.Materials.Mat_FlatTarp_Parent"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"DeSat_Percent": 0.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Tarp_Color": Vector4(1.0, 1.0, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

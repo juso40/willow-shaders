@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Anemone_Prop_Infection.Materials.Mat_Anemone_InfectionPlants.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Anemone_Prop_Infection.Materials.Mati_Anemone_TorkPillar"
+source_object = "Anemone_Prop_Infection.Materials.Mati_Anemone_TorkPillar"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Anemone_Prop_Infection.Materials.Mat_Anemone_InfectionPlants"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Base Radius": 350.0,
+"EmissiveMaskIntensity": 0.5
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"ColorMultiply": Vector4(0.063815, 0.078057, 0.051122, 0.0),
+"EmissiveMaskColor": Vector4(0.890698, 1.0, 0.172852, 0.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Diffuse": null,
+"EmissiveMask": null,
+"Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Diffuse": "Anemone_Prop_Infection.Textures.TorkPillar_Dif",
+"EmissiveMask": "Anemone_Prop_Infection.Textures.TorkPillar_Em",
+"Normal": "Anemone_Prop_Infection.Textures.TorkPillar_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"Diffuse": "Texture2D",
+"EmissiveMask": "Texture2D",
+"Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

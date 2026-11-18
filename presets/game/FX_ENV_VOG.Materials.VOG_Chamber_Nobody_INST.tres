@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_ENV_VOG.Materials.VOG_Visions.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_ENV_VOG.Materials.VOG_Chamber_Nobody_INST"
+source_object = "FX_ENV_VOG.Materials.VOG_Chamber_Nobody_INST"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_ENV_VOG.Materials.VOG_Visions"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"ScanLinesAmount": 0.3,
+"StaticAmount": 0.5
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Hue": Vector4(0.447544, 0.447544, 0.447544, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"VOG_Ethereal": null,
+"VOG_Movie": null,
+"VOG_Vision": null
+})
+texture_object_paths = Dictionary[String, String]({
+"VOG_Ethereal": "FX_ENV_VOG.Textures.electric_light",
+"VOG_Movie": "Common_Textures.Stub.StubWhite_Gray",
+"VOG_Vision": "FX_ENV_VOG.Textures.Vision_Cube"
+})
+texture_object_classes = Dictionary[String, String]({
+"VOG_Ethereal": "Texture2D",
+"VOG_Movie": "Texture2D",
+"VOG_Vision": "Texture2D"
+})

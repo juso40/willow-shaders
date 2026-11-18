@@ -1,0 +1,38 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_CHAR_Shared_Shield.Materials.MasterShaders.Mat_Nova_Shield_Bubble_MS"
+source_object = "FX_CHAR_Shared_Shield.Materials.MasterShaders.Mat_Nova_Shield_Bubble_MS"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"DistortAmount": 0.125,
+"MaskDistortTilingX": 1.0,
+"MaskDistortTilingY": 1.0,
+"MaskPanSpeed": 1.0,
+"OverlayMultiplier": 20.0,
+"PanSpeed": 0.5,
+"maskTilingX": 3.0,
+"maskTilingY": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"tex_Mask": null
+})
+texture_object_paths = Dictionary[String, String]({
+"tex_Mask": "FX_Shared_Fire.Textures.Fireball_Tiling_Dif"
+})
+texture_object_classes = Dictionary[String, String]({
+"tex_Mask": "Texture2D"
+})
+static_component_masks = Dictionary[String, Vector4]({
+"mask_Channel": Vector4(1.0, 0.0, 0.0, 0.0)
+})
+static_switches = Dictionary[String, bool]({
+"DistortionToggle": false,
+"ToggleShockOverlay": false
+})

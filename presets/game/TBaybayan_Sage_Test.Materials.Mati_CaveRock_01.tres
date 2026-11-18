@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Environment.Master_World.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "TBaybayan_Sage_Test.Materials.Mati_CaveRock_01"
+source_object = "TBaybayan_Sage_Test.Materials.Mati_CaveRock_01"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Environment.Master_World"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_DiffMod": Vector4(0.2466, 0.39, 0.49, 1.0),
+"p_NormalMod": Vector4(1.0, 1.0, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "TBaybayan_Sage_Test.Textures.CaveRock_01_Dif",
+"p_Normal": "TBaybayan_Sage_Test.Textures.CaveRock_01_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

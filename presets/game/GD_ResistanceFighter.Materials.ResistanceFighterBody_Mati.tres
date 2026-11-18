@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.NPC.Master_NPC.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_ResistanceFighter.Materials.ResistanceFighterBody_Mati"
+source_object = "GD_ResistanceFighter.Materials.ResistanceFighterBody_Mati"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.NPC.Master_NPC"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.345583, 0.408825, 0.346839, 1.0),
+"p_AColorMidtone": Vector4(0.288295, 0.331479, 0.280203, 1.0),
+"p_AColorShadow": Vector4(0.124537, 0.220986, 0.144061, 1.0),
+"p_BColorHilight": Vector4(0.384602, 0.386726, 0.32904, 1.0),
+"p_BColorMidtone": Vector4(0.419874, 0.37812, 0.37812, 1.0),
+"p_BColorShadow": Vector4(0.462462, 0.497219, 0.373606, 1.0),
+"p_CColorHilight": Vector4(0.46975, 0.497219, 0.479964, 1.0),
+"p_CColorMidtone": Vector4(0.397534, 0.48617, 0.443085, 1.0),
+"p_CColorShadow": Vector4(0.343325, 0.419874, 0.355121, 1.0),
+"p_ColorD": Vector4(0.370152, 0.34308, 0.296533, 1.0),
+"p_HidePart": Vector4(1.0, 1.0, 1.0, 0.0),
+"p_MuscleFat": Vector4(-2.0, -1.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_GenericMale.Textures.GenericMaleBody_Dif",
+"p_Masks": "Char_GenericMale.Textures.GenericMaleBody_Comp",
+"p_Normal": "Char_GenericMale.Textures.GenericMaleBody_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

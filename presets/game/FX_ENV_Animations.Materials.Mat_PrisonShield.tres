@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_ENV_Animations.Materials.Mat_PrisonShield"
+source_object = "FX_ENV_Animations.Materials.Mat_PrisonShield"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"AnimV": 1.0,
+"Base_Rate": 0.25,
+"Fresnel_Rate": 6.0,
+"General_PanSpeed": 0.2,
+"ManualPan_or_Time": 0.0,
+"Noise_Rate": 1.0,
+"Ring_Power": 1.5,
+"Ring_Rate": 2.4
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Color2": Vector4(0.15, 0.1, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

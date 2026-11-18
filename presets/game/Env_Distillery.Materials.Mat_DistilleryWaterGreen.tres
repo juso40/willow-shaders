@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_Distillery.Materials.Mat_DistilleryWaterGreen"
+source_object = "Env_Distillery.Materials.Mat_DistilleryWaterGreen"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"CubeLerpAlpha": 0.9,
+"DepthBias": -8.0,
+"Desaturation": 0.0,
+"Opacity": 0.9,
+"Speed": 0.3
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_WaterColorA": Vector4(0.008538, 0.038673, 0.023667, 1.0),
+"p_WaterColorB": Vector4(0.01011, 0.077345, 0.02217, 1.0),
+"wavescale": Vector4(0.07, 0.03, 0.1, 0.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"CubeMap": null,
+"Mask": null,
+"P_SimpleReflect": null
+})
+texture_object_paths = Dictionary[String, String]({
+"CubeMap": "",
+"Mask": "FX_Shared_Water.Textures.Water_Puddle01_Tex",
+"P_SimpleReflect": "Env_Distillery.Textures.Reflection_Distillery2"
+})
+texture_object_classes = Dictionary[String, String]({
+"CubeMap": "",
+"Mask": "Texture2D",
+"P_SimpleReflect": "Texture2D"
+})
+static_switches = Dictionary[String, bool]({
+"DepthBiasSwitch": false
+})

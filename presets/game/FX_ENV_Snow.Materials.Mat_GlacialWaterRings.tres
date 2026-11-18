@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_ENV_Snow.Materials.Mat_GlacialWaterRings"
+source_object = "FX_ENV_Snow.Materials.Mat_GlacialWaterRings"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"DepthBias": -128.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Diffuse": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Diffuse": "FX_Shared_Water.Textures.SubUV_2X2_TemporalDistortion_Dif"
+})
+texture_object_classes = Dictionary[String, String]({
+"Diffuse": "Texture2D"
+})

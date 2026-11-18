@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Char_SpiderAnt.Materials.Char_SpiderAntAttachments1.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_SpiderAnt.Materials.Mati_SpiderAntBlackQueenAttachments"
+source_object = "Char_SpiderAnt.Materials.Mati_SpiderAntBlackQueenAttachments"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Char_SpiderAnt.Materials.Char_SpiderAntAttachments1"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.460674, 0.460674, 0.460674, 1.0),
+"p_AColorMidtone": Vector4(0.275281, 0.275281, 0.275281, 1.0),
+"p_AColorShadow": Vector4(0.269663, 0.269663, 0.269663, 1.0),
+"p_BColorHilight": Vector4(0.033708, 0.033708, 0.033708, 1.0),
+"p_BColorMidtone": Vector4(0.08427, 0.08427, 0.08427, 1.0),
+"p_BColorShadow": Vector4(0.101124, 0.101124, 0.101124, 1.0),
+"p_CColorHilight": Vector4(0.264045, 0.264045, 0.264045, 1.0),
+"p_CColorMidtone": Vector4(0.314607, 0.314607, 0.314607, 1.0),
+"p_CColorShadow": Vector4(0.033708, 0.033708, 0.033708, 1.0),
+"p_ClampMasks": Vector4(0.971154, 1.711539, 0.971154, 1.0),
+"p_ColorD": Vector4(0.595506, 0.595506, 0.595506, 1.0),
+"p_PatternColor": Vector4(0.011236, 0.011236, 0.011236, 2.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

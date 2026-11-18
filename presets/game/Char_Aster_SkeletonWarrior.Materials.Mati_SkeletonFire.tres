@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_CreatureFire.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Aster_SkeletonWarrior.Materials.Mati_SkeletonFire"
+source_object = "Char_Aster_SkeletonWarrior.Materials.Mati_SkeletonFire"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_CreatureFire"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_FxScaleFire": 4.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.52809, 0.441619, 0.335248, 0.0),
+"p_AColorMidtone": Vector4(0.039326, 0.027664, 0.013318, 0.0),
+"p_AColorShadow": Vector4(0.101124, 0.074121, 0.040904, 0.0),
+"p_BColorHilight": Vector4(0.353933, 0.319683, 0.246368, 0.0),
+"p_BColorMidtone": Vector4(0.353933, 0.248973, 0.119858, 0.0),
+"p_BColorShadow": Vector4(0.174157, 0.122511, 0.058978, 0.0),
+"p_CColorHilight": Vector4(0.808989, 0.325811, 0.191834, 0.0),
+"p_CColorMidtone": Vector4(0.426966, 0.171956, 0.101246, 0.0),
+"p_CColorShadow": Vector4(0.129213, 0.052039, 0.03064, 0.0),
+"p_ColorD": Vector4(0.033708, 0.033708, 0.033708, 1.0),
+"p_FireColor": Vector4(4.0, 4.0, 4.0, 3.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_Aster_SkeletonWarrior.Textures.SkeletonWarrior_Dif",
+"p_Masks": "Char_Aster_SkeletonWarrior.Textures.SkeletonWarrior_Comp",
+"p_Normal": "Char_Aster_SkeletonWarrior.Textures.SkeletonWarrior_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

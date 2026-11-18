@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Env_Distillery_02.Materials.Mat_SmallWavesTrans_Distillery.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_Distillery_02.Materials.Mati_SmallWavesTransA_Distillery"
+source_object = "Env_Distillery_02.Materials.Mati_SmallWavesTransA_Distillery"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Env_Distillery_02.Materials.Mat_SmallWavesTrans_Distillery"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_wave_offset": 3.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

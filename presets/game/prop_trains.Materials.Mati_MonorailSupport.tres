@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Environment.Master_Spline.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "prop_trains.Materials.Mati_MonorailSupport"
+source_object = "prop_trains.Materials.Mati_MonorailSupport"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Environment.Master_Spline"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "prop_trains.Textures.MonorailSupport_Dif"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D"
+})

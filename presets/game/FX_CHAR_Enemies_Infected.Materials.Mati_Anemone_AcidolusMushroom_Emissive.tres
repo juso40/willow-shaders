@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_CHAR_Enemies_Infected.Materials.Mat_Anemone_AcidolusMushroom.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_CHAR_Enemies_Infected.Materials.Mati_Anemone_AcidolusMushroom_Emissive"
+source_object = "FX_CHAR_Enemies_Infected.Materials.Mati_Anemone_AcidolusMushroom_Emissive"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_CHAR_Enemies_Infected.Materials.Mat_Anemone_AcidolusMushroom"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"EmissiveMultiply": 250.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"EmissiveColor": Vector4(0.412359, 0.0, 3.5, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

@@ -1,0 +1,38 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Shared_MasterShaders.Materials.Masked.Mesh.Mat_FX_FakeLit_Mesh_2Sided_MS"
+source_object = "FX_Shared_MasterShaders.Materials.Masked.Mesh.Mat_FX_FakeLit_Mesh_2Sided_MS"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"p_ShadowLocStart": 0.65,
+"p_ShadowMult": 0.2,
+"p_brightness": 2.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_FireColor": Vector4(3.0, 2.0, 1.0, 1.0),
+"p_LightDir": Vector4(0.0, 0.0, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"DiffSubUVTex": null,
+"p_OpacTex": null
+})
+texture_object_paths = Dictionary[String, String]({
+"DiffSubUVTex": "Common_Textures.Stub.StubWhite_Gray",
+"p_OpacTex": "Common_Textures.Stub.StubWhite_Gray"
+})
+texture_object_classes = Dictionary[String, String]({
+"DiffSubUVTex": "Texture2D",
+"p_OpacTex": "Texture2D"
+})
+static_component_masks = Dictionary[String, Vector4]({
+"p_Diff_Channel": Vector4(1.0, 1.0, 1.0, 0.0),
+"p_Opac_Channel": Vector4(1.0, 1.0, 1.0, 0.0)
+})
+static_switches = Dictionary[String, bool]({
+"p_DXT_Type": true,
+"p_OnFireSwitch": false
+})

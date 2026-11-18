@@ -1,0 +1,59 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Aster_Prop_Airship.Materials.Mat_Billowing_Sail_MS"
+source_object = "Aster_Prop_Airship.Materials.Mat_Billowing_Sail_MS"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"Obj Sway Wind Speed Mult": 1.0,
+"Object Sway Amount": 1.0,
+"Object Sway World Sine Divider": 256.0,
+"Offset": 1.0,
+"PerLeafBendSpeedScale": 1.0,
+"PerLeafBendStrength": 1.0,
+"PerLeafBendWaveSize": 1.0,
+"PerLeafWaveSize": 1.0,
+"PerLeafWaveSpeedScale": 1.0,
+"PerLeafWaveStrength": 1.0,
+"SineMult": 3.0,
+"p_HighlightsIntensity": 2.0,
+"p_MainSwayVerticalOffset": 0.0,
+"p_ShadowsIntensity": 2.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Object Sway_R_Sine1Rate_G_Sine1Amount_B_Sine2Rate_A_Sine2Amount": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_AColorHilight": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_AColorMidtone": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_AColorShadow": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_BColorHilight": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_BColorMidtone": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_BColorShadow": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_CColorHilight": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_CColorMidtone": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_CColorShadow": Vector4(1.0, 1.0, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null,
+"p_OpacityMaskColor": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Common_Textures.Stub.StubBlack_Gray",
+"p_Masks": "Common_Textures.Stub.StubBlack_Gray",
+"p_Normal": "Common_Textures.Stub.StubBlack_Gray",
+"p_OpacityMaskColor": "Common_Textures.Stub.StubBlack_Gray"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D",
+"p_OpacityMaskColor": "Texture2D"
+})
+static_switches = Dictionary[String, bool]({
+"sw_Colorize": false,
+"sw_UseLeafBending": false
+})

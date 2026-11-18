@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_CREA_EXPLoader.Materials.Core_Rings_Mat.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_WEP_Alien.Materials.BlasterRing_Geo_Desat"
+source_object = "FX_WEP_Alien.Materials.BlasterRing_Geo_Desat"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_CREA_EXPLoader.Materials.Core_Rings_Mat"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Desaturation": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

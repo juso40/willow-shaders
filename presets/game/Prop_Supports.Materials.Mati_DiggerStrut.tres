@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Supports.Materials.Mat_DiggerStrut.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Supports.Materials.Mati_DiggerStrut"
+source_object = "Prop_Supports.Materials.Mati_DiggerStrut"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Supports.Materials.Mat_DiggerStrut"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_BugMorph.Materials.Mati_Bugmorph_Armor_SuperBadass"
+source_object = "Char_BugMorph.Materials.Mati_Bugmorph_Armor_SuperBadass"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_ShadowsIntensity": 2.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.054543, 0.057162, 0.460674, 1.0),
+"p_AColorMidtone": Vector4(0.167171, 0.213483, 0.104311, 1.0),
+"p_AColorShadow": Vector4(0.232976, 0.747191, 0.111239, 1.0),
+"p_BColorHilight": Vector4(1.0, 0.76749, 0.275281, 1.0),
+"p_BColorMidtone": Vector4(1.0, 0.732869, 0.23411, 1.0),
+"p_BColorShadow": Vector4(0.355323, 0.505618, 0.3902, 1.0),
+"p_CColorHilight": Vector4(0.499228, 0.814607, 0.114411, 1.0),
+"p_CColorMidtone": Vector4(0.198053, 0.38764, 0.368982, 1.0),
+"p_CColorShadow": Vector4(0.00546, 0.00546, 0.97191, 1.0),
+"p_ColorD": Vector4(0.831461, 0.831461, 0.831461, 1.0),
+"p_EmissiveScale": Vector4(20.0, 3.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_BugMorph.Textures.Bugmorph_Armor_Dif",
+"p_Masks": "Char_BugMorph.Textures.Bugmorph_Armor_Comp",
+"p_Normal": "Char_BugMorph.Textures.Bugmorph_Armor_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

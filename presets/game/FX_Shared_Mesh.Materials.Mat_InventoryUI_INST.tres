@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_Shared_Mesh.Materials.Mat_InventoryUI.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Shared_Mesh.Materials.Mat_InventoryUI_INST"
+source_object = "FX_Shared_Mesh.Materials.Mat_InventoryUI_INST"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_Shared_Mesh.Materials.Mat_InventoryUI"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Base_Rate": 1.0,
+"GlowLine_Rate": 1.0,
+"Outline_Rate": 0.05,
+"ScanLine_Rate": 0.03,
+"Text_Rate": 0.1
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Base_Color": Vector4(0.0, 0.8, 2.0, 1.0),
+"TextColor": Vector4(0.6, 2.2, 2.6, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

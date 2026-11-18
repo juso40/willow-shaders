@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Env_Boss_Cliffs.Materials.Mat_ShinyColor.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_Boss_Cliffs.Materials.Mati_ShinyColor_DarkOrange"
+source_object = "Env_Boss_Cliffs.Materials.Mati_ShinyColor_DarkOrange"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Env_Boss_Cliffs.Materials.Mat_ShinyColor"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Color": Vector4(0.414349, 0.083281, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

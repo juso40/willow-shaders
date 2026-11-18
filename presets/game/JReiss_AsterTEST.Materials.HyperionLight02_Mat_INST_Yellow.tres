@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/prop_lightfixtures.Materials.HyperionLight02_Mat_Off.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "JReiss_AsterTEST.Materials.HyperionLight02_Mat_INST_Yellow"
+source_object = "JReiss_AsterTEST.Materials.HyperionLight02_Mat_INST_Yellow"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "prop_lightfixtures.Materials.HyperionLight02_Mat_Off"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"emiss": 0.75
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"emiss color": Vector4(0.929348, 0.706949, 0.184883, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

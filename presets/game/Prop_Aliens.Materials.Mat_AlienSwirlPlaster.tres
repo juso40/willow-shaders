@@ -1,0 +1,55 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Aliens.Materials.Mat_AlienSwirlPlaster"
+source_object = "Prop_Aliens.Materials.Mat_AlienSwirlPlaster"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"DetailSizeX": 1.0,
+"DetailSizeX2": 0.0,
+"DetailSizeY": 1.06,
+"DetailSizeY2": 0.0,
+"Move Y": 2.0,
+"MoveDetailX": -0.01,
+"MoveDetailX2": -0.08,
+"MoveDetailY": 0.41,
+"MoveDetailY2": -0.12,
+"MoveIce Y": 2.0,
+"MoveIceX": 5.0,
+"MoveX": 5.65,
+"Rotate": 0.0,
+"SizeIceX": 1.0,
+"SizeX": 1.0,
+"size Y": 1.0,
+"sizeIceY": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"1": null,
+"2": null,
+"BaseInk": null,
+"BaseMask": null,
+"SecondDetail": null,
+"Topping": null
+})
+texture_object_paths = Dictionary[String, String]({
+"1": "Prop_Aliens.Textures.AlienPlasterSwirl_Dif",
+"2": "Prop_Aliens.Textures.IceCrete_01_Dif",
+"BaseInk": "Prop_Aliens.Textures.VaultPieceWalls",
+"BaseMask": "Prop_Aliens.Textures.VaultPieceWalls",
+"SecondDetail": "Prop_Aliens.Textures.AlienSpot_01",
+"Topping": "Prop_Aliens.Textures.SnowDrift_01_Dif"
+})
+texture_object_classes = Dictionary[String, String]({
+"1": "Texture2D",
+"2": "Texture2D",
+"BaseInk": "Texture2D",
+"BaseMask": "Texture2D",
+"SecondDetail": "Texture2D",
+"Topping": "Texture2D"
+})

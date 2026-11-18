@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_EnnisGutter.Character.GutterBrother_Mati"
+source_object = "GD_EnnisGutter.Character.GutterBrother_Mati"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.690582, 0.63499, 0.557049, 1.0),
+"p_AColorMidtone": Vector4(0.807933, 0.867371, 0.713008, 1.0),
+"p_AColorShadow": Vector4(0.707156, 0.636481, 0.53135, 1.0),
+"p_BColorHilight": Vector4(0.718206, 0.591516, 0.420618, 1.0),
+"p_BColorMidtone": Vector4(0.585614, 0.522001, 0.342965, 1.0),
+"p_BColorShadow": Vector4(0.618762, 0.599618, 0.536719, 1.0),
+"p_CColorHilight": Vector4(0.55799, 0.198187, 0.098667, 1.0),
+"p_CColorMidtone": Vector4(0.546941, 0.124191, 0.1088, 1.0),
+"p_CColorShadow": Vector4(0.408825, 0.209244, 0.18748, 1.0),
+"p_ColorD": Vector4(0.867371, 0.735786, 0.507977, 1.0),
+"p_PatternColor": Vector4(0.010849, 0.010829, 0.01087, 2.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_GenericMale.Textures.GenericMaleBody_Dif",
+"p_Masks": "Char_GenericMale.Textures.GenericMaleBody_Comp",
+"p_Normal": "Char_GenericMale.Textures.GenericMaleBody_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

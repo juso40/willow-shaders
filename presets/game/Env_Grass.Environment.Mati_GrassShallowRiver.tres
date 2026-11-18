@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Environment.Master_Water.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_Grass.Environment.Mati_GrassShallowRiver"
+source_object = "Env_Grass.Environment.Mati_GrassShallowRiver"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Environment.Master_Water"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Opacity": 0.5,
+"p_WaterFlowing": 1.0,
+"p_WaveSpeed": 1.0,
+"s_DepthBiasScale": 60.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_DeepColor": Vector4(0.036507, 0.055953, 0.071821, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

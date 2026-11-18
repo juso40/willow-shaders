@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_ENV_Gas.Materials.Mat_Gas_Purple.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_ENV_Gas.Materials.MI_Gas_Purple_Green"
+source_object = "FX_ENV_Gas.Materials.MI_Gas_Purple_Green"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_ENV_Gas.Materials.Mat_Gas_Purple"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"InteriorMult": 0.15
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"ColorHightLight": Vector4(0.098806, 0.033209, 0.215462, 1.0),
+"ColorInterior": Vector4(0.431399, 0.144972, 0.940601, 1.0),
+"ColorMain": Vector4(0.230127, 0.331479, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

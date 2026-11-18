@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_ENV_Anemone_Misc.Materials.Mat_Anemone_LightBeam_Master.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_ENV_Anemone_Misc.Materials.Mati_Anemone_LightBeam_Sanctuary_Yellow"
+source_object = "FX_ENV_Anemone_Misc.Materials.Mati_Anemone_LightBeam_Sanctuary_Yellow"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_ENV_Anemone_Misc.Materials.Mat_Anemone_LightBeam_Master"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Density": 0.1,
+"Distance": 10.0,
+"Opacity": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Color": Vector4(1.0, 0.841707, 0.523115, 0.329412)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

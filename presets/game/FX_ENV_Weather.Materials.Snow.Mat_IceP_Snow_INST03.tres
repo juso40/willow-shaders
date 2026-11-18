@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_ENV_Weather.Materials.Snow.Mat_IceP_Snow.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_ENV_Weather.Materials.Snow.Mat_IceP_Snow_INST03"
+source_object = "FX_ENV_Weather.Materials.Snow.Mat_IceP_Snow_INST03"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_ENV_Weather.Materials.Snow.Mat_IceP_Snow"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"FadeDist": 0.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"HighlightColor": Vector4(10.0, 10.0, 10.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

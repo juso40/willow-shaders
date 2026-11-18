@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Environment.Master_World.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Orchid_Prop_Spire_Lighthouse.Materials.Master_World_LightEmissive"
+source_object = "Orchid_Prop_Spire_Lighthouse.Materials.Master_World_LightEmissive"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Environment.Master_World"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_EmissiveScale": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_GlowColor": Vector4(2.909755, 2.899192, 3.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Orchid_Prop_Spire_Lighthouse.Textures.LightBulb_Diff"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Environment.Master_Switch.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Pickups.Materials.Mati_PowerCore"
+source_object = "Prop_Pickups.Materials.Mati_PowerCore"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Environment.Master_Switch"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_EmissiveBrightness": 4.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_SpecColor_SpecPow": Vector4(0.491695, 0.474258, 0.353156, 15.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Specular": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Prop_Pickups.Textures.FuelCell_Dif",
+"p_Specular": ""
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Specular": ""
+})
+notes = "Instance native static permutation data is not exposed by this dump."

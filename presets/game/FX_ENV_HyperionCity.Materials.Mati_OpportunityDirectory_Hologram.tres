@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_ENV_HyperionCity.Materials.Mat_NotTheLuxor_Hologram.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_ENV_HyperionCity.Materials.Mati_OpportunityDirectory_Hologram"
+source_object = "FX_ENV_HyperionCity.Materials.Mati_OpportunityDirectory_Hologram"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_ENV_HyperionCity.Materials.Mat_NotTheLuxor_Hologram"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Color": Vector4(0.3, 1.84, 1.82, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Ad_Diff": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Ad_Diff": "FX_ENV_HyperionCity.Textures.Tex_Opportunity_Directory"
+})
+texture_object_classes = Dictionary[String, String]({
+"Ad_Diff": "Texture2D"
+})

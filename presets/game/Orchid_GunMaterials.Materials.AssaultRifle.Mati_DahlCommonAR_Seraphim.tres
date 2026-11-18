@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_GunMaterials.Materials.AssaultRifle.Mati_DahlEpicAR.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Orchid_GunMaterials.Materials.AssaultRifle.Mati_DahlCommonAR_Seraphim"
+source_object = "Orchid_GunMaterials.Materials.AssaultRifle.Mati_DahlCommonAR_Seraphim"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_GunMaterials.Materials.AssaultRifle.Mati_DahlEpicAR"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_ReplaceDecal": 1.0,
+"p_ReplacePattern": 0.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.939192, 0.924666, 0.850984, 1.0),
+"p_AColorMidtone": Vector4(0.718247, 0.845794, 1.117279, 1.0),
+"p_AColorShadow": Vector4(0.685094, 0.780919, 1.0, 1.0),
+"p_BColorHilight": Vector4(1.75, 2.0, 3.3, 1.0),
+"p_BColorMidtone": Vector4(1.08, 1.22, 1.65, 1.0),
+"p_BColorShadow": Vector4(0.72, 0.8, 1.0, 1.0),
+"p_CColorHilight": Vector4(0.789314, 0.867136, 1.0, 1.0),
+"p_CColorMidtone": Vector4(0.560499, 0.598942, 0.632043, 1.0),
+"p_CColorShadow": Vector4(0.517401, 0.694081, 1.0, 1.0),
+"p_DecalColor": Vector4(5.170634, 5.170634, 5.170634, 1.0),
+"p_EmissiveColor": Vector4(1.723764, 1.723764, 1.723764, 1.0),
+"p_PatternColor": Vector4(4.891192, 4.891192, 4.891192, 1.0),
+"p_PatternScalePosition": Vector4(4.6, 4.6, 0.5381, 0.7749),
+"p_ReflectColor": Vector4(2.350533, 2.350533, 2.350533, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"P_SimpleReflect": null,
+"p_Pattern": null
+})
+texture_object_paths = Dictionary[String, String]({
+"P_SimpleReflect": "Common_GunMaterials.Env.GlossyC",
+"p_Pattern": "Common_GunMaterials.Patterns.Pattern_DahlEpic"
+})
+texture_object_classes = Dictionary[String, String]({
+"P_SimpleReflect": "Texture2D",
+"p_Pattern": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

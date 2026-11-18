@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Rocks.Materials.Mat_SimpleSlate"
+source_object = "Prop_Rocks.Materials.Mat_SimpleSlate"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"TextureScale": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"C_Blue": Vector4(0.267358, 0.541798, 0.65237, 1.0),
+"C_Green": Vector4(0.271577, 0.22331, 0.130352, 1.0),
+"temp_rock_color": Vector4(0.027755, 0.038473, 0.052842, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Environment.Master_Rocks.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_TundraExpress.Materials.Mati_GlacierRocks_Exp"
+source_object = "Env_TundraExpress.Materials.Mati_GlacierRocks_Exp"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Environment.Master_Rocks"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_FadeHeight": -0.6,
+"p_FadeWidth": 0.0004,
+"p_VertexNoiseUVMod": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_BounceA": Vector4(0.021739, 0.020303, 0.013038, 1.0),
+"p_BounceB": Vector4(0.04027, 0.053587, 0.065217, 1.0),
+"p_Diff_UVMod": Vector4(1.0, 1.0, 1.5, 1.5),
+"p_DiffuseFadeMod": Vector4(0.4, 0.4, 0.4, 1.0),
+"p_DiffuseFadeUVMod": Vector4(4.0, 4.0, 0.0, 1.0),
+"p_Normal_UVMod": Vector4(0.5, 0.5, 1.0, 1.0),
+"p_VertexPaintDifMod": Vector4(0.73913, 0.858767, 1.0, 1.0),
+"p_VertexPaintNoiseMod": Vector4(20.0, -1.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_DiffuseFade": null,
+"p_DiffuseVertexPaint": null,
+"p_Normal": null,
+"p_VertexPaintNoise": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Prop_Glacier.Textures.GlacierRock",
+"p_DiffuseFade": "Prop_Rocks.Textures.SlateRock_Dif",
+"p_DiffuseVertexPaint": "Prop_Terrain.Textures.DirtySnow_Dif",
+"p_Normal": "Prop_Rocks_03.Textures.OceanRocks_Nrm",
+"p_VertexPaintNoise": "Prop_Glacier.Textures.GlacierRock"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_DiffuseFade": "Texture2D",
+"p_DiffuseVertexPaint": "Texture2D",
+"p_Normal": "Texture2D",
+"p_VertexPaintNoise": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

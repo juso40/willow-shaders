@@ -1,0 +1,41 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_GunMaterials.MasterMaterials.Vladof.MasterMati_VladofLegendary.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Common_GunMaterials.Materials.AssaultRifle.Mati_VladofLegendary"
+source_object = "Common_GunMaterials.Materials.AssaultRifle.Mati_VladofLegendary"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_GunMaterials.MasterMaterials.Vladof.MasterMati_VladofLegendary"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.353578, 0.044154, 0.027361, 1.0),
+"p_AColorMidtone": Vector4(0.034492, 0.041707, 0.055247, 1.0),
+"p_BColorHilight": Vector4(1.439528, 1.557709, 1.988939, 1.0),
+"p_BColorMidtone": Vector4(0.052024, 0.244391, 0.392251, 1.0),
+"p_BColorShadow": Vector4(0.694526, 0.518524, 1.0, 1.0),
+"p_CColorHilight": Vector4(0.102615, 0.970775, 1.546977, 1.0),
+"p_CColorMidtone": Vector4(0.143404, 0.243874, 1.239715, 1.0),
+"p_CColorShadow": Vector4(0.270708, 0.023939, 0.046624, 1.0),
+"p_DecalColor": Vector4(1.493438, 0.031504, 0.0, 1.0),
+"p_PatternChannelScale": Vector4(0.9, 1.0, 0.5, 0.0),
+"p_PatternScalePosition": Vector4(-1.2, 30.0, 0.3043, 0.03)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Decal": null,
+"p_Pattern": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Decal": "Common_GunMaterials.Logos.FacePaint_SirenBanditCommon",
+"p_Pattern": "Common_GunMaterials.Patterns.Pattern_BlueSpectrum"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Decal": "Texture2D",
+"p_Pattern": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

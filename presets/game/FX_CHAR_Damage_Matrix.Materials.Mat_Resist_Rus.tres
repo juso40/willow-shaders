@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_CHAR_Damage_Matrix.Materials.DamageNumbers.Mat_Critical.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_CHAR_Damage_Matrix.Materials.Mat_Resist_Rus"
+source_object = "FX_CHAR_Damage_Matrix.Materials.Mat_Resist_Rus"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_CHAR_Damage_Matrix.Materials.DamageNumbers.Mat_Critical"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Texture": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Texture": "FX_CHAR_Damage_Matrix.Textures.Tex_Resist_2"
+})
+texture_object_classes = Dictionary[String, String]({
+"Texture": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

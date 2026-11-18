@@ -1,0 +1,53 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Vehicle.Master_Vehicle.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "CD_Skins_BanditTech_MainGame.Mati_Camo_Body"
+source_object = "CD_Skins_BanditTech_MainGame.Mati_Camo_Body"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Vehicle.Master_Vehicle"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_HighlightsIntensity": 4.0,
+"p_ShadowsIntensity": 2.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.453022, 0.330264, 0.140173, 1.0),
+"p_AColorMidtone": Vector4(0.29201, 0.292807, 0.093516, 1.0),
+"p_AColorShadow": Vector4(0.413245, 0.449704, 0.491695, 1.0),
+"p_BColorHilight": Vector4(0.635336, 0.564979, 0.308905, 1.0),
+"p_BColorMidtone": Vector4(0.484071, 0.530367, 0.216847, 1.0),
+"p_BColorShadow": Vector4(1.0, 0.891488, 0.685749, 1.0),
+"p_CColorMidtone": Vector4(0.395649, 0.397775, 0.142857, 1.0),
+"p_ColorD": Vector4(0.607712, 0.573776, 0.52042, 1.0),
+"p_DecalChannel": Vector4(1.0, 0.0, 1.0, 0.85),
+"p_DecalColor": Vector4(1.828227, 1.352691, 0.412303, 1.0),
+"p_PatternChannelScale": Vector4(0.0, 0.8, 0.0, 0.0),
+"p_PatternColor": Vector4(1.330866, 0.87367, 0.31621, 1.0),
+"p_PatternScalePosition": Vector4(6.0, 10.0, 0.0, 0.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_CustomPattern": null,
+"p_Decal": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_CustomPattern": "Common_GunMaterials.Patterns.Pattern_DahlRare",
+"p_Decal": "CD_Skins_BanditTech_MainGame.Textures.Decal_TechnicalMilitary",
+"p_Diffuse": "Veh_Bandit_Technical.Textures.BanditTechnical_D",
+"p_Masks": "Veh_Bandit_Technical.Textures.BanditTechnical_Comp",
+"p_Normal": "Veh_Bandit_Technical.Textures.BanditTechnical_N"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_CustomPattern": "Texture2D",
+"p_Decal": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Environment.Master_World.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Thanksgiving_Rocks.Materials.Mati_FlatCaveRock_01_ColdGrass"
+source_object = "Prop_Thanksgiving_Rocks.Materials.Mati_FlatCaveRock_01_ColdGrass"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Environment.Master_World"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_SnowNoiseUVScale": 0.3,
+"p_SnowUVScale": 10.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_DiffMod": Vector4(0.192861, 0.38719, 0.646385, 1.0),
+"p_Diff_UVMod": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_NormalMod": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_SnowAmount": Vector4(0.808989, 0.808989, 0.808989, 1.0),
+"p_SnowColor": Vector4(0.441973, 0.441973, 0.441973, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Normal": null,
+"p_SnowDiffuse": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Prop_Thanksgiving_Rocks.Textures.FlatCaveRock_Thanksgiving_01_Dif",
+"p_Normal": "Prop_Thanksgiving_Rocks.Textures.FlatCaveRock_Thanksgiving_01_Nrm",
+"p_SnowDiffuse": "Prop_Skybox.MoveMe.Terrian_ColdGrass"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Normal": "Texture2D",
+"p_SnowDiffuse": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

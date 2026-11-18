@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Skybox.Materials.Mat_FalloffSphere.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Skybox.Materials.Mati_FalloffSphere_Ash"
+source_object = "Prop_Skybox.Materials.Mati_FalloffSphere_Ash"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Skybox.Materials.Mat_FalloffSphere"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Bias": -5000.0,
+"Distance": 100.0,
+"FalloffExponent": 10.0,
+"Opacity": 0.5
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Color": Vector4(1.0, 0.419879, 0.120339, 2.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

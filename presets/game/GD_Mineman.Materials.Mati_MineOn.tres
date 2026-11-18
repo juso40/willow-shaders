@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Weapons.Materials.Mat_OldWaterMine.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_Mineman.Materials.Mati_MineOn"
+source_object = "GD_Mineman.Materials.Mati_MineOn"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Weapons.Materials.Mat_OldWaterMine"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"BlinkOn": 4.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.06729, 0.067164, 0.067416, 1.0),
+"p_AColorMidtone": Vector4(0.319626, 0.319027, 0.320225, 1.0),
+"p_AColorShadow": Vector4(0.246729, 0.246267, 0.247191, 1.0),
+"p_BColorHilight": Vector4(0.998131, 0.996261, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Prop_Weapons.Textures.BanditMine_Dif"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

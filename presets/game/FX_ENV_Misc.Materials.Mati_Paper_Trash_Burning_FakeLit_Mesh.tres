@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_Shared_MasterShaders.Materials.Masked.Mesh.Mat_FX_FakeLit_Mesh_2Sided_MS.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_ENV_Misc.Materials.Mati_Paper_Trash_Burning_FakeLit_Mesh"
+source_object = "FX_ENV_Misc.Materials.Mati_Paper_Trash_Burning_FakeLit_Mesh"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_Shared_MasterShaders.Materials.Masked.Mesh.Mat_FX_FakeLit_Mesh_2Sided_MS"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_ShadowLocStart": 0.7,
+"p_brightness": -0.15
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_FireColor": Vector4(60.0, 24.0, 5.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"DiffSubUVTex": null,
+"p_OpacTex": null
+})
+texture_object_paths = Dictionary[String, String]({
+"DiffSubUVTex": "FX_ENV_Misc.Textures.Blowing_Papers_D",
+"p_OpacTex": "FX_ENV_Misc.Textures.Blowing_Papers_M"
+})
+texture_object_classes = Dictionary[String, String]({
+"DiffSubUVTex": "Texture2D",
+"p_OpacTex": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

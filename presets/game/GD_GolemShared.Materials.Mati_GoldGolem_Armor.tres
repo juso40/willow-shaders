@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Aster_Common_Materials.Creature.Aster_Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_GolemShared.Materials.Mati_GoldGolem_Armor"
+source_object = "GD_GolemShared.Materials.Mati_GoldGolem_Armor"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Aster_Common_Materials.Creature.Aster_Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"P_AuraGlowColor": Vector4(0.994439, 0.065378, 0.0, 1.0),
+"p_AColorHilight": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_AColorMidtone": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_AColorShadow": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_BColorHilight": Vector4(2.119333, 2.005284, 1.674407, 1.0),
+"p_BColorMidtone": Vector4(1.274635, 0.936542, 0.45073, 1.0),
+"p_BColorShadow": Vector4(1.414041, 1.130051, 0.602623, 1.0),
+"p_CColorHilight": Vector4(2.350533, 2.266537, 1.607933, 1.0),
+"p_CColorMidtone": Vector4(1.459653, 0.991293, 0.461025, 1.0),
+"p_CColorShadow": Vector4(1.239715, 0.892827, 0.457032, 1.0),
+"p_ColorD": Vector4(0.73478, 0.445928, 0.11775, 1.0),
+"p_DissolveColor": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_ElementalDeathColor": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_EmissiveScale": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_PatternColor": Vector4(0.501804, 0.500864, 0.502744, 2.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Aster_Prop_Armor.Textures.PyschoArmor_Diff",
+"p_Masks": "Aster_Prop_Armor.Textures.PsychoArmor_Comp",
+"p_Normal": "Aster_Prop_Armor.Textures.PyschoArmor_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

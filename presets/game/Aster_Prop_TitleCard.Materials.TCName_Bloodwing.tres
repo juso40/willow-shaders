@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Aster_Prop_TitleCard.Materials.Master_TCTextOverlay.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Aster_Prop_TitleCard.Materials.TCName_Bloodwing"
+source_object = "Aster_Prop_TitleCard.Materials.TCName_Bloodwing"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Aster_Prop_TitleCard.Materials.Master_TCTextOverlay"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_TopBottom": 0.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_colora": Vector4(1.802034, 0.865717, 0.0, 1.0),
+"p_colorb": Vector4(1.0, 0.863229, 0.848315, 1.0),
+"p_patchColor": Vector4(0.537792, 0.988764, 0.188972, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_mask": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_mask": "Aster_Prop_TitleCard.Textures.TC_Name_Aster_Bloodwing"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_mask": "Texture2D"
+})

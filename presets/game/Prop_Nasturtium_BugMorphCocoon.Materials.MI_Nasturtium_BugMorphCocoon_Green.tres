@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Nasturtium_BugMorphCocoon.Materials.M_Nasturtium_BugMorphCocoon.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Nasturtium_BugMorphCocoon.Materials.MI_Nasturtium_BugMorphCocoon_Green"
+source_object = "Prop_Nasturtium_BugMorphCocoon.Materials.MI_Nasturtium_BugMorphCocoon_Green"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Nasturtium_BugMorphCocoon.Materials.M_Nasturtium_BugMorphCocoon"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Color": Vector4(1.0, 2.0, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

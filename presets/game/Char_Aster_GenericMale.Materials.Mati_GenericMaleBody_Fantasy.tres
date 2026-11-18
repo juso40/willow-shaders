@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.NPC.Master_NPC.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Aster_GenericMale.Materials.Mati_GenericMaleBody_Fantasy"
+source_object = "Char_Aster_GenericMale.Materials.Mati_GenericMaleBody_Fantasy"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.NPC.Master_NPC"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.817649, 0.512053, 0.29365, 1.0),
+"p_AColorMidtone": Vector4(0.8066, 0.44536, 0.18719, 1.0),
+"p_AColorShadow": Vector4(0.453022, 0.323115, 0.230274, 1.0),
+"p_BColorHilight": Vector4(0.696107, 0.460101, 0.276577, 1.0),
+"p_BColorMidtone": Vector4(0.475121, 0.299446, 0.170635, 1.0),
+"p_BColorShadow": Vector4(0.243085, 0.189435, 0.199784, 1.0),
+"p_CColorHilight": Vector4(0.751354, 0.4264, 0.257388, 1.0),
+"p_CColorMidtone": Vector4(0.331479, 0.168447, 0.142854, 1.0),
+"p_CColorShadow": Vector4(0.198888, 0.07033, 0.167277, 1.0),
+"p_HidePart": Vector4(1.0, 1.0, 0.0, 0.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_Aster_GenericMale.Textures.GenericMaleBody_Fantasy_Dif",
+"p_Masks": "Char_Aster_GenericMale.Textures.GenericMaleBody_Fantasy_Comp",
+"p_Normal": "Char_Aster_GenericMale.Textures.GenericMaleBody_Fantasy_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

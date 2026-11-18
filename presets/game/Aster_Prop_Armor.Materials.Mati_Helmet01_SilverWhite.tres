@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Aster_Prop_Armor.Materials.Mati_Helmet01_SilverWhite"
+source_object = "Aster_Prop_Armor.Materials.Mati_Helmet01_SilverWhite"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_BColorHilight": Vector4(1.301047, 1.376637, 1.508305, 1.0),
+"p_BColorMidtone": Vector4(1.741837, 1.7219, 1.679695, 1.0),
+"p_BColorShadow": Vector4(0.14587, 0.156496, 0.171264, 1.0),
+"p_CColorHilight": Vector4(0.375677, 0.183978, 0.076807, 1.0),
+"p_CColorMidtone": Vector4(0.198888, 0.139314, 0.08791, 1.0),
+"p_CColorShadow": Vector4(0.033148, 0.019827, 0.017603, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Aster_Prop_Armor.Textures.Helmet01_Dif",
+"p_Masks": "Aster_Prop_Armor.Textures.Helmet01_Comp",
+"p_Normal": "Aster_Prop_Armor.Textures.Helmet01_Nrmf"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

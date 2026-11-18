@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_Aster_Skybox.Materials.Mat_Skydome_CastleKeep.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Aster_Skybox.Materials.Mati_CastleKeep_Skydome_Overcast"
+source_object = "FX_Aster_Skybox.Materials.Mati_CastleKeep_Skydome_Overcast"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_Aster_Skybox.Materials.Mat_Skydome_CastleKeep"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"FadeToStorm": 0.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

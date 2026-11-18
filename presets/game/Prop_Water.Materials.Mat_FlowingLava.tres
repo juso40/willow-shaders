@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Water.Materials.Mat_FlowingLava"
+source_object = "Prop_Water.Materials.Mat_FlowingLava"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"Flow_Rate_Lava": 1.5,
+"Flow_Rate_Rock": 2.0,
+"Lava_Pattern_Rate": 1.0,
+"Rock_Rate": 1.0,
+"Tile_Rate_U": 2.0,
+"Tile_Rate_V": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+static_switches = Dictionary[String, bool]({
+"sw_Rock_Rate": false
+})

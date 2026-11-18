@@ -1,0 +1,40 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Water.Materials.Mat_Water"
+source_object = "Prop_Water.Materials.Mat_Water"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"InnerBlendMin": 0.0,
+"InnerDepthBias": 0.5,
+"NormalIntensity": 1.0,
+"Opacity": 0.25,
+"Opacitycontrolbutton": 0.5,
+"OuterDepthBias": 0.5,
+"Speed": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Edge color": Vector4(0.071761, 5.0, 0.0, 2.0),
+"Emissive": Vector4(0.5, 0.3, 0.32, 0.0),
+"NormalIntensity": Vector4(1.0, 1.0, 1.0, 1.0),
+"wavescale": Vector4(0.2, 0.3, 0.1, 0.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"CubeMap": null,
+"RenderToTextureReflection": null
+})
+texture_object_paths = Dictionary[String, String]({
+"CubeMap": "Common_Cubemaps.SaltFlats_Cube",
+"RenderToTextureReflection": ""
+})
+texture_object_classes = Dictionary[String, String]({
+"CubeMap": "TextureCube",
+"RenderToTextureReflection": ""
+})
+static_switches = Dictionary[String, bool]({
+"BrightenEdges": false
+})
+notes = "Conflicting expression defaults for Speed. First recorded node used for named lookup. Not recovered shader wiring."

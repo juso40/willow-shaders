@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_ZafordBadass.Materials.Mati_ZafordBadass"
+source_object = "GD_ZafordBadass.Materials.Mati_ZafordBadass"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_PatternInvert": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(1.0, 0.756909, 0.723767, 1.0),
+"p_AColorMidtone": Vector4(0.767928, 0.557508, 0.517618, 1.0),
+"p_AColorShadow": Vector4(0.662959, 0.446978, 0.428551, 1.0),
+"p_BColorHilight": Vector4(0.120268, 0.132592, 0.123683, 1.0),
+"p_BColorMidtone": Vector4(0.110493, 0.083023, 0.083023, 1.0),
+"p_BColorShadow": Vector4(0.093919, 0.079834, 0.038525, 1.0),
+"p_CColorHilight": Vector4(0.37977, 0.436448, 0.186053, 1.0),
+"p_CColorMidtone": Vector4(0.164807, 0.209937, 0.158904, 1.0),
+"p_CColorShadow": Vector4(0.099444, 0.063664, 0.059888, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_CustomPattern": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_CustomPattern": "GD_ZafordBadass.Texture.ZafordBadass_Body_Dif",
+"p_Diffuse": "GD_ZafordBadass.Texture.ZafordBadass_Body_Dif",
+"p_Masks": "GD_ZafordBadass.Texture.ZafordBadass_Body_Comp",
+"p_Normal": "GD_ZafordBadass.Texture.ZafordBadass_Body_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_CustomPattern": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

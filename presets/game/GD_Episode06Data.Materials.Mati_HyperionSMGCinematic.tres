@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_GunMaterials.MasterMaterials.Hyperion.MasterMati_HyperionUncommon.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_Episode06Data.Materials.Mati_HyperionSMGCinematic"
+source_object = "GD_Episode06Data.Materials.Mati_HyperionSMGCinematic"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_GunMaterials.MasterMaterials.Hyperion.MasterMati_HyperionUncommon"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_HighlightsIntensity": 2.0,
+"p_ShadowsIntensity": 3.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorMidtone": Vector4(2.142602, 1.402948, 0.0, 1.0),
+"p_EmissiveColor": Vector4(0.05, 0.05, 3.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Masks": null,
+"p_NormalScopesEmissive": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Masks": "Weap_SMG.Tex.Weap_SMG_Comp",
+"p_NormalScopesEmissive": "Weap_SMG.Tex.Weap_SMG_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Masks": "Texture2D",
+"p_NormalScopesEmissive": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

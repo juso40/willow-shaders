@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Aster_Spider.Material.Mati_Spider_Abdomen_Blue"
+source_object = "Char_Aster_Spider.Material.Mati_Spider_Abdomen_Blue"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"P_DeathsValue": 0.0,
+"p_fade": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorMidtone": Vector4(0.402287, 1.545782, 5.027032, 1.0),
+"p_BColorMidtone": Vector4(3.460908, 4.569888, 6.960011, 1.0),
+"p_BColorShadow": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_CColorHilight": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_CColorMidtone": Vector4(1.0, 1.095978, 1.138359, 1.0),
+"p_CColorShadow": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_ColorD": Vector4(0.002812, 0.006973, 0.022099, 1.0),
+"p_DissolveColor": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_ElementalDeathColor": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_EmissiveScale": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_PatternColor": Vector4(0.20403, 0.203648, 0.204412, 2.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Prop_Aliens.Textures.AlienPlasterSwirl_Dif",
+"p_Masks": "",
+"p_Normal": "Char_Aster_Spider.Textures.Creat_CesiumHarvester_Norm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

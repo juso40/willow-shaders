@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_CreatureDigistruct.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Probe.Material.Mati_JetLoader"
+source_object = "Char_Probe.Material.Mati_JetLoader"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_CreatureDigistruct"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_HighlightsIntensity": 1.0,
+"p_ShadowsIntensity": 0.5
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.938202, 0.938202, 0.938202, 1.0),
+"p_AColorMidtone": Vector4(3.0, 3.0, 3.0, 1.0),
+"p_AColorShadow": Vector4(0.904494, 0.904494, 0.904494, 1.0),
+"p_BColorHilight": Vector4(0.215432, 0.093708, 0.47191, 1.0),
+"p_BColorMidtone": Vector4(0.267377, 0.305624, 0.820225, 1.0),
+"p_BColorShadow": Vector4(0.105151, 0.045738, 0.230337, 1.0),
+"p_CColorHilight": Vector4(0.443687, 0.192993, 0.97191, 1.0),
+"p_CColorMidtone": Vector4(0.215432, 0.093708, 0.47191, 1.0),
+"p_CColorShadow": Vector4(0.215432, 0.093708, 0.47191, 1.0),
+"p_ColorD": Vector4(1.955056, 1.955056, 1.955056, 1.0),
+"p_EmissiveScale": Vector4(0.0, 0.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_CustomPattern": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_CustomPattern": "",
+"p_Diffuse": "Char_Probe.Texture.Probe_Dif",
+"p_Masks": "Char_Probe.Texture.Probe_Comp",
+"p_Normal": "Char_Probe.Texture.Probe_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_CustomPattern": "",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

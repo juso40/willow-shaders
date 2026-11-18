@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_GunMaterials.Materials.Pistol.Mati_DahlUniquePistol_Teapot.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Iris_GunMaterials.Materials.AssaultRifle.Mati_TorgueUnique_BoomPuppy"
+source_object = "Iris_GunMaterials.Materials.AssaultRifle.Mati_TorgueUnique_BoomPuppy"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_GunMaterials.Materials.Pistol.Mati_DahlUniquePistol_Teapot"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_DecalRotate": 0.0034,
+"p_ReplaceDecal": 1.0,
+"p_UseFullColorDecal": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_DecalChannel": Vector4(1.0, 0.0, 0.0, 1.0),
+"p_DecalColor": Vector4(4.414079, 4.414079, 4.414079, 1.0),
+"p_DecalScalePosition": Vector4(7.7, 12.6, 0.5229, 0.5374),
+"p_ReflectColor": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_ReflectionChannelScale": Vector4(0.8, 0.3, 0.3, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"P_SimpleReflect": null,
+"p_Decal": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_NormalScopesEmissive": null
+})
+texture_object_paths = Dictionary[String, String]({
+"P_SimpleReflect": "Common_GunMaterials.Env.Chrome",
+"p_Decal": "Iris_GunMaterials.Iris_GunLogos.TinyTina_Bunny_01",
+"p_Diffuse": "Common_GunMaterials.CompTextures.Weap_AssaultSubSniper_Comp",
+"p_Masks": "Weap_AssaultRifles.Tex.Weap_AssaultRifle_Comp",
+"p_NormalScopesEmissive": "Weap_AssaultRifles.Tex.Weap_AssaultRifle_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"P_SimpleReflect": "Texture2D",
+"p_Decal": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_NormalScopesEmissive": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

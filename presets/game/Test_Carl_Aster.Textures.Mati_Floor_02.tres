@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Test_Carl_Aster.Material.Mat_Castle_Floors.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Test_Carl_Aster.Textures.Mati_Floor_02"
+source_object = "Test_Carl_Aster.Textures.Mati_Floor_02"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Test_Carl_Aster.Material.Mat_Castle_Floors"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"P_UV2_Grunge_Tile": 4.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Test_Carl_Aster.Textures.Floor_02"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

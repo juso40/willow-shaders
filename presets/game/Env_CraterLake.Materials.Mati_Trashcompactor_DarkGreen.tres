@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Containers_Trash.Materials.Mat_Trashcompactor.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_CraterLake.Materials.Mati_Trashcompactor_DarkGreen"
+source_object = "Env_CraterLake.Materials.Mati_Trashcompactor_DarkGreen"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Containers_Trash.Materials.Mat_Trashcompactor"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Tint": Vector4(0.320121, 0.634831, 0.296017, 0.2)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

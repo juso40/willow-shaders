@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Aster_Prop_Dice.Materials.Mat_Aster_D20.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Aster_Prop_Dice.Materials.Mat_Aster_D20_Purple"
+source_object = "Aster_Prop_Dice.Materials.Mat_Aster_D20_Purple"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Aster_Prop_Dice.Materials.Mat_Aster_D20"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_colora": Vector4(0.521983, 0.219014, 1.198667, 1.0),
+"p_colorb": Vector4(2.602688, 2.655734, 2.742248, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

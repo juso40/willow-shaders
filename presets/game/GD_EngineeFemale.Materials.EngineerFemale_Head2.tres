@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_EngineeFemale.Materials.EngineerFemale_Head2"
+source_object = "GD_EngineeFemale.Materials.EngineerFemale_Head2"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_PatternIntensity": 3.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.955766, 0.762554, 0.707593, 1.0),
+"p_AColorMidtone": Vector4(0.933667, 0.645026, 0.587831, 1.0),
+"p_AColorShadow": Vector4(0.740304, 0.186322, 0.090006, 1.0),
+"p_BColorHilight": Vector4(1.0, 0.78999, 0.0, 1.0),
+"p_BColorMidtone": Vector4(1.0, 0.891648, 0.02731, 1.0),
+"p_BColorShadow": Vector4(1.0, 0.926684, 0.0, 1.0),
+"p_CColorHilight": Vector4(0.011049, 0.003494, 0.0, 1.0),
+"p_CColorMidtone": Vector4(0.027623, 0.007596, 0.000476, 1.0),
+"p_CColorShadow": Vector4(0.055247, 0.017678, 0.0, 1.0),
+"p_ColorD": Vector4(0.546941, 0.546941, 0.546941, 1.0),
+"p_PatternColor": Vector4(0.453022, 0.426117, 0.372933, 1.0),
+"p_PatternScalePosition": Vector4(1.110856, 1.152118, 0.515379, 0.92)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_CustomPattern": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_CustomPattern": "FX_Shared_Dirt.Textures.Dirt_Clump_Diff",
+"p_Diffuse": "Char_GenericFemale.Textures.GenericFemaleHead_01_Dif",
+"p_Masks": "Char_GenericFemale.Textures.GenericFemaleHead_01_Comp",
+"p_Normal": "Char_GenericFemale.Textures.GenericFemaleHead_01_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_CustomPattern": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

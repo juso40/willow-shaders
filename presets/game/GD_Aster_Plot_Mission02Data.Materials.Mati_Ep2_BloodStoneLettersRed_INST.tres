@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Aster_Prop_Orc_Decals.Materials.Mat_Ruin_Orc_02.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_Aster_Plot_Mission02Data.Materials.Mati_Ep2_BloodStoneLettersRed_INST"
+source_object = "GD_Aster_Plot_Mission02Data.Materials.Mati_Ep2_BloodStoneLettersRed_INST"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Aster_Prop_Orc_Decals.Materials.Mat_Ruin_Orc_02"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"LetterColor": Vector4(4.0, 0.05, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

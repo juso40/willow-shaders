@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_ENV_Dust.Materials.Mat_Sand_Mesh.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_ENV_Dust.Materials.Mat_Dust_Mesh_INST"
+source_object = "FX_ENV_Dust.Materials.Mat_Dust_Mesh_INST"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_ENV_Dust.Materials.Mat_Sand_Mesh"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Opacity": 2.0,
+"PanningSpeed": 1.0,
+"SpeckXTile": 2.0,
+"SpeckYTile": 1.0,
+"XTile": 0.5,
+"YTile": 0.6
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"HighlightColor": Vector4(0.3, 0.2, 0.05, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

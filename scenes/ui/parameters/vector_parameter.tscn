@@ -1,0 +1,106 @@
+[gd_scene format=3 uid="uid://cgcw25ivtlqmg"]
+
+[ext_resource type="PackedScene" uid="uid://dik0r5pgbrwg7" path="res://scenes/ui/parameters/parameter_control.tscn" id="1"]
+[ext_resource type="Script" uid="uid://pdtw0fpnq3ux" path="res://scripts/ui/parameters/vector_parameter.gd" id="2"]
+[ext_resource type="Theme" uid="uid://dp0gr1e124ouj" path="res://themes/editor_theme.tres" id="3_3kg4l"]
+
+[node name="VectorParameter" unique_id=212075463 instance=ExtResource("1")]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 62.0
+grow_horizontal = 2
+theme_override_constants/separation = 12
+script = ExtResource("2")
+component_labels = null
+parameter_property = &"VectorParameterValues"
+
+[node name="Caption" parent="." index="0" unique_id=1527039649]
+size_flags_horizontal = 0
+
+[node name="ColorValue" type="ColorPickerButton" parent="." index="1" unique_id=337311477]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(48, 36)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+size_flags_stretch_ratio = 1.29
+theme = ExtResource("3_3kg4l")
+
+[node name="Details" type="VBoxContainer" parent="." index="2" unique_id=207857285]
+layout_mode = 2
+theme_override_constants/separation = 2
+
+[node name="Grid" type="GridContainer" parent="Details" index="0" unique_id=1044606066]
+layout_mode = 2
+size_flags_horizontal = 8
+columns = 4
+
+[node name="RLabel" type="Label" parent="Details/Grid" index="0" unique_id=2120149881]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 8
+text = "R"
+
+[node name="R" type="SpinBox" parent="Details/Grid" index="1" unique_id=484282692]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+size_flags_horizontal = 8
+step = 0.001
+allow_greater = true
+allow_lesser = true
+custom_arrow_step = 0.01
+
+[node name="GLabel" type="Label" parent="Details/Grid" index="2" unique_id=1996437949]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 8
+text = "G"
+
+[node name="G" type="SpinBox" parent="Details/Grid" index="3" unique_id=1279858289]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+size_flags_horizontal = 8
+step = 0.001
+allow_greater = true
+allow_lesser = true
+custom_arrow_step = 0.01
+
+[node name="BLabel" type="Label" parent="Details/Grid" index="4" unique_id=1736053415]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 8
+text = "B"
+
+[node name="B" type="SpinBox" parent="Details/Grid" index="5" unique_id=1958331882]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+size_flags_horizontal = 8
+step = 0.001
+allow_greater = true
+allow_lesser = true
+custom_arrow_step = 0.01
+
+[node name="ALabel" type="Label" parent="Details/Grid" index="6" unique_id=449821055]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 8
+text = "A"
+
+[node name="A" type="SpinBox" parent="Details/Grid" index="7" unique_id=1635757455]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+size_flags_horizontal = 8
+step = 0.001
+allow_greater = true
+allow_lesser = true
+custom_arrow_step = 0.01
+
+[node name="State" parent="." index="3" unique_id=1610565965]
+size_flags_horizontal = 4
+
+[node name="Inherit" parent="." index="4" unique_id=2008994577]
+size_flags_horizontal = 8

@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_CREA_Constructor.Materials.Mat_Constructor_Beams"
+source_object = "FX_CREA_Constructor.Materials.Mat_Constructor_Beams"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"PanSpeed": 1.0,
+"TilingAmount": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Color": Vector4(0.75, 3.0, 2.8, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Mask": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Mask": "FX_CREA_Constructor.Texture.Tex_Test_Lightning"
+})
+texture_object_classes = Dictionary[String, String]({
+"Mask": "Texture2D"
+})

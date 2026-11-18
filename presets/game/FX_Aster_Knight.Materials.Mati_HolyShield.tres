@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_Aster_WizardSpells.Materials.Mat_ArcaneShield_B.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Aster_Knight.Materials.Mati_HolyShield"
+source_object = "FX_Aster_Knight.Materials.Mati_HolyShield"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_Aster_WizardSpells.Materials.Mat_ArcaneShield_B"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Fade": 2.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"ShieldColor": Vector4(2.0, 1.4, 1.0, 1.0),
+"ShieldColorB": Vector4(0.093919, 0.065743, 0.04696, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

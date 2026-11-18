@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Skybox.MoveMe.MasterMati_IceRock.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Skybox.MoveMe.Mati_IceRock05X"
+source_object = "Prop_Skybox.MoveMe.Mati_IceRock05X"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Skybox.MoveMe.MasterMati_IceRock"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_DiffuseUVScale": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_NormalUVScale": Vector4(0.5, 0.5, 0.5, 0.5)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

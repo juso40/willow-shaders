@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_ENV_VOG.Materials.VOG_Visions"
+source_object = "FX_ENV_VOG.Materials.VOG_Visions"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"ScanLinesAmount": 0.3,
+"StaticAmount": 0.5
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Hue": Vector4(0.5, 0.5, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"VOG_Ethereal": null,
+"VOG_Movie": null,
+"VOG_Vision": null
+})
+texture_object_paths = Dictionary[String, String]({
+"VOG_Ethereal": "FX_ENV_VOG.Textures.electric_light",
+"VOG_Movie": "FX_ENV_VOG.Textures.Angel_Test",
+"VOG_Vision": "FX_ENV_VOG.Textures.Vision_Cube"
+})
+texture_object_classes = Dictionary[String, String]({
+"VOG_Ethereal": "Texture2D",
+"VOG_Movie": "TextureMovie",
+"VOG_Vision": "Texture2D"
+})
+notes = "Conflicting expression defaults for VOG_Ethereal. First recorded node used for named lookup. Not recovered shader wiring."

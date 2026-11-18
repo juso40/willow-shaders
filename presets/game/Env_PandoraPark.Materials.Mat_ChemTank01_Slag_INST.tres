@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Tanks.Materials.Mat_ChemTank01.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_PandoraPark.Materials.Mat_ChemTank01_Slag_INST"
+source_object = "Env_PandoraPark.Materials.Mat_ChemTank01_Slag_INST"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Tanks.Materials.Mat_ChemTank01"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"EmissColorA": Vector4(0.107147, 0.0, 0.804348, 1.0),
+"EmissColorB": Vector4(0.005108, 0.0, 0.674008, 1.0),
+"Fresnel_Color": Vector4(0.567, 0.108693, 0.56904, 1.0),
+"p_SpecColor": Vector4(0.497219, 0.222523, 0.368453, 1.0),
+"transmission color": Vector4(0.490037, 0.346649, 1.0, 1.0),
+"tube color": Vector4(0.186956, 0.101075, 0.491695, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

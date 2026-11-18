@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_PrimalBeast.Materials.Mati_DonkeyMong"
+source_object = "Char_PrimalBeast.Materials.Mati_DonkeyMong"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.52809, 0.286803, 0.09812, 1.0),
+"p_AColorMidtone": Vector4(0.337079, 0.21138, 0.094685, 1.0),
+"p_AColorShadow": Vector4(0.325843, 0.141362, 0.052217, 1.0),
+"p_BColorHilight": Vector4(0.567416, 0.225242, 0.143448, 1.0),
+"p_BColorMidtone": Vector4(0.308989, 0.165127, 0.046195, 1.0),
+"p_BColorShadow": Vector4(0.275281, 0.148361, 0.069067, 1.0),
+"p_CColorHilight": Vector4(0.08427, 0.067892, 0.04749, 1.0),
+"p_CColorMidtone": Vector4(0.073034, 0.047892, 0.040545, 1.0),
+"p_CColorShadow": Vector4(0.106742, 0.090713, 0.075271, 1.0),
+"p_MuscleFat": Vector4(0.0, 0.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_PrimalBeast.Textures.PrimalBeast_Dif",
+"p_Masks": "Char_PrimalBeast.Textures.PrimalBeast_Comp",
+"p_Normal": "Char_PrimalBeast.Textures.PrimalBeast_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

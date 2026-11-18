@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_EasterRocks.Materials.Mat_Easter_Rock.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_EasterRocks.Materials.Mati_Easter_RockFlat"
+source_object = "Prop_EasterRocks.Materials.Mati_Easter_RockFlat"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_EasterRocks.Materials.Mat_Easter_Rock"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"rock_color": Vector4(0.375677, 0.307808, 0.280204, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Diffuse": null,
+"Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Diffuse": "Prop_EasterRocks.Textures.Easter_FlatRock_Dif",
+"Normal": "Prop_EasterRocks.Textures.Easter_FlatRock_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"Diffuse": "Texture2D",
+"Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

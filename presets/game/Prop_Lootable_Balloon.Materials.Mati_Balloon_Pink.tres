@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Lootable_Balloon.Materials.Mat_Balloon.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Lootable_Balloon.Materials.Mati_Balloon_Pink"
+source_object = "Prop_Lootable_Balloon.Materials.Mati_Balloon_Pink"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Lootable_Balloon.Materials.Mat_Balloon"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"EmissiveBrightness": 0.1
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"BalloonColor": Vector4(0.812125, 0.161552, 0.715967, 0.0),
+"HeartColor": Vector4(0.464108, 1.0, 0.464108, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

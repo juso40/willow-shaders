@@ -1,0 +1,50 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Co_Materials.Materials.Mati_Basic_Diffuse_Emissive.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Co_MoonInstDecor.Materials.Mati_Co_MoonInsDecor02"
+source_object = "Prop_Co_MoonInstDecor.Materials.Mati_Co_MoonInsDecor02"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Co_Materials.Materials.Mati_Basic_Diffuse_Emissive"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_AColorMidtone": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_BColorHilight": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_BColorMidtone": Vector4(0.27663, 0.292807, 0.292807, 1.0),
+"p_BColorShadow": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_CColorHilight": Vector4(0.275833, 0.288816, 0.288816, 1.0),
+"p_CColorMidtone": Vector4(0.275833, 0.288816, 0.288816, 1.0),
+"p_CColorShadow": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_Color_D": Vector4(0.093919, 0.093919, 0.093919, 1.0),
+"p_Color_Emissive1_A": Vector4(0.127067, 0.127067, 0.127067, 1.0),
+"p_Color_Emissive1_B": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_Color_Emissive1_Base": Vector4(0.05532, 0.740043, 2.0, 1.0),
+"p_Color_Highlight": Vector4(0.10052, 0.101654, 0.089074, 1.0),
+"p_Color_Texture1_A": Vector4(0.939375, 1.0, 0.0, 1.0),
+"p_Color_Texture1_B": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_Color_Texture1_Base": Vector4(0.186553, 0.211153, 0.225406, 1.0),
+"p_Color_Texture1_C": Vector4(0.061876, 0.011471, 0.006254, 1.0),
+"p_Color_Texture1_D": Vector4(0.204721, 0.220986, 0.194172, 0.0),
+"p_DiffMod": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_EmissiveScale": Vector4(1.0, 1.0, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Prop_Co_MoonInstDecor.Textures.Co_TechContainer_01_Diff",
+"p_Masks": ""
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": ""
+})
+notes = "Instance native static permutation data is not exposed by this dump."

@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_CreatureSlag.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Nast_Anchorman.Materials.Mati_Glowing_Cutlass"
+source_object = "Char_Nast_Anchorman.Materials.Mati_Glowing_Cutlass"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_CreatureSlag"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_FxScaleSlag": 0.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_SlagColor": Vector4(6.0, 0.1, 0.0, 5.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Normal": null,
+"p_ShockEffectTexture": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_Nast_Anchorman.Texture.Cutlass_Dif",
+"p_Normal": "Char_Nast_Anchorman.Texture.Cutlass_Nrm",
+"p_ShockEffectTexture": "Common_Textures.Stub.StubWhite_Gray"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Normal": "Texture2D",
+"p_ShockEffectTexture": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

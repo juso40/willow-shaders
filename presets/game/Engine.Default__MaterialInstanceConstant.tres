@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Engine.Default__MaterialInstanceConstant"
+source_object = "Engine.Default__MaterialInstanceConstant"
+unreal_class = "MaterialInstanceConstant"
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_Aster_CastleKeep.Materials.clouds.Mat_Rock_Debris_Circle.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Aster_CastleKeep.Materials.clouds.Mati_Rock_Debris_Circle_Bottom"
+source_object = "FX_Aster_CastleKeep.Materials.clouds.Mati_Rock_Debris_Circle_Bottom"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_Aster_CastleKeep.Materials.clouds.Mat_Rock_Debris_Circle"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"TimeMultiplier": 4.25
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

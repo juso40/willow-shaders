@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_HyperionArchitecture.Materials.Mati_HyperionWall1_On.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_HyperionShip.Materials.Mati_HyperionWall1_Dark"
+source_object = "Env_HyperionShip.Materials.Mati_HyperionWall1_Dark"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_HyperionArchitecture.Materials.Mati_HyperionWall1_On"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_DiffMod": Vector4(0.093919, 0.093919, 0.093919, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

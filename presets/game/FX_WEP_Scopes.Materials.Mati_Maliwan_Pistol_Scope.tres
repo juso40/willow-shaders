@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_WEP_Scopes.Materials.Mat_Maliwan_SMG_Scope.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_WEP_Scopes.Materials.Mati_Maliwan_Pistol_Scope"
+source_object = "FX_WEP_Scopes.Materials.Mati_Maliwan_Pistol_Scope"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_WEP_Scopes.Materials.Mat_Maliwan_SMG_Scope"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Inner_Rotation_Rate": 0.125,
+"Outer_Dim_Rotation_Rate": 0.25,
+"Outer_Rotation_Rate": -0.4,
+"bg_circle_intensity": 0.08
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Tex": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Tex": "FX_WEP_Scopes.Textures.Tex_Maliwan_Pistol_Reticle"
+})
+texture_object_classes = Dictionary[String, String]({
+"Tex": "Texture2D"
+})

@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_ENV_Gas.Materials.Decals.Mat_Decal_Gas_Ground"
+source_object = "FX_ENV_Gas.Materials.Decals.Mat_Decal_Gas_Ground"
+unreal_class = "DecalMaterial"
+ScalarParameterValues = Dictionary[String, float]({
+"LocalSpaceUVScale": 2.0,
+"VinesTiling": 0.00125,
+"p_Multiplier": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+static_switches = Dictionary[String, bool]({
+"WorldSpaceUV": true
+})

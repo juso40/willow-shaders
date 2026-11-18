@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Awnings.Materials.Mat_Canopy_Red"
+source_object = "Prop_Awnings.Materials.Mat_Canopy_Red"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Canopy_Color": Vector4(0.302126, 0.035614, 0.032876, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

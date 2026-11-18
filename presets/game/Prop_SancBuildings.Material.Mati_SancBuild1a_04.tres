@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_SancBuildings.Material.Mat_SancBuild_Colorized.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_SancBuildings.Material.Mati_SancBuild1a_04"
+source_object = "Prop_SancBuildings.Material.Mati_SancBuild1a_04"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_SancBuildings.Material.Mat_SancBuild_Colorized"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

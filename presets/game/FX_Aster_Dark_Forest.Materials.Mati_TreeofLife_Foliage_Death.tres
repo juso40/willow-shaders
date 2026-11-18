@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_Aster_Dark_Forest.Materials.Mat_TreeofLife_Foliage_Death.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Aster_Dark_Forest.Materials.Mati_TreeofLife_Foliage_Death"
+source_object = "FX_Aster_Dark_Forest.Materials.Mati_TreeofLife_Foliage_Death"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_Aster_Dark_Forest.Materials.Mat_TreeofLife_Foliage_Death"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"FinalTurbMultiplier": 2.0,
+"Obj Sway Wind Speed Mult": 0.35,
+"Object Radius Offset": -500.0,
+"Object Sway Amount": 0.0001,
+"Object Sway World Sine Divider": 2048.0,
+"p_WindSpeed": 0.5,
+"p_WindSpeed2": 0.5,
+"p_WindSpeed3": 0.25,
+"p_WindWaveLength": 150.0,
+"p_WindWaveLength2": 12.0,
+"p_WindWaveLength3": 180.0,
+"p_WindWaveLength_Multiplier": 2.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

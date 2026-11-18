@@ -1,0 +1,38 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Aster_Common_Materials.Creature.Master_Shiny.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_Dwarf_Badass.Materials.Mati_DwarfArmor_Body"
+source_object = "GD_Dwarf_Badass.Materials.Mati_DwarfArmor_Body"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Aster_Common_Materials.Creature.Master_Shiny"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_Bright1": 1.35,
+"p_Bright2": 1.35
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_color": Vector4(4.0, 4.0, 4.0, 0.27)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_CubeTexture": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_CubeTexture": "Prop_Skybox.MoveMe.R2Tex_SnowTempCubeStatic",
+"p_Diffuse": "Char_Aster_Dwarf.Textures.NomadDwarf_Dif",
+"p_Masks": "Char_Aster_Dwarf.Textures.NomadDwarf_Comp",
+"p_Normal": "Char_Aster_Dwarf.Textures.NomadDwarf_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_CubeTexture": "TextureCube",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

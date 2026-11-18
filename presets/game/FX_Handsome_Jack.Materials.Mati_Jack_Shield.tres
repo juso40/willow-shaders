@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_CREA_Drone.Materials.Mat_Drone_Shield_Hemi.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Handsome_Jack.Materials.Mati_Jack_Shield"
+source_object = "FX_Handsome_Jack.Materials.Mati_Jack_Shield"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_CREA_Drone.Materials.Mat_Drone_Shield_Hemi"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_color": Vector4(1.0, 0.2, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

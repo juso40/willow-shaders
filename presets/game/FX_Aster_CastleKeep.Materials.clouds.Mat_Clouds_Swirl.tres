@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Aster_CastleKeep.Materials.clouds.Mat_Clouds_Swirl"
+source_object = "FX_Aster_CastleKeep.Materials.clouds.Mat_Clouds_Swirl"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"FadeEdgeMultiplier": 250.0,
+"TimeScale": 1.0,
+"WhirlWind_Fade": 0.0,
+"x_Scale": 2.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Color_WhirlTopMultiplier": Vector4(0.071821, 0.026542, 0.008335, 1.0),
+"Color_Whirl_Bottom_Multiplier": Vector4(0.071761, 0.026549, 0.008373, 1.0),
+"LightningColor": Vector4(1.92258, 1.167135, 0.849798, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

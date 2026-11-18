@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Aliens.Materials.Mat_AlienPlasterMaster"
+source_object = "Prop_Aliens.Materials.Mat_AlienPlasterMaster"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"Emissive": 1.0,
+"TextureScaleRock": 1.8,
+"TextureScaleSwirl": 1.8
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"masks parameter": null
+})
+texture_object_paths = Dictionary[String, String]({
+"masks parameter": "Prop_Aliens.Textures.AlienTempleRuins_04_Opac"
+})
+texture_object_classes = Dictionary[String, String]({
+"masks parameter": "Texture2D"
+})
+static_switches = Dictionary[String, bool]({
+"Toggle G>A Channel Mask": true,
+"Toggle R>B Channel Mask": true
+})

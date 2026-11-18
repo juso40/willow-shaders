@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Tanks.Materials.Mat_ChemTank01.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_Fridge.Materials.Mati_ChemTank01"
+source_object = "Env_Fridge.Materials.Mati_ChemTank01"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Tanks.Materials.Mat_ChemTank01"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"EmissColorA": Vector4(0.6, 0.6, 2.0, 1.0),
+"p_SpecColor": Vector4(0.0, 0.3, 1.0, 1.0),
+"transmission color": Vector4(0.8, 1.0, 1.0, 1.0),
+"tube color": Vector4(3.0, 4.0, 5.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

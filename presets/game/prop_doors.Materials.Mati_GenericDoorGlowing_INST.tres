@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/prop_doors.Materials.Mati_GenericDoor.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "prop_doors.Materials.Mati_GenericDoorGlowing_INST"
+source_object = "prop_doors.Materials.Mati_GenericDoorGlowing_INST"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "prop_doors.Materials.Mati_GenericDoor"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_GlowScale": 0.15
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_GlowColor": Vector4(0.0, 0.0, 0.0, 0.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

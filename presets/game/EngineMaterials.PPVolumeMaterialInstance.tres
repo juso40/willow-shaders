@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/EngineMaterials.PPVolumeMaterial.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "EngineMaterials.PPVolumeMaterialInstance"
+source_object = "EngineMaterials.PPVolumeMaterialInstance"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "EngineMaterials.PPVolumeMaterial"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Desaturation": 0.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"HighLights": Vector4(1.0, 1.0, 1.0, 0.0),
+"MidTones": Vector4(1.0, 1.0, 1.0, 0.0),
+"Shadows": Vector4(0.0, 0.0, 0.0, 0.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

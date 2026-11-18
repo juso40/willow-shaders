@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Aster_RaidBoss.Materials.Mat_FireVolume"
+source_object = "FX_Aster_RaidBoss.Materials.Mat_FireVolume"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"Dist_Opac_TileU": 1.0,
+"Dist_Opac_TileV": 0.25,
+"Distortion_Dot_Rate": 1.0,
+"Dot_Rate": 0.5,
+"Lower_Limit": 0.07,
+"Offset Strength": 5.0,
+"RiseTime_Multiply": 1.0,
+"TileU_Mult": 1.0,
+"TileV_Mult": 1.0,
+"WaveU1_Period": 3.0,
+"WaveU2_Period": 4.0,
+"WaveV1_Period": 4.0,
+"WaveV2_Period": 8.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Fire_Color": Vector4(14.0, 1.75, 0.35, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

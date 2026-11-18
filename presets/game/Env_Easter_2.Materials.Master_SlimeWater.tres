@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_Easter_2.Materials.Master_SlimeWater"
+source_object = "Env_Easter_2.Materials.Master_SlimeWater"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"p_WaveScale": 8.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_ShadowColor": Vector4(0.357203, 0.679533, 0.602228, 1.0),
+"p_SkyColor": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_WaterColorA": Vector4(0.005873, 0.016793, 0.03, 1.0),
+"p_WaterColorB": Vector4(0.029112, 0.05, 0.038599, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"P_SimpleReflect": null,
+"WaterA_NRM": null,
+"p_VertexPaintNoise": null
+})
+texture_object_paths = Dictionary[String, String]({
+"P_SimpleReflect": "Env_Easter.Textures.Mapreflection",
+"WaterA_NRM": "FX_Shared_Water.Textures.Tex_Water2_Nm",
+"p_VertexPaintNoise": "FX_Shared_Gradients.Textures.Tex_Noise_Hires"
+})
+texture_object_classes = Dictionary[String, String]({
+"P_SimpleReflect": "Texture2D",
+"WaterA_NRM": "Texture2D",
+"p_VertexPaintNoise": "Texture2D"
+})
+notes = "Conflicting expression defaults for WaterA_NRM. First recorded node used for named lookup. Not recovered shader wiring."

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Carnival.Materials.Mat_PenaltyBox_01.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Carnival.Materials.Mati_PenaltyBox_01"
+source_object = "Prop_Carnival.Materials.Mati_PenaltyBox_01"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Carnival.Materials.Mat_PenaltyBox_01"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Brightness": 9.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"BloodSplat": Vector4(0.493616, 0.0, 0.000107, 1.0),
+"EmissiveColor": Vector4(0.163641, 0.592438, 0.991393, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

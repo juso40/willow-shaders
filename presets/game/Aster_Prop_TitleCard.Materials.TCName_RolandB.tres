@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Aster_Prop_TitleCard.Materials.Master_TCTextOverlay.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Aster_Prop_TitleCard.Materials.TCName_RolandB"
+source_object = "Aster_Prop_TitleCard.Materials.TCName_RolandB"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Aster_Prop_TitleCard.Materials.Master_TCTextOverlay"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_TopBottom": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_colora": Vector4(5.749374, 6.240175, 5.875919, 1.0),
+"p_colorb": Vector4(1.0, 0.079139, 0.455411, 1.0),
+"p_colorc": Vector4(0.91573, 0.428598, 0.551461, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_mask": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_mask": "Aster_Prop_TitleCard.Textures.TC_Name_Aster_Roland"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_mask": "Texture2D"
+})

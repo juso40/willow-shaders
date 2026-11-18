@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Environment.Master_Water.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Water.Materials.Mati_WaterBasicZone2Small"
+source_object = "Prop_Water.Materials.Mati_WaterBasicZone2Small"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Environment.Master_Water"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Opacity": 0.8,
+"p_WaveScale": 4.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_SkyColor": Vector4(0.701087, 0.701087, 0.701087, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

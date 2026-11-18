@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/GD_DigiCreaturesShared.Materials.Master_Lobelia_CreatureDigital_SlagDigistruct.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_SkagBadassSlag_Digi.Materials.Mati_Skag_SlagBadass_Digi"
+source_object = "GD_SkagBadassSlag_Digi.Materials.Mati_Skag_SlagBadass_Digi"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "GD_DigiCreaturesShared.Materials.Master_Lobelia_CreatureDigital_SlagDigistruct"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_FxScaleSlag": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.475043, 0.39437, 0.751354, 1.0),
+"p_AColorMidtone": Vector4(0.156882, 0.089372, 0.230337, 1.0),
+"p_AColorShadow": Vector4(0.073579, 0.067491, 0.182314, 1.0),
+"p_BColorHilight": Vector4(0.105763, 0.081867, 0.106742, 1.0),
+"p_BColorMidtone": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_BColorShadow": Vector4(0.061475, 0.0812, 0.104969, 1.0),
+"p_CColorHilight": Vector4(0.990834, 0.766965, 1.0, 1.0),
+"p_CColorMidtone": Vector4(0.790026, 0.28373, 0.615288, 1.0),
+"p_CColorShadow": Vector4(0.081522, 0.004357, 0.0, 1.0),
+"p_DigiColor": Vector4(0.098213, 0.284622, 1.0, 3.0),
+"p_EmissiveScale": Vector4(0.793651, 0.07928, 0.78539, 1.0),
+"p_MuscleFat": Vector4(-9.0, -9.0, 0.0, 1.0),
+"p_SlagColor": Vector4(0.372777, 0.054101, 0.61236, 5.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_Skag.Skag_Dif",
+"p_Masks": "Char_Skag.Skag_Comp",
+"p_Normal": "Char_Skag.Skag_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

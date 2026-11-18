@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Sage_Prop_Generic.Materials.Smesh_Urine.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Sage_Prop_Generic.Materials.Smesh_Urine_INST"
+source_object = "Sage_Prop_Generic.Materials.Smesh_Urine_INST"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Sage_Prop_Generic.Materials.Smesh_Urine"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"SubtractTHis": -0.5,
+"p_Multiplier": 3.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_color_01": Vector4(0.8, 0.797316, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

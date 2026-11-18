@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/GD_Pumpkin.Materials.Mat_Pumpkin.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_Pumpkin.Materials.Mati_PumpkinHeal"
+source_object = "GD_Pumpkin.Materials.Mati_PumpkinHeal"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "GD_Pumpkin.Materials.Mat_Pumpkin"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_light_bright": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_colora": Vector4(4.0, 0.0, 2.902792, 1.0),
+"p_colorb": Vector4(4.0, 0.0, 2.902792, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_texture": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_texture": "GD_Pumpkin.Textures.SirenPumpkin_Dif"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_texture": "Texture2D"
+})

@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Environment.Master_WorldMultiTexture.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "prop_gates.Materials.Mati_BeamsPlates"
+source_object = "prop_gates.Materials.Mati_BeamsPlates"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Environment.Master_WorldMultiTexture"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Diffuse_A": null,
+"Diffuse_B": null,
+"Diffuse_C": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Diffuse_A": "prop_gates.Textures.CorrugatedSheet",
+"Diffuse_B": "prop_gates.Textures.PlateSheet",
+"Diffuse_C": "prop_gates.Textures.MetalSupports"
+})
+texture_object_classes = Dictionary[String, String]({
+"Diffuse_A": "Texture2D",
+"Diffuse_B": "Texture2D",
+"Diffuse_C": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

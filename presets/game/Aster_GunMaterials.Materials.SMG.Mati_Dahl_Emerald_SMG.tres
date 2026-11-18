@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Aster_GunMaterials.Materials.Pistol.Mati_Bandit_Quartz_Pistol.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Aster_GunMaterials.Materials.SMG.Mati_Dahl_Emerald_SMG"
+source_object = "Aster_GunMaterials.Materials.SMG.Mati_Dahl_Emerald_SMG"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Aster_GunMaterials.Materials.Pistol.Mati_Bandit_Quartz_Pistol"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_ReflectColorScale": 0.25,
+"p_ReplaceDecal": 0.0,
+"p_UseFullColorDecal": 0.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(1.447976, 1.209535, 5.3e-05, 1.0),
+"p_AColorMidtone": Vector4(0.037228, 0.668484, 0.0, 1.0),
+"p_AColorShadow": Vector4(0.0, 0.149166, 0.029195, 1.0),
+"p_DecalChannel": Vector4(0.0, 0.0, 0.0, 0.0),
+"p_DecalScalePosition": Vector4(10.29866, 49.4025, 0.5355, 0.553),
+"p_PatternColor": Vector4(0.806807, 1.283675, 0.701228, 1.0),
+"p_PatternScalePosition": Vector4(8.0, 8.0, 0.3853, 0.3256),
+"p_ReflectColor": Vector4(0.554485, 1.792027, 0.554485, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Decal": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_NormalScopesEmissive": null,
+"p_Pattern": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Decal": "",
+"p_Diffuse": "Common_GunMaterials.CompTextures.Weap_AssaultSubSniper_Comp",
+"p_Masks": "Weap_SMG.Tex.Weap_SMG_Comp",
+"p_NormalScopesEmissive": "Weap_SMG.Tex.Weap_SMG_Nrm",
+"p_Pattern": "Common_GunMaterials.Patterns.Pattern_DahlRare"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Decal": "",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_NormalScopesEmissive": "Texture2D",
+"p_Pattern": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

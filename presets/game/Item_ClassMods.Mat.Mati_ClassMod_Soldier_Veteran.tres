@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Items.Master_ClassMod_02.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Item_ClassMods.Mat.Mati_ClassMod_Soldier_Veteran"
+source_object = "Item_ClassMods.Mat.Mati_ClassMod_Soldier_Veteran"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Items.Master_ClassMod_02"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.465302, 0.580089, 0.290511, 1.0),
+"p_AColorMidtone": Vector4(0.195094, 0.270708, 0.144101, 1.0),
+"p_AColorShadow": Vector4(0.024225, 0.038673, 0.027888, 1.0),
+"p_BColorHilight": Vector4(0.370152, 0.286683, 0.218653, 1.0),
+"p_BColorMidtone": Vector4(0.284249, 0.49, 0.327158, 1.0),
+"p_BColorShadow": Vector4(0.132592, 0.132592, 0.132592, 1.0),
+"p_CColorHilight": Vector4(1.045468, 1.473555, 0.119916, 1.0),
+"p_CColorMidtone": Vector4(1.215527, 1.01219, 0.148092, 1.0),
+"p_CColorShadow": Vector4(1.350729, 0.585982, 0.014088, 1.0),
+"p_PatternScalePosition": Vector4(1.0, 1.0, 0.0, 0.0),
+"p_ReflectColor": Vector4(4.891191, 4.891191, 4.891191, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"P_SimpleReflect": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"P_SimpleReflect": "Common_GunMaterials.Env.Gold",
+"p_Diffuse": "Item_ClassMods.Textures.SoldierClassMod01_Diff",
+"p_Masks": "Item_ClassMods.Textures.SoldierClassMod01_Msk",
+"p_Normal": "Item_ClassMods.Textures.SoldierClassMod01_Norm"
+})
+texture_object_classes = Dictionary[String, String]({
+"P_SimpleReflect": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/GD_DigiCreaturesShared.Materials.Master_Lobelia_CreatureDigital_Digistruct.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_Lobelia_DahlDigi.Materials.Mati_DalhEpicCrate_Digi"
+source_object = "GD_Lobelia_DahlDigi.Materials.Mati_DalhEpicCrate_Digi"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "GD_DigiCreaturesShared.Materials.Master_Lobelia_CreatureDigital_Digistruct"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_FxScaleDigi": 3.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.26087, 0.167218, 0.061841, 1.0),
+"p_AColorMidtone": Vector4(0.073859, 0.13587, 0.061991, 1.0),
+"p_AColorShadow": Vector4(0.527919, 0.460644, 0.728261, 1.0),
+"p_BColorHilight": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_BColorMidtone": Vector4(0.369565, 0.353964, 0.324409, 1.0),
+"p_BColorShadow": Vector4(1.0, 0.98905, 0.157609, 1.0),
+"p_CColorHilight": Vector4(1.0, 0.996948, 0.924385, 1.0),
+"p_CColorMidtone": Vector4(1.0, 0.985697, 0.916358, 1.0),
+"p_CColorShadow": Vector4(0.161119, 0.173913, 0.157428, 1.0),
+"p_DigiColor": Vector4(0.057593, 0.217583, 1.0, 3.0),
+"p_PatternColor": Vector4(0.010849, 0.010829, 0.01087, 2.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Prop_Lootables.Textures.DahlEpicCrate_Diff",
+"p_Masks": "",
+"p_Normal": "Prop_Lootables.Textures.HyperionAmmoLocker_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

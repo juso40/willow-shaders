@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Thresher.Materials.Mati_ThresherMain"
+source_object = "Char_Thresher.Materials.Mati_ThresherMain"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_ShadowsIntensity": 2.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.869565, 0.674951, 0.72349, 1.0),
+"p_AColorMidtone": Vector4(0.516304, 0.425582, 0.427425, 1.0),
+"p_AColorShadow": Vector4(0.147642, 0.142003, 0.331522, 1.0),
+"p_BColorHilight": Vector4(0.647524, 0.663043, 0.0, 1.0),
+"p_BColorMidtone": Vector4(0.652174, 0.595273, 0.478825, 1.0),
+"p_BColorShadow": Vector4(0.390993, 0.434783, 0.140595, 0.0),
+"p_CColorHilight": Vector4(0.847826, 0.78375, 0.476177, 1.0),
+"p_CColorMidtone": Vector4(0.382022, 0.262793, 0.062781, 1.0),
+"p_CColorShadow": Vector4(0.646739, 0.220093, 0.053081, 1.0),
+"p_EmissiveScale": Vector4(0.413811, 5.0, 5.0, 1.0),
+"p_MuscleFat": Vector4(0.0, 0.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_CustomPattern": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_CustomPattern": "",
+"p_Diffuse": "Char_Thresher.Textures.Thresher_Dif",
+"p_Masks": "Char_Thresher.Textures.Thresher_Comp",
+"p_Normal": "Char_Thresher.Textures.Thresher_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_CustomPattern": "",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Env_Sanctuary.Materials.Master_Sanc_Base_concrete.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_Sanctuary.Materials.Mati_SancBaseConcrete_Tile04"
+source_object = "Env_Sanctuary.Materials.Mati_SancBaseConcrete_Tile04"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Env_Sanctuary.Materials.Master_Sanc_Base_concrete"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Desaturation": 0.3
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Global_Tint": Vector4(1.1, 1.0, 0.9, 1.0),
+"p_UVScalePosition": Vector4(4.0, 4.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

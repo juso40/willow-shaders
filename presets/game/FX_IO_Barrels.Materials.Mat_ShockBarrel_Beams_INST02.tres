@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_CREA_Constructor.Materials.Mat_Constructor_Beams.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_IO_Barrels.Materials.Mat_ShockBarrel_Beams_INST02"
+source_object = "FX_IO_Barrels.Materials.Mat_ShockBarrel_Beams_INST02"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_CREA_Constructor.Materials.Mat_Constructor_Beams"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"PanSpeed": -0.8,
+"TilingAmount": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Color": Vector4(1.05, 1.0, 6.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Mask": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Mask": "FX_CREA_Constructor.Texture.Lightning_Thick"
+})
+texture_object_classes = Dictionary[String, String]({
+"Mask": "Texture2D"
+})

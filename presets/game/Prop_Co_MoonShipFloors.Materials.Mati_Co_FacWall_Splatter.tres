@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Co_Materials.Materials.Mati_Basic_Diffuse_Decal.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Co_MoonShipFloors.Materials.Mati_Co_FacWall_Splatter"
+source_object = "Prop_Co_MoonShipFloors.Materials.Mati_Co_FacWall_Splatter"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Co_Materials.Materials.Mati_Basic_Diffuse_Decal"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_Pattern_WorldPositionOffset": 0.01
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"PatternFilter": Vector4(1.2, 0.5, 1.0, 1.0),
+"p_Color_Emissive1_A": Vector4(0.075135, 0.067148, 0.049436, 1.0),
+"p_Color_Emissive1_B": Vector4(0.162092, 0.190048, 0.148939, 1.0),
+"p_Color_Emissive1_Base": Vector4(0.0, 0.658416, 1.0, 1.0),
+"p_Color_Highlight": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_Color_Spec_1": Vector4(0.0, 0.0, 0.0, 10.0),
+"p_Color_Spec_2": Vector4(0.0, 0.0, 0.0, 10.0),
+"p_Color_Texture1_A": Vector4(1.0, 0.601361, 0.0, 1.0),
+"p_Color_Texture1_B": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_Color_Texture1_Base": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_Color_Texture1_C": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_Color_Texture1_D": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_DiffMod": Vector4(0.348053, 0.348053, 0.348053, 1.0),
+"p_PatternColor_A": Vector4(1.0, 0.872472, 0.609611, 1.0),
+"p_PatternColor_B": Vector4(0.419874, 0.419874, 0.419874, 1.0),
+"p_PatternPositionScale": Vector4(-0.25, -0.6, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Pattern_Overlay": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Prop_Co_HabWall.Textures.HabWall_Diff",
+"p_Pattern_Overlay": ""
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Pattern_Overlay": ""
+})
+notes = "Instance native static permutation data is not exposed by this dump."

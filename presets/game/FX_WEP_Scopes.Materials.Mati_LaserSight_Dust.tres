@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_WEP_Scopes.Materials.Mat_LaserSight_MS.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_WEP_Scopes.Materials.Mati_LaserSight_Dust"
+source_object = "FX_WEP_Scopes.Materials.Mati_LaserSight_Dust"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_WEP_Scopes.Materials.Mat_LaserSight_MS"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"PanSpeed": -1.0,
+"Tex_Multiplier": 4.0,
+"Tex_Tile_X": 8.0,
+"Tex_Tile_Y": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Tex": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Tex": "FX_Shared_Gradients.Textures.ViewfinderNoise_Dif"
+})
+texture_object_classes = Dictionary[String, String]({
+"Tex": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

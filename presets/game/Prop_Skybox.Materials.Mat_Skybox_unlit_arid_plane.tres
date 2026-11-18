@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Skybox.Materials.Mat_Skybox_unlit_plane.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Skybox.Materials.Mat_Skybox_unlit_arid_plane"
+source_object = "Prop_Skybox.Materials.Mat_Skybox_unlit_arid_plane"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Skybox.Materials.Mat_Skybox_unlit_plane"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Mask_UV": Vector4(1.0, 2.0, 1.0, 2.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Diffuse": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Diffuse": "Prop_Skybox.Textures.DistantTerrain_Dif"
+})
+texture_object_classes = Dictionary[String, String]({
+"Diffuse": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

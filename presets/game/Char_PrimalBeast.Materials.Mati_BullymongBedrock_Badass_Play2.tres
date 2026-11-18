@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_PrimalBeast.Materials.Mati_BullymongBedrock_Badass_Play2"
+source_object = "Char_PrimalBeast.Materials.Mati_BullymongBedrock_Badass_Play2"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_PatternIntensity": 2.5,
+"p_UVChannelSelect": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(1.0, 0.469633, 0.987634, 1.0),
+"p_AColorMidtone": Vector4(0.502744, 0.19722, 0.416344, 1.0),
+"p_AColorShadow": Vector4(0.121542, 0.043682, 0.11917, 1.0),
+"p_BColorHilight": Vector4(1.0, 0.893088, 0.861884, 1.0),
+"p_BColorMidtone": Vector4(0.900519, 0.783751, 0.731367, 1.0),
+"p_BColorShadow": Vector4(0.15469, 0.137386, 0.127732, 1.0),
+"p_CColorHilight": Vector4(4.088321, 12.061751, 2.811422, 1.0),
+"p_CColorMidtone": Vector4(0.340338, 1.0, 0.265231, 1.0),
+"p_CColorShadow": Vector4(0.680088, 2.445816, 0.547061, 1.0),
+"p_MuscleFat": Vector4(20.0, 40.0, 0.0, 1.0),
+"p_PatternColor": Vector4(0.099444, 0.030897, 0.097205, 2.0),
+"p_PatternScalePosition": Vector4(4.762498, 4.69595, 0.0, 0.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_CustomPattern": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_CustomPattern": "FX_Shared_Smoke.Textures.GenericSmoke4_Dif",
+"p_Diffuse": "Char_PrimalBeast.Textures.PrimalBeast_Dif",
+"p_Masks": "Char_PrimalBeast.Textures.PrimalBeast_Comp",
+"p_Normal": "Char_PrimalBeast.Textures.PrimalBeast_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_CustomPattern": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

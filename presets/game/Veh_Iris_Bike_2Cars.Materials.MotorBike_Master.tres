@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Vehicle.Master_Vehicle.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Veh_Iris_Bike_2Cars.Materials.MotorBike_Master"
+source_object = "Veh_Iris_Bike_2Cars.Materials.MotorBike_Master"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Vehicle.Master_Vehicle"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_CColorHilight": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_CColorMidtone": Vector4(0.11236, 0.11236, 0.11236, 1.0),
+"p_CColorShadow": Vector4(0.067416, 0.067416, 0.067416, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Veh_Iris_Bike_2Cars.Textures.Motorcycle_Dif_01",
+"p_Masks": "Veh_Iris_Bike_2Cars.Textures.Motorcycle_Mask_01",
+"p_Normal": "Veh_Iris_Bike_2Cars.Textures.Motorcycle_Nrm_01"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

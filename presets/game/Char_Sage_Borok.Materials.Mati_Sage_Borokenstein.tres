@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Char_Sage_Skaylion.Materials.Master_Skaylion.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Sage_Borok.Materials.Mati_Sage_Borokenstein"
+source_object = "Char_Sage_Borok.Materials.Mati_Sage_Borokenstein"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Char_Sage_Skaylion.Materials.Master_Skaylion"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.521637, 0.641694, 0.65, 1.0),
+"p_AColorMidtone": Vector4(0.720054, 0.730327, 0.930582, 1.0),
+"p_AColorShadow": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_BColorHilight": Vector4(0.371933, 0.529042, 0.62, 1.0),
+"p_BColorMidtone": Vector4(0.237166, 0.268127, 0.29, 1.0),
+"p_BColorShadow": Vector4(0.976692, 0.927424, 1.0, 1.0),
+"p_CColorHilight": Vector4(1.0, 0.453132, 0.321208, 1.0),
+"p_CColorMidtone": Vector4(1.0, 0.087132, 0.149162, 1.0),
+"p_CColorShadow": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_ColorD": Vector4(0.2268, 0.29466, 0.54, 1.0),
+"p_MuscleFat": Vector4(1.0, 1.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_Sage_Borok.Textures.Borok_D",
+"p_Masks": "Char_Sage_Borok.Textures.Borok_Comp",
+"p_Normal": "Char_Sage_Borok.Textures.Borok_N"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

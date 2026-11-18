@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/ui/parameters/parameter_control.tscn" id="1"]
+[ext_resource type="Script" path="res://scripts/ui/parameters/enum_parameter.gd" id="2"]
+
+[node name="EnumParameter" instance=ExtResource("1")]
+script = ExtResource("2")
+
+[node name="Value" type="OptionButton" parent="." index="1"]
+unique_name_in_owner = true
+layout_mode = 2
+fit_to_longest_item = false
+custom_minimum_size = Vector2(150, 0)

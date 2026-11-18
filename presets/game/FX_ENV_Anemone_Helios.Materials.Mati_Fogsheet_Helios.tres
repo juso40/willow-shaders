@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_ENV_Gas.Materials.Mat_GasFogsheet.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_ENV_Anemone_Helios.Materials.Mati_Fogsheet_Helios"
+source_object = "FX_ENV_Anemone_Helios.Materials.Mati_Fogsheet_Helios"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_ENV_Gas.Materials.Mat_GasFogsheet"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"BeginFadeDistance": 1500.0,
+"DepthBias": 6000.0,
+"FadeLength": 1500.0,
+"Opacity": 0.25
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Color": Vector4(0.04, 0.591166, 1.0, 0.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

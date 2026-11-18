@@ -1,0 +1,41 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Char_Sage_Borok.Materials.Master_Borok_Shock.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Sage_Borok.Materials.Mati_Sage_Borok_ShockBadass"
+source_object = "Char_Sage_Borok.Materials.Mati_Sage_Borok_ShockBadass"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Char_Sage_Borok.Materials.Master_Borok_Shock"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_FxScaleShock": 20.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.861884, 0.864244, 1.0, 1.0),
+"p_AColorMidtone": Vector4(0.155704, 0.143164, 0.455056, 1.0),
+"p_AColorShadow": Vector4(0.048973, 0.073223, 0.24861, 1.0),
+"p_BColorHilight": Vector4(0.058326, 0.193983, 0.370787, 1.0),
+"p_BColorMidtone": Vector4(0.16839, 0.300708, 0.421348, 1.0),
+"p_BColorShadow": Vector4(0.087461, 0.113168, 0.185393, 1.0),
+"p_EmissiveScale": Vector4(1.0, 1.764412, 0.566194, 1.0),
+"p_ShockColor": Vector4(0.2, 0.5, 20.0, 5.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_Sage_Borok.Textures.Borok_D",
+"p_Masks": "Char_Sage_Borok.Textures.Borok_Comp",
+"p_Normal": "Char_Sage_Borok.Textures.Borok_N"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Water.Materials.Mat_FlowingLava.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Water.Materials.Mat_FlowingLava_16"
+source_object = "Prop_Water.Materials.Mat_FlowingLava_16"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Water.Materials.Mat_FlowingLava"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Flow_Rate_Lava": 0.6,
+"Flow_Rate_Rock": 2.0,
+"Tile_Rate_U": 12.0,
+"Tile_Rate_V": 6.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

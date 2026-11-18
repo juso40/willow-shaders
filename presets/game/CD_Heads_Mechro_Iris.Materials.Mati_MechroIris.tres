@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Player.Master_Player.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "CD_Heads_Mechro_Iris.Materials.Mati_MechroIris"
+source_object = "CD_Heads_Mechro_Iris.Materials.Mati_MechroIris"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Player.Master_Player"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.252745, 0.369097, 0.662959, 1.0),
+"p_AColorMidtone": Vector4(0.154065, 0.271767, 0.56904, 1.0),
+"p_AColorShadow": Vector4(0.131719, 0.118317, 0.375677, 1.0),
+"p_BColorHilight": Vector4(0.359103, 0.29151, 0.204357, 1.0),
+"p_BColorMidtone": Vector4(0.193363, 0.161167, 0.119653, 1.0),
+"p_BColorShadow": Vector4(0.712681, 0.05417, 0.038319, 1.0),
+"p_CColorHilight": Vector4(0.796108, 0.243324, 0.193551, 1.0),
+"p_CColorMidtone": Vector4(1.007698, 0.562283, 0.35077, 1.0),
+"p_CColorShadow": Vector4(1.0, 0.42624, 0.237597, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Decal": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Decal": "Common_Textures.Stub.StubGray_Gray",
+"p_Diffuse": "CD_Heads_Mechro_Iris.Textures.MechroIris_Dif",
+"p_Masks": "CD_Heads_Mechro_Iris.Textures.MechroIris_Comp",
+"p_Normal": "CD_Heads_Mechro_Iris.Textures.MechroIris_Nm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Decal": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

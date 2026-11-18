@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Char_Goliath.Materials.Mati_GoliathStd.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Goliath.Materials.Mati_GoliathBlaster"
+source_object = "Char_Goliath.Materials.Mati_GoliathBlaster"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Char_Goliath.Materials.Mati_GoliathStd"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_HighlightsIntensity": 3.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.011049, 0.002892, 0.001771, 1.0),
+"p_AColorMidtone": Vector4(0.906044, 0.608629, 0.405486, 1.0),
+"p_AColorShadow": Vector4(0.149166, 0.09833, 0.046428, 1.0),
+"p_BColorHilight": Vector4(0.220986, 0.161238, 0.134304, 1.0),
+"p_BColorMidtone": Vector4(0.15469, 0.107817, 0.096577, 1.0),
+"p_BColorShadow": Vector4(0.099444, 0.032663, 0.028572, 1.0),
+"p_CColorHilight": Vector4(1.0, 0.324212, 0.0, 1.0),
+"p_CColorMidtone": Vector4(0.690582, 0.199006, 0.0, 1.0),
+"p_CColorShadow": Vector4(0.55799, 0.060388, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_Goliath.Textures.Goliath_Dif",
+"p_Masks": "Char_Goliath.Textures.Goliath_Comp",
+"p_Normal": "Char_Goliath.Textures.Goliath_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

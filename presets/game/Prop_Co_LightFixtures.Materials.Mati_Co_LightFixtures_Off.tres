@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Co_LightFixtures.Materials.Mati_Co_LightFictures_Blue.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Co_LightFixtures.Materials.Mati_Co_LightFixtures_Off"
+source_object = "Prop_Co_LightFixtures.Materials.Mati_Co_LightFixtures_Off"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Co_LightFixtures.Materials.Mati_Co_LightFictures_Blue"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_Color_Emissive1_A": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_Color_Emissive1_B": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_Color_Emissive1_Base": Vector4(1.154036, 2.940176, 5.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

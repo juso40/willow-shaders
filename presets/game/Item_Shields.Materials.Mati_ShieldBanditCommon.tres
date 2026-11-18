@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Item_Shields.DefaultMaterial.Mati_Shield.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Item_Shields.Materials.Mati_ShieldBanditCommon"
+source_object = "Item_Shields.Materials.Mati_ShieldBanditCommon"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Item_Shields.DefaultMaterial.Mati_Shield"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_UseFullColorDecal": 0.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.310866, 0.375536, 0.392251, 1.0),
+"p_AColorMidtone": Vector4(0.337004, 0.186078, 0.161992, 1.0),
+"p_AColorShadow": Vector4(0.127067, 0.111457, 0.089217, 1.0),
+"p_BColorHilight": Vector4(0.171264, 0.048415, 0.020822, 1.0),
+"p_BColorMidtone": Vector4(0.465306, 0.480645, 0.449966, 1.0),
+"p_BColorShadow": Vector4(0.57349, 0.572416, 0.574564, 1.0),
+"p_CColorHilight": Vector4(0.23756, 0.179809, 0.152558, 1.0),
+"p_CColorMidtone": Vector4(0.24861, 0.190355, 0.109327, 1.0),
+"p_CColorShadow": Vector4(0.077345, 0.060565, 0.047006, 1.0),
+"p_DecalChannel": Vector4(0.93, 0.94, 1.0, 1.0),
+"p_DecalColor": Vector4(0.114532, 0.2722, 0.370152, 1.0),
+"p_DecalScalePosition": Vector4(0.75, 0.75, 0.46, 0.44),
+"p_PatternChannelScale": Vector4(1.0, 0.66, 0.0, 0.0),
+"p_PatternColor": Vector4(3.850659, 3.850659, 3.850659, 1.0),
+"p_PatternScalePosition": Vector4(3.0, 3.0, 1.0, 3.4371)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_CustomPattern": null,
+"p_Decal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_CustomPattern": "Common_GunMaterials.Patterns.Pattern_BanditRare",
+"p_Decal": "Common_GunMaterials.Logos.grundge_decals_2"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_CustomPattern": "Texture2D",
+"p_Decal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

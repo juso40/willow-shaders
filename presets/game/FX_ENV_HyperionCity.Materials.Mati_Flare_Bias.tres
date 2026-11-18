@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_Shared_Lighting.Materials.Mat_Half_Flare.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_ENV_HyperionCity.Materials.Mati_Flare_Bias"
+source_object = "FX_ENV_HyperionCity.Materials.Mati_Flare_Bias"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_Shared_Lighting.Materials.Mat_Half_Flare"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Depth_Bias": -80.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_JohnMamaril.Materials.MamarilHead_Mati"
+source_object = "GD_JohnMamaril.Materials.MamarilHead_Mati"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_BColorMidtone": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_CColorHilight": Vector4(0.099444, 0.065103, 0.029112, 1.0),
+"p_CColorMidtone": Vector4(0.375677, 0.237362, 0.075061, 1.0),
+"p_CColorShadow": Vector4(0.265184, 0.16795, 0.064727, 1.0),
+"p_ColorD": Vector4(0.72373, 0.584658, 0.343886, 1.0),
+"p_MuscleFat": Vector4(2.5, -3.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_GenericMale.Textures.GenericMale_Head03_Dif",
+"p_Masks": "Char_GenericMale.Textures.GenericMale_Head03_Comp",
+"p_Normal": "Char_GenericMale.Textures.GenericMale_Head03_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

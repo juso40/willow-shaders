@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Crate.Materials.Mat_CrateMasked.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Crate.Materials.Mati_AmmoCrate"
+source_object = "Prop_Crate.Materials.Mati_AmmoCrate"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Crate.Materials.Mat_CrateMasked"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"UV_Offset": Vector4(0.0, 0.0, 0.0, 0.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

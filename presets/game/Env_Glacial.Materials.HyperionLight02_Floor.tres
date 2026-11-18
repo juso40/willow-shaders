@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Env_Hyperion.Materials.HyperionLight02_Mat_INST_On_A.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_Glacial.Materials.HyperionLight02_Floor"
+source_object = "Env_Glacial.Materials.HyperionLight02_Floor"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Env_Hyperion.Materials.HyperionLight02_Mat_INST_On_A"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"emiss": 0.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"emiss color": Vector4(12.0, 0.240793, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

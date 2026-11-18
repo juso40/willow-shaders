@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_WEP_Scopes.Materials.Mat_Scope_SceneTex_MS"
+source_object = "FX_WEP_Scopes.Materials.Mat_Scope_SceneTex_MS"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"FadeDistances": Vector4(35.0, 20.0, 0.0, 1.0),
+"ScanlineColor": Vector4(0.0, 0.0, 0.0, 1.0),
+"SceneTexScale": Vector4(0.1094, 0.1945, 0.0, 0.0),
+"ScreenGlowColor": Vector4(0.0, 0.0, 0.0, 1.0),
+"UV_Horizontal_And_Vertical": Vector4(4.0, 2.0, 0.0, 1.0),
+"UV_Offset": Vector4(0.0, 0.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+static_component_masks = Dictionary[String, Vector4]({
+"MaskDirection": Vector4(0.0, 1.0, 0.0, 0.0)
+})
+static_switches = Dictionary[String, bool]({
+"swMaskRound": false,
+"swMasked": false,
+"swReverseMask": false
+})

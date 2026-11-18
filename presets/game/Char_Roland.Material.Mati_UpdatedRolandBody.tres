@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Char_Roland.Material.Mati_RolandBody.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Roland.Material.Mati_UpdatedRolandBody"
+source_object = "Char_Roland.Material.Mati_UpdatedRolandBody"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Char_Roland.Material.Mati_RolandBody"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.254134, 0.04213, 0.054661, 1.0),
+"p_AColorMidtone": Vector4(0.171264, 0.061603, 0.068085, 1.0),
+"p_AColorShadow": Vector4(0.161758, 0.06402, 0.069797, 1.0),
+"p_BColorHilight": Vector4(0.441973, 0.441973, 0.441973, 1.0),
+"p_BColorMidtone": Vector4(0.331479, 0.331479, 0.331479, 1.0),
+"p_BColorShadow": Vector4(0.193363, 0.193363, 0.193363, 1.0),
+"p_CColorHilight": Vector4(0.562808, 0.679533, 0.540628, 1.0),
+"p_CColorMidtone": Vector4(0.496173, 0.541417, 0.487576, 1.0),
+"p_CColorShadow": Vector4(0.274541, 0.331479, 0.263721, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_Roland.Textures.UpdateRoland_Dif",
+"p_Normal": "Char_Roland.Textures.UpdateRoland_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

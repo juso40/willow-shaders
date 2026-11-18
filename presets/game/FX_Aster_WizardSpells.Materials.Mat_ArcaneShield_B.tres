@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Aster_WizardSpells.Materials.Mat_ArcaneShield_B"
+source_object = "FX_Aster_WizardSpells.Materials.Mat_ArcaneShield_B"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"Fade": 2.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"ShieldColor": Vector4(0.65, 0.6, 1.0, 1.0),
+"ShieldColorB": Vector4(0.014364, 0.013259, 0.022099, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

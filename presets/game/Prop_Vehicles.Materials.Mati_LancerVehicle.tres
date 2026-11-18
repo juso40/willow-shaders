@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Vehicles.Materials.Mat_RunnerVehicle.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Vehicles.Materials.Mati_LancerVehicle"
+source_object = "Prop_Vehicles.Materials.Mati_LancerVehicle"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Vehicles.Materials.Mat_RunnerVehicle"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Diffuse": null,
+"Emissive": null,
+"Emissive_masks": null,
+"Mask": null,
+"Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Diffuse": "Prop_Vehicles.Lancer_Dif",
+"Emissive": "Prop_Vehicles.Lancer_Emis",
+"Emissive_masks": "Prop_Vehicles.Lancer_Comp",
+"Mask": "Prop_Vehicles.Textures.LancerHolder",
+"Normal": "Prop_Vehicles.Lancer_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"Diffuse": "Texture2D",
+"Emissive": "Texture2D",
+"Emissive_masks": "Texture2D",
+"Mask": "Texture2D",
+"Normal": "Texture2D"
+})

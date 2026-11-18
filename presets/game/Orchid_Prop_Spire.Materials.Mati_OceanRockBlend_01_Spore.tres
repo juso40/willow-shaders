@@ -1,0 +1,38 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Orchid_Test_Carl.Materials.RockVeticalBlend.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Orchid_Prop_Spire.Materials.Mati_OceanRockBlend_01_Spore"
+source_object = "Orchid_Prop_Spire.Materials.Mati_OceanRockBlend_01_Spore"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Orchid_Test_Carl.Materials.RockVeticalBlend"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_ATextureScale": 1.0,
+"p_BTextureScale": 0.5
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_WaterScaleHeight": Vector4(0.0007, 1.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_DiffuseA": null,
+"p_DiffuseB": null,
+"p_NormalA": null,
+"p_NormalB": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_DiffuseA": "Orchid_Test_Carl.Textures.SedimentRock_01_Dif",
+"p_DiffuseB": "Orchid_Test_Carl.Textures.WastelandRock_Orchid_Dif",
+"p_NormalA": "Orchid_Test_Carl.Textures.SedimentRock_01_Nrm",
+"p_NormalB": "Orchid_Test_Carl.Textures.WastelandRock_Orchid_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_DiffuseA": "Texture2D",
+"p_DiffuseB": "Texture2D",
+"p_NormalA": "Texture2D",
+"p_NormalB": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

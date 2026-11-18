@@ -1,0 +1,71 @@
+[gd_scene format=3 uid="uid://gdcb0nhnt7y5"]
+
+[ext_resource type="Script" uid="uid://de5sfvdhhtndf" path="res://scripts/preview/preview_stage.gd" id="1"]
+[ext_resource type="Script" uid="uid://6te2gc3sciin" path="res://scripts/preview/orbit_camera.gd" id="2"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ldsvc"]
+
+[sub_resource type="Sky" id="PreviewSky"]
+sky_material = SubResource("ProceduralSkyMaterial_ldsvc")
+
+[sub_resource type="Environment" id="Environment"]
+background_mode = 1
+background_color = Color(0.21, 0.21, 0.21, 1)
+sky = SubResource("PreviewSky")
+ambient_light_source = 2
+ambient_light_color = Color(0.7, 0.7, 0.7, 1)
+tonemap_mode = 2
+ssao_enabled = true
+glow_enabled = true
+glow_intensity = 0.6
+glow_strength = 0.5
+glow_bloom = 0.25
+glow_blend_mode = 0
+adjustment_enabled = true
+
+[sub_resource type="QuadMesh" id="Plane"]
+size = Vector2(1.5, 1.5)
+add_uv2 = true
+
+[sub_resource type="BoxMesh" id="Cube"]
+add_uv2 = true
+
+[sub_resource type="SphereMesh" id="Sphere"]
+add_uv2 = true
+
+[node name="PreviewStage" type="Node3D" unique_id=1977562650]
+script = ExtResource("1")
+plane = SubResource("Plane")
+cube = SubResource("Cube")
+sphere = SubResource("Sphere")
+
+[node name="Environment" type="WorldEnvironment" parent="." unique_id=1520410626]
+environment = SubResource("Environment")
+
+[node name="KeyLight" type="DirectionalLight3D" parent="." unique_id=1850639940]
+transform = Transform3D(-0.8660254, -0.43301275, 0.25000003, -0.095541514, 0.6340992, 0.7673266, -0.490787, 0.64063895, -0.59051675, 0.017432809, -0.0349465, -0.3830608)
+shadow_enabled = true
+
+[node name="Pivot" type="Node3D" parent="." unique_id=1308071980]
+unique_name_in_owner = true
+
+[node name="ModelRoot" type="Node3D" parent="Pivot" unique_id=551142727]
+unique_name_in_owner = true
+
+[node name="CustomMount" type="Node3D" parent="Pivot/ModelRoot"]
+unique_name_in_owner = true
+
+[node name="Primitive" type="MeshInstance3D" parent="Pivot/ModelRoot"]
+unique_name_in_owner = true
+visible = false
+
+[node name="OrbitCamera" type="Camera3D" parent="." unique_id=895532008 node_paths=PackedStringArray("target")]
+unique_name_in_owner = true
+current = true
+fov = 38.0
+near = 0.01
+far = 1000.0
+script = ExtResource("2")
+target = NodePath("%Pivot")
+
+[connection signal="frame_requested" from="OrbitCamera" to="." method="frame_subject"]

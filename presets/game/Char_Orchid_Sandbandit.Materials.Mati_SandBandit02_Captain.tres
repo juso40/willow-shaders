@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Orchid_Sandbandit.Materials.Mati_SandBandit02_Captain"
+source_object = "Char_Orchid_Sandbandit.Materials.Mati_SandBandit02_Captain"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.170005, 0.174843, 0.131132, 1.0),
+"p_AColorMidtone": Vector4(0.07, 0.048697, 0.0119, 1.0),
+"p_AColorShadow": Vector4(0.120986, 0.118688, 0.097999, 1.0),
+"p_BColorHilight": Vector4(0.309381, 0.28129, 0.257539, 1.0),
+"p_BColorMidtone": Vector4(0.062408, 0.092608, 0.254627, 1.0),
+"p_BColorShadow": Vector4(0.063261, 0.115346, 0.22433, 1.0),
+"p_CColorHilight": Vector4(0.229533, 0.164579, 0.095145, 1.0),
+"p_CColorMidtone": Vector4(0.246448, 0.17602, 0.117634, 1.0),
+"p_CColorShadow": Vector4(0.185121, 0.181047, 0.10737, 1.0),
+"p_ColorD": Vector4(0.71, 0.704675, 0.6461, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_Orchid_Sandbandit.Texture.SandBandit02_Body_Dif",
+"p_Masks": "Char_Orchid_Sandbandit.Texture.SandBandit02_Body_Comp",
+"p_Normal": "Char_Orchid_Sandbandit.Texture.SandBandit02_Body_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

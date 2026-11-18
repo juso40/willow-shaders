@@ -1,0 +1,65 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Anemone_GunMaterials.MasterMaterials.Master_Gun_Anemone.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_Anemone_Weapons.AssaultRifle.PeakOpener.MasterMati_Torgue_Effervescent"
+source_object = "GD_Anemone_Weapons.AssaultRifle.PeakOpener.MasterMati_Torgue_Effervescent"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Anemone_GunMaterials.MasterMaterials.Master_Gun_Anemone"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_DecalRotate": 0.0,
+"p_HighlightsIntensity": 3.0,
+"p_ReplaceDecal": 0.7424,
+"p_ReplacePattern": 0.0,
+"p_ShadowsIntensity": 4.0,
+"p_UseFullColorDecal": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.383275, 0.581389, 1.601734, 1.0),
+"p_AColorMidtone": Vector4(1.828227, 1.828227, 1.828227, 1.0),
+"p_AColorShadow": Vector4(0.682556, 0.849806, 1.436485, 1.0),
+"p_BColorHilight": Vector4(0.490453, 0.513793, 0.467112, 1.0),
+"p_BColorMidtone": Vector4(0.144657, 0.23141, 0.545421, 1.0),
+"p_BColorShadow": Vector4(0.080344, 0.038489, 0.209937, 1.0),
+"p_CColorHilight": Vector4(1.885355, 1.539897, 1.295754, 1.0),
+"p_CColorMidtone": Vector4(3.290632, 1.873898, 0.490971, 1.0),
+"p_CColorShadow": Vector4(0.298332, 0.098895, 0.088406, 1.0),
+"p_DColor": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_DecalChannel": Vector4(0.0, 1.0, 0.0, 0.0),
+"p_DecalColor": Vector4(1.9052, 0.0, 0.0, 1.0),
+"p_DecalScalePosition": Vector4(21.8284, 27.835096, 0.3941, 0.5105),
+"p_PatternChannelScale": Vector4(1.0, 0.0, 0.0, 0.0),
+"p_PatternColor": Vector4(0.646385, 0.646385, 0.646385, 1.0),
+"p_PatternScalePosition": Vector4(2.3314, 27.299612, 0.8379, 0.2335),
+"p_ReflectColor": Vector4(3.231877, 3.231877, 3.231877, 1.0),
+"p_ReflectionChannelScale": Vector4(1.0, 0.2, 1.0, 0.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"P_SimpleReflect": null,
+"p_Decal": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_NormalScopesEmissive": null,
+"p_Pattern": null
+})
+texture_object_paths = Dictionary[String, String]({
+"P_SimpleReflect": "Common_GunMaterials.Env.Chrome",
+"p_Decal": "Common_GunMaterials.Logos.Logo_TorgueColor",
+"p_Diffuse": "Common_GunMaterials.CompTextures.Weap_AssaultSubSniper_Comp",
+"p_Masks": "Weap_AssaultRifles.Tex.Weap_AssaultRifle_Comp",
+"p_NormalScopesEmissive": "Weap_AssaultRifles.Tex.Weap_AssaultRifle_Nrm",
+"p_Pattern": "Common_GunMaterials.Patterns.Pattern_Torgue_Legendary"
+})
+texture_object_classes = Dictionary[String, String]({
+"P_SimpleReflect": "Texture2D",
+"p_Decal": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_NormalScopesEmissive": "Texture2D",
+"p_Pattern": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

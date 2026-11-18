@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_Cinematics_Volcano.Materials.Mat_Slag_Splatter.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Cinematics_Volcano.Materials.Mati_Slag_Splatter_Josh"
+source_object = "FX_Cinematics_Volcano.Materials.Mati_Slag_Splatter_Josh"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_Cinematics_Volcano.Materials.Mat_Slag_Splatter"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Multiply": 0.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

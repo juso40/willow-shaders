@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_Shared_Dirt.Materials.Master_Diffuse_Translucent_Depthbiased_2.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_CREA_Skag.Materials.Mati_SmokePuff_Trans"
+source_object = "FX_CREA_Skag.Materials.Mati_SmokePuff_Trans"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_Shared_Dirt.Materials.Master_Diffuse_Translucent_Depthbiased_2"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"color_adjust": Vector4(1.0, 1.0, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"masterDiffuseOpacityInput": null
+})
+texture_object_paths = Dictionary[String, String]({
+"masterDiffuseOpacityInput": "FX_ENV_Smoke.Textures.SubUV_2X2_GenericSmoke2_Dif"
+})
+texture_object_classes = Dictionary[String, String]({
+"masterDiffuseOpacityInput": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

@@ -1,0 +1,121 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Common_Co_Materials.MasterMaterials.Master_Environment"
+source_object = "Common_Co_Materials.MasterMaterials.Master_Environment"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"P_DeathsValue": 0.0,
+"p_DeathTextureAdd": 0.0,
+"p_DeathTextureContrast": 0.0,
+"p_DigiContrast_High": -10100.0,
+"p_DigiContrast_Low": 10000.0,
+"p_DigiTransition": 0.5,
+"p_DigiTransitionHardness": 0.01,
+"p_DigiTransitionScale": 1000000.0,
+"p_GlowScale": 1.0,
+"p_Pattern_WorldPositionOffset": 0.0,
+"p_SpecMult": 2.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"PatternFilter": Vector4(0.0, 1.0, 0.0, 1.0),
+"p_AColorHilight": Vector4(1.0, 0.862988, 0.862988, 1.0),
+"p_AColorMidtone": Vector4(0.172369, 0.108376, 0.108376, 1.0),
+"p_AColorShadow": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_BColorHilight": Vector4(0.263279, 0.263279, 0.667379, 1.0),
+"p_BColorMidtone": Vector4(0.0, 0.0, 1.0, 1.0),
+"p_BColorShadow": Vector4(0.001027, 0.005762, 0.044197, 1.0),
+"p_CColorHilight": Vector4(0.0, 1.0, 0.0, 1.0),
+"p_CColorMidtone": Vector4(0.0, 1.0, 0.0, 1.0),
+"p_CColorShadow": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_Center": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_ColorRimLight": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_Color_D": Vector4(0.433133, 0.433133, 0.433133, 1.0),
+"p_Color_Emissive1_A": Vector4(0.102204, 1.0, 0.349255, 1.0),
+"p_Color_Emissive1_B": Vector4(0.074231, 0.191509, 1.0, 1.0),
+"p_Color_Emissive1_Base": Vector4(1.0, 0.576311, 0.118933, 1.0),
+"p_Color_Highlight": Vector4(0.216567, 0.216567, 0.216567, 1.0),
+"p_Color_Spec_1": Vector4(1.0, 1.0, 5.0, 10.0),
+"p_Color_Spec_2": Vector4(5.0, 1.0, 1.0, 10.0),
+"p_Color_Spec_Emissive": Vector4(1.0, 1.5, 2.5, 200.0),
+"p_Color_Texture1_A": Vector4(0.2, 0.1, 0.0, 1.0),
+"p_Color_Texture1_B": Vector4(0.079143, 0.172614, 0.190048, 1.0),
+"p_Color_Texture1_Base": Vector4(0.079555, 0.073346, 0.070413, 0.5),
+"p_Color_Texture1_C": Vector4(0.053207, 0.152941, 1.0, 1.0),
+"p_Color_Texture1_D": Vector4(0.720415, 0.669688, 0.128445, 1.0),
+"p_Color_Texture2_A": Vector4(0.472911, 0.436103, 0.181609, 1.0),
+"p_Color_Texture2_B": Vector4(0.782292, 0.657403, 0.135736, 1.0),
+"p_Color_Texture2_Base": Vector4(0.184868, 0.194468, 0.068401, 1.0),
+"p_Color_Texture2_C": Vector4(0.053207, 0.152941, 1.0, 1.0),
+"p_Color_Texture2_D": Vector4(0.720415, 0.669688, 0.128445, 1.0),
+"p_DiffMod": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_Diff_UVMod": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_DigiColorFilter": Vector4(100.0, 100.0, -2000.0, 1.0),
+"p_DigiColorHilight": Vector4(0.667379, 0.050929, 0.125856, 1.0),
+"p_DigiColorMidtone": Vector4(0.150271, 0.012513, 0.016928, 1.0),
+"p_DigiColorShadow": Vector4(0.044197, 0.005571, 0.007326, 1.0),
+"p_ElementalDeathColor": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_EmissiveScale": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_GlowColor": Vector4(0.0, 3.0, 0.0, 1.0),
+"p_PatternColor_A": Vector4(1.0, 0.974378, 0.208172, 1.0),
+"p_PatternColor_B": Vector4(0.685058, 0.018949, 0.018949, 1.0),
+"p_PatternPositionScale": Vector4(-0.25, -0.6, 4.0, 4.0),
+"p_PatternRegionMaskScale": Vector4(-0.25, -0.6, 4.0, 4.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Compilation_Mask": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null,
+"p_Pattern_Overlay": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Compilation_Mask": "Common_Co_Materials.Colorize_4_Example2_SD5C_Comp",
+"p_Diffuse": "Common_Co_Materials.Colorize_Example_Diff",
+"p_Masks": "Common_Co_Materials.Colorize_Example_Masks",
+"p_Normal": "Common_Textures.Stub.StubFlat_Nrm",
+"p_Pattern_Overlay": "Common_Co_Materials.Pattern_Overlay_Clamped_Masks"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Compilation_Mask": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D",
+"p_Pattern_Overlay": "Texture2D"
+})
+static_switches = Dictionary[String, bool]({
+"sw_2ColorGroups": false,
+"sw_5_Colors_PerGroup": false,
+"sw_AI_Effects": false,
+"sw_AddHighlight": true,
+"sw_AlphaAsEmissive": false,
+"sw_ColorizeDiffuse": true,
+"sw_CubeMap": false,
+"sw_DigiColorOverlay": false,
+"sw_EmissiveON": true,
+"sw_EmissiveSpecColorON": false,
+"sw_FilterPattern": true,
+"sw_InteractiveGlow": false,
+"sw_MaskPattern": true,
+"sw_MixPatternColorWithColorSets": true,
+"sw_MultiColorDiffuse": true,
+"sw_MultiColorSpec": true,
+"sw_MultiColor_Spec": true,
+"sw_NormalON": false,
+"sw_PatternOverlay": false,
+"sw_PatternOverride": false,
+"sw_PatternUsesUV2": false,
+"sw_RemoveEmissiveFromColorizeZones": false,
+"sw_SmoothEmissive": false,
+"sw_SpecON": false,
+"sw_SplitTile_Vertical": false,
+"sw_UseCompTexture": false,
+"sw_UseCubemapBlend": false,
+"sw_UseCubemapVectorTransform": true,
+"sw_UseDiffuseDerivedSpecMask": false,
+"sw_UsePatternRegionMask": false,
+"sw_Use_SMH_ColorBlending": false
+})

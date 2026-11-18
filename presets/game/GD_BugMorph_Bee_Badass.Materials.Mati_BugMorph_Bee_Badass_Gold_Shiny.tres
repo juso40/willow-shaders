@@ -1,0 +1,37 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/GD_BugMorph_Bee_Badass.Materials.Allium_Master_Shiny.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_BugMorph_Bee_Badass.Materials.Mati_BugMorph_Bee_Badass_Gold_Shiny"
+source_object = "GD_BugMorph_Bee_Badass.Materials.Mati_BugMorph_Bee_Badass_Gold_Shiny"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "GD_BugMorph_Bee_Badass.Materials.Allium_Master_Shiny"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_Bright1": 2.0,
+"p_Bright2": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_EmissiveScale": Vector4(20.0, 0.0, 0.75, 1.0),
+"p_MuscleFat": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_color": Vector4(5.606708, 2.551782, 0.0, 0.27)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_BugMorph.Textures.Bugmorph_Dif",
+"p_Masks": "Char_BugMorph.Textures.BugmorphTone_Comp",
+"p_Normal": "Char_BugMorph.Textures.Bugmorph_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

@@ -1,0 +1,38 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_FinalBoss.Materials.Mat_FinalBoss"
+source_object = "Char_FinalBoss.Materials.Mat_FinalBoss"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"Glow_Overray": 0.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Diffuse_Texture_Name": null,
+"EmissiveMask": null,
+"Normal_Texture_Name": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Diffuse_Texture_Name": "Char_FinalBoss.Textures.FB_Mat1_Diff",
+"EmissiveMask": "Char_FinalBoss.Textures.FB_Emis_Comp",
+"Normal_Texture_Name": "Char_FinalBoss.Textures.FB_Mat1_Norm"
+})
+texture_object_classes = Dictionary[String, String]({
+"Diffuse_Texture_Name": "Texture2D",
+"EmissiveMask": "Texture2D",
+"Normal_Texture_Name": "Texture2D"
+})
+static_component_masks = Dictionary[String, Vector4]({
+"EmmissiveMaskChannel": Vector4(1.0, 0.0, 0.0, 0.0)
+})
+static_switches = Dictionary[String, bool]({
+"sw_Breakable_Chunks": false,
+"sw_HeartBeat": false,
+"sw_Tail_Slit": false
+})

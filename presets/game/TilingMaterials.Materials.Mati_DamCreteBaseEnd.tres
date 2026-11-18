@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/TilingMaterials.Materials.Master_DamCrete.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "TilingMaterials.Materials.Mati_DamCreteBaseEnd"
+source_object = "TilingMaterials.Materials.Mati_DamCreteBaseEnd"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "TilingMaterials.Materials.Master_DamCrete"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_UVScalePosition": Vector4(2.0, 0.4, 0.0, 1.0),
+"p_color": Vector4(0.270708, 0.270708, 0.270708, 0.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "TilingMaterials.Textures.DamCrete_Dif"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

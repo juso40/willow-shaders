@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Aster_ElementalTrap.Materials.Mat_Radial_Elemental"
+source_object = "FX_Aster_ElementalTrap.Materials.Mat_Radial_Elemental"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"MaskTiling": Vector4(1.0, 1.0, 0.0, 1.0),
+"Strength": Vector4(6.0, 6.0, 6.0, 1.0),
+"Tiling1": Vector4(12.0, 0.5, 0.0, 1.0),
+"Tiling2": Vector4(10.0, 0.5, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Mask": null,
+"Texture2": null,
+"texture1": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Mask": "FX_Shared_Gradients.Textures.Gradient_TopBottom_Dif",
+"Texture2": "FX_Shared_Fire.Textures.Molten_Scroll_Dif",
+"texture1": "FX_Shared_Fire.Textures.Fire_Tile_Dif"
+})
+texture_object_classes = Dictionary[String, String]({
+"Mask": "Texture2D",
+"Texture2": "Texture2D",
+"texture1": "Texture2D"
+})

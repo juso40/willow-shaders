@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_BugMorphCocoon.Mat_BugMorphCocoon.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_BugMorphCocoon.Mat_BugMorphCocoon_INST"
+source_object = "Prop_BugMorphCocoon.Mat_BugMorphCocoon_INST"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_BugMorphCocoon.Mat_BugMorphCocoon"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"GrowBreak": 1.0,
+"Growth": -1.0,
+"p_UVMod": 1.5
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

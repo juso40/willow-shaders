@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Environment.Master_World.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_Dam.Materials.Mati_BanditCrateGreen"
+source_object = "Env_Dam.Materials.Mati_BanditCrateGreen"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Environment.Master_World"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.275234, 0.325843, 0.258662, 1.0),
+"p_AColorMidtone": Vector4(0.233525, 0.325843, 0.22847, 1.0),
+"p_BColorHilight": Vector4(0.11619, 0.162921, 0.103612, 1.0),
+"p_BColorMidtone": Vector4(0.262924, 0.269663, 0.198803, 1.0),
+"p_CColorHilight": Vector4(0.488764, 0.462274, 0.244518, 1.0),
+"p_CColorMidtone": Vector4(0.438202, 0.343954, 0.161751, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Prop_Crate.Textures.BanditCrate_Dif",
+"p_Masks": "Prop_Crate.Textures.BanditCrate_Comp"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

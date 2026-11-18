@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_Aster_Ragnar.Materials.Mati_Ragnar"
+source_object = "GD_Aster_Ragnar.Materials.Mati_Ragnar"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_ShadowsIntensity": 2.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.39772, 0.412652, 0.624286, 1.0),
+"p_AColorMidtone": Vector4(0.472748, 0.499771, 0.707156, 1.0),
+"p_AColorShadow": Vector4(0.199443, 0.222679, 0.364627, 1.0),
+"p_BColorHilight": Vector4(0.615127, 0.708821, 1.0, 1.0),
+"p_BColorMidtone": Vector4(0.486438, 0.564911, 0.872896, 0.0),
+"p_BColorShadow": Vector4(0.187904, 0.197243, 0.314906, 0.0),
+"p_CColorHilight": Vector4(0.265184, 0.203643, 0.124539, 1.0),
+"p_CColorMidtone": Vector4(0.334077, 0.5, 0.272385, 1.0),
+"p_CColorShadow": Vector4(0.24861, 0.119096, 0.051151, 1.0),
+"p_ColorD": Vector4(1.350729, 1.13585, 0.626884, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_CustomPattern": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_CustomPattern": "",
+"p_Diffuse": "Char_Aster_Dwarf.Textures.NomadDwarf_Dif",
+"p_Masks": "Char_Aster_Dwarf.Textures.NomadDwarf_Comp",
+"p_Normal": "Char_Aster_Dwarf.Textures.NomadDwarf_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_CustomPattern": "",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

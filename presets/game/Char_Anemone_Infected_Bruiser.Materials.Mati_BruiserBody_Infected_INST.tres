@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Char_Anemone_Infected_Bruiser.Materials.Mati_BruiserBody.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Anemone_Infected_Bruiser.Materials.Mati_BruiserBody_Infected_INST"
+source_object = "Char_Anemone_Infected_Bruiser.Materials.Mati_BruiserBody_Infected_INST"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Char_Anemone_Infected_Bruiser.Materials.Mati_BruiserBody"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(1.0, 0.791741, 0.904491, 1.0),
+"p_AColorMidtone": Vector4(1.0, 0.786499, 0.684915, 1.0),
+"p_AColorShadow": Vector4(0.591138, 0.344618, 0.238171, 1.0),
+"p_BColorHilight": Vector4(0.63603, 0.540557, 0.97191, 1.0),
+"p_BColorMidtone": Vector4(0.325992, 0.627182, 1.0, 1.0),
+"p_BColorShadow": Vector4(0.181832, 0.165511, 0.259659, 1.0),
+"p_CColorHilight": Vector4(0.58495, 0.57922, 0.831461, 1.0),
+"p_CColorMidtone": Vector4(0.576663, 0.662343, 0.848315, 1.0),
+"p_CColorShadow": Vector4(0.65191, 0.343219, 0.128703, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

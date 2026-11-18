@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_CreatureDigistruct.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "HyperionBotAttachments.Materials.Mati_Attachment_Badass"
+source_object = "HyperionBotAttachments.Materials.Mati_Attachment_Badass"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_CreatureDigistruct"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_DigiStructEnable": 0.0,
+"p_HighlightsIntensity": 2.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.043293, 0.067416, 0.059682, 1.0),
+"p_AColorMidtone": Vector4(0.001218, 0.016854, 0.000568, 1.0),
+"p_AColorShadow": Vector4(0.096515, 0.191011, 0.094609, 1.0),
+"p_BColorHilight": Vector4(0.043293, 0.067416, 0.059682, 1.0),
+"p_BColorMidtone": Vector4(0.078652, 0.065619, 0.054753, 1.0),
+"p_BColorShadow": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_CColorHilight": Vector4(0.039326, 0.014906, 0.009344, 1.0),
+"p_CColorMidtone": Vector4(0.007738, 0.02809, 0.008241, 1.0),
+"p_CColorShadow": Vector4(0.224719, 0.219919, 0.075429, 1.0),
+"p_ColorD": Vector4(0.132854, 0.134831, 0.123785, 1.0),
+"p_EmissiveScale": Vector4(0.0, 0.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "HyperionBotAttachments.Tex.HyperionBotAttachments_Dif",
+"p_Masks": "HyperionBotAttachments.Tex.HyperionBotAttachments_Comp",
+"p_Normal": "HyperionBotAttachments.Tex.HyperionBotAttachments_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

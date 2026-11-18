@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Pickups.Materials.Eridium_Pickups.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Pickups.Materials.Eridium_Pickups_Nugget"
+source_object = "Prop_Pickups.Materials.Eridium_Pickups_Nugget"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Pickups.Materials.Eridium_Pickups"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Object Radius": 10.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

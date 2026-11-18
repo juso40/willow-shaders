@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Env_Dark_Forest.Materials.Mat_Mossy_Rock.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_Dark_Forest.Materials.Mat_Mossy_Rock_2x"
+source_object = "Env_Dark_Forest.Materials.Mat_Mossy_Rock_2x"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Env_Dark_Forest.Materials.Mat_Mossy_Rock"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"FresnelStrength": 5.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"MossUV": Vector4(2.0, 2.0, 0.0, 1.0),
+"p_Diff_UVMod": Vector4(2.0, 2.0, 1.0, 1.0),
+"p_Normal_UVMod": Vector4(2.0, 2.0, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

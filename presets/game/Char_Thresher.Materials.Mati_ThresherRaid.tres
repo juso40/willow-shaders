@@ -1,0 +1,56 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_CreatureFire.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Thresher.Materials.Mati_ThresherRaid"
+source_object = "Char_Thresher.Materials.Mati_ThresherRaid"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_CreatureFire"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_FxScaleFire": 0.0,
+"p_HighlightsIntensity": 1.0,
+"p_PatternIntensity": 3.0,
+"p_ShadowsIntensity": 20.0,
+"p_UVChannelSelect": 3.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.904494, 0.779793, 0.648399, 1.0),
+"p_AColorMidtone": Vector4(0.331461, 0.196183, 0.121039, 1.0),
+"p_AColorShadow": Vector4(0.511236, 0.465005, 0.163126, 1.0),
+"p_BColorHilight": Vector4(0.647524, 0.663043, 0.0, 1.0),
+"p_BColorMidtone": Vector4(0.797753, 0.644774, 0.552608, 1.0),
+"p_BColorShadow": Vector4(0.390993, 0.434783, 0.140595, 0.0),
+"p_CColorHilight": Vector4(0.988764, 0.938443, 0.969637, 1.0),
+"p_CColorMidtone": Vector4(0.893258, 0.704086, 0.441611, 1.0),
+"p_CColorShadow": Vector4(0.195652, 0.164066, 0.042708, 1.0),
+"p_EmissiveScale": Vector4(6.418373, 3.149627, 0.0, 1.0),
+"p_MuscleFat": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_PatternColor": Vector4(1.0, 0.233662, 0.0, 2.0),
+"p_PatternScalePosition": Vector4(0.58427, 0.58427, 0.006565, 0.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_CustomPattern": null,
+"p_Diffuse": null,
+"p_FireEffectTexture": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_CustomPattern": "FX_ENV_Level_Specific.Textures.Lava_Strings_Dif",
+"p_Diffuse": "Char_Thresher.Textures.Thresher_Dif",
+"p_FireEffectTexture": "FX_Shared_Fire.Textures.Fireball_Tiling_Dif",
+"p_Masks": "Char_Thresher.Textures.Thresher_Comp",
+"p_Normal": "Char_Thresher.Textures.Thresher_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_CustomPattern": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_FireEffectTexture": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

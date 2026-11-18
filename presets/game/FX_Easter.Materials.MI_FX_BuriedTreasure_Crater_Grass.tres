@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_Easter.Materials.M_FX_BuriedTreasure_Crater.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Easter.Materials.MI_FX_BuriedTreasure_Crater_Grass"
+source_object = "FX_Easter.Materials.MI_FX_BuriedTreasure_Crater_Grass"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_Easter.Materials.M_FX_BuriedTreasure_Crater"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"D_Mod": Vector4(1.0, 1.0, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Terrain": null,
+"crater": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Terrain": "Prop_EasterRocks.Textures.GrasslandsSlateMoss_Dif",
+"crater": "Prop_EasterRocks.Textures.GrasslandsSlateMoss_Dif"
+})
+texture_object_classes = Dictionary[String, String]({
+"Terrain": "Texture2D",
+"crater": "Texture2D"
+})

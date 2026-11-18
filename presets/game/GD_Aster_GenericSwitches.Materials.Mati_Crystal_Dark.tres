@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Aster_Prop_MagicCrystal.Material.MagiCrystal.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_Aster_GenericSwitches.Materials.Mati_Crystal_Dark"
+source_object = "GD_Aster_GenericSwitches.Materials.Mati_Crystal_Dark"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Aster_Prop_MagicCrystal.Material.MagiCrystal"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"TurnOnFlashing": 5.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Inner_Color": Vector4(0.0, 0.015675, 0.168539, 1.0),
+"Outer_Color": Vector4(0.0, 0.015675, 0.168539, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

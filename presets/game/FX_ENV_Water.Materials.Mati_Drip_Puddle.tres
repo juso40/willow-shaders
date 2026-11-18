@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_ENV_Water.Materials.Mat_SanctuaryWater.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_ENV_Water.Materials.Mati_Drip_Puddle"
+source_object = "FX_ENV_Water.Materials.Mati_Drip_Puddle"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_ENV_Water.Materials.Mat_SanctuaryWater"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"CubeLerpAlpha": 0.65,
+"Desaturation": 0.4,
+"Opacity": 0.05
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_WaterColorB": Vector4(0.4, 0.38, 0.35, 1.0),
+"wavescale": Vector4(0.2, 0.2, 0.0, 0.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"CubeMap": null
+})
+texture_object_paths = Dictionary[String, String]({
+"CubeMap": "FX_ENV_Water.CubeMaps.Cliffs_Cube_Tex"
+})
+texture_object_classes = Dictionary[String, String]({
+"CubeMap": "TextureCube"
+})

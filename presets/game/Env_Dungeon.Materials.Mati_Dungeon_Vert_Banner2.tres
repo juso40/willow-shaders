@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Aster_Prop_Castle.Materials.CastleBanner.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_Dungeon.Materials.Mati_Dungeon_Vert_Banner2"
+source_object = "Env_Dungeon.Materials.Mati_Dungeon_Vert_Banner2"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Aster_Prop_Castle.Materials.CastleBanner"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"FinalTurbMultiplier": 0.01,
+"Obj Sway Wind Speed Mult": 0.35,
+"Object Radius Offset": 250.0,
+"Object Sway Amount": 0.0004,
+"Object Sway World Sine Divider": 128.0,
+"Wind_Sin_TimeScale": 0.28,
+"p_WindSpeed": 0.0,
+"p_WindSpeed2": 0.0,
+"p_WindSpeed3": 0.0,
+"p_WindWaveLength": 0.0,
+"p_WindWaveLength2": 0.0,
+"p_WindWaveLength3": 0.0,
+"p_WindWaveLength_Multiplier": 0.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Main Color": Vector4(9.0, 4.0, 1.0, 1.0),
+"Object Sway_R_Sine1Rate_G_Sine1Amount_B_Sine2Rate_A_Sine2Amount": Vector4(1.0, 40.0, 1.125, 1.5),
+"Trim COlor": Vector4(0.5, 1.04, 0.84, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

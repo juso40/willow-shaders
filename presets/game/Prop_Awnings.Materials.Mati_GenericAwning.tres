@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Environment.Master_WindyAwning.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Awnings.Materials.Mati_GenericAwning"
+source_object = "Prop_Awnings.Materials.Mati_GenericAwning"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Environment.Master_WindyAwning"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Tarp_Saturation": 0.5,
+"Wind_Scale": 0.2,
+"Wind_Speed": 1.0,
+"p_WaveScale": 30.0,
+"p_WindSpeed": 20.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Tarp_Color": Vector4(0.0, 1.0, 0.0, 1.0),
+"Transmission_Color": Vector4(1.75, 2.0, 1.75, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Diffuse": null,
+"Normal": null,
+"Panner(B)": null,
+"Transmission_Color_Mask(G)": null,
+"Transmission_Mask(R)": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Diffuse": "Prop_Awnings.Textures.GenericAwning_Dif",
+"Normal": "Prop_Awnings.Textures.GenericAwning_Nrm",
+"Panner(B)": "",
+"Transmission_Color_Mask(G)": "",
+"Transmission_Mask(R)": "Prop_Awnings.Textures.GenericAwning_Panner"
+})
+texture_object_classes = Dictionary[String, String]({
+"Diffuse": "Texture2D",
+"Normal": "Texture2D",
+"Panner(B)": "",
+"Transmission_Color_Mask(G)": "",
+"Transmission_Mask(R)": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

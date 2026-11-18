@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/prop_signs.Materials.PropagandaPosters_01.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "prop_signs.Materials.PropagandaPosters_03"
+source_object = "prop_signs.Materials.PropagandaPosters_03"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "prop_signs.Materials.PropagandaPosters_01"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"TextureSwitch": Vector4(0.5, 0.0, 0.0, 0.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

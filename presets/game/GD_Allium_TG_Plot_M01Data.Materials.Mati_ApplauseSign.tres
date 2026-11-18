@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Env_Hunger.Materials.Mat_ApplauseBox.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_Allium_TG_Plot_M01Data.Materials.Mati_ApplauseSign"
+source_object = "GD_Allium_TG_Plot_M01Data.Materials.Mati_ApplauseSign"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Env_Hunger.Materials.Mat_ApplauseBox"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"P_Emissive_Switch": 0.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"P_Emissive_Color": Vector4(1.9, 1.398583, 0.651522, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

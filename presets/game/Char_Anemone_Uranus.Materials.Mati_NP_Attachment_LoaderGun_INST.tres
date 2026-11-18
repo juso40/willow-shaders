@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/HyperionBotAttachments.Materials.Mati_Attachment_WAR_Overheat.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Anemone_Uranus.Materials.Mati_NP_Attachment_LoaderGun_INST"
+source_object = "Char_Anemone_Uranus.Materials.Mati_NP_Attachment_LoaderGun_INST"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "HyperionBotAttachments.Materials.Mati_Attachment_WAR_Overheat"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorMidtone": Vector4(0.442894, 0.597898, 1.0, 1.0),
+"p_AColorShadow": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_BColorHilight": Vector4(0.921348, 0.921348, 0.921348, 1.0),
+"p_BColorMidtone": Vector4(0.921348, 0.921348, 0.921348, 1.0),
+"p_BColorShadow": Vector4(0.921348, 0.921348, 0.921348, 1.0),
+"p_CColorHilight": Vector4(0.921348, 0.921348, 0.921348, 1.0),
+"p_CColorMidtone": Vector4(0.921348, 0.921348, 0.921348, 1.0),
+"p_CColorShadow": Vector4(0.921348, 0.921348, 0.921348, 1.0),
+"p_ColorD": Vector4(0.921348, 0.921348, 0.921348, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_Anemone_Uranus.T_HyperionBotAttachments_Uranus_Dif",
+"p_Masks": "Char_Anemone_Uranus.T_HyperionBotAttachments_Uranus_Comp"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

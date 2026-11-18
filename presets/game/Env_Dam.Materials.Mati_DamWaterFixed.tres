@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Env_Dam.Materials.Mat_WaterDam.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_Dam.Materials.Mati_DamWaterFixed"
+source_object = "Env_Dam.Materials.Mati_DamWaterFixed"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Env_Dam.Materials.Mat_WaterDam"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Opacity": 0.9,
+"Speed": 0.25
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Edge color": Vector4(0.071761, 5.0, 0.0, 2.0),
+"Emissive": Vector4(0.21, 0.21, 0.1, 0.0),
+"NormalIntensity": Vector4(1.0, 1.0, 0.5, 0.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"CubeMap": null
+})
+texture_object_paths = Dictionary[String, String]({
+"CubeMap": "FX_Shared_CubeMaps.CubeMaps.GenericSpots_Cube"
+})
+texture_object_classes = Dictionary[String, String]({
+"CubeMap": "TextureCube"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

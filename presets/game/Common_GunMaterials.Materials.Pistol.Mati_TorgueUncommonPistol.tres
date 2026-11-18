@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_GunMaterials.MasterMaterials.Torgue.MasterMati_TorgueUncommon.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Common_GunMaterials.Materials.Pistol.Mati_TorgueUncommonPistol"
+source_object = "Common_GunMaterials.Materials.Pistol.Mati_TorgueUncommonPistol"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_GunMaterials.MasterMaterials.Torgue.MasterMati_TorgueUncommon"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_HighlightsIntensity": 2.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.276233, 0.202215, 0.136406, 1.0),
+"p_AColorMidtone": Vector4(2.011036, 1.797489, 1.471991, 1.0),
+"p_AColorShadow": Vector4(0.483714, 0.487849, 0.544944, 1.0),
+"p_BColorHilight": Vector4(0.418362, 0.415155, 0.300845, 1.0),
+"p_BColorMidtone": Vector4(0.128452, 0.23756, 0.143293, 1.0),
+"p_BColorShadow": Vector4(0.504539, 0.466105, 0.189679, 1.0),
+"p_CColorHilight": Vector4(0.911569, 0.637597, 0.138272, 1.0),
+"p_CColorMidtone": Vector4(0.430923, 0.253606, 0.038107, 1.0),
+"p_CColorShadow": Vector4(1.0, 0.155179, 0.016295, 1.0),
+"p_DecalChannel": Vector4(0.95, 0.0, 0.0, 0.0),
+"p_DecalScalePosition": Vector4(20.609304, 51.277714, 0.3383, 0.5047),
+"p_PatternScalePosition": Vector4(4.4388, 37.519684, 0.6061, -0.0359)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_NormalScopesEmissive": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Common_GunMaterials.CompTextures.Weap_LauncherShotgunPistol_Comp",
+"p_Masks": "Weap_Pistol.Tex.Weap_Pistols_Comp",
+"p_NormalScopesEmissive": "Weap_Pistol.Tex.Weap_Pistols_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_NormalScopesEmissive": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

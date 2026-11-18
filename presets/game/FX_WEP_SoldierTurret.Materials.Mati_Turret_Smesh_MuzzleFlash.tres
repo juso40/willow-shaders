@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_WEP_Assault.Materials.Garbage.Mat_Assault_Mesh_Parent.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_WEP_SoldierTurret.Materials.Mati_Turret_Smesh_MuzzleFlash"
+source_object = "FX_WEP_SoldierTurret.Materials.Mati_Turret_Smesh_MuzzleFlash"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_WEP_Assault.Materials.Garbage.Mat_Assault_Mesh_Parent"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Diffuse": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Diffuse": "FX_WEP_SoldierTurret.Textures.Default_TurretMuzzleFlash_Smesh"
+})
+texture_object_classes = Dictionary[String, String]({
+"Diffuse": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

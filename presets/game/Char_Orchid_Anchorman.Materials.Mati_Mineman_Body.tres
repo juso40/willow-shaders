@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Orchid_Anchorman.Materials.Mati_Mineman_Body"
+source_object = "Char_Orchid_Anchorman.Materials.Mati_Mineman_Body"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.11236, 0.108411, 0.11236, 1.0),
+"p_AColorMidtone": Vector4(0.044553, 0.042987, 0.044553, 1.0),
+"p_AColorShadow": Vector4(0.876405, 0.810082, 0.763161, 1.0),
+"p_BColorHilight": Vector4(0.11236, 0.108411, 0.11236, 1.0),
+"p_BColorMidtone": Vector4(0.044553, 0.042987, 0.044553, 1.0),
+"p_BColorShadow": Vector4(0.067416, 0.065047, 0.067416, 1.0),
+"p_CColorHilight": Vector4(0.11236, 0.108411, 0.11236, 1.0),
+"p_CColorMidtone": Vector4(0.11236, 0.108411, 0.11236, 1.0),
+"p_CColorShadow": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_ColorD": Vector4(0.654842, 0.747191, 0.719806, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_Orchid_Anchorman.Texture.Anchorman_Body_Dif",
+"p_Masks": "Char_Orchid_Anchorman.Texture.Anchorman_Body_Comp",
+"p_Normal": "Char_Orchid_Anchorman.Texture.Anchorman_Body_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

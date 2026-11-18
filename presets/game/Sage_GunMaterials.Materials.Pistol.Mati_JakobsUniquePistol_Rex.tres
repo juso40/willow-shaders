@@ -1,0 +1,41 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Sage_GunMaterials.Materials.AssaultRifle.Mati_JakobsUniqueAR_DamnedCowboy.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Sage_GunMaterials.Materials.Pistol.Mati_JakobsUniquePistol_Rex"
+source_object = "Sage_GunMaterials.Materials.Pistol.Mati_JakobsUniquePistol_Rex"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Sage_GunMaterials.Materials.AssaultRifle.Mati_JakobsUniqueAR_DamnedCowboy"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_ShadowsIntensity": 8.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_BColorHilight": Vector4(4.308999, 2.666497, 0.311054, 1.0),
+"p_BColorMidtone": Vector4(0.933667, 0.527281, 0.074205, 1.0),
+"p_DecalChannel": Vector4(0.0, 0.0, 1.0, 1.0),
+"p_DecalColor": Vector4(1.274635, 0.536397, 0.102502, 1.0),
+"p_DecalScalePosition": Vector4(36.154198, 32.809998, 0.3429, 0.5353),
+"p_PatternChannelScale": Vector4(1.0, 0.3, 0.9, 0.0),
+"p_PatternScalePosition": Vector4(15.0054, 7.810502, 2.4273, 0.4647),
+"p_ReflectColor": Vector4(6.324452, 6.324452, 6.324452, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_NormalScopesEmissive": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Common_GunMaterials.CompTextures.Weap_LauncherShotgunPistol_Comp",
+"p_Masks": "Weap_Pistol.Tex.Weap_Pistols_Comp",
+"p_NormalScopesEmissive": "Weap_Pistol.Tex.Weap_Pistols_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_NormalScopesEmissive": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

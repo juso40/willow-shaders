@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Aster_Prop_DwarfMines.Materials.Master_DwarfGrungeStone.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Aster_Prop_DwarfMines.Materials.Mati_DwarfGrungeConcrete"
+source_object = "Aster_Prop_DwarfMines.Materials.Mati_DwarfGrungeConcrete"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Aster_Prop_DwarfMines.Materials.Master_DwarfGrungeStone"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"P_Grunge_Color": Vector4(0.179775, 0.162225, 0.025803, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Aster_Prop_DwarfMines.Textures.DwarfMines_BuildingRoofTile_Dif"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

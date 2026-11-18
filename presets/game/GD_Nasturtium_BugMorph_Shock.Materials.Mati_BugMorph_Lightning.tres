@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_CreatureShock.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_Nasturtium_BugMorph_Shock.Materials.Mati_BugMorph_Lightning"
+source_object = "GD_Nasturtium_BugMorph_Shock.Materials.Mati_BugMorph_Lightning"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_CreatureShock"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_ShadowsIntensity": 2.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(1.294117, 2.549356, 10.470588, 1.0),
+"p_AColorMidtone": Vector4(1.400415, 3.344797, 15.579627, 1.0),
+"p_AColorShadow": Vector4(2.305758, 2.272441, 20.22472, 1.0),
+"p_BColorHilight": Vector4(1.144529, 1.806836, 5.741935, 1.0),
+"p_BColorMidtone": Vector4(1.021165, 1.054721, 1.975309, 1.0),
+"p_BColorShadow": Vector4(0.245071, 0.286047, 0.797753, 1.0),
+"p_CColorHilight": Vector4(0.846867, 1.7714, 9.529412, 1.0),
+"p_CColorMidtone": Vector4(0.007518, 0.0288, 0.08427, 1.0),
+"p_CColorShadow": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_ColorD": Vector4(0.219375, 0.34458, 1.402349, 1.0),
+"p_EmissiveScale": Vector4(22.626797, 18.996614, 6.682699, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_BugMorph.Textures.Bugmorph_Dif",
+"p_Masks": "Char_BugMorph.Textures.BugmorphTone_Comp",
+"p_Normal": "Char_BugMorph.Textures.Bugmorph_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Player.Master_Player.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "CD_Skins_Siren_MainGame.Mati_OrangeG_Head"
+source_object = "CD_Skins_Siren_MainGame.Mati_OrangeG_Head"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Player.Master_Player"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_HighlightsIntensity": 1.4,
+"p_ShadowsIntensity": 2.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.469596, 0.16482, 0.0, 1.0),
+"p_AColorMidtone": Vector4(0.24861, 0.031016, 0.0, 1.0),
+"p_AColorShadow": Vector4(0.121542, 0.0243, 0.0, 1.0),
+"p_BColorHilight": Vector4(0.314906, 0.132132, 0.0, 1.0),
+"p_BColorMidtone": Vector4(0.038673, 0.022568, 0.017667, 1.0),
+"p_BColorShadow": Vector4(0.331479, 0.109697, 0.0, 1.0),
+"p_CColorHilight": Vector4(0.48617, 0.115227, 0.098135, 1.0),
+"p_CColorShadow": Vector4(0.147049, 0.580089, 0.176906, 1.0),
+"p_EmissiveColor": Vector4(9.047319, 5.671018, 0.023174, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_Siren.Texture.SirenHead_Dif",
+"p_Masks": "Char_Siren.Texture.SirenHead_Msk",
+"p_Normal": "Char_Siren.Texture.SirenHead_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

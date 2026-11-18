@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Char_Nasturtium_Goliath.Materials.Mat_GoliathHelmet_MaskedOut.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Nasturtium_Goliath.Materials.Mati_GoliathHelmet_MaskedOut_Bride"
+source_object = "Char_Nasturtium_Goliath.Materials.Mati_GoliathHelmet_MaskedOut_Bride"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Char_Nasturtium_Goliath.Materials.Mat_GoliathHelmet_MaskedOut"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

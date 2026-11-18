@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Char_Lilith.Materials.Mat_MasterPCBody.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_HandsomeJack.Materials.Mati_HandsomeJack_DyingBody"
+source_object = "Char_HandsomeJack.Materials.Mati_HandsomeJack_DyingBody"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Char_Lilith.Materials.Mat_MasterPCBody"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_PatternIntensity": 10.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_PatternColor": Vector4(0.502744, 0.091884, 0.178725, 2.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_CustomPattern": null,
+"p_Diffuse": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_CustomPattern": "FX_GOR_Textures.Textures.Blood_Overlay_Dif",
+"p_Diffuse": "Char_HandsomeJack.Textures.HandsomeJack_Diff",
+"p_Normal": "Char_HandsomeJack.Textures.HandsomeJack_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_CustomPattern": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

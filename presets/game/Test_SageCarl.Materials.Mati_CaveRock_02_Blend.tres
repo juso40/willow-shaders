@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Test_SageCarl.Materials.RockVeticalBlend.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Test_SageCarl.Materials.Mati_CaveRock_02_Blend"
+source_object = "Test_SageCarl.Materials.Mati_CaveRock_02_Blend"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Test_SageCarl.Materials.RockVeticalBlend"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"DiffuseModB": Vector4(0.25, 0.39, 0.49, 1.0),
+"UpperDarkness": Vector4(0.03, 0.04, 0.05, 1.0),
+"p_WaterScaleHeight": Vector4(0.00014, -12000.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

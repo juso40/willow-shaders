@@ -1,0 +1,55 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Aster_GunMaterials.Materials.Pistol.Mati_Bandit_Quartz_Pistol.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Aster_GunMaterials.Materials.AssaultRifle.Mati_Jakobs_Citrine_AR"
+source_object = "Aster_GunMaterials.Materials.AssaultRifle.Mati_Jakobs_Citrine_AR"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Aster_GunMaterials.Materials.Pistol.Mati_Bandit_Quartz_Pistol"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_EmissiveScale": 0.0,
+"p_ReflectColorScale": 0.25,
+"p_ReplaceDecal": 0.0,
+"p_UseFullColorDecal": 0.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(1.0, 0.988279, 0.453059, 1.0),
+"p_AColorMidtone": Vector4(0.138116, 0.07776, 0.049603, 1.0),
+"p_AColorShadow": Vector4(0.072345, 0.110493, 0.071425, 1.0),
+"p_CColorHilight": Vector4(1.447976, 1.286389, 0.0, 1.0),
+"p_CColorMidtone": Vector4(1.57388, 0.122954, 0.0, 1.0),
+"p_CColorShadow": Vector4(0.524843, 0.055727, 0.0, 1.0),
+"p_DecalChannel": Vector4(0.0, 0.0, 0.0, 0.0),
+"p_DecalScalePosition": Vector4(10.29866, 49.4025, 0.5355, 0.553),
+"p_PatternChannelScale": Vector4(1.0, 0.0, 0.0, 0.0),
+"p_PatternColor": Vector4(1.306407, 0.969467, 1.38166, 1.0),
+"p_PatternScalePosition": Vector4(8.95, 7.5484, -0.0302, 1.0),
+"p_ReflectColor": Vector4(3.906431, 1.770016, 0.431778, 1.0),
+"p_ReflectionChannelScale": Vector4(0.2, 0.1, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Decal": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_NormalScopesEmissive": null,
+"p_Pattern": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Decal": "",
+"p_Diffuse": "Common_GunMaterials.CompTextures.Weap_AssaultSubSniper_Comp",
+"p_Masks": "Weap_AssaultRifles.Tex.Weap_AssaultRifle_Comp",
+"p_NormalScopesEmissive": "Weap_AssaultRifles.Tex.Weap_AssaultRifle_Nrm",
+"p_Pattern": "Common_GunMaterials.Patterns.Pattern_JakobsEpic_SpaltedMaple"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Decal": "",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_NormalScopesEmissive": "Texture2D",
+"p_Pattern": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

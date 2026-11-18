@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_MickZaford.Materials.BowlerHat_Mati"
+source_object = "GD_MickZaford.Materials.BowlerHat_Mati"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.872896, 0.379021, 0.314394, 1.0),
+"p_AColorMidtone": Vector4(0.535892, 0.375935, 0.227987, 1.0),
+"p_AColorShadow": Vector4(0.530367, 0.30336, 0.287169, 1.0),
+"p_BColorHilight": Vector4(0.037007, 0.298332, 0.023469, 1.0),
+"p_BColorMidtone": Vector4(0.028599, 0.088395, 0.022953, 1.0),
+"p_BColorShadow": Vector4(0.009265, 0.044197, 0.006136, 1.0),
+"p_CColorHilight": Vector4(0.810282, 1.0, 0.878532, 1.0),
+"p_CColorMidtone": Vector4(0.035713, 0.071821, 0.038026, 1.0),
+"p_CColorShadow": Vector4(0.222606, 0.281758, 0.238226, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_GenericMale.Textures.IrishLad_Attachments_Dif",
+"p_Masks": "Char_GenericMale.Textures.IrishLad_Attachments_Comp",
+"p_Normal": "Common_Textures.Stub.StubFlat_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

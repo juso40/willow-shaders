@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Buildings.Materials.Mat_NewHavenBuilding1"
+source_object = "Prop_Buildings.Materials.Mat_NewHavenBuilding1"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"Alpha Strength": 0.0,
+"OverallBrightness": 0.6,
+"Saturation": 0.1
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"BuildingColor": Vector4(0.21952, 0.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

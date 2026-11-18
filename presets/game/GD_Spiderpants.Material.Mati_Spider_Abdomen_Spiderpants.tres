@@ -1,0 +1,40 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_Spiderpants.Material.Mati_Spider_Abdomen_Spiderpants"
+source_object = "GD_Spiderpants.Material.Mati_Spider_Abdomen_Spiderpants"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"P_DeathsValue": 0.0,
+"p_fade": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorMidtone": Vector4(1.048584, 0.207833, 0.292924, 1.0),
+"p_BColorMidtone": Vector4(1.0, 0.123289, 0.0, 1.0),
+"p_CColorMidtone": Vector4(1.0, 0.008855, 0.0, 1.0),
+"p_ColorD": Vector4(0.502744, 0.227285, 0.177778, 1.0),
+"p_DissolveColor": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_ElementalDeathColor": Vector4(1.0, 1.0, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_CustomPattern": null,
+"p_Diffuse": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_CustomPattern": "",
+"p_Diffuse": "Prop_Aliens.Textures.AlienPlasterSwirl_Dif",
+"p_Normal": "Char_Aster_Spider.Textures.Creat_CesiumHarvester_Norm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_CustomPattern": "",
+"p_Diffuse": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

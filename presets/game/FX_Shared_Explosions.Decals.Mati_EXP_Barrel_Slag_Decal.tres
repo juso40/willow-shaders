@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_Shared_MasterShaders.Materials.Decals.Decal_Parent_Unlit_Translucent.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Shared_Explosions.Decals.Mati_EXP_Barrel_Slag_Decal"
+source_object = "FX_Shared_Explosions.Decals.Mati_EXP_Barrel_Slag_Decal"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_Shared_MasterShaders.Materials.Decals.Decal_Parent_Unlit_Translucent"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Color_Multiplier": Vector4(0.0, 0.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Decal_Diffuse": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Decal_Diffuse": "FX_Shared_Explosions.Textures.Tex_Barrel_Explosion_Slag"
+})
+texture_object_classes = Dictionary[String, String]({
+"Decal_Diffuse": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

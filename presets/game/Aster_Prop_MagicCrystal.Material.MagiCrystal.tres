@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Aster_Prop_MagicCrystal.Material.MagiCrystal"
+source_object = "Aster_Prop_MagicCrystal.Material.MagiCrystal"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"Crystal_Charge": 0.5,
+"TurnOnFlashing": 0.0,
+"glow_scale": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Inner_Color": Vector4(0.669782, 2.429397, 4.848104, 1.0),
+"Outer_Color": Vector4(0.31257, 0.317991, 0.707156, 1.0),
+"Rim Color": Vector4(0.583504, 0.560162, 0.685058, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Buildings.Materials.Mati_HyperionBuildingEndpiece_01.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Buildings.Materials.Mati_HyperionBuildingEndpiece_01_Yellow"
+source_object = "Prop_Buildings.Materials.Mati_HyperionBuildingEndpiece_01_Yellow"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Buildings.Materials.Mati_HyperionBuildingEndpiece_01"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.0, 0.958774, 1.0, 1.0),
+"p_AColorMidtone": Vector4(0.83972, 0.837725, 0.88587, 1.0),
+"p_AColorShadow": Vector4(0.568289, 0.569309, 0.804348, 1.0),
+"p_BColorHilight": Vector4(0.983696, 0.685053, 0.0, 1.0),
+"p_BColorMidtone": Vector4(0.36413, 0.348651, 0.330488, 1.0),
+"p_BColorShadow": Vector4(0.866667, 0.721569, 0.384314, 1.0),
+"p_CColorHilight": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_CColorMidtone": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_CColorShadow": Vector4(0.0, 0.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Specular": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Prop_Buildings.Textures.HyperionBuildingEndPiece_01_D",
+"p_Masks": "Prop_Buildings.Textures.HyperionBuildingEndPiece_01_Comp",
+"p_Specular": ""
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Specular": ""
+})
+notes = "Instance native static permutation data is not exposed by this dump."

@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_IcePack.Material.Mat_IceFalls.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_IcePack.Material.Mati_Icicles"
+source_object = "Prop_IcePack.Material.Mati_Icicles"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_IcePack.Material.Mat_IceFalls"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"P_CubeMapMultiply": 0.01,
+"P_GlowIntensity": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_DiffuseColor": Vector4(0.236713, 0.260548, 0.280899, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"CubeMap": null
+})
+texture_object_paths = Dictionary[String, String]({
+"CubeMap": "Prop_Skybox.MoveMe.R2Tex_SnowTempCubeStatic"
+})
+texture_object_classes = Dictionary[String, String]({
+"CubeMap": "TextureCube"
+})

@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Water.General_WaterFog.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Water.Materials.Mati_MillWater01"
+source_object = "Prop_Water.Materials.Mati_MillWater01"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Water.General_WaterFog"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"CubeContrast": 1.1,
+"CubeScale": 1.0,
+"Cube_desaturation": 0.2,
+"DiffuseStrength": 0.8,
+"Diffuse_Brightness": 100.0,
+"Diffuse_Contrast": 1.0,
+"Diffuse_desaturation": 0.2,
+"InnerBlendMin": 0.5,
+"InnerDepthBias": 0.85,
+"Opacity": 0.99,
+"OuterDepthBias": 0.9
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"CubeColor": Vector4(0.982826, 0.851252, 0.625345, 0.0),
+"DiffuseColor": Vector4(0.315763, 0.170138, 0.103634, 0.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"CubeMap": null
+})
+texture_object_paths = Dictionary[String, String]({
+"CubeMap": ""
+})
+texture_object_classes = Dictionary[String, String]({
+"CubeMap": ""
+})
+notes = "Instance native static permutation data is not exposed by this dump."

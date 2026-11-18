@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Wire.Materials.Mat_Wires.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Wire.Materials.Mat_INST_Wires_Red"
+source_object = "Prop_Wire.Materials.Mat_INST_Wires_Red"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Wire.Materials.Mat_Wires"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"DiffColor": Vector4(0.386726, 0.057701, 0.062978, 1.0),
+"SpecColor": Vector4(0.773452, 0.0, 0.021279, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Co_Materials.Materials.Mati_Colorize_Split_SMH.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Co_MoonInstDecor.Materials.Mati_Co_TechContainer_01"
+source_object = "Prop_Co_MoonInstDecor.Materials.Mati_Co_TechContainer_01"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Co_Materials.Materials.Mati_Colorize_Split_SMH"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(5.0, 5.0, 5.0, 1.0),
+"p_AColorMidtone": Vector4(3.25415, 2.72119, 2.113908, 1.0),
+"p_AColorShadow": Vector4(7.0, 7.0, 7.0, 1.0),
+"p_BColorHilight": Vector4(0.790026, 0.782655, 0.74638, 1.0),
+"p_BColorMidtone": Vector4(0.757552, 0.733522, 0.615255, 1.0),
+"p_BColorShadow": Vector4(0.994439, 0.890317, 0.377887, 1.0),
+"p_CColorHilight": Vector4(0.790026, 0.734083, 0.45876, 1.0),
+"p_CColorMidtone": Vector4(0.425181, 0.425181, 0.425181, 1.0),
+"p_CColorShadow": Vector4(0.099161, 0.136951, 0.149166, 1.0),
+"p_Color_D": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_Color_Emissive1_A": Vector4(0.127067, 0.127067, 0.127067, 1.0),
+"p_Color_Emissive1_B": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_Color_Emissive1_Base": Vector4(0.05532, 0.740043, 2.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Prop_Co_MoonInstDecor.Textures.Co_TechContainer_01_Diff",
+"p_Masks": ""
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": ""
+})
+notes = "Instance native static permutation data is not exposed by this dump."

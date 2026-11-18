@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Flags.Materials.Mat_RaceStreamers.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Flags.Materials.Mati_RedRaceStreamers"
+source_object = "Prop_Flags.Materials.Mati_RedRaceStreamers"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Flags.Materials.Mat_RaceStreamers"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Desaturation": 1.0,
+"Flag_Saturation_1": -0.2
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Flag_Color_1": Vector4(0.701632, 0.100809, 0.103369, 1.0),
+"Flag_Color_2": Vector4(1.0, 1.0, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

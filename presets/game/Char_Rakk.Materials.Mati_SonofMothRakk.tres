@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Rakk.Materials.Mati_SonofMothRakk"
+source_object = "Char_Rakk.Materials.Mati_SonofMothRakk"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_HighlightsIntensity": 2.0,
+"p_PatternIntensity": 1.0,
+"p_UVChannelSelect": 0.5
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(50.0, 22.481659, 0.0, 1.0),
+"p_AColorMidtone": Vector4(15.744318, 6.62464, 0.0, 1.0),
+"p_AColorShadow": Vector4(50.0, 24.182949, 0.0, 1.0),
+"p_BColorHilight": Vector4(0.182314, 0.125815, 0.011461, 1.0),
+"p_BColorMidtone": Vector4(0.055247, 0.031865, 0.013604, 1.0),
+"p_BColorShadow": Vector4(50.0, 22.254259, 0.0, 1.0),
+"p_CColorHilight": Vector4(23.908192, 11.283613, 0.0, 1.0),
+"p_CColorMidtone": Vector4(0.060771, 0.043113, 0.034919, 1.0),
+"p_CColorShadow": Vector4(50.0, 24.512964, 0.0, 1.0),
+"p_ColorD": Vector4(0.071817, 0.077345, 0.075593, 1.0),
+"p_MuscleFat": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_PatternColor": Vector4(22.6511, 11.317129, 0.0, 2.0),
+"p_PatternScalePosition": Vector4(1.0, 0.557826, 0.0, 0.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_CustomPattern": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_CustomPattern": "FX_CREA_Hyperion.Textures.BlueRed_MuzzleFlash_Dif",
+"p_Diffuse": "Char_Rakk.Textures.Rakk_Diff",
+"p_Masks": "Char_Rakk.Textures.Rakk_Comp",
+"p_Normal": "Char_Rakk.Textures.Rakk_Norm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_CustomPattern": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

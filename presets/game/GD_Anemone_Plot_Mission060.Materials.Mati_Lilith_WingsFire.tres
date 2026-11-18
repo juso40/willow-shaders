@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Char_VoG.Materials.Mat_Digital_Feathers.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_Anemone_Plot_Mission060.Materials.Mati_Lilith_WingsFire"
+source_object = "GD_Anemone_Plot_Mission060.Materials.Mati_Lilith_WingsFire"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Char_VoG.Materials.Mat_Digital_Feathers"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_fade": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"FeatherColor_Base": Vector4(1.355238, 0.239814, 0.122036, 1.0),
+"FeatherColor_Tip": Vector4(1.062527, 0.873776, 0.201889, 1.0),
+"FeatherColor_WingEnd": Vector4(0.43768, 0.513793, 0.105026, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

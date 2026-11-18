@@ -1,0 +1,110 @@
+[gd_scene format=3 uid="uid://dhgc5famg6kb5"]
+
+[ext_resource type="Script" uid="uid://qdihguxmfyh3" path="res://scripts/ui/material_parameter_editor.gd" id="1"]
+[ext_resource type="PackedScene" uid="uid://bflghd1pmap8j" path="res://scenes/ui/parameter_group.tscn" id="2"]
+[ext_resource type="Theme" uid="uid://dp0gr1e124ouj" path="res://themes/editor_theme.tres" id="2_c0xdy"]
+
+[node name="MaterialParameterEditor" type="VBoxContainer" unique_id=1447258833]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_c0xdy")
+theme_override_constants/separation = 12
+script = ExtResource("1")
+
+[node name="Master" type="Label" parent="." unique_id=1582354016]
+unique_name_in_owner = true
+layout_mode = 2
+theme = ExtResource("2_c0xdy")
+text = "Master: none"
+clip_text = true
+text_overrun_behavior = 3
+
+[node name="Filters" type="HBoxContainer" parent="." unique_id=1721025179]
+layout_mode = 2
+theme = ExtResource("2_c0xdy")
+
+[node name="Search" type="LineEdit" parent="Filters" unique_id=1632810396]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("2_c0xdy")
+placeholder_text = "Search parameter names…"
+clear_button_enabled = true
+
+[node name="Overrides" type="CheckBox" parent="Filters" unique_id=373573763]
+unique_name_in_owner = true
+layout_mode = 2
+tooltip_text = "Show only overrides on the editable child MIC, not inherited preset values."
+theme = ExtResource("2_c0xdy")
+text = "Local only"
+
+[node name="Tabs" type="TabContainer" parent="." unique_id=509349579]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 128)
+layout_mode = 2
+size_flags_vertical = 3
+theme = ExtResource("2_c0xdy")
+current_tab = 2
+
+[node name="Textures" type="ScrollContainer" parent="Tabs" unique_id=1936161897]
+visible = false
+layout_mode = 2
+theme = ExtResource("2_c0xdy")
+metadata/_tab_index = 0
+
+[node name="Textures" parent="Tabs/Textures" unique_id=169107183 instance=ExtResource("2")]
+unique_name_in_owner = true
+layout_mode = 2
+theme = ExtResource("2_c0xdy")
+parameter_property = &"TextureParameterValues"
+
+[node name="Scalars" type="ScrollContainer" parent="Tabs" unique_id=3171574]
+visible = false
+layout_mode = 2
+theme = ExtResource("2_c0xdy")
+metadata/_tab_index = 1
+
+[node name="Scalars" parent="Tabs/Scalars" unique_id=410930388 instance=ExtResource("2")]
+unique_name_in_owner = true
+layout_mode = 2
+theme = ExtResource("2_c0xdy")
+
+[node name="Vectors" type="ScrollContainer" parent="Tabs" unique_id=2096467848]
+layout_mode = 2
+theme = ExtResource("2_c0xdy")
+metadata/_tab_index = 2
+
+[node name="Vectors" parent="Tabs/Vectors" unique_id=521542174 instance=ExtResource("2")]
+unique_name_in_owner = true
+layout_mode = 2
+theme = ExtResource("2_c0xdy")
+parameter_property = &"VectorParameterValues"
+
+[node name="Static" type="ScrollContainer" parent="Tabs" unique_id=214427898]
+visible = false
+layout_mode = 2
+theme = ExtResource("2_c0xdy")
+metadata/_tab_index = 3
+
+[node name="Static" type="VBoxContainer" parent="Tabs/Static" unique_id=1266687499]
+layout_mode = 2
+theme = ExtResource("2_c0xdy")
+
+[node name="Masks" parent="Tabs/Static/Static" unique_id=655060770 instance=ExtResource("2")]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 0
+theme = ExtResource("2_c0xdy")
+parameter_property = &"static_component_masks"
+
+[node name="Switches" parent="Tabs/Static/Static" unique_id=336437444 instance=ExtResource("2")]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 0
+theme = ExtResource("2_c0xdy")
+parameter_property = &"static_switches"

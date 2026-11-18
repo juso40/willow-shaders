@@ -1,0 +1,132 @@
+[gd_scene format=3 uid="uid://d2w8qddc5xt5x"]
+
+[ext_resource type="Script" uid="uid://81prxqi45n4r" path="res://scripts/preview/preview_pane.gd" id="1"]
+[ext_resource type="PackedScene" uid="uid://gdcb0nhnt7y5" path="res://scenes/preview/preview_stage.tscn" id="2"]
+[ext_resource type="PackedScene" uid="uid://305xivxt5dcp" path="res://scenes/preview/preview_toolbar.tscn" id="3"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o7s0p"]
+bg_color = Color(0.0546875, 0.0546875, 0.0546875, 0.6)
+corner_radius_top_left = 32
+corner_radius_top_right = 32
+corner_radius_bottom_right = 32
+corner_radius_bottom_left = 32
+expand_margin_left = 2.0
+expand_margin_top = 2.0
+expand_margin_right = 2.0
+expand_margin_bottom = 2.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j6qve"]
+corner_radius_top_left = 32
+corner_radius_top_right = 32
+corner_radius_bottom_right = 32
+corner_radius_bottom_left = 32
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dropflash"]
+bg_color = Color(1, 1, 1, 0)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.4, 0.85, 0.5, 1)
+corner_radius_top_left = 32
+corner_radius_top_right = 32
+corner_radius_bottom_right = 32
+corner_radius_bottom_left = 32
+
+[node name="PreviewPane" type="VBoxContainer" unique_id=742293043]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 1
+script = ExtResource("1")
+
+[node name="BlankSpace" type="Control" parent="." unique_id=639168652]
+custom_minimum_size = Vector2(0, 7)
+layout_mode = 2
+
+[node name="Header" type="HBoxContainer" parent="." unique_id=1070055630]
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="Title" type="Label" parent="Header" unique_id=919131465]
+layout_mode = 2
+theme_type_variation = &"SectionLabel"
+text = "Preview"
+vertical_alignment = 1
+
+[node name="Hint" type="Label" parent="Header" unique_id=525401817]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 13
+text = "RMB orbit   •   LMB pan   •   Wheel zoom   •   F frame"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=1544977699]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_o7s0p")
+
+[node name="PanelContainer" type="PanelContainer" parent="PanelContainer" unique_id=1470875228]
+clip_children = 2
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_j6qve")
+
+[node name="ViewportContainer" type="SubViewportContainer" parent="PanelContainer/PanelContainer" unique_id=692354666]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+focus_mode = 2
+stretch = true
+
+[node name="Toolbar" parent="PanelContainer/PanelContainer/ViewportContainer" unique_id=1269033626 instance=ExtResource("3")]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+offset_transform_visual_only = false
+
+[node name="Viewport" type="SubViewport" parent="PanelContainer/PanelContainer/ViewportContainer" unique_id=1840227890]
+unique_name_in_owner = true
+own_world_3d = true
+handle_input_locally = false
+size = Vector2i(1440, 895)
+render_target_update_mode = 4
+
+[node name="Stage" parent="PanelContainer/PanelContainer/ViewportContainer/Viewport" unique_id=616278376 instance=ExtResource("2")]
+unique_name_in_owner = true
+
+[node name="DropHint" type="Label" parent="PanelContainer/PanelContainer" unique_id=2016050329]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 16
+text = "Drop a GLB model here
+or press Import model"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DropFlash" type="Panel" parent="PanelContainer/PanelContainer" unique_id=2046536451]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_dropflash")
+
+[node name="Status" type="Label" parent="." unique_id=1194156096]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 34)
+layout_mode = 2
+size_flags_vertical = 8
+theme_override_font_sizes/font_size = 13
+text = "Choose a preview object, or import a GLB."
+vertical_alignment = 1
+text_overrun_behavior = 3
+
+[connection signal="gui_input" from="PanelContainer/PanelContainer/ViewportContainer" to="." method="_on_preview_input"]

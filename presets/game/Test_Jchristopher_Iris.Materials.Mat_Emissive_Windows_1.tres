@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Test_Jchristopher_Iris.Materials.Mat_Emissive_Windows_Test.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Test_Jchristopher_Iris.Materials.Mat_Emissive_Windows_1"
+source_object = "Test_Jchristopher_Iris.Materials.Mat_Emissive_Windows_1"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Test_Jchristopher_Iris.Materials.Mat_Emissive_Windows_Test"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"BuildingLights": Vector4(0.0, 0.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

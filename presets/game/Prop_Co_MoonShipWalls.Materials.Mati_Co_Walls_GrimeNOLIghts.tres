@@ -1,0 +1,64 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Co_Materials.Materials.Mati_Colorize_Split_SMH.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Co_MoonShipWalls.Materials.Mati_Co_Walls_GrimeNOLIghts"
+source_object = "Prop_Co_MoonShipWalls.Materials.Mati_Co_Walls_GrimeNOLIghts"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Co_Materials.Materials.Mati_Colorize_Split_SMH"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_Pattern_WorldPositionOffset": 0.38,
+"p_SpecMult": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"PatternFilter": Vector4(1.0, 0.499505, 1.0, 1.0),
+"p_AColorHilight": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_AColorMidtone": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_AColorShadow": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_BColorHilight": Vector4(0.884845, 1.0, 0.850834, 1.0),
+"p_BColorMidtone": Vector4(0.789931, 1.0, 0.740341, 1.0),
+"p_BColorShadow": Vector4(0.858164, 1.0, 0.84531, 1.0),
+"p_CColorHilight": Vector4(0.207175, 0.207175, 0.207175, 1.0),
+"p_CColorMidtone": Vector4(1.13808, 1.13808, 1.13808, 1.0),
+"p_CColorShadow": Vector4(1.0, 0.422236, 0.243122, 1.0),
+"p_Color_D": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_Color_Emissive1_A": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_Color_Emissive1_B": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_Color_Emissive1_Base": Vector4(0.0, 0.009072, 0.011049, 1.0),
+"p_Color_Highlight": Vector4(0.143641, 0.143641, 0.143641, 1.0),
+"p_Color_Spec_1": Vector4(0.099444, 0.099444, 0.099444, 10.0),
+"p_Color_Spec_2": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_Color_Spec_Emissive": Vector4(0.0, 0.0, 0.0, 200.0),
+"p_Color_Texture1_A": Vector4(0.598893, 0.667639, 0.712681, 1.0),
+"p_Color_Texture1_B": Vector4(0.712681, 0.0, 0.035222, 1.0),
+"p_Color_Texture1_Base": Vector4(0.598893, 0.667639, 0.712681, 1.0),
+"p_Color_Texture1_C": Vector4(0.662264, 0.701896, 0.835328, 1.0),
+"p_Color_Texture1_D": Vector4(0.132592, 0.000415, 0.040934, 1.0),
+"p_Color_Texture2_A": Vector4(0.253066, 0.254134, 0.242902, 1.0),
+"p_Color_Texture2_B": Vector4(1.0, 0.469426, 0.0, 1.0),
+"p_Color_Texture2_Base": Vector4(0.950241, 0.950241, 0.950241, 1.0),
+"p_DiffMod": Vector4(0.410835, 0.428714, 0.424674, 1.0),
+"p_PatternColor_A": Vector4(1.0, 0.589345, 0.341355, 1.0),
+"p_PatternColor_B": Vector4(0.469596, 0.469596, 0.469596, 1.0),
+"p_PatternPositionScale": Vector4(-0.25, -0.6, 1.5, 1.5)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Pattern_Overlay": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Prop_Co_MoonShipWalls.Textures.MoonShip_Wall_Diff",
+"p_Masks": "Prop_Co_MoonShipWalls.Textures.MoonShipWalls_Mask",
+"p_Pattern_Overlay": ""
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Pattern_Overlay": ""
+})
+notes = "Instance native static permutation data is not exposed by this dump."

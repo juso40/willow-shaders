@@ -1,0 +1,53 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/GD_Anemone_Weapons.Rocket_Launcher.WorldBurn.MasterMati_Torgue_Effervescent.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_Anemone_Weapons.Rocket_Launcher.WorldBurn.Mati_Torgue_Effervescent_RL"
+source_object = "GD_Anemone_Weapons.Rocket_Launcher.WorldBurn.Mati_Torgue_Effervescent_RL"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "GD_Anemone_Weapons.Rocket_Launcher.WorldBurn.MasterMati_Torgue_Effervescent"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_UseFullColorDecal": 0.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(1.601734, 0.896866, 0.346006, 1.0),
+"p_AColorMidtone": Vector4(1.630593, 0.510862, 0.054111, 1.0),
+"p_AColorShadow": Vector4(1.0, 0.1081, 0.11167, 1.0),
+"p_BColorMidtone": Vector4(0.232036, 0.087179, 0.087569, 1.0),
+"p_BColorShadow": Vector4(0.140224, 0.168666, 0.209937, 1.0),
+"p_CColorHilight": Vector4(1.0, 0.0, 0.003885, 1.0),
+"p_CColorMidtone": Vector4(1.0, 0.0, 0.003697, 1.0),
+"p_CColorShadow": Vector4(0.115073, 0.117035, 0.160215, 1.0),
+"p_DecalChannel": Vector4(1.0, 0.0, 0.0, 0.0),
+"p_DecalColor": Vector4(6.032215, 2.718926, 0.495946, 1.0),
+"p_DecalScalePosition": Vector4(10.410398, 24.1682, 0.5835, 0.5597),
+"p_PatternChannelScale": Vector4(0.0, 0.0, 0.0, 0.0),
+"p_PatternScalePosition": Vector4(3.1008, 27.299612, 0.8379, 0.2335),
+"p_ReflectColor": Vector4(2.966998, 1.547706, 0.491859, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Decal": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_NormalScopesEmissive": null,
+"p_Pattern": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Decal": "Common_GunMaterials.Logos.Logo_Logan5th",
+"p_Diffuse": "Common_GunMaterials.CompTextures.Weap_LauncherShotgunPistol_Comp",
+"p_Masks": "Weap_Launchers.Tex.Weap_Launchers_Comp",
+"p_NormalScopesEmissive": "Weap_Launchers.Tex.Weap_Launchers_Nrm",
+"p_Pattern": ""
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Decal": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_NormalScopesEmissive": "Texture2D",
+"p_Pattern": ""
+})
+notes = "Instance native static permutation data is not exposed by this dump."

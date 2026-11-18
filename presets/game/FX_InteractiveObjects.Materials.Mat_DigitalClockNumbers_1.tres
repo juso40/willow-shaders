@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_InteractiveObjects.Materials.Mat_DigitalClockNumbers_ZMaster.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_InteractiveObjects.Materials.Mat_DigitalClockNumbers_1"
+source_object = "FX_InteractiveObjects.Materials.Mat_DigitalClockNumbers_1"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_InteractiveObjects.Materials.Mat_DigitalClockNumbers_ZMaster"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Daytime": 1.0,
+"XAxis": 0.25,
+"YAxis": 0.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"NumbersTex": null
+})
+texture_object_paths = Dictionary[String, String]({
+"NumbersTex": "FX_InteractiveObjects.Textures.Clock_Numbers_Dif"
+})
+texture_object_classes = Dictionary[String, String]({
+"NumbersTex": "Texture2D"
+})

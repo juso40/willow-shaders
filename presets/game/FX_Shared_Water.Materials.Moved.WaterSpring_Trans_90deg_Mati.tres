@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_BulletImpacts.Materials.Mat_WaterSpring_Trans_90deg_Dup.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Shared_Water.Materials.Moved.WaterSpring_Trans_90deg_Mati"
+source_object = "FX_Shared_Water.Materials.Moved.WaterSpring_Trans_90deg_Mati"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_BulletImpacts.Materials.Mat_WaterSpring_Trans_90deg_Dup"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"color_adjust": Vector4(1.0, 1.0, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

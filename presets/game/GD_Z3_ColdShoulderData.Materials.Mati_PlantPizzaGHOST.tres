@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Environment.Master_WorldTranslucent2Sided.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_Z3_ColdShoulderData.Materials.Mati_PlantPizzaGHOST"
+source_object = "GD_Z3_ColdShoulderData.Materials.Mati_PlantPizzaGHOST"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Environment.Master_WorldTranslucent2Sided"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_GhostIntensity": 0.25,
+"p_OpacityMod": 0.15,
+"p_Use2DOpacity": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_EmissiveScale": Vector4(0.219942, 0.822472, 0.251568, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Opacity": null,
+"p_emissive": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Opacity": "Prop_Plants.Textures.BlosomStalk_Dif",
+"p_emissive": "Prop_Plants.Textures.BlosomStalk_Dif"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Opacity": "Texture2D",
+"p_emissive": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

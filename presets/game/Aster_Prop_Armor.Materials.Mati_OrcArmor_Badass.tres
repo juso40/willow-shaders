@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Aster_Common_Materials.Creature.Aster_Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Aster_Prop_Armor.Materials.Mati_OrcArmor_Badass"
+source_object = "Aster_Prop_Armor.Materials.Mati_OrcArmor_Badass"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Aster_Common_Materials.Creature.Aster_Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.688636, 0.667296, 0.484093, 1.0),
+"p_AColorMidtone": Vector4(0.408825, 0.337446, 0.229677, 1.0),
+"p_AColorShadow": Vector4(0.149166, 0.126255, 0.0, 1.0),
+"p_BColorHilight": Vector4(0.975799, 1.032492, 1.131245, 1.0),
+"p_BColorMidtone": Vector4(1.469452, 1.57795, 1.927303, 1.0),
+"p_BColorShadow": Vector4(0.005514, 0.011146, 0.016574, 1.0),
+"p_CColorHilight": Vector4(0.160215, 0.078461, 0.032756, 1.0),
+"p_CColorMidtone": Vector4(0.15469, 0.10285, 0.058119, 1.0),
+"p_CColorShadow": Vector4(0.025371, 0.015175, 0.013473, 1.0),
+"p_ColorD": Vector4(1.0, 1.0, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Aster_Prop_Armor.Textures.Orc_Armor_Diff",
+"p_Masks": "Aster_Prop_Armor.Textures.Orc_Armor_Mask",
+"p_Normal": "Aster_Prop_Armor.Textures.Orc_Armor_Norm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

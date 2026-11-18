@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_MoonBase.Materials.Mat_MoonBase_02a_Skybox.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_MoonBase.Materials.Mati_MoonBase_02a_Skybox"
+source_object = "Prop_MoonBase.Materials.Mati_MoonBase_02a_Skybox"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_MoonBase.Materials.Mat_MoonBase_02a_Skybox"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Brightness": 1.0,
+"Emissive_Mult": 4.0,
+"Fog_Intensity": 0.02
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"": Vector4(10.0, 1.57063, 1.348217, 1.0),
+"Fog": Vector4(0.2, 0.2, 0.2, 1.0),
+"MoonBase_Color": Vector4(0.939937, 0.293104, 0.0, 1.0),
+"RimLight_Color": Vector4(0.605484, 0.0, 0.089015, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

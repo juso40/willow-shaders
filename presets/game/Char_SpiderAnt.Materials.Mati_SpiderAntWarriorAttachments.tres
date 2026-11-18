@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Char_SpiderAnt.Materials.Char_SpiderAntAttachments.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_SpiderAnt.Materials.Mati_SpiderAntWarriorAttachments"
+source_object = "Char_SpiderAnt.Materials.Mati_SpiderAntWarriorAttachments"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Char_SpiderAnt.Materials.Char_SpiderAntAttachments"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_BColorMidtone": Vector4(0.356894, 0.409718, 0.872896, 1.0),
+"p_BColorShadow": Vector4(0.291814, 0.337723, 0.563515, 1.0),
+"p_CColorHilight": Vector4(0.435511, 0.443372, 0.679533, 1.0),
+"p_CColorMidtone": Vector4(0.309418, 0.347165, 1.0, 1.0),
+"p_CColorShadow": Vector4(0.843188, 0.877005, 1.16025, 1.0),
+"p_PatternColor": Vector4(0.228842, 0.250761, 0.392251, 2.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

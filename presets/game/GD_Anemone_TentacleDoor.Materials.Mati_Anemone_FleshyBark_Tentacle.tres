@@ -1,0 +1,38 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Anemone_Prop_Infection.Materials.Mat_Anemone_InfectionPlants.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_Anemone_TentacleDoor.Materials.Mati_Anemone_FleshyBark_Tentacle"
+source_object = "GD_Anemone_TentacleDoor.Materials.Mati_Anemone_FleshyBark_Tentacle"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Anemone_Prop_Infection.Materials.Mat_Anemone_InfectionPlants"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Base Radius": 0.0,
+"BaseRadiusEmissive": 10000.0,
+"DiffuseUV": 4.0,
+"EmissiveMaskTiling": 0.2,
+"WorldDisplacementMult": 2.5
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Diffuse": null,
+"EmissiveMask": null,
+"Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Diffuse": "Anemone_Prop_Infection.Textures.T_Anemone_FleshyBark_V1_Dif",
+"EmissiveMask": "Anemone_Prop_Infection.Textures.T_Anemone_FleshyBark_V1_Em",
+"Normal": "Anemone_Prop_Infection.Textures.T_Anemone_FleshyBark_V1_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"Diffuse": "Texture2D",
+"EmissiveMask": "Texture2D",
+"Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Env_Fridge.Materials.Mat_LightConeMod.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_Easter.Materials.Mati_LightConeMod_LightBlue"
+source_object = "Env_Easter.Materials.Mati_LightConeMod_LightBlue"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Env_Fridge.Materials.Mat_LightConeMod"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Contrast": 0.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"BeamColor": Vector4(0.996721, 0.398874, 0.376703, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

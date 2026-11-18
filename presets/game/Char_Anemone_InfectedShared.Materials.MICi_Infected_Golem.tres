@@ -1,0 +1,40 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Char_Anemone_InfectedShared.Materials.Master_Creature_Infected.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Anemone_InfectedShared.Materials.MICi_Infected_Golem"
+source_object = "Char_Anemone_InfectedShared.Materials.MICi_Infected_Golem"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Char_Anemone_InfectedShared.Materials.Master_Creature_Infected"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"WorldDisplacementMult": 0.0,
+"p_PatternIntensity": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.3312, 0.455056, 0.04346, 1.0),
+"p_AColorMidtone": Vector4(0.622051, 1.0, 0.192475, 1.0),
+"p_AColorShadow": Vector4(0.095897, 0.138757, 0.168539, 1.0),
+"p_BColorHilight": Vector4(0.388508, 0.58427, 0.222914, 1.0),
+"p_BColorMidtone": Vector4(0.229849, 0.561798, 0.293737, 1.0),
+"p_BColorShadow": Vector4(0.501038, 0.634831, 0.152306, 1.0),
+"p_CColorHilight": Vector4(0.358429, 0.460674, 0.051761, 1.0),
+"p_CColorMidtone": Vector4(0.337079, 0.312543, 0.073854, 1.0),
+"p_CColorShadow": Vector4(0.224578, 0.241573, 0.059759, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_Anemone_InfectedShared.Texture.T_Infected_Golem_D",
+"p_Normal": "Char_Anemone_InfectedShared.Texture.T_Infected_Golem_N"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

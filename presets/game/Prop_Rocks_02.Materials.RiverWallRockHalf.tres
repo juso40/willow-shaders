@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Rocks_02.Materials.Mat_RiverWallRock.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Rocks_02.Materials.RiverWallRockHalf"
+source_object = "Prop_Rocks_02.Materials.RiverWallRockHalf"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Rocks_02.Materials.Mat_RiverWallRock"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_HorizontalScale": 0.5
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "TorgueMaterials.Materials.Mati_Iris_Engineer_Torgue"
+source_object = "TorgueMaterials.Materials.Mati_Iris_Engineer_Torgue"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.900519, 0.097596, 0.089584, 1.0),
+"p_AColorMidtone": Vector4(0.795551, 0.00786, 0.0, 1.0),
+"p_AColorShadow": Vector4(0.382022, 0.0, 0.006209, 1.0),
+"p_BColorHilight": Vector4(0.933667, 0.593627, 0.298983, 1.0),
+"p_BColorMidtone": Vector4(0.801075, 0.418465, 0.265525, 1.0),
+"p_BColorShadow": Vector4(0.060771, 0.051013, 0.033467, 1.0),
+"p_CColorHilight": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_CColorMidtone": Vector4(0.414349, 0.0, 0.053881, 1.0),
+"p_CColorShadow": Vector4(0.202247, 0.161343, 0.161343, 1.0),
+"p_ColorD": Vector4(0.502744, 0.502744, 0.502744, 1.0),
+"p_EmissiveScale": Vector4(0.0, 0.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_HyperionWorker.Textures.HyperionWorker_Dif",
+"p_Masks": "Char_HyperionWorker.Textures.HyperionWorker_Msk",
+"p_Normal": "Char_HyperionWorker.Textures.HyperionWorker_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

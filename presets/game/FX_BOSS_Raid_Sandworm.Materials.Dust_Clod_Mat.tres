@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_BOSS_Raid_Sandworm.Materials.Dust_Clod_Mat"
+source_object = "FX_BOSS_Raid_Sandworm.Materials.Dust_Clod_Mat"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"NearCulling": 700.0,
+"NearCullingFadeStart": 1000.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Diffuse": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Diffuse": "FX_Fast_Travel.Textures.Snow_Splash_UV_Dif"
+})
+texture_object_classes = Dictionary[String, String]({
+"Diffuse": "Texture2D"
+})
+static_switches = Dictionary[String, bool]({
+"sw_use_Diffuse": false
+})

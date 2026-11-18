@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_Allium_MarauderSnow.Materials.Mati_Snow_Helmet"
+source_object = "GD_Allium_MarauderSnow.Materials.Mati_Snow_Helmet"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorMidtone": Vector4(0.144693, 0.124047, 0.176789, 1.0),
+"p_AColorShadow": Vector4(0.690434, 0.715563, 0.801075, 1.0),
+"p_BColorHilight": Vector4(0.502744, 0.104631, 0.094453, 1.0),
+"p_BColorMidtone": Vector4(0.447497, 0.126882, 0.118685, 1.0),
+"p_BColorShadow": Vector4(1.0, 0.589564, 0.248646, 1.0),
+"p_CColorHilight": Vector4(0.0, 0.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_Allium_SandPirates.Texture.Anchorman_Head01_Dif",
+"p_Masks": "Char_Allium_SandPirates.Texture.Anchorman_Head01_Comp",
+"p_Normal": "Char_Allium_SandPirates.Texture.Anchorman_Head01_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

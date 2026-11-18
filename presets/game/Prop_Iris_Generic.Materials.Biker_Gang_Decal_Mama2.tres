@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Iris_Generic.Materials.Biker_Gang_Decals.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Iris_Generic.Materials.Biker_Gang_Decal_Mama2"
+source_object = "Prop_Iris_Generic.Materials.Biker_Gang_Decal_Mama2"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Iris_Generic.Materials.Biker_Gang_Decals"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Brightness": 0.5
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Paint Color": Vector4(0.121197, 0.898876, 0.301355, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Diffuse Texture": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Diffuse Texture": "Prop_Iris_Generic.Textures.Gang_Decals_Comp"
+})
+texture_object_classes = Dictionary[String, String]({
+"Diffuse Texture": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

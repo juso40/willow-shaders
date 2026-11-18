@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_GunMaterials.MasterMaterials.Hyperion.MasterMati_HyperionRare.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Common_GunMaterials.Materials.sniper.Mati_HyperionUniqueSR_FremingtonsEdge"
+source_object = "Common_GunMaterials.Materials.sniper.Mati_HyperionUniqueSR_FremingtonsEdge"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_GunMaterials.MasterMaterials.Hyperion.MasterMati_HyperionRare"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_ReplaceDecal": 1.0,
+"p_UseFullColorDecal": 0.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_BColorHilight": Vector4(2.350533, 1.716818, 0.311748, 1.0),
+"p_BColorMidtone": Vector4(1.0, 0.751835, 0.3101, 1.0),
+"p_BColorShadow": Vector4(0.4033, 0.054497, 0.055936, 1.0),
+"p_DecalColor": Vector4(2.3204, 0.101233, 0.025724, 0.6683),
+"p_DecalScalePosition": Vector4(10.29866, 28.111099, 0.5303, 0.5216),
+"p_PatternChannelScale": Vector4(1.0, 0.0, 0.0, 0.0),
+"p_PatternScalePosition": Vector4(16.5639, 16.17, 0.0, 0.0),
+"p_ReflectColor": Vector4(1.190781, 0.998231, 0.296083, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"P_SimpleReflect": null,
+"p_Decal": null,
+"p_Masks": null,
+"p_NormalScopesEmissive": null,
+"p_Pattern": null
+})
+texture_object_paths = Dictionary[String, String]({
+"P_SimpleReflect": "Common_GunMaterials.Env.GlossyB",
+"p_Decal": "Common_GunMaterials.Patterns.Logo_Fibber",
+"p_Masks": "Weap_SniperRifles.Tex.Weap_SniperRifle_Comp",
+"p_NormalScopesEmissive": "Weap_SniperRifles.Tex.Weap_SniperRifle_Nrm",
+"p_Pattern": "Common_GunMaterials.Patterns.Pattern_MetalPebbled"
+})
+texture_object_classes = Dictionary[String, String]({
+"P_SimpleReflect": "Texture2D",
+"p_Decal": "Texture2D",
+"p_Masks": "Texture2D",
+"p_NormalScopesEmissive": "Texture2D",
+"p_Pattern": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

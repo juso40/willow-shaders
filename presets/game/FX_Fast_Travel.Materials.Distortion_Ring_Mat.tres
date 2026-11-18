@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Fast_Travel.Materials.Distortion_Ring_Mat"
+source_object = "FX_Fast_Travel.Materials.Distortion_Ring_Mat"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"DistortionAmount": 50.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Mask": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Mask": "FX_Shared_Energy.Textures.DistantLightning_Dif_Tex"
+})
+texture_object_classes = Dictionary[String, String]({
+"Mask": "Texture2D"
+})
+static_switches = Dictionary[String, bool]({
+"CutinHalf": false,
+"Radial": true
+})

@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Stalker.Materials.Mati_StalkerName1Attach"
+source_object = "Char_Stalker.Materials.Mati_StalkerName1Attach"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_ShadowsIntensity": 2.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.393199, 0.435439, 0.696629, 1.0),
+"p_AColorMidtone": Vector4(0.207865, 0.207865, 0.207865, 1.0),
+"p_AColorShadow": Vector4(0.426473, 0.580509, 1.053254, 1.0),
+"p_BColorHilight": Vector4(0.981599, 1.0, 0.963198, 1.0),
+"p_BColorMidtone": Vector4(1.761905, 0.624211, 0.188068, 1.0),
+"p_BColorShadow": Vector4(0.097826, 0.0, 0.002092, 0.0),
+"p_CColorHilight": Vector4(2.117647, 1.139404, 0.264626, 1.0),
+"p_CColorMidtone": Vector4(0.902899, 0.659461, 0.169245, 1.0),
+"p_CColorShadow": Vector4(0.558494, 0.497683, 0.075599, 1.0),
+"p_ColorD": Vector4(0.039548, 0.025396, 0.006574, 1.0),
+"p_MuscleFat": Vector4(1.0, 1.0, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_CustomPattern": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_CustomPattern": "",
+"p_Diffuse": "Char_Stalker.Texture.StalkerAttachments_Dif",
+"p_Masks": "Char_Stalker.Texture.StalkerAttachments_Comp",
+"p_Normal": "Char_Stalker.Texture.StalkerAttachments_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_CustomPattern": "",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

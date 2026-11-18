@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Environment.Master_World.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Trim.Mati_AwningDetail"
+source_object = "Prop_Trim.Mati_AwningDetail"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Environment.Master_World"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Spec Brightness": 6.0,
+"Spec Color": 0.2,
+"Spec Contrast": 3.4,
+"spec power": 12.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Diffuse and Specular": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Diffuse and Specular": ""
+})
+texture_object_classes = Dictionary[String, String]({
+"Diffuse and Specular": ""
+})

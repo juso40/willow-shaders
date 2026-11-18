@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Char_Aster_ButtStallion.Materials.Mat_ButtStallion_DiamondPile.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_CastleKeep.Materials.Mat_DiamondPile_Inst_Brighter"
+source_object = "Env_CastleKeep.Materials.Mat_DiamondPile_Inst_Brighter"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Char_Aster_ButtStallion.Materials.Mat_ButtStallion_DiamondPile"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_EmissiveColor": Vector4(0.443094, 0.443094, 0.567416, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Flax_Snowman.Materials.Master_Snowman_NOMELT"
+source_object = "Char_Flax_Snowman.Materials.Master_Snowman_NOMELT"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"p_NegativeCompression": 0.01,
+"p_PositiveCompression": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_DiffuseScale": Vector4(1.0, 1.0, 0.0, 1.0),
+"p_DiffuseTint": Vector4(1.0, 1.05, 1.25, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_Flax_Snowman.Textures.Snowbosspattern_Dif"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D"
+})

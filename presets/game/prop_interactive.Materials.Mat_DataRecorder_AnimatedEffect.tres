@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "prop_interactive.Materials.Mat_DataRecorder_AnimatedEffect"
+source_object = "prop_interactive.Materials.Mat_DataRecorder_AnimatedEffect"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"Global_Amplitude_Scale": 0.5,
+"ScanLineResolution": 60.0,
+"Visibility": 1.0,
+"WaveA_Amplitude": 1.0,
+"WaveA_Frequency": 3.0,
+"WaveB_Amplitude": 1.0,
+"WaveB_Frequency": 1.0,
+"WaveC_Amplitude": 1.0,
+"WaveC_Frequency": 2.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Color": Vector4(0.120694, 0.787704, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

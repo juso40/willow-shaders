@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Easter_Village.Easter_Building_Master_Mat.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Easter_Village.EasterBuilding_01_Pink_Mati"
+source_object = "Prop_Easter_Village.EasterBuilding_01_Pink_Mati"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Easter_Village.Easter_Building_Master_Mat"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Paint Color": Vector4(1.551162, 0.334538, 0.770598, 2.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

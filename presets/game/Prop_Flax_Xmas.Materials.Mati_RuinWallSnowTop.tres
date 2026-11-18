@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Flax_Xmas.Materials.Master_SnowTop.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Flax_Xmas.Materials.Mati_RuinWallSnowTop"
+source_object = "Prop_Flax_Xmas.Materials.Mati_RuinWallSnowTop"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Flax_Xmas.Materials.Master_SnowTop"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"ColorMap_Coordinate": Vector4(0.5, 0.5, 0.5, 0.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Color_Map": null,
+"p_Diffuse": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Color_Map": "Prop_Flax_Xmas.Textures.Ruins_Set_Color",
+"p_Diffuse": "Prop_Flax_Xmas.Textures.Ruins_Set_Comp",
+"p_Normal": "Prop_Flax_Xmas.Textures.Ruin_Wall_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"Color_Map": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

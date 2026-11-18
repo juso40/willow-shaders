@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/GD_DigiCreaturesShared.Materials.Master_Lobelia_CreatureDigital_Digistruct.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_MrMercy_Digi.Materials.Mati_GenerallyHospitalSign_Digi"
+source_object = "GD_MrMercy_Digi.Materials.Mati_GenerallyHospitalSign_Digi"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "GD_DigiCreaturesShared.Materials.Master_Lobelia_CreatureDigital_Digistruct"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_FxScaleDigi": 3.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_DigiColor": Vector4(0.060914, 0.29316, 1.0, 3.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "prop_signs.GenerallyHospitalSign_Dif",
+"p_Normal": "Common_Textures.Stub.StubFlat_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

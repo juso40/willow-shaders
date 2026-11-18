@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Cameras.Materials.Mat_SecCamera.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Cameras.Materials.Mati_SecCamera"
+source_object = "Prop_Cameras.Materials.Mati_SecCamera"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Cameras.Materials.Mat_SecCamera"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Color": Vector4(10.0, 0.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

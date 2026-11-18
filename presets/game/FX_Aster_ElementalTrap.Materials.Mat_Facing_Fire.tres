@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_Aster_ElementalTrap.Materials.Mat_Facing_Additive.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Aster_ElementalTrap.Materials.Mat_Facing_Fire"
+source_object = "FX_Aster_ElementalTrap.Materials.Mat_Facing_Fire"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_Aster_ElementalTrap.Materials.Mat_Facing_Additive"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Mask": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Mask": "FX_Shared_Fire.Textures.Tex_Fire_Flipbook_03"
+})
+texture_object_classes = Dictionary[String, String]({
+"Mask": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

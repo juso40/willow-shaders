@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_ForceField.Materials.Mat_HyperionField"
+source_object = "Prop_ForceField.Materials.Mat_HyperionField"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"p_brightness": 0.5,
+"p_shield_erase": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_base": Vector4(0.133209, 0.084357, 0.009044, 1.0),
+"p_edge_color": Vector4(0.133209, 0.054357, 0.009, 1.0),
+"p_logo_color": Vector4(0.133209, 0.084357, 0.009, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

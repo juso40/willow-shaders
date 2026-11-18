@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_Aster_RockGollum.Materials.Mat_RockChunks.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Aster_Mines.Materials.Mati_Aster_FloatingRocks"
+source_object = "FX_Aster_Mines.Materials.Mati_Aster_FloatingRocks"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_Aster_RockGollum.Materials.Mat_RockChunks"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Light_Z": -1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"AmbientColor": Vector4(0.02, 0.017, 0.01, 1.0),
+"LightColor": Vector4(0.8125, 0.703125, 0.394531, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

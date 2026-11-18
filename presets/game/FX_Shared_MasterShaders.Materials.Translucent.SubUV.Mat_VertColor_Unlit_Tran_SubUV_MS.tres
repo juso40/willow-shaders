@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Shared_MasterShaders.Materials.Translucent.SubUV.Mat_VertColor_Unlit_Tran_SubUV_MS"
+source_object = "FX_Shared_MasterShaders.Materials.Translucent.SubUV.Mat_VertColor_Unlit_Tran_SubUV_MS"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"Depth_Bias_Value": -15.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Emissive_GP": null,
+"Opc_GP": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Emissive_GP": "Common_Textures.Stub.StubGray_Gray",
+"Opc_GP": "Common_Textures.Stub.StubGray_Gray"
+})
+texture_object_classes = Dictionary[String, String]({
+"Emissive_GP": "Texture2D",
+"Opc_GP": "Texture2D"
+})
+static_component_masks = Dictionary[String, Vector4]({
+"OPC_Mask_Channel": Vector4(1.0, 0.0, 0.0, 0.0)
+})
+static_switches = Dictionary[String, bool]({
+"p_useworldlightcolor": false,
+"sw_Alpha_Clamp_Off": false,
+"sw_Depth_Biased_Alpha_On": false,
+"sw_SingleGP_or_DXT5": false
+})

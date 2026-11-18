@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/GD_DigiCreaturesShared.Materials.Master_Lobelia_CreatureDigital_Digistruct.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_Assassin1_Digi.Materials.Mati_Marauder_Assassin1_Digi"
+source_object = "GD_Assassin1_Digi.Materials.Mati_Marauder_Assassin1_Digi"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "GD_DigiCreaturesShared.Materials.Master_Lobelia_CreatureDigital_Digistruct"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(1.0, 0.592184, 0.634551, 1.0),
+"p_AColorMidtone": Vector4(2.129323, 1.967275, 0.22359, 1.0),
+"p_AColorShadow": Vector4(0.39455, 0.516, 1.0, 1.0),
+"p_BColorHilight": Vector4(0.6488, 1.088707, 1.238769, 1.0),
+"p_BColorMidtone": Vector4(0.212448, 0.23346, 0.441973, 1.0),
+"p_BColorShadow": Vector4(0.402972, 0.419874, 0.264457, 1.0),
+"p_CColorHilight": Vector4(0.65606, 0.679533, 0.524992, 1.0),
+"p_CColorMidtone": Vector4(0.224275, 0.226511, 0.203975, 1.0),
+"p_CColorShadow": Vector4(0.430923, 0.384379, 0.329245, 1.0),
+"p_DigiColor": Vector4(0.116213, 0.279842, 1.0, 3.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_Bandit_Marauder.Textures.BanditMarauder_Diff",
+"p_Masks": "Char_Bandit_Marauder.Textures.BanditMarauderTone_Comp",
+"p_Normal": "Char_Bandit_Marauder.Textures.BanditMarauder_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Carnival.Materials.Mat_PenaltyBox_01"
+source_object = "Prop_Carnival.Materials.Mat_PenaltyBox_01"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"Brightness": 9.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"BloodSplat": Vector4(0.493616, 0.0, 0.000107, 1.0),
+"EmissiveColor": Vector4(1.0, 0.353741, 0.368591, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

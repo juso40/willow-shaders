@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Test_Carl_Aster.Materials.clouds.Mat_CastleKeep_Clouds_MS.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Test_Carl_Aster.Materials.clouds.Mat_Cloud_Ring_02"
+source_object = "Test_Carl_Aster.Materials.clouds.Mat_Cloud_Ring_02"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Test_Carl_Aster.Materials.clouds.Mat_CastleKeep_Clouds_MS"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Color": Vector4(0.072656, 0.264194, 0.375677, 0.75)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

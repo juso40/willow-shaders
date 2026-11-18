@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_CreatureDigistruct.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_BattleDroid.Materials.Mati_Loader_WAR"
+source_object = "Char_BattleDroid.Materials.Mati_Loader_WAR"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_CreatureDigistruct"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_DigiStructEnable": 0.0,
+"p_HighlightsIntensity": 0.4,
+"p_ShadowsIntensity": 1.5
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.203678, 0.238351, 0.359103, 1.0),
+"p_AColorMidtone": Vector4(0.016574, 0.016574, 0.016574, 1.0),
+"p_AColorShadow": Vector4(0.08287, 0.030707, 0.026722, 1.0),
+"p_BColorHilight": Vector4(0.247454, 0.273705, 0.370152, 1.0),
+"p_BColorMidtone": Vector4(0.033148, 0.031341, 0.030401, 1.0),
+"p_BColorShadow": Vector4(0.276233, 0.104986, 0.088524, 1.0),
+"p_CColorHilight": Vector4(2.966998, 0.7783, 0.655775, 1.0),
+"p_CColorMidtone": Vector4(1.096966, 0.009714, 0.0, 1.0),
+"p_CColorShadow": Vector4(0.167086, 0.254134, 0.183557, 1.0),
+"p_ColorD": Vector4(0.381201, 0.381201, 0.381201, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_BattleDroid.Textures.BattleDroid_Dif",
+"p_Masks": "Char_BattleDroid.Textures.BattleDroid_Comp",
+"p_Normal": "Char_BattleDroid.Textures.BattleDroid_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

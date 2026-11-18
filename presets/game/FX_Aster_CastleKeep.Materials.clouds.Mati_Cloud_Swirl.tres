@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_Aster_CastleKeep.Materials.clouds.Mat_Clouds_Swirl.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Aster_CastleKeep.Materials.clouds.Mati_Cloud_Swirl"
+source_object = "FX_Aster_CastleKeep.Materials.clouds.Mati_Cloud_Swirl"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_Aster_CastleKeep.Materials.clouds.Mat_Clouds_Swirl"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"FadeEdgeMultiplier": 4000.0,
+"TimeScale": 2.0,
+"WhirlWind_Fade": 0.0,
+"x_Scale": 2.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Color_WhirlTopMultiplier": Vector4(0.071821, 0.026542, 0.008335, 1.0),
+"Color_Whirl_Bottom_Multiplier": Vector4(2.072852, 0.741438, 0.206209, 1.0),
+"LightningColor": Vector4(8.0, 2.0, 0.849798, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

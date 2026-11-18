@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Char_Anemone_NewPandora.Creature.Mati_NewPandora_DahlSoldier_BLUE_INST.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Anemone_NewPandora.Creature.Mati_NewPandora_DahlSoldier_Sniper_INST"
+source_object = "Char_Anemone_NewPandora.Creature.Mati_NewPandora_DahlSoldier_Sniper_INST"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Char_Anemone_NewPandora.Creature.Mati_NewPandora_DahlSoldier_BLUE_INST"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.41573, 0.41573, 0.41573, 1.0),
+"p_AColorMidtone": Vector4(0.02809, 0.02809, 0.02809, 1.0),
+"p_AColorShadow": Vector4(0.011236, 0.011236, 0.011236, 1.0),
+"p_BColorHilight": Vector4(0.632562, 0.707519, 0.729255, 1.0),
+"p_BColorMidtone": Vector4(0.410112, 0.410112, 0.410112, 1.0),
+"p_BColorShadow": Vector4(0.632562, 0.707519, 0.729255, 1.0),
+"p_CColorHilight": Vector4(0.348315, 0.348315, 0.348315, 1.0),
+"p_CColorMidtone": Vector4(0.057442, 0.062618, 0.078652, 1.0),
+"p_CColorShadow": Vector4(0.016854, 0.016854, 0.016854, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

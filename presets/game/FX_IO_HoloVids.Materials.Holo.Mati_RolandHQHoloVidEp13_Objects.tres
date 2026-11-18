@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_IO_HoloVids.Materials.Holo.Mat_RolandHQHoloVid.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_IO_HoloVids.Materials.Holo.Mati_RolandHQHoloVidEp13_Objects"
+source_object = "FX_IO_HoloVids.Materials.Holo.Mati_RolandHQHoloVidEp13_Objects"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_IO_HoloVids.Materials.Holo.Mat_RolandHQHoloVid"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"TextureMovie": null
+})
+texture_object_paths = Dictionary[String, String]({
+"TextureMovie": "FX_IO_HoloVids.TextureMovies.Ep13_Recap"
+})
+texture_object_classes = Dictionary[String, String]({
+"TextureMovie": "TextureMovie"
+})

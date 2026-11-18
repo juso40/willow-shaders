@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/GD_Episode17Data.Materials.Mat_DynamicNumber.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_Episode17Data.Materials.Mati_DynamicNumber_Back"
+source_object = "GD_Episode17Data.Materials.Mati_DynamicNumber_Back"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "GD_Episode17Data.Materials.Mat_DynamicNumber"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"DigitColor": Vector4(0.441973, 0.15493, 0.058437, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Sky.Master_ArauraBorealis_INST.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "TundraExpress_Light.TheWorld:PersistentLevel.Main_Sequence.WillowSeqAct_DayNightCycle_6.InterpGroupInst_12.InterpTrackInstFloatMaterialParam_22.MaterialInstanceConstant_93"
+source_object = "TundraExpress_Light.TheWorld:PersistentLevel.Main_Sequence.WillowSeqAct_DayNightCycle_6.InterpGroupInst_12.InterpTrackInstFloatMaterialParam_22.MaterialInstanceConstant_93"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Sky.Master_ArauraBorealis_INST"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_EnableAurara": 0.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

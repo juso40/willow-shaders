@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Environment.Master_World.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_WEP_Shared.Materials.Mati_RL_Ball_Hive"
+source_object = "FX_WEP_Shared.Materials.Mati_RL_Ball_Hive"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Environment.Master_World"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.797753, 0.510047, 0.153553, 1.0),
+"p_AColorMidtone": Vector4(0.0, 1.0, 0.312667, 1.0),
+"p_AColorShadow": Vector4(0.145384, 1.0, 0.46221, 1.0),
+"p_BColorHilight": Vector4(0.219606, 1.0, 0.251685, 1.0),
+"p_BColorShadow": Vector4(0.158037, 1.0, 0.444163, 1.0),
+"p_CColorMidtone": Vector4(0.099687, 1.0, 0.171355, 1.0),
+"p_CColorShadow": Vector4(0.180867, 1.0, 0.388175, 1.0),
+"p_DiffMod": Vector4(1.0, 0.680805, 0.099059, 1.0),
+"p_EmissiveScale": Vector4(1.471301, 6.481504, 1.908274, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_emissive": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "FX_WEP_Shared.Textures.RL_Projectiles_Dif",
+"p_Masks": "FX_WEP_Shared.Textures.RL_Projectiles_Comp",
+"p_emissive": "FX_WEP_Shared.Textures.RL_Projectiles_Comp"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_emissive": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Env_VOG_Chamber.Materials.VOG_FloorColumn_Mat.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_VOG_Chamber.Materials.VOG_FloorColumn_Mati"
+source_object = "Env_VOG_Chamber.Materials.VOG_FloorColumn_Mati"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Env_VOG_Chamber.Materials.VOG_FloorColumn_Mat"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"HexBrightness": 15.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"HexColor": Vector4(0.0, 0.2, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

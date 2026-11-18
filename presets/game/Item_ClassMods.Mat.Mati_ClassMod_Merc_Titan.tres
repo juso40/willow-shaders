@@ -1,0 +1,57 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Items.Master_ClassMod_02.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Item_ClassMods.Mat.Mati_ClassMod_Merc_Titan"
+source_object = "Item_ClassMods.Mat.Mati_ClassMod_Merc_Titan"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Items.Master_ClassMod_02"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_DecalRotate": -0.4317
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.254134, 0.130421, 0.025688, 1.0),
+"p_AColorMidtone": Vector4(0.348053, 0.134571, 0.048728, 1.0),
+"p_AColorShadow": Vector4(0.241478, 0.250574, 0.270708, 1.0),
+"p_BColorHilight": Vector4(0.541417, 0.288063, 0.070253, 1.0),
+"p_BColorMidtone": Vector4(0.171264, 0.123817, 0.058628, 1.0),
+"p_BColorShadow": Vector4(0.044197, 0.044197, 0.044197, 1.0),
+"p_CColorHilight": Vector4(0.088395, 0.072567, 0.062331, 1.0),
+"p_CColorMidtone": Vector4(0.574564, 0.068427, 0.028728, 1.0),
+"p_CColorShadow": Vector4(0.502744, 0.263002, 0.212618, 1.0),
+"p_DecalChannel": Vector4(1.0, 0.0, 0.0, 1.0),
+"p_DecalColor": Vector4(5.474453, 3.249694, 1.513429, 1.0),
+"p_DecalScalePosition": Vector4(0.6, 0.6, 0.4676, 0.347),
+"p_EmissiveColor": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_PatternChannelScale": Vector4(1.0, 1.0, 1.0, 0.0),
+"p_PatternColor": Vector4(1.757233, 1.757233, 1.757233, 1.0),
+"p_PatternScalePosition": Vector4(1.0, 1.0, 0.0, 0.0),
+"p_ReflectColor": Vector4(2.915958, 1.558102, 0.0, 1.0),
+"p_ReflectionChannelScale": Vector4(1.0, 0.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"P_SimpleReflect": null,
+"p_CustomPattern": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"P_SimpleReflect": "Common_GunMaterials.Env.Gold",
+"p_CustomPattern": "",
+"p_Diffuse": "Item_ClassMods.Textures.MercClassMod01_Dif",
+"p_Masks": "Item_ClassMods.Textures.MercClassMod01_Msk",
+"p_Normal": "Item_ClassMods.Textures.MercClassMod01_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"P_SimpleReflect": "Texture2D",
+"p_CustomPattern": "",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

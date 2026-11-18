@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Anemone_GunMaterials.MasterMaterials.Master_Gun_Anemone.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Anemone_GunMaterials.Materials.SMG.Mati_Tediore_6_Infection_Cleaner"
+source_object = "Anemone_GunMaterials.Materials.SMG.Mati_Tediore_6_Infection_Cleaner"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Anemone_GunMaterials.MasterMaterials.Master_Gun_Anemone"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_DecalChannel": Vector4(1.0, 0.85, 0.0, 1.0),
+"p_DecalScalePosition": Vector4(13.8625, 61.385406, 0.3577, 0.5466)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_NormalScopesEmissive": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Common_GunMaterials.CompTextures.Weap_AssaultSubSniper_Comp",
+"p_Masks": "Weap_SMG.Tex.Weap_SMG_Comp",
+"p_NormalScopesEmissive": "Weap_SMG.Tex.Weap_SMG_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_NormalScopesEmissive": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

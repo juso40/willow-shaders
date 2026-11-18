@@ -1,0 +1,40 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Environment.Master_World.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Buildings.Materials.Mati_NHBuildings02_Reds"
+source_object = "Prop_Buildings.Materials.Mati_NHBuildings02_Reds"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Environment.Master_World"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_HighlightsIntensity": 5.0,
+"p_ShadowsIntensity": 3.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.270708, 0.071772, 0.065751, 1.0),
+"p_AColorMidtone": Vector4(0.138116, 0.085466, 0.102679, 1.0),
+"p_AColorShadow": Vector4(0.08191, 0.191753, 0.232036, 1.0),
+"p_BColorHilight": Vector4(0.273794, 0.32641, 0.359103, 1.0),
+"p_BColorMidtone": Vector4(0.303856, 0.099821, 0.081277, 1.0),
+"p_BColorShadow": Vector4(0.546941, 0.177634, 0.130067, 1.0),
+"p_CColorHilight": Vector4(0.464071, 0.286341, 0.23589, 1.0),
+"p_CColorMidtone": Vector4(0.193641, 0.217911, 0.287282, 1.0),
+"p_CColorShadow": Vector4(0.381201, 0.1965, 0.166389, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Prop_Buildings.Textures.NewhavenBuilding2_Dif",
+"p_Masks": "Prop_Buildings.Textures.NewhavenBuilding2_Comp"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_AngelBoss.Material.Mati_SpiderQueen_Body"
+source_object = "GD_AngelBoss.Material.Mati_SpiderQueen_Body"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"P_DeathsValue": 0.0,
+"p_HighlightsIntensity": 5.0,
+"p_fade": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.021375, 0.056854, 0.276233, 1.0),
+"p_AColorMidtone": Vector4(0.032315, 0.0, 0.15469, 1.0),
+"p_BColorMidtone": Vector4(0.567364, 0.137964, 1.040228, 1.0),
+"p_CColorHilight": Vector4(0.554779, 0.0, 3.067563, 1.0),
+"p_CColorMidtone": Vector4(0.030597, 0.028387, 0.055247, 1.0),
+"p_ColorD": Vector4(0.02277, 0.0, 0.099444, 1.0),
+"p_DissolveColor": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_ElementalDeathColor": Vector4(1.0, 1.0, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_Aster_Spider.Textures.Creat_CesiumHarvester_Dif",
+"p_Masks": "Char_Aster_Spider.Textures.Creat_CesiumHarvester_Mask_02",
+"p_Normal": "Char_Aster_Spider.Textures.Creat_CesiumHarvester_Norm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

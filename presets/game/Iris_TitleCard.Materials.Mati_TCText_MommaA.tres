@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_TitleCard_02.Materials.Master_TCTextOverlay.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Iris_TitleCard.Materials.Mati_TCText_MommaA"
+source_object = "Iris_TitleCard.Materials.Mati_TCText_MommaA"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_TitleCard_02.Materials.Master_TCTextOverlay"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_colora": Vector4(2.104566, 0.454663, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_mask": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_mask": "Iris_TitleCard.Textures.Tex_TCNames_Momma"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_mask": "Texture2D"
+})

@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="MaterialDebugProfile" format=3]
+
+[ext_resource type="Script" path="res://scripts/preview/material_debug_profile.gd" id="1"]
+[ext_resource type="Shader" path="res://shaders/diagnostics.gdshader" id="2"]
+
+[resource]
+script = ExtResource("1")
+section = "Master_Gun"
+shader = ExtResource("2")
+provides_unlit = true
+views = Dictionary[int, String]({
+30: "Diffuse only (class channel)",
+31: "Zones ABC (RGB)",
+32: "Zone A",
+33: "Zone B",
+34: "Zone C",
+35: "Zone D (residual)",
+36: "Highlight mask",
+37: "Shadow mask",
+38: "Tangent-space normal",
+39: "Emissive mask",
+40: "Pattern coverage",
+41: "Pattern ink",
+42: "Reflection weight",
+43: "Atlas cells",
+44: "Decal coverage",
+45: "Reflection contribution"
+})

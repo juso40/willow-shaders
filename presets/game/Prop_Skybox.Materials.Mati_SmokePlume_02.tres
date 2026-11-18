@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Skybox.Materials.Mat_SmokePlume_01.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Skybox.Materials.Mati_SmokePlume_02"
+source_object = "Prop_Skybox.Materials.Mati_SmokePlume_02"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Skybox.Materials.Mat_SmokePlume_01"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Cloud Color": Vector4(1.5, 0.530702, 0.223098, 1.0),
+"cloud Highlight": Vector4(2.5, 1.415337, 0.308785, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

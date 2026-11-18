@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_GunMaterials.MasterMaterials.Maliwan.MasterMati_MaliwanRare.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Lobelia_GunMaterials.Materials.Pistol.Mati_Maliwan_Pearl_Wanderlust"
+source_object = "Lobelia_GunMaterials.Materials.Pistol.Mati_Maliwan_Pearl_Wanderlust"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_GunMaterials.MasterMaterials.Maliwan.MasterMati_MaliwanRare"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_ReplaceDecal": 0.0,
+"p_UseFullColorDecal": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(2.994394, 2.191529, 1.621325, 1.0),
+"p_AColorMidtone": Vector4(1.0, 0.322658, 0.222691, 1.0),
+"p_AColorShadow": Vector4(0.348053, 0.297105, 0.058761, 1.0),
+"p_BColorHilight": Vector4(0.050363, 0.057582, 0.060771, 1.0),
+"p_BColorMidtone": Vector4(0.026999, 0.025084, 0.057469, 1.0),
+"p_BColorShadow": Vector4(0.001405, 0.002872, 0.022099, 1.0),
+"p_CColorHilight": Vector4(0.035614, 0.052842, 0.060032, 1.0),
+"p_CColorMidtone": Vector4(0.001158, 0.021176, 0.033148, 1.0),
+"p_CColorShadow": Vector4(0.287282, 0.07787, 0.052893, 1.0),
+"p_DecalScalePosition": Vector4(3.6769, 1.4478, 0.2376, 0.0),
+"p_ReflectColor": Vector4(2.056738, 2.037343, 2.034013, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"P_SimpleReflect": null,
+"p_Decal": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_NormalScopesEmissive": null
+})
+texture_object_paths = Dictionary[String, String]({
+"P_SimpleReflect": "Common_GunMaterials.Env.GlossyC",
+"p_Decal": "Lobelia_GunMaterials.Materials.MaliwanPearl_Stripe",
+"p_Diffuse": "Common_GunMaterials.CompTextures.Weap_LauncherShotgunPistol_Comp",
+"p_Masks": "Weap_Pistol.Tex.Weap_Pistols_Comp",
+"p_NormalScopesEmissive": "Weap_Pistol.Tex.Weap_Pistols_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"P_SimpleReflect": "Texture2D",
+"p_Decal": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_NormalScopesEmissive": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

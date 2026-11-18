@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_Aster_CastleExterior.Materials.MS.Mat_Lightning_Glow_MS.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Aster_CastleExterior.Materials.Mat_Subtle_Lightning_Glow_Forest"
+source_object = "FX_Aster_CastleExterior.Materials.Mat_Subtle_Lightning_Glow_Forest"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_Aster_CastleExterior.Materials.MS.Mat_Lightning_Glow_MS"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Color": Vector4(0.502483, 0.801075, 0.391768, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

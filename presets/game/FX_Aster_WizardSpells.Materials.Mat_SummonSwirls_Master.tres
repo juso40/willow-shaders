@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Aster_WizardSpells.Materials.Mat_SummonSwirls_Master"
+source_object = "FX_Aster_WizardSpells.Materials.Mat_SummonSwirls_Master"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"BackFace_Fresnel_Power": 5.0,
+"Offset Strength": 20.0,
+"Wave1_Period": 3.0,
+"Wave2_Period": 4.0,
+"ZWave2_Period": 3.0,
+"ZWave_Period": 2.0,
+"Z_Stretch_Strength": 30.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+static_switches = Dictionary[String, bool]({
+"Enable BackFace Frasnel": true
+})

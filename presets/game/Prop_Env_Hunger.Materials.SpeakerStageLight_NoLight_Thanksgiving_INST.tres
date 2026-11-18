@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Env_Hunger.Materials.SpeakerStageLight_Thanksgiving.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Env_Hunger.Materials.SpeakerStageLight_NoLight_Thanksgiving_INST"
+source_object = "Prop_Env_Hunger.Materials.SpeakerStageLight_NoLight_Thanksgiving_INST"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Env_Hunger.Materials.SpeakerStageLight_Thanksgiving"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"LightBrightness": 0.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"LightColor": Vector4(0.0, 0.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

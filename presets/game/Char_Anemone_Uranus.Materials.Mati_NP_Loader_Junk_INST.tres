@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Char_Anemone_Uranus.Materials.Mati_NP_Loader_Fire_INST.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Anemone_Uranus.Materials.Mati_NP_Loader_Junk_INST"
+source_object = "Char_Anemone_Uranus.Materials.Mati_NP_Loader_Junk_INST"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Char_Anemone_Uranus.Materials.Mati_NP_Loader_Fire_INST"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorMidtone": Vector4(0.834223, 0.288536, 0.00464, 1.0),
+"p_AColorShadow": Vector4(0.596663, 0.273492, 0.094398, 1.0),
+"p_BColorHilight": Vector4(0.247454, 0.273705, 0.370152, 1.0),
+"p_BColorMidtone": Vector4(1.0, 0.929844, 0.839785, 1.0),
+"p_CColorHilight": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_CColorMidtone": Vector4(0.756878, 0.19442, 0.069396, 1.0),
+"p_CColorShadow": Vector4(1.0, 0.496362, 0.070867, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

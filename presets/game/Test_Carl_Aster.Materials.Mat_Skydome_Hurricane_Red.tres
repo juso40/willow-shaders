@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Test_Carl_Aster.Materials.Mat_Skydome_Hurricane_Red"
+source_object = "Test_Carl_Aster.Materials.Mat_Skydome_Hurricane_Red"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"AlphaFade": 1.0,
+"Bias_Value": -80.0,
+"p_ColorPower": 1.25,
+"p_TimeMult": 0.08
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"CameraDotPower": Vector4(0.0, 0.0, 3.0, 1.0),
+"ColorValue": Vector4(1.0, 0.306447, 0.055283, 1.0),
+"UV_Offset": Vector4(-0.1, -0.075, 0.0, 1.0),
+"Uv_Mult": Vector4(1.25, 1.25, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_AlphaTtexture": null,
+"p_texture": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_AlphaTtexture": "Common_Textures.Stub.StubWhite_Gray",
+"p_texture": "Common_Textures.Stub.StubWhite_Gray"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_AlphaTtexture": "Texture2D",
+"p_texture": "Texture2D"
+})
+static_component_masks = Dictionary[String, Vector4]({
+"p_AlphaMask": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_ColorMask": Vector4(1.0, 1.0, 1.0, 0.0),
+"p_SecondaryAlphaMask": Vector4(0.0, 0.0, 0.0, 1.0)
+})
+static_switches = Dictionary[String, bool]({
+"sw_BiasAlpha": false,
+"sw_SeparateAlphaMap": false
+})

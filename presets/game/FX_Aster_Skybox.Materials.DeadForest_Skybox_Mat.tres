@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Aster_Skybox.Materials.DeadForest_Skybox_Mat"
+source_object = "FX_Aster_Skybox.Materials.DeadForest_Skybox_Mat"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"DayNight": 0.0,
+"SkyBrightness": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"NightSkyColor": Vector4(0.8, 1.8, 1.7, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

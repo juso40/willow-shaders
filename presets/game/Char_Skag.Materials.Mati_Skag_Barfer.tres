@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Skag.Materials.Mati_Skag_Barfer"
+source_object = "Char_Skag.Materials.Mati_Skag_Barfer"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.331461, 0.18471, 0.059588, 1.0),
+"p_AColorMidtone": Vector4(0.589888, 0.550179, 0.25849, 1.0),
+"p_AColorShadow": Vector4(0.140449, 0.135501, 0.080861, 1.0),
+"p_BColorHilight": Vector4(0.695459, 0.852425, 0.91573, 1.0),
+"p_BColorMidtone": Vector4(0.629214, 0.250005, 0.309354, 1.0),
+"p_BColorShadow": Vector4(0.348315, 0.213542, 0.17396, 1.0),
+"p_CColorHilight": Vector4(1.0, 0.996948, 0.924385, 1.0),
+"p_CColorMidtone": Vector4(1.0, 0.985697, 0.916358, 1.0),
+"p_CColorShadow": Vector4(0.161119, 0.173913, 0.157428, 1.0),
+"p_MuscleFat": Vector4(0.0, 25.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_Skag.Skag_Dif",
+"p_Masks": "Char_Skag.Skag_Comp",
+"p_Normal": "Char_Skag.Skag_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

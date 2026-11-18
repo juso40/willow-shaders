@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Environment.Master_WindyTarp.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Flax_AllHallowsEve.Materials.Mati_Tarp_Still"
+source_object = "FX_Flax_AllHallowsEve.Materials.Mati_Tarp_Still"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Environment.Master_WindyTarp"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"AO_Map_Brightness": 1.2,
+"p_WaveScale": 0.0,
+"p_WindSpeed": 16.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Tarp_Color": Vector4(1.0, 0.283456, 0.11821, 1.0),
+"p_TransmissionColor": Vector4(0.386726, 0.311559, 0.258534, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Diffuse": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Diffuse": "Prop_Tarps.PointyTarp_Dif"
+})
+texture_object_classes = Dictionary[String, String]({
+"Diffuse": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

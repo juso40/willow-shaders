@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Char_Sage_Skaylion.Materials.Master_Skaylion.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Sage_Skaylion.Materials.Mati_DiseasedSkaylion"
+source_object = "Char_Sage_Skaylion.Materials.Mati_DiseasedSkaylion"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Char_Sage_Skaylion.Materials.Master_Skaylion"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.513779, 0.637494, 0.82, 1.0),
+"p_AColorMidtone": Vector4(0.129639, 0.321416, 0.156259, 1.0),
+"p_AColorShadow": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_BColorHilight": Vector4(0.166832, 0.323363, 0.198964, 1.0),
+"p_BColorMidtone": Vector4(0.785699, 0.83, 0.7636, 1.0),
+"p_BColorShadow": Vector4(0.976692, 0.927424, 1.0, 1.0),
+"p_CColorHilight": Vector4(0.1088, 0.32, 0.28832, 1.0),
+"p_CColorMidtone": Vector4(0.260324, 0.89, 0.316312, 1.0),
+"p_CColorShadow": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_ColorD": Vector4(0.288053, 0.44, 0.2772, 1.0),
+"p_MuscleFat": Vector4(-1.25, 0.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_Sage_Skaylion.Textures.Skaylion_D",
+"p_Masks": "Char_Sage_Skaylion.Textures.Skaylion_Comp",
+"p_Normal": "Char_Sage_Skaylion.Textures.Skaylion_N"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

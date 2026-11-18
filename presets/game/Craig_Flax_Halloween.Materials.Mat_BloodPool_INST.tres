@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Craig_Flax_Halloween.Materials.Mat_BloodPool_CastleKeep.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Craig_Flax_Halloween.Materials.Mat_BloodPool_INST"
+source_object = "Craig_Flax_Halloween.Materials.Mat_BloodPool_INST"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Craig_Flax_Halloween.Materials.Mat_BloodPool_CastleKeep"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"DepthBias_Rate": -10.0,
+"Desat_Rate": 0.7
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Color_High": Vector4(0.05, 0.0, 0.0, 1.0),
+"Color_Low": Vector4(0.02, 0.0, 0.002, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Wiretech.Material.Mat_DefaultWire.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Anemone_Prop_Wires.Material.Mati_DefaultWire_Black_NoWind"
+source_object = "Anemone_Prop_Wires.Material.Mati_DefaultWire_Black_NoWind"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Wiretech.Material.Mat_DefaultWire"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_WaveScale": 0.0,
+"p_WindSpeed": 0.0,
+"p_WindWaveLength": 0.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"wire_color": Vector4(0.0, 0.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

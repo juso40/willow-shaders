@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_Allium_Xmas.Materials.M_FX_IceShardCluster.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Allium_Xmas.Materials.MI_FX_IceShardCluster_NoEmissive"
+source_object = "FX_Allium_Xmas.Materials.MI_FX_IceShardCluster_NoEmissive"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_Allium_Xmas.Materials.M_FX_IceShardCluster"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Emis_Strength": 0.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

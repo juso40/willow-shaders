@@ -1,0 +1,40 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Environment.Master_World.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_LongWaller.Material.Mati_LongWaller_Arm"
+source_object = "Prop_LongWaller.Material.Mati_LongWaller_Arm"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Environment.Master_World"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_HighlightsIntensity": 3.0,
+"p_ShadowsIntensity": 5.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.966815, 0.665212, 0.090838, 1.0),
+"p_AColorMidtone": Vector4(0.469596, 0.307274, 0.036338, 1.0),
+"p_AColorShadow": Vector4(0.530367, 0.236921, 0.0, 1.0),
+"p_BColorHilight": Vector4(0.973075, 1.0, 0.973131, 1.0),
+"p_BColorMidtone": Vector4(1.0, 0.741176, 0.458824, 1.0),
+"p_BColorShadow": Vector4(1.0, 0.792157, 0.823529, 1.0),
+"p_CColorHilight": Vector4(0.574601, 0.929273, 1.0, 1.0),
+"p_CColorMidtone": Vector4(0.330752, 0.341372, 0.464071, 1.0),
+"p_CColorShadow": Vector4(0.415114, 0.446796, 0.469596, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Prop_LongWaller.Texture.LongWallerArm_D",
+"p_Masks": "Prop_LongWaller.Texture.LongWallerArm_Comp"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Environment.Master_World.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Aster_Prop_Staffs.Materials.Mati_Staff_Skull"
+source_object = "Aster_Prop_Staffs.Materials.Mati_Staff_Skull"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Environment.Master_World"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(1.0, 0.318994, 0.0, 1.0),
+"p_AColorMidtone": Vector4(1.0, 0.0, 0.049758, 1.0),
+"p_AColorShadow": Vector4(0.48617, 0.0, 0.017279, 1.0),
+"p_DiffMod": Vector4(0.707865, 0.707865, 0.707865, 1.0),
+"p_EmissiveScale": Vector4(3.32102, 0.0, 0.010445, 1.0),
+"p_SpecColor_SpecPow": Vector4(0.2, 0.2, 0.2, 15.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Specular": null,
+"p_emissive": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Aster_Prop_Staffs.Textures.Staff_Skull_Dif",
+"p_Specular": "",
+"p_emissive": "Aster_Prop_Staffs.Textures.Staff_Skull_Emissive"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Specular": "",
+"p_emissive": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

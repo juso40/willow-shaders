@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Items.Master_ClassMod_02.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Item_ClassMods.Mat.Mati_ClassMod_Soldier_Tactician"
+source_object = "Item_ClassMods.Mat.Mati_ClassMod_Soldier_Tactician"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Items.Master_ClassMod_02"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.049722, 0.049722, 0.049722, 1.0),
+"p_AColorMidtone": Vector4(1.0, 0.938714, 0.61876, 1.0),
+"p_AColorShadow": Vector4(0.116018, 0.116018, 0.116018, 1.0),
+"p_BColorHilight": Vector4(0.303856, 0.303856, 0.303856, 1.0),
+"p_BColorMidtone": Vector4(0.296769, 0.396045, 0.458547, 1.0),
+"p_BColorShadow": Vector4(0.187838, 0.187838, 0.187838, 1.0),
+"p_CColorHilight": Vector4(1.0, 0.402739, 0.237129, 1.0),
+"p_CColorMidtone": Vector4(0.222917, 1.041916, 1.420472, 1.0),
+"p_CColorShadow": Vector4(1.0, 0.01094, 0.079091, 1.0),
+"p_PatternChannelScale": Vector4(1.0, 1.0, 0.0, 0.0),
+"p_PatternScalePosition": Vector4(5.0, 5.0, 0.0, 0.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_CustomPattern": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_CustomPattern": "Common_GunMaterials.Patterns.Pattern_BanditRare",
+"p_Diffuse": "Item_ClassMods.Textures.SoldierClassMod01_Diff",
+"p_Masks": "Item_ClassMods.Textures.SoldierClassMod01_Msk",
+"p_Normal": "Item_ClassMods.Textures.SoldierClassMod01_Norm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_CustomPattern": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

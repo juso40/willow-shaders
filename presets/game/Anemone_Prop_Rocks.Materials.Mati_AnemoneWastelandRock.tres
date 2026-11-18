@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Rocks_03.Materials.Mat_Obsidian.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Anemone_Prop_Rocks.Materials.Mati_AnemoneWastelandRock"
+source_object = "Anemone_Prop_Rocks.Materials.Mati_AnemoneWastelandRock"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Rocks_03.Materials.Mat_Obsidian"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Diffuse": null,
+"Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Diffuse": "Anemone_Prop_Rocks.Textures.WastelandRockOldDust_Dif",
+"Normal": "Prop_Rocks_03.Textures.Obsidian_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"Diffuse": "Texture2D",
+"Normal": "Texture2D"
+})

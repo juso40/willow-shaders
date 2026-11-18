@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_TitleCard_02.Materials.Master_TCTextOverlay.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Orchid_Prop_TitleCard.Materials.Mati_TCText_H3RLE_B"
+source_object = "Orchid_Prop_TitleCard.Materials.Mati_TCText_H3RLE_B"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_TitleCard_02.Materials.Master_TCTextOverlay"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_TopBottom": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_colora": Vector4(1.439033, 0.0, 5.837669, 1.0),
+"p_colorb": Vector4(0.036463, 1.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_mask": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_mask": "Orchid_Prop_TitleCard.Textures.Tex_TCNames_H3RLE"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_mask": "Texture2D"
+})

@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_Aster_Claptrap.Materials.Claptrap_Apprentice.Mat_Aster_CA_WaterSplashes.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Aster_Claptrap.Materials.Claptrap_Apprentice.Mat_Aster_CA_Broom_Glow_MS"
+source_object = "FX_Aster_Claptrap.Materials.Claptrap_Apprentice.Mat_Aster_CA_Broom_Glow_MS"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_Aster_Claptrap.Materials.Claptrap_Apprentice.Mat_Aster_CA_WaterSplashes"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Nrm": null,
+"dif": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Nrm": "FX_Shared_Water.Textures.SubUV_2X2_Water_Splash_Nrm",
+"dif": "FX_Shared_Water.Textures.SubUV_2X2_WaterSplash_Dif"
+})
+texture_object_classes = Dictionary[String, String]({
+"Nrm": "Texture2D",
+"dif": "Texture2D"
+})

@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Vehicle.Master_Vehicle.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "CD_Skins_BanditTech_MainGame.Mati_FirstPlace_Body"
+source_object = "CD_Skins_BanditTech_MainGame.Mati_FirstPlace_Body"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Vehicle.Master_Vehicle"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_PatternInvert": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.741876, 0.790026, 0.485406, 1.0),
+"p_AColorMidtone": Vector4(0.773452, 0.0, 0.010476, 1.0),
+"p_AColorShadow": Vector4(0.216261, 0.253832, 0.359103, 1.0),
+"p_BColorHilight": Vector4(1.0, 0.708063, 0.357335, 1.0),
+"p_BColorMidtone": Vector4(1.0, 0.039926, 0.0, 1.0),
+"p_BColorShadow": Vector4(0.546941, 0.0, 0.0, 1.0),
+"p_ColorD": Vector4(0.602188, 0.566538, 0.46567, 1.0),
+"p_PatternChannelScale": Vector4(0.98, 0.0, 0.0, 0.0),
+"p_PatternColor": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_PatternScalePosition": Vector4(2.479317, 2.276993, 0.547986, 0.09)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_CustomPattern": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_CustomPattern": "WillowHUD.Textures.Saving_Indicator",
+"p_Diffuse": "Veh_Bandit_Technical.Textures.BanditTechnical_D",
+"p_Masks": "Veh_Bandit_Technical.Textures.BanditTechnical_Comp",
+"p_Normal": "Veh_Bandit_Technical.Textures.BanditTechnical_N"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_CustomPattern": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Murals.Materials.Mat_Mural.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Murals.Materials.Mati_Ad_JackNewFace_04"
+source_object = "Prop_Murals.Materials.Mati_Ad_JackNewFace_04"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Murals.Materials.Mat_Mural"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Desaturate": 0.01,
+"MovieType": 0.0,
+"OverlayMask": -0.5
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Tint": Vector4(0.3791, 0.48147, 0.497219, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Diffuse": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Diffuse": "Prop_Murals.Textures.Ad_JackNewFace_04_Dif"
+})
+texture_object_classes = Dictionary[String, String]({
+"Diffuse": "Texture2D"
+})

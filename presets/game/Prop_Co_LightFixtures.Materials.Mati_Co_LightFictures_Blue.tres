@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Co_LightFixtures.Materials.Mati_Co_LightFictures_White.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Co_LightFixtures.Materials.Mati_Co_LightFictures_Blue"
+source_object = "Prop_Co_LightFixtures.Materials.Mati_Co_LightFictures_Blue"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Co_LightFixtures.Materials.Mati_Co_LightFictures_White"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_SpecMult": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_Color_Emissive1_B": Vector4(0.154764, 0.843281, 2.0, 1.0),
+"p_Color_Emissive1_Base": Vector4(1.154036, 2.940176, 5.0, 1.0),
+"p_Color_Spec_Emissive": Vector4(2.5, 0.685776, 0.0, 200.0),
+"p_Color_Texture1_A": Vector4(0.247921, 0.273988, 0.287282, 1.0),
+"p_Color_Texture1_B": Vector4(0.247921, 0.273988, 0.287282, 1.0),
+"p_Color_Texture2_A": Vector4(0.353615, 0.639904, 1.0, 1.0),
+"p_Color_Texture2_B": Vector4(0.624323, 0.64502, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Prop_Co_LightFixtures.LightFixtures_Diff"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

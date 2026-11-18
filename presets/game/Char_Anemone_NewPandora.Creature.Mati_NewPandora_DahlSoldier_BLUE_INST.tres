@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Char_Anemone_InfectedShared.Materials.Master_Creature_Infected.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Anemone_NewPandora.Creature.Mati_NewPandora_DahlSoldier_BLUE_INST"
+source_object = "Char_Anemone_NewPandora.Creature.Mati_NewPandora_DahlSoldier_BLUE_INST"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Char_Anemone_InfectedShared.Materials.Master_Creature_Infected"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"WorldDisplacementMult": 0.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.134914, 0.163977, 0.187838, 1.0),
+"p_AColorMidtone": Vector4(0.134914, 0.163977, 0.187838, 1.0),
+"p_AColorShadow": Vector4(0.134914, 0.163977, 0.187838, 1.0),
+"p_BColorHilight": Vector4(0.632562, 0.707519, 0.729255, 1.0),
+"p_BColorMidtone": Vector4(0.632562, 0.707519, 0.729255, 1.0),
+"p_BColorShadow": Vector4(0.632562, 0.707519, 0.729255, 1.0),
+"p_CColorHilight": Vector4(0.193404, 0.341073, 0.48617, 1.0),
+"p_CColorMidtone": Vector4(0.193404, 0.341073, 0.48617, 1.0),
+"p_CColorShadow": Vector4(0.193404, 0.341073, 0.48617, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_Anemone_NewPandora.T_SoldierUniform_D",
+"p_Masks": "Char_Anemone_NewPandora.T_SoldierUniform_Col",
+"p_Normal": "Char_Anemone_NewPandora.T_SoldierUniform_N"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_IO_Digistruct.Materials.Mat_DigistructPaneMaster.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_IO_Digistruct.Materials.Mati_DigiPaneXPlane"
+source_object = "FX_IO_Digistruct.Materials.Mati_DigiPaneXPlane"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_IO_Digistruct.Materials.Mat_DigistructPaneMaster"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"RGTilingBAOffset": Vector4(0.5, 0.7, 0.5, 0.31)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Diffuse": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Diffuse": "FX_IO_Digistruct.Textures.TexPage_02"
+})
+texture_object_classes = Dictionary[String, String]({
+"Diffuse": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

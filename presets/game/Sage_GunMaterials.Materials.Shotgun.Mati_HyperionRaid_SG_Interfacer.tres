@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_GunMaterials.MasterMaterials.Hyperion.MasterMati_HyperionCommon.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Sage_GunMaterials.Materials.Shotgun.Mati_HyperionRaid_SG_Interfacer"
+source_object = "Sage_GunMaterials.Materials.Shotgun.Mati_HyperionRaid_SG_Interfacer"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_GunMaterials.MasterMaterials.Hyperion.MasterMati_HyperionCommon"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_HighlightsIntensity": 10.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(6.032215, 5.47503, 0.326918, 1.0),
+"p_AColorMidtone": Vector4(2.231145, 1.613109, 0.037061, 1.0),
+"p_AColorShadow": Vector4(1.630593, 1.084766, 0.677322, 1.0),
+"p_BColorHilight": Vector4(0.337004, 0.326974, 0.263306, 1.0),
+"p_BColorMidtone": Vector4(0.222781, 0.23818, 0.292195, 1.0),
+"p_BColorShadow": Vector4(0.220986, 0.177816, 0.134304, 1.0),
+"p_DecalScalePosition": Vector4(23.0676, 39.404907, -0.0461, 0.5493),
+"p_ReflectColor": Vector4(2.585563, 2.585563, 2.585563, 1.0),
+"p_ReflectionChannelScale": Vector4(0.464071, 0.464071, 0.464071, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"P_SimpleReflect": null,
+"p_Decal": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_NormalScopesEmissive": null
+})
+texture_object_paths = Dictionary[String, String]({
+"P_SimpleReflect": "Common_Textures.Stub.StubWhite_Gray",
+"p_Decal": "Common_GunMaterials.Patterns.Pattern_HyperionStripeUncommon",
+"p_Diffuse": "Common_GunMaterials.CompTextures.Weap_LauncherShotgunPistol_Comp",
+"p_Masks": "Weap_Shotguns.Tex.Weap_Shotgun_Comp",
+"p_NormalScopesEmissive": "Weap_Shotguns.Tex.Weap_Shotgun_Nor"
+})
+texture_object_classes = Dictionary[String, String]({
+"P_SimpleReflect": "Texture2D",
+"p_Decal": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_NormalScopesEmissive": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

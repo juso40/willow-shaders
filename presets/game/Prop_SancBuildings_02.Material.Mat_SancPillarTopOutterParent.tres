@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_SancBuildings_02.Material.Mat_SancPillarTopOutterParent"
+source_object = "Prop_SancBuildings_02.Material.Mat_SancPillarTopOutterParent"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"p_emissive": 0.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Blue": Vector4(0.06157, 0.887918, 0.966292, 1.0),
+"Green": Vector4(0.024688, 0.061798, 0.006826, 1.0),
+"PhaseColor": Vector4(0.0, 0.0, 0.0, 0.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Water.Materials.Mat_RiverSmall.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_ENV_Anemone_Misc.Materials.Mati_FallsTall_Blue"
+source_object = "FX_ENV_Anemone_Misc.Materials.Mati_FallsTall_Blue"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Water.Materials.Mat_RiverSmall"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_FoamOpacity": 0.9,
+"p_RiverSpeed": 2.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_FoamColor_ReflScale": Vector4(0.779032, 1.37199, 1.5, 0.2),
+"p_FoamDensity": Vector4(0.795551, 0.795551, 0.795551, 1.0),
+"p_TexCoordScale": Vector4(1.0, 2.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

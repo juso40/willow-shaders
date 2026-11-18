@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Decal.Master_DecalModulate.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_SouthpawFactory.Decals.Mati_SplatterBRedFactory"
+source_object = "Env_SouthpawFactory.Decals.Mati_SplatterBRedFactory"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Decal.Master_DecalModulate"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_color": Vector4(0.591138, 0.084238, 0.063458, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_DecalMask": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_DecalMask": "Prop_Decals.Textures.BanditSplatterA_Comp"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_DecalMask": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

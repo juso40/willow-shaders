@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Wiretech.Material.Mat_DefaultWire.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_Ash.Materials.Mat_DefaultWire_Ash"
+source_object = "Env_Ash.Materials.Mat_DefaultWire_Ash"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Wiretech.Material.Mat_DefaultWire"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_WaveScale": 3.0,
+"p_WindSpeed": 10.0,
+"p_WindWaveLength": 10.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

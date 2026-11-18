@@ -1,0 +1,53 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_CreatureCorrosive.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_SpiderAnt.Materials.Mati_SpiderantPoison"
+source_object = "Char_SpiderAnt.Materials.Mati_SpiderantPoison"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_CreatureCorrosive"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_FxScaleCorrosive": 8.0,
+"p_HighlightsIntensity": 2.0,
+"p_PatternIntensity": 0.4,
+"p_ShadowsIntensity": 2.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_AColorMidtone": Vector4(0.043951, 0.092391, 0.032638, 1.0),
+"p_AColorShadow": Vector4(0.003574, 0.043478, 0.0, 1.0),
+"p_BColorHilight": Vector4(0.523653, 0.597826, 0.387517, 1.0),
+"p_BColorMidtone": Vector4(0.221375, 0.375677, 0.243726, 1.0),
+"p_BColorShadow": Vector4(0.423913, 0.390959, 0.327375, 1.0),
+"p_CColorHilight": Vector4(0.86413, 0.860107, 0.474372, 1.0),
+"p_CColorMidtone": Vector4(0.092455, 0.320652, 0.088958, 1.0),
+"p_CColorShadow": Vector4(0.020179, 0.076087, 0.019709, 1.0),
+"p_CorrosiveColor": Vector4(0.3, 0.7, 0.0, 1.0),
+"p_CorrosiveColorB": Vector4(0.3, 0.7, 0.0, 1.0),
+"p_EmissiveScale": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_MuscleFat": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_PatternColor": Vector4(0.532609, 0.480528, 0.162098, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_CustomPattern": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_CustomPattern": "",
+"p_Diffuse": "Char_SpiderAnt.Textures.SpiderAnt_Dif",
+"p_Masks": "Char_SpiderAnt.Textures.SpiderAntColor_Comp",
+"p_Normal": "Char_SpiderAnt.Textures.SpiderAnt_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_CustomPattern": "",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

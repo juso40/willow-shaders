@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_Aster_Dark_Forest.Materials.Mat_TreeOfLife_Death.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Aster_Dark_Forest.Materials.Mati_Tree_Of_Life_Death"
+source_object = "FX_Aster_Dark_Forest.Materials.Mati_Tree_Of_Life_Death"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_Aster_Dark_Forest.Materials.Mat_TreeOfLife_Death"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Ember_Swipe": -4.999,
+"MessedUpTreeLerp": 7.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

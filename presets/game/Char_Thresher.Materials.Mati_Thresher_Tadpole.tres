@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Thresher.Materials.Mati_Thresher_Tadpole"
+source_object = "Char_Thresher.Materials.Mati_Thresher_Tadpole"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_HighlightsIntensity": 2.0,
+"p_ShadowsIntensity": 2.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.186845, 0.203819, 0.449438, 1.0),
+"p_AColorMidtone": Vector4(0.432058, 0.436619, 0.438202, 1.0),
+"p_AColorShadow": Vector4(0.145281, 0.120575, 0.207865, 1.0),
+"p_BColorHilight": Vector4(0.284402, 0.279258, 0.314607, 1.0),
+"p_BColorMidtone": Vector4(0.903993, 0.88764, 1.0, 1.0),
+"p_BColorShadow": Vector4(0.167594, 0.164563, 0.185393, 1.0),
+"p_CColorHilight": Vector4(0.859551, 0.827913, 0.676051, 1.0),
+"p_CColorMidtone": Vector4(0.157303, 0.094659, 0.042529, 1.0),
+"p_CColorShadow": Vector4(0.320225, 0.108976, 0.026282, 1.0),
+"p_EmissiveScale": Vector4(4.0, 1.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_Thresher.Textures.Thresher_Dif",
+"p_Masks": "Char_Thresher.Textures.Thresher_Comp",
+"p_Normal": "Char_Thresher.Textures.Thresher_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

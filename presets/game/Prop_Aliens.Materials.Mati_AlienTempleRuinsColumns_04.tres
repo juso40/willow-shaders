@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Aliens.Materials.Mat_AlienSwirlPlaster_02.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Aliens.Materials.Mati_AlienTempleRuinsColumns_04"
+source_object = "Prop_Aliens.Materials.Mati_AlienTempleRuinsColumns_04"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Aliens.Materials.Mat_AlienSwirlPlaster_02"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"DetailSizeX": 1.0,
+"DetailSizeX2": 0.0,
+"DetailSizeY": 1.0,
+"DetailSizeY2": 0.0,
+"Move Y": 2.3131,
+"MoveDetailX": 0.2556,
+"MoveDetailX2": -0.57,
+"MoveDetailY": 0.091,
+"MoveDetailY2": -0.43,
+"MoveIce Y": 2.0,
+"MoveIceX": 12.75,
+"MoveX": 3.396,
+"SizeIceX": 2.0,
+"SizeX": 1.36,
+"size Y": 1.61,
+"sizeIceY": 2.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"1": null,
+"2": null,
+"BaseInk": null,
+"BaseMask": null
+})
+texture_object_paths = Dictionary[String, String]({
+"1": "Prop_Aliens.Textures.AlienPlasterSwirl_Dif",
+"2": "Prop_Aliens.Textures.IceCrete_01_Dif",
+"BaseInk": "Prop_Aliens.Textures.VaultPieceWalls",
+"BaseMask": "Prop_Aliens.Textures.VaultPieceWalls"
+})
+texture_object_classes = Dictionary[String, String]({
+"1": "Texture2D",
+"2": "Texture2D",
+"BaseInk": "Texture2D",
+"BaseMask": "Texture2D"
+})

@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_ResistanceFighter.Materials.ExCrim_Armor_Camo2"
+source_object = "GD_ResistanceFighter.Materials.ExCrim_Armor_Camo2"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_PatternIntensity": 1.4,
+"p_UVChannelSelect": 2.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.917093, 0.765094, 0.765799, 1.0),
+"p_AColorMidtone": Vector4(0.8066, 0.632602, 0.41526, 1.0),
+"p_AColorShadow": Vector4(0.552466, 0.4609, 0.4609, 1.0),
+"p_BColorHilight": Vector4(0.963961, 1.0, 0.849526, 1.0),
+"p_BColorMidtone": Vector4(0.620873, 0.65191, 0.48707, 1.0),
+"p_BColorShadow": Vector4(0.486259, 0.685058, 0.386066, 1.0),
+"p_CColorHilight": Vector4(0.674008, 0.176745, 0.1378, 1.0),
+"p_CColorMidtone": Vector4(0.491695, 0.084175, 0.054347, 1.0),
+"p_CColorShadow": Vector4(0.16574, 0.10604, 0.057839, 1.0),
+"p_ColorD": Vector4(0.653382, 0.850797, 0.65973, 1.0),
+"p_PatternColor": Vector4(0.209937, 0.124307, 0.075397, 2.0),
+"p_PatternScalePosition": Vector4(1.53, 1.335, 0.0, 0.229)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_CustomPattern": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_CustomPattern": "Common_GunMaterials.Patterns.Pattern_DahlRare",
+"p_Diffuse": "Char_GenericMale.Textures.ExCrimson_Armor_Dif",
+"p_Masks": "Char_GenericMale.Textures.ExCrimson_Armor_Comp",
+"p_Normal": "Char_GenericMale.Textures.ExCrimson_Armor_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_CustomPattern": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

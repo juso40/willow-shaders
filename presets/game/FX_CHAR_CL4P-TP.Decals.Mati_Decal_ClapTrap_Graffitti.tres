@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_Shared_MasterShaders.Materials.Decals.Decal_Parent_Lit_Translucent.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_CHAR_CL4P-TP.Decals.Mati_Decal_ClapTrap_Graffitti"
+source_object = "FX_CHAR_CL4P-TP.Decals.Mati_Decal_ClapTrap_Graffitti"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_Shared_MasterShaders.Materials.Decals.Decal_Parent_Lit_Translucent"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Color_Multiplier": Vector4(1.0, 0.0, 0.019046, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Decal_Diffuse": null,
+"Decal_Opc": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Decal_Diffuse": "FX_CHAR_CL4P-TP.Textures.Tex_Claptrap_Graffitti_Tag",
+"Decal_Opc": "FX_CHAR_CL4P-TP.Textures.Tex_Claptrap_Graffitti_Tag"
+})
+texture_object_classes = Dictionary[String, String]({
+"Decal_Diffuse": "Texture2D",
+"Decal_Opc": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

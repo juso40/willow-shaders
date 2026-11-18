@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Env_VOG_Chamber.Materials.M_DigitalDissolve_Interp_Master.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_VOG_Chamber.Materials.M_Dissolve_Doors_INST"
+source_object = "Env_VOG_Chamber.Materials.M_Dissolve_Doors_INST"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Env_VOG_Chamber.Materials.M_DigitalDissolve_Interp_Master"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Outline Color": Vector4(0.215764, 0.511398, 0.774227, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

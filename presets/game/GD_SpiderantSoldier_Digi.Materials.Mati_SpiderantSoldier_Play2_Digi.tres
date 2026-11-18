@@ -1,0 +1,52 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/GD_DigiCreaturesShared.Materials.Master_Lobelia_CreatureDigital_Digistruct.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_SpiderantSoldier_Digi.Materials.Mati_SpiderantSoldier_Play2_Digi"
+source_object = "GD_SpiderantSoldier_Digi.Materials.Mati_SpiderantSoldier_Play2_Digi"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "GD_DigiCreaturesShared.Materials.Master_Lobelia_CreatureDigital_Digistruct"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_PatternIntensity": 3.0,
+"p_ShadowsIntensity": 2.0,
+"p_UVChannelSelect": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.127067, 0.108647, 0.073715, 1.0),
+"p_AColorMidtone": Vector4(0.077345, 0.063705, 0.047861, 1.0),
+"p_AColorShadow": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_BColorHilight": Vector4(0.464071, 0.419442, 0.220507, 1.0),
+"p_BColorMidtone": Vector4(0.325955, 0.226172, 0.149478, 1.0),
+"p_BColorShadow": Vector4(0.093919, 0.070829, 0.026542, 1.0),
+"p_CColorHilight": Vector4(5.170634, 5.111451, 4.986164, 1.0),
+"p_CColorMidtone": Vector4(1.20039, 1.257929, 0.471398, 1.0),
+"p_CColorShadow": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_ColorD": Vector4(1.20039, 1.257929, 0.471398, 1.0),
+"p_DigiColor": Vector4(0.05, 0.2, 3.0, 3.0),
+"p_EmissiveScale": Vector4(0.281758, 0.237711, 0.193031, 1.0),
+"p_PatternColor": Vector4(0.027623, 0.016686, 0.006563, 2.0),
+"p_PatternScalePosition": Vector4(0.321416, 0.321416, 0.15805, 0.3)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_CustomPattern": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_CustomPattern": "FX_Shared_Gradients.Textures.Round_Ring_Distortion_Clamped_Dif",
+"p_Diffuse": "Char_SpiderAnt.Textures.SpiderAnt_Dif",
+"p_Masks": "Char_SpiderAnt.Textures.SpiderAntColor_Comp",
+"p_Normal": "Char_SpiderAnt.Textures.SpiderAnt_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_CustomPattern": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

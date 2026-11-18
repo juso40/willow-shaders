@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Items.Master_ClassMod_02.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Item_ClassMods.Mat.Mati_ClassMod_Assassin_Infiltrator"
+source_object = "Item_ClassMods.Mat.Mati_ClassMod_Assassin_Infiltrator"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Items.Master_ClassMod_02"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_DecalRotate": -0.0189
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_AColorMidtone": Vector4(0.311571, 0.353578, 0.223676, 1.0),
+"p_AColorShadow": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_BColorHilight": Vector4(0.1343, 0.149166, 0.127177, 1.0),
+"p_BColorMidtone": Vector4(0.069396, 0.131545, 0.187838, 1.0),
+"p_BColorShadow": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_DecalChannel": Vector4(0.0, 1.0, 0.0, 1.0),
+"p_DecalColor": Vector4(1.0, 0.564405, 0.16, 1.0),
+"p_DecalScalePosition": Vector4(3.0, 7.0, 0.4393, -0.0579),
+"p_PatternChannelScale": Vector4(0.0, 1.0, 0.0, 0.0),
+"p_PatternColor": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_PatternScalePosition": Vector4(2.0, 2.0, -0.2243, -0.2542)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Decal": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Decal": "Common_GunMaterials.Patterns.Pattern_HyperionStripeUncommon",
+"p_Diffuse": "Item_ClassMods.Textures.AssassinClassMod01_Dif",
+"p_Masks": "Item_ClassMods.Textures.AssassinClassMod01_Msk",
+"p_Normal": "Item_ClassMods.Textures.AssassinClassMod01_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Decal": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

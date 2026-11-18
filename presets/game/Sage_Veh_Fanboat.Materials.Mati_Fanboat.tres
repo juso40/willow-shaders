@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Vehicle.Master_Vehicle.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Sage_Veh_Fanboat.Materials.Mati_Fanboat"
+source_object = "Sage_Veh_Fanboat.Materials.Mati_Fanboat"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Vehicle.Master_Vehicle"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.25084, 0.267358, 0.215764, 1.0),
+"p_AColorMidtone": Vector4(0.181341, 0.187838, 0.156595, 1.0),
+"p_AColorShadow": Vector4(0.078057, 0.093876, 0.082414, 1.0),
+"p_BColorHilight": Vector4(0.637872, 0.648587, 0.712681, 1.0),
+"p_BColorMidtone": Vector4(0.282033, 0.28495, 0.309381, 1.0),
+"p_BColorShadow": Vector4(0.207017, 0.206399, 0.270708, 1.0),
+"p_CColorHilight": Vector4(0.737, 0.2585, 0.0, 1.0),
+"p_CColorMidtone": Vector4(1.5, 0.303636, 0.0, 1.0),
+"p_CColorShadow": Vector4(0.226511, 0.107471, 0.0826, 1.0),
+"p_ColorD": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_DecalColor": Vector4(0.0, 0.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Decal": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Decal": "Sage_Veh_Fanboat.Textures.Decal_FanboatSkull",
+"p_Diffuse": "Sage_Veh_Fanboat.Textures.Fanboat_D",
+"p_Masks": "Sage_Veh_Fanboat.Textures.Fanboat_Comp",
+"p_Normal": ""
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Decal": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": ""
+})
+notes = "Instance native static permutation data is not exposed by this dump."

@@ -1,0 +1,41 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.NPC.Master_NPC.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_Allium_Tim.Materials.Mati_HeadTim"
+source_object = "GD_Allium_Tim.Materials.Mati_HeadTim"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.NPC.Master_NPC"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.231708, 0.598114, 0.817649, 1.0),
+"p_AColorMidtone": Vector4(0.13269, 0.262307, 0.8066, 1.0),
+"p_AColorShadow": Vector4(0.017654, 0.158453, 0.453022, 1.0),
+"p_BColorHilight": Vector4(0.210513, 0.266418, 0.696107, 1.0),
+"p_BColorMidtone": Vector4(0.040754, 0.187217, 0.475121, 1.0),
+"p_BColorShadow": Vector4(0.05307, 0.079953, 0.243085, 1.0),
+"p_CColorHilight": Vector4(0.073793, 0.213852, 0.751354, 1.0),
+"p_CColorMidtone": Vector4(0.034985, 0.156893, 0.331479, 1.0),
+"p_CColorShadow": Vector4(0.015528, 0.049969, 0.198888, 1.0),
+"p_ColorD": Vector4(0.673514, 1.556597, 3.693511, 1.0),
+"p_HidePart": Vector4(1.0, 1.0, 0.0, 0.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_Allium_GenericMale.Textures.FanHead_Dif",
+"p_Normal": "Char_Allium_GenericMale.Textures.FanHead_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_LovePotion.Materials.Mat_LovePotion.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_LovePotion.Mati_Whiskey"
+source_object = "Prop_LovePotion.Mati_Whiskey"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_LovePotion.Materials.Mat_LovePotion"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_glasscolor": Vector4(0.0, 0.0, 0.0, 1.0),
+"potion color": Vector4(0.265184, 0.184025, 0.110075, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

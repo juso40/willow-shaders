@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Signs_02.Materials.Mat_CardboardSign"
+source_object = "Prop_Signs_02.Materials.Mat_CardboardSign"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Grafitti_Color": Vector4(0.204412, 0.035044, 0.033136, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Comp": null,
+"Diffuse": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Comp": "Prop_Signs_02.Textures.CardboardSign_01_Comp",
+"Diffuse": "Prop_Signs_02.Textures.CardboardSign_01_Dif"
+})
+texture_object_classes = Dictionary[String, String]({
+"Comp": "Texture2D",
+"Diffuse": "Texture2D"
+})
+static_component_masks = Dictionary[String, Vector4]({
+"mask_Channel": Vector4(1.0, 0.0, 0.0, 0.0)
+})
+static_switches = Dictionary[String, bool]({
+"Switch_Grafitti": false
+})

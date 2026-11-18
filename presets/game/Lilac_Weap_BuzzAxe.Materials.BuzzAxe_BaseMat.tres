@@ -1,0 +1,57 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Weapons.Master_Gun.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Lilac_Weap_BuzzAxe.Materials.BuzzAxe_BaseMat"
+source_object = "Lilac_Weap_BuzzAxe.Materials.BuzzAxe_BaseMat"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Weapons.Master_Gun"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_DecalRotate": 0.0466,
+"p_HighlightsIntensity": 0.5,
+"p_ShadowsIntensity": 2.0,
+"p_UseFullColorDecal": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(3.548687, 1.582361, 1.137237, 1.0),
+"p_AColorMidtone": Vector4(1.142793, 0.03161, 0.135825, 1.0),
+"p_AColorShadow": Vector4(0.278259, 0.317728, 0.585614, 1.0),
+"p_BColorHilight": Vector4(2.206298, 4.037255, 4.524412, 1.0),
+"p_BColorMidtone": Vector4(0.54492, 0.594584, 0.976512, 1.0),
+"p_BColorShadow": Vector4(0.530367, 0.462068, 0.460045, 1.0),
+"p_CColorMidtone": Vector4(0.401023, 0.411707, 0.599867, 1.0),
+"p_CColorShadow": Vector4(0.182515, 0.201695, 0.243883, 1.0),
+"p_DColor": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_DecalChannel": Vector4(1.0, 1.0, 1.0, 0.0),
+"p_DecalColor": Vector4(0.0, 7.618185, 17.043728, 0.0),
+"p_DecalScalePosition": Vector4(6.310199, 6.7664, 0.4868, 0.4879)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"P_SimpleReflect": null,
+"p_Decal": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_NormalScopesEmissive": null,
+"p_Pattern": null
+})
+texture_object_paths = Dictionary[String, String]({
+"P_SimpleReflect": "Common_GunMaterials.Env.GlossyC",
+"p_Decal": "Common_GunMaterials.Logos.FacePaint_SirenBanditEpic",
+"p_Diffuse": "Lilac_Weap_BuzzAxe.Texture.BuzzAxe_Diff",
+"p_Masks": "Lilac_Weap_BuzzAxe.Texture.BuzzAxe_Comp",
+"p_NormalScopesEmissive": "Lilac_Weap_BuzzAxe.Texture.BuzzAxe_Norm",
+"p_Pattern": "Common_GunMaterials.Patterns.Pattern_DahlRare"
+})
+texture_object_classes = Dictionary[String, String]({
+"P_SimpleReflect": "Texture2D",
+"p_Decal": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_NormalScopesEmissive": "Texture2D",
+"p_Pattern": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_ENV_Fire.Materials.Mat_SubUV_3X3_Dynamic_Fire"
+source_object = "FX_ENV_Fire.Materials.Mat_SubUV_3X3_Dynamic_Fire"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"DepthBias": 0.0,
+"DesaturationAmt": 0.0,
+"ShimmerAmount": 0.08
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Mask": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Mask": "FX_Shared_Fire.Textures.Tex_Fire_Flipbook_03"
+})
+texture_object_classes = Dictionary[String, String]({
+"Mask": "Texture2D"
+})

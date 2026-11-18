@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/prop_lightfixtures.Materials.Mat_LightSpot.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_Fyrestone.Materials.Mati_LightSpotPurple"
+source_object = "Env_Fyrestone.Materials.Mati_LightSpotPurple"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "prop_lightfixtures.Materials.Mat_LightSpot"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"LightColor": Vector4(1.592141, 0.97557, 6.067416, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

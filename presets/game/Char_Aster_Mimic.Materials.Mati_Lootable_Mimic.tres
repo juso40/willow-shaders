@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Char_Aster_Mimic.Materials.Mat_LootableMimic.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Aster_Mimic.Materials.Mati_Lootable_Mimic"
+source_object = "Char_Aster_Mimic.Materials.Mati_Lootable_Mimic"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Char_Aster_Mimic.Materials.Mat_LootableMimic"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_EmissiveScale": Vector4(1.0, 15.0, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

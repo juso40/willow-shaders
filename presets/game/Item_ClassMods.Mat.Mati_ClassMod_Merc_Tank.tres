@@ -1,0 +1,56 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Items.Master_ClassMod_02.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Item_ClassMods.Mat.Mati_ClassMod_Merc_Tank"
+source_object = "Item_ClassMods.Mat.Mati_ClassMod_Merc_Tank"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Items.Master_ClassMod_02"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_DecalRotate": -0.503,
+"p_ReplaceDecal": 0.5
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.616926, 0.790931, 0.658626, 1.0),
+"p_AColorMidtone": Vector4(0.501802, 0.569315, 0.179559, 1.0),
+"p_AColorShadow": Vector4(0.241478, 0.250574, 0.270708, 1.0),
+"p_BColorHilight": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_BColorMidtone": Vector4(0.480645, 0.405892, 0.401047, 1.0),
+"p_BColorShadow": Vector4(0.325955, 0.325955, 0.325955, 1.0),
+"p_CColorHilight": Vector4(0.530367, 0.450225, 0.312203, 1.0),
+"p_CColorMidtone": Vector4(1.0, 0.547495, 0.245497, 1.0),
+"p_CColorShadow": Vector4(0.48421, 0.655193, 1.0, 1.0),
+"p_DecalChannel": Vector4(1.0, 0.0, 0.0, 1.0),
+"p_DecalColor": Vector4(0.869275, 0.93, 0.690435, 1.01),
+"p_DecalScalePosition": Vector4(0.55, 0.5, 0.508, -0.3724),
+"p_EmissiveColor": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_PatternChannelScale": Vector4(1.0, 1.0, 1.0, 0.0),
+"p_PatternColor": Vector4(2.262395, 2.262395, 2.262395, 1.0),
+"p_PatternScalePosition": Vector4(1.0, 1.0, 0.0, 0.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_CustomPattern": null,
+"p_Decal": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_CustomPattern": "Common_GunMaterials.Patterns.Pattern_DahlUncommon",
+"p_Decal": "Item_ClassMods.Textures.MercClassMod_Decal_01",
+"p_Diffuse": "Item_ClassMods.Textures.MercClassMod01_Dif",
+"p_Masks": "Item_ClassMods.Textures.MercClassMod01_Msk",
+"p_Normal": "Item_ClassMods.Textures.MercClassMod01_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_CustomPattern": "Texture2D",
+"p_Decal": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

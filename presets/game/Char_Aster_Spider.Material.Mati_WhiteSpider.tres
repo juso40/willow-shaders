@@ -1,0 +1,40 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Aster_Spider.Material.Mati_WhiteSpider"
+source_object = "Char_Aster_Spider.Material.Mati_WhiteSpider"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_HighlightsIntensity": 5.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(42.586124, 45.688557, 50.0, 0.0),
+"p_AColorMidtone": Vector4(0.935498, 4.089984, 5.837669, 0.0),
+"p_BColorMidtone": Vector4(1.058477, 1.058477, 1.058477, 0.0),
+"p_CColorHilight": Vector4(4.01915, 4.308999, 3.955968, 0.0),
+"p_CColorMidtone": Vector4(1.792027, 1.792027, 1.792027, 0.0),
+"p_ColorD": Vector4(2.3204, 2.3204, 2.3204, 1.0),
+"p_EmissiveScale": Vector4(50.0, 39.499504, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_Aster_Spider.Textures.Creat_CesiumHarvester_Dif",
+"p_Masks": "Char_Aster_Spider.Textures.Creat_CesiumHarvester_Mask_02",
+"p_Normal": "Char_Aster_Spider.Textures.Creat_CesiumHarvester_Norm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

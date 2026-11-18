@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_WEP_Trails.Materials.Mat_INCEND_Trail.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_WEP_Trails.Materials.Mati_EMP_Trail"
+source_object = "FX_WEP_Trails.Materials.Mati_EMP_Trail"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_WEP_Trails.Materials.Mat_INCEND_Trail"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"ColorBrightness": Vector4(3.0, 3.0, 3.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Panner1": null,
+"PannerRotator": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Panner1": "FX_Shared_Smoke.Textures.Tiling_DisturbanceC_Dif",
+"PannerRotator": "FX_Shared_Water.Textures.WaterrippleBLK_Pan_512_Dif"
+})
+texture_object_classes = Dictionary[String, String]({
+"Panner1": "Texture2D",
+"PannerRotator": "Texture2D"
+})

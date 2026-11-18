@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_Nast_ThresherIkaroa.Materials.Mati_Thresher_Ikaroa"
+source_object = "GD_Nast_ThresherIkaroa.Materials.Mati_Thresher_Ikaroa"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_HighlightsIntensity": 10.0,
+"p_PatternIntensity": 0.5,
+"p_UVChannelSelect": 6.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.115624, 0.365433, 0.618762, 1.0),
+"p_AColorMidtone": Vector4(0.120288, 0.23205, 0.618762, 1.0),
+"p_AColorShadow": Vector4(0.076254, 0.147103, 0.392251, 1.0),
+"p_BColorHilight": Vector4(0.155886, 0.568536, 0.618762, 1.0),
+"p_BColorMidtone": Vector4(0.088034, 0.618762, 0.556939, 1.0),
+"p_BColorShadow": Vector4(0.120288, 0.23205, 0.618762, 1.0),
+"p_CColorHilight": Vector4(0.238446, 0.024042, 0.657434, 1.0),
+"p_CColorMidtone": Vector4(0.188352, 0.018991, 0.519318, 1.0),
+"p_CColorShadow": Vector4(0.11221, 0.011314, 0.309381, 1.0),
+"p_ColorD": Vector4(0.120288, 0.23205, 0.618762, 1.0),
+"p_EmissiveScale": Vector4(0.162005, 0.515756, 2.0, 1.0),
+"p_MuscleFat": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_PatternColor": Vector4(0.790654, 0.789173, 0.792135, 2.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_CustomPattern": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_CustomPattern": "FX_ENV_Misc.Textures.Caustic_Dif",
+"p_Diffuse": "Char_Thresher.Textures.Thresher_Dif",
+"p_Masks": "Char_Thresher.Textures.Thresher_Comp",
+"p_Normal": "Char_Thresher.Textures.Thresher_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_CustomPattern": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

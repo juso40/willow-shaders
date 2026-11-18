@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_GunMaterials.Materials.Pistol.Mati_TorgueLegendaryPistol_Calla.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Gladiolus_GunMaterials.Materials.Launcher.Mati_Torgue_6_Tunguska"
+source_object = "Gladiolus_GunMaterials.Materials.Launcher.Mati_Torgue_6_Tunguska"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_GunMaterials.Materials.Pistol.Mati_TorgueLegendaryPistol_Calla"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_DecalRotate": -0.0064,
+"p_ReplaceDecal": 0.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_ReflectColor": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_ReflectionChannelScale": Vector4(0.8, 0.3, 0.4, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"P_SimpleReflect": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_NormalScopesEmissive": null
+})
+texture_object_paths = Dictionary[String, String]({
+"P_SimpleReflect": "Common_GunMaterials.Env.Chrome",
+"p_Diffuse": "Common_GunMaterials.CompTextures.Weap_LauncherShotgunPistol_Comp",
+"p_Masks": "Weap_Launchers.Tex.Weap_Launchers_Comp",
+"p_NormalScopesEmissive": "Weap_Launchers.Tex.Weap_Launchers_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"P_SimpleReflect": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_NormalScopesEmissive": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

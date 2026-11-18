@@ -1,0 +1,9 @@
+{
+  "Common_Materials.Weapons.Master_Gun": {
+	"shader": "res://shaders/master_gun.gdshader",
+	"debug_profile": "res://presets/debug_profiles/master_gun.tres",
+	"static_parameter_bindings": {
+	  "p_DecalChannel": "p_DecalChannelStaticMask"
+	}
+  }
+}

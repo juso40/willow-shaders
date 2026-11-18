@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Co_MoonInstDecor.Materials.Mati_Co_TechContainer_01.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Co_MoonInstDecor.Materials.Mati_Co_TechContainer_04"
+source_object = "Prop_Co_MoonInstDecor.Materials.Mati_Co_TechContainer_04"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Co_MoonInstDecor.Materials.Mati_Co_TechContainer_01"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.811275, 0.81646, 0.872896, 1.0),
+"p_AColorMidtone": Vector4(4.647029, 4.676731, 5.0, 1.0),
+"p_AColorShadow": Vector4(0.5186, 0.521914, 0.55799, 1.0),
+"p_Color_Emissive1_Base": Vector4(1.0, 0.070849, 0.0, 1.0),
+"p_Color_Highlight": Vector4(0.751354, 0.58975, 0.332687, 1.0),
+"p_Color_Spec_1": Vector4(0.0, 0.0, 0.0, 10.0),
+"p_Color_Spec_2": Vector4(0.0, 0.0, 0.0, 10.0),
+"p_Color_Texture1_A": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_Color_Texture1_B": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_Color_Texture1_Base": Vector4(0.408825, 0.408825, 0.408825, 1.0),
+"p_Color_Texture1_C": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_Color_Texture1_D": Vector4(1.0, 1.0, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

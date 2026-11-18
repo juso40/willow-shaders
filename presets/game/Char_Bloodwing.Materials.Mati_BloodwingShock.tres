@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Char_Bloodwing.Materials.Mati_Bloodwing.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Bloodwing.Materials.Mati_BloodwingShock"
+source_object = "Char_Bloodwing.Materials.Mati_BloodwingShock"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Char_Bloodwing.Materials.Mati_Bloodwing"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_FxScaleShock": 15.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"TintColor": Vector4(0.3, 0.7, 1.2, 1.0),
+"TintDiffuse": Vector4(1.0, 1.5, 4.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

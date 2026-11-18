@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Env_VOG_Chamber.Materials.Mat_DigiFade_Master.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_VOG_Chamber.Materials.Mat_HyperionSwitchFade_INST"
+source_object = "Env_VOG_Chamber.Materials.Mat_HyperionSwitchFade_INST"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Env_VOG_Chamber.Materials.Mat_DigiFade_Master"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Diffuse": null,
+"Emissive": null,
+"Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Diffuse": "Prop_Switches.Textures.HyperionButton_Dif",
+"Emissive": "Prop_HyperionArchitecture.Textures.HyperionEchoKiosk_Comp",
+"Normal": "EngineMaterials.DefaultNormal"
+})
+texture_object_classes = Dictionary[String, String]({
+"Diffuse": "Texture2D",
+"Emissive": "Texture2D",
+"Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

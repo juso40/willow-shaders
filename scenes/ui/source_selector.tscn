@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/source_selector.gd" id="1"]
+[ext_resource type="PackedScene" path="res://scenes/ui/material_browser.tscn" id="2"]
+
+[node name="SourceSelector" type="VBoxContainer"]
+script = ExtResource("1")
+
+[node name="Selection" type="Label" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+autowrap_mode = 3
+text = "No material selected"
+
+[node name="Choose" type="Button" parent="."]
+layout_mode = 2
+text = "Choose material"
+
+[node name="Import" type="Button" parent="."]
+layout_mode = 2
+text = "Import model"
+
+[node name="Browser" parent="." instance=ExtResource("2")]
+unique_name_in_owner = true
+
+[connection signal="pressed" from="Choose" to="Browser" method="open_browser"]
+[connection signal="pressed" from="Import" to="." method="_on_import_pressed"]
+[connection signal="instance_selected" from="Browser" to="." method="_on_browser_selected"]

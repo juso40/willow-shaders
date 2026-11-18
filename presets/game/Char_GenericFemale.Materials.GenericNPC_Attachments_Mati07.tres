@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Char_GenericFemale.Materials.GenericNPC_Attachments_Mati01.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_GenericFemale.Materials.GenericNPC_Attachments_Mati07"
+source_object = "Char_GenericFemale.Materials.GenericNPC_Attachments_Mati07"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Char_GenericFemale.Materials.GenericNPC_Attachments_Mati01"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(1.259622, 0.806693, 0.38279, 1.0),
+"p_AColorMidtone": Vector4(1.414313, 0.905761, 0.4298, 1.0),
+"p_AColorShadow": Vector4(0.507884, 0.325261, 0.154342, 1.0),
+"p_BColorHilight": Vector4(1.569003, 0.800252, 0.493139, 0.0),
+"p_BColorMidtone": Vector4(1.0, 0.510039, 0.314301, 0.0),
+"p_BColorShadow": Vector4(0.856322, 0.456049, 0.293347, 0.0),
+"p_CColorHilight": Vector4(0.839748, 0.561031, 0.431626, 1.0),
+"p_CColorMidtone": Vector4(0.828699, 0.347055, 0.21521, 1.0),
+"p_CColorShadow": Vector4(0.353029, 0.316892, 0.618762, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

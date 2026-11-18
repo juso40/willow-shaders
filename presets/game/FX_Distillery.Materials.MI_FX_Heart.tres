@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_Shared_MasterShaders.Materials.Additive.Mat_FX_Unlit_Add_MS.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Distillery.Materials.MI_FX_Heart"
+source_object = "FX_Distillery.Materials.MI_FX_Heart"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_Shared_MasterShaders.Materials.Additive.Mat_FX_Unlit_Add_MS"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Emissive_GP": null,
+"Opc_GP": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Emissive_GP": "FX_Distillery.Textures.T_FX_LovePotion_Heart_D",
+"Opc_GP": "FX_Distillery.Textures.T_FX_LovePotion_Heart_D"
+})
+texture_object_classes = Dictionary[String, String]({
+"Emissive_GP": "Texture2D",
+"Opc_GP": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_SkagMeat.Materials.Mat_MeatSoup.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_SkagMeat.Materials.Mati_MeatSoup"
+source_object = "Prop_SkagMeat.Materials.Mati_MeatSoup"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_SkagMeat.Materials.Mat_MeatSoup"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"SlopColor": Vector4(0.0, 0.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

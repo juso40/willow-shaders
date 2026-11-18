@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Co_Materials.MasterMaterials.Master_Environment.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Co_DahlShipExterior.Materials.Mati_Colorize_Split_Common"
+source_object = "Prop_Co_DahlShipExterior.Materials.Mati_Colorize_Split_Common"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Co_Materials.MasterMaterials.Master_Environment"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_Color_Emissive1_B": Vector4(1.0, 0.546973, 0.0, 1.0),
+"p_Color_Emissive1_Base": Vector4(0.912682, 1.0, 0.0, 1.0),
+"p_Color_Highlight": Vector4(0.21649, 0.220986, 0.189811, 1.0),
+"p_Color_Spec_1": Vector4(0.461077, 0.632021, 0.591451, 0.1),
+"p_Color_Spec_2": Vector4(0.97069, 0.981179, 0.691464, 0.0),
+"p_Color_Spec_Emissive": Vector4(1.0, 1.5, 2.5, 1.0),
+"p_Color_Texture1_A": Vector4(0.021187, 0.022099, 0.007057, 1.0),
+"p_Color_Texture1_B": Vector4(0.193639, 0.212314, 0.220986, 1.0),
+"p_Color_Texture1_Base": Vector4(0.061876, 0.061876, 0.061876, 1.0),
+"p_DiffMod": Vector4(0.070716, 0.070716, 0.070716, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Compilation_Mask": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Compilation_Mask": "Common_Co_Materials.Colorize_4_Example2_SD5C_Comp",
+"p_Diffuse": "Prop_Co_DahlShipExterior.Texture.MoonShip_Fusebox_Diff",
+"p_Masks": "Prop_Co_DahlShipExterior.Texture.MoonShip_Fusebox_Mask",
+"p_Normal": "Prop_Co_DahlShipExterior.Texture.MoonShip_Fusebox_Norm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Compilation_Mask": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

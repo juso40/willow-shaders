@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Radios.Materials.Mat_RadioBig.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Radios.Materials.Mat_RadioBig_GLOW"
+source_object = "Prop_Radios.Materials.Mat_RadioBig_GLOW"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Radios.Materials.Mat_RadioBig"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_Dial": 0.0,
+"p_Dial_Brightness": 1.0,
+"p_GlowScale": 2.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"P_SimpleReflectOffset": Vector4(0.5, 0.5, 0.0, 1.0),
+"p_BackLight": Vector4(1.0, 5.0, 1.0, 1.0),
+"p_GlowColor": Vector4(0.0, 0.795551, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

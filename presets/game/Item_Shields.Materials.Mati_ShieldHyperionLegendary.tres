@@ -1,0 +1,61 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Items.Master_ShieldGrenade.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Item_Shields.Materials.Mati_ShieldHyperionLegendary"
+source_object = "Item_Shields.Materials.Mati_ShieldHyperionLegendary"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Items.Master_ShieldGrenade"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_EpicLegendaryEmissScale": 2.0,
+"p_HighlightsIntensity": 0.5
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(1.0, 0.521705, 0.499458, 1.0),
+"p_AColorMidtone": Vector4(1.0, 0.038473, 0.038473, 1.0),
+"p_AColorShadow": Vector4(0.259659, 0.011904, 0.172264, 1.0),
+"p_BColorHilight": Vector4(0.599165, 0.807791, 1.0, 1.0),
+"p_BColorMidtone": Vector4(0.160444, 0.173439, 0.280124, 1.0),
+"p_BColorShadow": Vector4(0.302125, 0.202327, 0.235246, 1.0),
+"p_CColorHilight": Vector4(1.530576, 1.836439, 1.846881, 1.0),
+"p_CColorMidtone": Vector4(0.778977, 0.724677, 0.512761, 1.0),
+"p_CColorShadow": Vector4(0.311181, 0.38891, 0.618686, 1.0),
+"p_DecalChannel": Vector4(1.0, 0.0, 0.0, 1.0),
+"p_DecalColor": Vector4(2.919148, 2.919148, 2.919148, 1.0),
+"p_DecalScalePosition": Vector4(10.0, 18.0, 0.53, 0.46),
+"p_EmissiveColor": Vector4(3.616907, 1.939901, 0.024605, 1.0),
+"p_PatternChannelScale": Vector4(1.0, 0.0, 0.0, 0.0),
+"p_PatternColor": Vector4(1.716298, 1.774459, 1.704893, 1.0),
+"p_PatternScalePosition": Vector4(1.0, 1.0, 0.535642, 0.678431),
+"p_ReflectColor": Vector4(1.57388, 1.57388, 1.57388, 1.0),
+"p_ReflectionChannelScale": Vector4(1.0, 1.0, 0.26, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"P_SimpleReflect": null,
+"p_Decal": null,
+"p_Diffuse": null,
+"p_EpicEmiss": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"P_SimpleReflect": "Common_GunMaterials.Env.GlossyC",
+"p_Decal": "Common_GunMaterials.Patterns.Pattern_HyperionStripeUncommon",
+"p_Diffuse": "Item_Shields.Textures.Shield_Dif",
+"p_EpicEmiss": "Item_Shields.Textures.Shield_Nrm",
+"p_Masks": "Item_Shields.Textures.Shield_Comp",
+"p_Normal": "Item_Shields.Textures.Shield_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"P_SimpleReflect": "Texture2D",
+"p_Decal": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_EpicEmiss": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

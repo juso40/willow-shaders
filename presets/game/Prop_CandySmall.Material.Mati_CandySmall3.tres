@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_CandySmall.Material.Mati_CandySmall.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_CandySmall.Material.Mati_CandySmall3"
+source_object = "Prop_CandySmall.Material.Mati_CandySmall3"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_CandySmall.Material.Mati_CandySmall"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(1.0, 0.788454, 0.784538, 1.0),
+"p_AColorMidtone": Vector4(0.861847, 0.115092, 0.066691, 1.0),
+"p_AColorShadow": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_BColorHilight": Vector4(0.56904, 0.56904, 0.56904, 1.0),
+"p_BColorMidtone": Vector4(0.049722, 0.049722, 0.049722, 1.0),
+"p_BColorShadow": Vector4(0.23756, 0.23756, 0.23756, 1.0),
+"p_CColorHilight": Vector4(1.0, 0.986029, 0.795588, 1.0),
+"p_CColorMidtone": Vector4(0.88947, 0.742049, 0.742049, 1.0),
+"p_CColorShadow": Vector4(0.0, 0.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

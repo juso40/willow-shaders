@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Environment.Master_World.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Sage_Prop_Lootables.Materials.Mati_Tribal_Misc2"
+source_object = "Sage_Prop_Lootables.Materials.Mati_Tribal_Misc2"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Environment.Master_World"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_EmissiveScale": Vector4(0.0, 13.289639, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Normal": null,
+"p_emissive": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Sage_Prop_Lootables.Textures.Tribal_Misc2_Dif",
+"p_Normal": "Sage_Prop_Lootables.Textures.Tribal_Misc2_Nrm",
+"p_emissive": "Sage_Prop_Lootables.Textures.Tribal_Lootable_Grp"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Normal": "Texture2D",
+"p_emissive": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_BikerAccessories.Materials.Mati_Biker_Head_03_Orange"
+source_object = "Prop_BikerAccessories.Materials.Mati_Biker_Head_03_Orange"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_HighlightsIntensity": 0.75,
+"p_ShadowsIntensity": 4.0,
+"p_fade": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(1.757233, 0.968513, 0.068022, 1.0),
+"p_AColorMidtone": Vector4(0.38764, 0.118051, 0.023222, 1.0),
+"p_AColorShadow": Vector4(0.337004, 0.121558, 0.011768, 1.0),
+"p_BColorHilight": Vector4(0.23756, 0.162975, 0.119855, 1.0),
+"p_BColorMidtone": Vector4(0.574564, 0.174417, 0.003138, 1.0),
+"p_BColorShadow": Vector4(0.464071, 0.211118, 0.027219, 1.0),
+"p_CColorHilight": Vector4(0.370152, 0.140298, 0.087947, 1.0),
+"p_CColorMidtone": Vector4(4.0, 2.0, 0.060797, 1.0),
+"p_CColorShadow": Vector4(0.24861, 0.114153, 0.019048, 1.0),
+"p_ColorD": Vector4(0.922618, 0.640718, 0.006513, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Prop_BikerAccessories.Textures.BlackArmor_Head_D",
+"p_Masks": "Prop_BikerAccessories.Textures.Biker_BlackArmor_Head_Comp",
+"p_Normal": "Prop_BikerAccessories.Textures.BlackArmor_Head_N"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

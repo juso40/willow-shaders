@@ -1,0 +1,40 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Skybox.MoveMe.Master_IceRock"
+source_object = "Prop_Skybox.MoveMe.Master_IceRock"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"p_InternalGlowRadiusScale": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_DiffuseColor": Vector4(0.958912, 0.993986, 1.110425, 1.0),
+"p_DiffuseUVScale": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_InternalGlowColor": Vector4(0.4, 0.48, 0.4, 1.0),
+"p_NormalUVScale": Vector4(1.0, 1.0, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"P_SimpleReflect": null,
+"p_InternalGlowTexture": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"P_SimpleReflect": "Prop_Skybox.MoveMe.R2Tex_SnowTempCubeStaticNegY",
+"p_InternalGlowTexture": "Prop_Skybox.MoveMe.Ice_Dif",
+"p_Normal": "Prop_Skybox.MoveMe.Ice_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"P_SimpleReflect": "Texture2D",
+"p_InternalGlowTexture": "Texture2D",
+"p_Normal": "Texture2D"
+})
+static_component_masks = Dictionary[String, Vector4]({
+"p_SnowAxis": Vector4(1.0, 1.0, 0.0, 0.0)
+})
+static_switches = Dictionary[String, bool]({
+"p_InternalGlow": false,
+"p_Use2ndUVW": false
+})

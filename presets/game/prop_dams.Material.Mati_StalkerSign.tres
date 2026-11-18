@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/prop_dams.Material.Master_WildlifeSign.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "prop_dams.Material.Mati_StalkerSign"
+source_object = "prop_dams.Material.Mati_StalkerSign"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "prop_dams.Material.Master_WildlifeSign"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Sign1_Placement": 2.02,
+"Sign2_Placement": 2.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Sign2_Color": Vector4(0.1, 0.01, 0.01, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

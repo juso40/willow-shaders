@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_TitleCards.Materials.Mat_TitleCardBackground.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_TitleCards.Ep07.Mati_MordecaiTitleCard"
+source_object = "FX_TitleCards.Ep07.Mati_MordecaiTitleCard"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_TitleCards.Materials.Mat_TitleCardBackground"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Color": Vector4(0.0, 0.15, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

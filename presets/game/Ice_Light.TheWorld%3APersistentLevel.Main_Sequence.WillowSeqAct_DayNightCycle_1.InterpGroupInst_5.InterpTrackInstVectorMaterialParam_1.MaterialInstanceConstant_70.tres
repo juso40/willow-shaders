@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Env_Glacial.Materials.Mati_GlacialWater_DNC.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Ice_Light.TheWorld:PersistentLevel.Main_Sequence.WillowSeqAct_DayNightCycle_1.InterpGroupInst_5.InterpTrackInstVectorMaterialParam_1.MaterialInstanceConstant_70"
+source_object = "Ice_Light.TheWorld:PersistentLevel.Main_Sequence.WillowSeqAct_DayNightCycle_1.InterpGroupInst_5.InterpTrackInstVectorMaterialParam_1.MaterialInstanceConstant_70"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Env_Glacial.Materials.Mati_GlacialWater_DNC"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_FogHeight": 7.0,
+"p_FogOpacity": 0.8
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_FogColor": Vector4(0.57, 0.84, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Environment.Master_Wind.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_CraterLake.Materials.Mati_BanditFlagCrater_Green"
+source_object = "Env_CraterLake.Materials.Mati_BanditFlagCrater_Green"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Environment.Master_Wind"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_HighlightsIntensity": 2.0,
+"p_WaveScale": 20.0,
+"p_WindSpeed": 10.0,
+"p_WindWaveLength": 7.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.102547, 0.505435, 0.047976, 1.0),
+"p_AColorMidtone": Vector4(0.069597, 0.398876, 0.062488, 1.0),
+"p_AColorShadow": Vector4(0.037495, 0.190217, 0.049987, 1.0),
+"p_BColorHilight": Vector4(0.75, 0.15873, 0.219595, 1.0),
+"p_BColorMidtone": Vector4(0.288043, 0.138793, 0.090987, 1.0),
+"p_BColorShadow": Vector4(0.777174, 0.128423, 0.070954, 1.0),
+"p_CColorHilight": Vector4(0.701087, 0.166164, 0.141517, 1.0),
+"p_CColorMidtone": Vector4(0.391304, 0.096269, 0.067326, 1.0),
+"p_CColorShadow": Vector4(0.25, 0.126781, 0.098458, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Prop_Flags.Textures.BanditFlags_Dif",
+"p_Masks": "Prop_Flags.Textures.BanditFlagsColor_Comp",
+"p_Normal": "Prop_Flags.Textures.BanditFlags_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

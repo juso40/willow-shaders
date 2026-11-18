@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_Matchstick.Materials.Mati_Psycho_Matchstick"
+source_object = "GD_Matchstick.Materials.Mati_Psycho_Matchstick"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_FxScaleSlag": 0.0,
+"p_PatternIntensity": 1.75,
+"p_PatternScale": 2.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(1.0, 0.867945, 0.839785, 1.0),
+"p_AColorMidtone": Vector4(1.0, 0.571849, 0.508305, 1.0),
+"p_AColorShadow": Vector4(1.0, 0.56131, 0.546978, 1.0),
+"p_BColorHilight": Vector4(0.521348, 0.262266, 0.226113, 1.0),
+"p_BColorMidtone": Vector4(0.837079, 0.337933, 0.310377, 1.0),
+"p_BColorShadow": Vector4(0.151685, 0.093991, 0.028571, 1.0),
+"p_CColorHilight": Vector4(0.067416, 0.046983, 0.043207, 1.0),
+"p_CColorMidtone": Vector4(0.477528, 0.256752, 0.183687, 1.0),
+"p_CColorShadow": Vector4(0.292135, 0.116551, 0.106279, 1.0),
+"p_PatternColor": Vector4(0.035955, 0.030709, 0.028771, 2.0),
+"p_SlagColor": Vector4(0.117131, 0.000441, 0.589888, 5.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_CustomPattern": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_CustomPattern": "Common_GunMaterials.Patterns.Pattern_JacobsCommonMetal",
+"p_Diffuse": "Char_Bandit_Psycho.Textures.BanditPsycho_Dif",
+"p_Masks": "Char_Bandit_Psycho.Textures.BanditPsycho_Comp",
+"p_Normal": "Char_Bandit_Psycho.Textures.BanditPsycho_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_CustomPattern": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

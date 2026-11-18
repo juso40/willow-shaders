@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Billboards.Materials.Mati_Bllboards"
+source_object = "Billboards.Materials.Mati_Bllboards"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"offsetU (0 / .5)": 0.0,
+"offsetV (0 / .333 / .666 )": 0.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Diffuse Texture": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Diffuse Texture": "Billboards.Textures.AdvertCombined01_Dif"
+})
+texture_object_classes = Dictionary[String, String]({
+"Diffuse Texture": "Texture2D"
+})
+notes = "Conflicting expression defaults for Diffuse Texture. First recorded node used for named lookup. Not recovered shader wiring."

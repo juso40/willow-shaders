@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Bandit_Psycho.Materials.Mati_PsychoBanditMohawk"
+source_object = "Char_Bandit_Psycho.Materials.Mati_PsychoBanditMohawk"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.756878, 0.576485, 0.367999, 1.0),
+"p_AColorMidtone": Vector4(0.646385, 0.243192, 0.178544, 1.0),
+"p_AColorShadow": Vector4(0.563515, 0.239039, 0.384501, 1.0),
+"p_BColorHilight": Vector4(1.0, 0.839541, 0.497256, 1.0),
+"p_BColorMidtone": Vector4(0.801075, 0.484267, 0.1328, 1.0),
+"p_BColorShadow": Vector4(0.392251, 0.097222, 0.348172, 1.0),
+"p_CColorHilight": Vector4(0.911569, 0.473427, 0.623716, 1.0),
+"p_CColorMidtone": Vector4(0.72373, 0.23593, 0.335163, 1.0),
+"p_CColorShadow": Vector4(0.344922, 0.035176, 0.397775, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_Bandit_Psycho.Textures.BanditPsychoMohawk_Dif",
+"p_Masks": "Char_Bandit_Psycho.Textures.BanditPsychoMohawkColor_Comp"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

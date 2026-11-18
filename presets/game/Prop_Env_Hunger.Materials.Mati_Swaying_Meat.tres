@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Env_Hunger.Environment.Master_GlowySwayingObjectsMasked.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Env_Hunger.Materials.Mati_Swaying_Meat"
+source_object = "Prop_Env_Hunger.Materials.Mati_Swaying_Meat"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Env_Hunger.Environment.Master_GlowySwayingObjectsMasked"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Emissive_color": Vector4(0.5, 0.5, 0.5, 1.0),
+"swayDirection": Vector4(0.25, 1.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Tex_Diff": null,
+"Tex_Spec": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Tex_Diff": "Prop_SkagMeat.Textures.SkagMeat_Dif",
+"Tex_Spec": "Prop_SkagMeat.Textures.SkagMeat_Dif"
+})
+texture_object_classes = Dictionary[String, String]({
+"Tex_Diff": "Texture2D",
+"Tex_Spec": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

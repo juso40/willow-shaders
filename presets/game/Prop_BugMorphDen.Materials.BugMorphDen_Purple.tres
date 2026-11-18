@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_BugMorphDen.Materials.BugMorphDen_Green.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_BugMorphDen.Materials.BugMorphDen_Purple"
+source_object = "Prop_BugMorphDen.Materials.BugMorphDen_Purple"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_BugMorphDen.Materials.BugMorphDen_Green"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.45678, 0.391477, 1.0, 1.0),
+"p_AColorMidtone": Vector4(0.891501, 0.878458, 1.0, 1.0),
+"p_AColorShadow": Vector4(0.867371, 0.412138, 0.549122, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

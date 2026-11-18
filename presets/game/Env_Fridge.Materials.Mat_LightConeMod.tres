@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_Fridge.Materials.Mat_LightConeMod"
+source_object = "Env_Fridge.Materials.Mat_LightConeMod"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"Contrast": 0.5,
+"ScaleX": 1.0,
+"ScaleY": 1.0,
+"SmokePanSpeed": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"BeamColor": Vector4(1.0, 1.0, 0.8, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

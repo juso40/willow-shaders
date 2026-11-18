@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Moxxi.Materials.Mati_MoxxiBody_Purple"
+source_object = "Char_Moxxi.Materials.Mati_MoxxiBody_Purple"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(2.570119, 0.0, 2.759761, 1.0),
+"p_AColorMidtone": Vector4(0.380176, 0.002223, 0.408825, 1.0),
+"p_AColorShadow": Vector4(0.243085, 0.0, 0.23582, 1.0),
+"p_BColorHilight": Vector4(0.988356, 1.0, 0.976712, 1.0),
+"p_BColorMidtone": Vector4(0.988356, 1.0, 0.976712, 1.0),
+"p_BColorShadow": Vector4(1.0, 0.993295, 0.983322, 1.0),
+"p_CColorHilight": Vector4(1.0, 0.416025, 0.197262, 1.0),
+"p_CColorMidtone": Vector4(1.600358, 0.778656, 1.633028, 1.0),
+"p_CColorShadow": Vector4(0.230337, 0.022801, 0.174831, 1.0),
+"p_ColorD": Vector4(1.0, 1.0, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_Moxxi.Textures.MoxxiBody_Dif",
+"p_Masks": "Char_Moxxi.Textures.MoxxiBody_Comp",
+"p_Normal": "Char_Moxxi.Textures.MoxxiBody_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

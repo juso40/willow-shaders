@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Env_Xmas.Materials.ChristmasTree_Dead_Mat.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_Xmas.Materials.ChristmasTree_Dead_Mat_INST"
+source_object = "Env_Xmas.Materials.ChristmasTree_Dead_Mat_INST"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Env_Xmas.Materials.ChristmasTree_Dead_Mat"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"P_VertexBloat": Vector4(-1.5, -1.5, -1.5, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Normal": null,
+"Texture": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Normal": "",
+"Texture": "Prop_Wreath.Wreath_Dif"
+})
+texture_object_classes = Dictionary[String, String]({
+"Normal": "",
+"Texture": "Texture2D"
+})

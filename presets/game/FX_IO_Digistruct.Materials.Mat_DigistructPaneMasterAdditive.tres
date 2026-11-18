@@ -1,0 +1,40 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_IO_Digistruct.Materials.Mat_DigistructPaneMasterAdditive"
+source_object = "FX_IO_Digistruct.Materials.Mat_DigistructPaneMasterAdditive"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"BorderThickness": 0.98,
+"DepthBias": -5.0,
+"FracTimeSpeedNonZero": 1.0,
+"GradientStrength": 1.0,
+"PannerSpeed": 0.0,
+"RotatorTimeInRadians": 0.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"RGTilingBAOffset": Vector4(1.0, 1.0, 0.0, 0.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Diffuse": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Diffuse": "FX_IO_Digistruct.Textures.TexPage_01"
+})
+texture_object_classes = Dictionary[String, String]({
+"Diffuse": "Texture2D"
+})
+static_component_masks = Dictionary[String, Vector4]({
+"GradientDirection": Vector4(0.0, 1.0, 0.0, 0.0)
+})
+static_switches = Dictionary[String, bool]({
+"Border?": false,
+"DepthBias": false,
+"FlipGradient": false,
+"HasGradient?": false,
+"MeshEmitter?": false,
+"UseFracTime?": false
+})

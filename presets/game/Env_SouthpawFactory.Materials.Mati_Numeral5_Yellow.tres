@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_NumberStencils.Materials.Mat_Numerals_Decals.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_SouthpawFactory.Materials.Mati_Numeral5_Yellow"
+source_object = "Env_SouthpawFactory.Materials.Mati_Numeral5_Yellow"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_NumberStencils.Materials.Mat_Numerals_Decals"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"numeral": 5.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Hue": Vector4(1.0, 0.766744, 0.008373, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

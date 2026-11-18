@@ -1,0 +1,91 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Common_Materials.Environment.Master_World"
+source_object = "Common_Materials.Environment.Master_World"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"p_GlowScale": 1.0,
+"p_HighlightsIntensity": 2.0,
+"p_ShadowsIntensity": 2.0,
+"p_SnowNoiseUVScale": 1.0,
+"p_SnowUVScale": 1.0,
+"p_VertexNoiseMod": 8.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"P_SimpleReflectOffset": Vector4(0.5, 0.5, 0.0, 1.0),
+"p_AColorHilight": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_AColorMidtone": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_AColorShadow": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_BColorHilight": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_BColorMidtone": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_BColorShadow": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_CColorHilight": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_CColorMidtone": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_CColorShadow": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_DiffMod": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_Diff_UVMod": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_EmissiveScale": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_GlowColor": Vector4(0.0, 3.0, 0.0, 1.0),
+"p_NormalMod": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_SnowAmount": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_SnowColor": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_SpecColor_SpecPow": Vector4(1.0, 1.0, 1.0, 15.0),
+"p_VertexPaintDifMod": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_VertexPaintNoiseMod": Vector4(10.0, -1.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"P_SimpleReflect": null,
+"p_Diffuse": null,
+"p_DiffuseB": null,
+"p_Masks": null,
+"p_Normal": null,
+"p_NormalB": null,
+"p_SnowDiffuse": null,
+"p_Specular": null,
+"p_VertexPaintNoise": null,
+"p_emissive": null
+})
+texture_object_paths = Dictionary[String, String]({
+"P_SimpleReflect": "Common_Textures.Stub.StubWhite_Gray",
+"p_Diffuse": "Common_Textures.Stub.StubGray_Gray",
+"p_DiffuseB": "Common_Textures.Stub.StubGray_Gray",
+"p_Masks": "Common_Textures.Stub.StubBlack_Gray",
+"p_Normal": "Common_Textures.Stub.StubFlat_Nrm",
+"p_NormalB": "Common_Textures.Stub.StubFlat_Nrm",
+"p_SnowDiffuse": "Prop_Terrain.Textures.Snow_Dif",
+"p_Specular": "",
+"p_VertexPaintNoise": "Prop_Water.Textures.WaterHqNoise_Gray",
+"p_emissive": "Common_Textures.Stub.StubWhite_Gray"
+})
+texture_object_classes = Dictionary[String, String]({
+"P_SimpleReflect": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_DiffuseB": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D",
+"p_NormalB": "Texture2D",
+"p_SnowDiffuse": "Texture2D",
+"p_Specular": "",
+"p_VertexPaintNoise": "Texture2D",
+"p_emissive": "Texture2D"
+})
+static_component_masks = Dictionary[String, Vector4]({
+"chan_EmissiveMask": Vector4(1.0, 0.0, 0.0, 0.0),
+"chan_Specular": Vector4(1.0, 0.0, 0.0, 0.0),
+"p_VertexPaintNoiseChan": Vector4(0.0, 0.0, 1.0, 0.0)
+})
+static_switches = Dictionary[String, bool]({
+"sw_Colorize": false,
+"sw_Emissive": false,
+"sw_EnableSnowOnTop": false,
+"sw_Glow": false,
+"sw_Normal": false,
+"sw_SimpleReflect": false,
+"sw_UV2": false,
+"sw_VertexPaint": false,
+"sw_specular": false
+})

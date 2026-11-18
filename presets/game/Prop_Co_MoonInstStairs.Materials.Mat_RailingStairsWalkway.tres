@@ -1,0 +1,41 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Co_Materials.Materials.Mati_Colorize_Split_Common.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Co_MoonInstStairs.Materials.Mat_RailingStairsWalkway"
+source_object = "Prop_Co_MoonInstStairs.Materials.Mat_RailingStairsWalkway"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Co_Materials.Materials.Mati_Colorize_Split_Common"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_Color_Emissive1_A": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_Color_Emissive1_B": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_Color_Emissive1_Base": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_Color_Highlight": Vector4(0.620306, 0.806746, 1.0, 1.0),
+"p_Color_Spec_1": Vector4(2.466145, 2.535913, 2.616478, 1.0),
+"p_Color_Texture1_A": Vector4(0.195792, 0.201331, 0.207727, 1.0),
+"p_Color_Texture1_B": Vector4(0.593054, 0.652161, 0.720415, 1.0),
+"p_Color_Texture1_Base": Vector4(0.685058, 0.613739, 0.588169, 1.0),
+"p_Color_Texture2_A": Vector4(0.097137, 0.105387, 0.114913, 1.0),
+"p_Color_Texture2_B": Vector4(1.0, 0.916025, 0.932217, 1.0),
+"p_Color_Texture2_Base": Vector4(0.393356, 0.36264, 0.295998, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Prop_Co_MoonInstStairs.Textures.RailingStairsWalkway_Diff",
+"p_Masks": "Prop_Co_MoonInstStairs.Textures.RailingStairsWalkway_Masks"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

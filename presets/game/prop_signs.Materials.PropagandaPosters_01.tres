@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "prop_signs.Materials.PropagandaPosters_01"
+source_object = "prop_signs.Materials.PropagandaPosters_01"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"TextureSwitch": Vector4(0.0, 0.0, 0.0, 0.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"TexturePack": null
+})
+texture_object_paths = Dictionary[String, String]({
+"TexturePack": "prop_signs.Textures.PropagandaPosters_Pack1"
+})
+texture_object_classes = Dictionary[String, String]({
+"TexturePack": "Texture2D"
+})

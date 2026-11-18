@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Aster_Prop_GelatinousCube.Material.GelatinousCube"
+source_object = "Aster_Prop_GelatinousCube.Material.GelatinousCube"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"AmbientScale": 1.0,
+"FinalTurbMultiplier": 0.2,
+"Panning Speed": 0.5,
+"Reflective Scale": 20.0,
+"p_WindSpeed": 0.25,
+"p_WindWaveLength": 0.0225,
+"p_WindWaveLength_Multiplier": 4.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Ambient": Vector4(0.0, 0.0, 0.0, 1.0),
+"DestTint": Vector4(0.0, 0.258427, 0.049366, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

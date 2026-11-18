@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_GunMaterials.MasterMaterials.Tediore.MasterMati_TedioreLegendary.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Common_GunMaterials.Materials.Launcher.Mati_TedioreLegendaryRL"
+source_object = "Common_GunMaterials.Materials.Launcher.Mati_TedioreLegendaryRL"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_GunMaterials.MasterMaterials.Tediore.MasterMati_TedioreLegendary"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_DecalRotate": 0.0089
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_DecalChannel": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_DecalColor": Vector4(9.047316, 9.047316, 9.047316, 1.0),
+"p_DecalScalePosition": Vector4(3.9309, 5.574, 0.7497, 0.5189)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Decal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Decal": "Common_GunMaterials.Logos.Decals_General_1"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Decal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

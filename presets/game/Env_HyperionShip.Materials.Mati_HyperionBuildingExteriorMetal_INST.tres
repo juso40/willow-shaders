@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Buildings.Materials.Mati_HyperionBuildingExteriorMetal.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_HyperionShip.Materials.Mati_HyperionBuildingExteriorMetal_INST"
+source_object = "Env_HyperionShip.Materials.Mati_HyperionBuildingExteriorMetal_INST"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Buildings.Materials.Mati_HyperionBuildingExteriorMetal"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.08287, 0.063006, 0.056297, 1.0),
+"p_AColorMidtone": Vector4(0.198888, 0.086811, 0.179792, 1.0),
+"p_AColorShadow": Vector4(0.021648, 0.027348, 0.038673, 1.0),
+"p_BColorHilight": Vector4(0.576087, 0.522591, 0.469636, 1.0),
+"p_BColorMidtone": Vector4(0.396739, 0.396739, 0.396739, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

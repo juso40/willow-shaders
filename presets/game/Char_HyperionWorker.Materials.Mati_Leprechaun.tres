@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_HyperionWorker.Materials.Mati_Leprechaun"
+source_object = "Char_HyperionWorker.Materials.Mati_Leprechaun"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.489465, 0.519318, 0.291752, 1.0),
+"p_AColorMidtone": Vector4(0.314863, 0.348315, 0.211337, 1.0),
+"p_AColorShadow": Vector4(0.132592, 0.112331, 0.04805, 1.0),
+"p_BColorHilight": Vector4(0.645555, 0.541798, 0.329729, 1.0),
+"p_BColorMidtone": Vector4(0.646385, 0.542636, 0.332132, 1.0),
+"p_BColorShadow": Vector4(0.617977, 0.487493, 0.100682, 1.0),
+"p_CColorHilight": Vector4(0.116937, 0.269663, 0.059083, 1.0),
+"p_CColorMidtone": Vector4(0.024145, 0.095506, 0.024881, 1.0),
+"p_CColorShadow": Vector4(0.01691, 0.050562, 0.012785, 1.0),
+"p_ColorD": Vector4(0.570747, 0.442489, 0.446397, 1.0),
+"p_EmissiveScale": Vector4(0.0, 0.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_HyperionWorker.Textures.HyperionWorker_Dif",
+"p_Masks": "Char_HyperionWorker.Textures.HyperionWorker_Msk",
+"p_Normal": "Char_HyperionWorker.Textures.HyperionWorker_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

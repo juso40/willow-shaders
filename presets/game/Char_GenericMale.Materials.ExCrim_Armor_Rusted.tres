@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_GenericMale.Materials.ExCrim_Armor_Rusted"
+source_object = "Char_GenericMale.Materials.ExCrim_Armor_Rusted"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_PatternIntensity": 5.0,
+"p_UVChannelSelect": 0.001
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.767928, 0.318219, 0.320302, 1.0),
+"p_AColorMidtone": Vector4(0.635336, 0.432209, 0.224664, 1.0),
+"p_AColorShadow": Vector4(0.552466, 0.167891, 0.167891, 1.0),
+"p_BColorHilight": Vector4(0.839748, 0.839748, 0.839748, 1.0),
+"p_BColorMidtone": Vector4(0.856322, 0.856322, 0.856322, 1.0),
+"p_BColorShadow": Vector4(0.613237, 0.504824, 0.504824, 1.0),
+"p_CColorHilight": Vector4(0.795551, 0.47236, 0.210996, 1.0),
+"p_CColorMidtone": Vector4(0.830503, 0.874095, 0.933667, 1.0),
+"p_CColorShadow": Vector4(0.854827, 0.817882, 1.000239, 1.0),
+"p_ColorD": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_PatternColor": Vector4(0.381201, 0.288554, 0.223251, 2.0),
+"p_PatternScalePosition": Vector4(10.0, 10.0, 10.0, 2.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_CustomPattern": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_CustomPattern": "TilingMaterials.Textures.RoadRubble_Dif",
+"p_Diffuse": "Char_GenericMale.Textures.ExCrimson_Armor_Dif",
+"p_Masks": "Char_GenericMale.Textures.ExCrimson_Armor_Comp",
+"p_Normal": "Char_GenericMale.Textures.ExCrimson_Armor_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_CustomPattern": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

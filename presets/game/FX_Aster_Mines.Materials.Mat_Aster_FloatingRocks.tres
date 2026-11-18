@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Aster_Mines.Materials.Mat_Aster_FloatingRocks"
+source_object = "FX_Aster_Mines.Materials.Mat_Aster_FloatingRocks"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"Clamp_Min": 0.5,
+"Emissive_Scale": 1.0,
+"Flicker>Pulse": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Diff_ColorEmissive": Vector4(0.2, 0.4, 4.0, 1.0),
+"Diff_ColorMod": Vector4(0.2466, 0.39, 0.49, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Emis": null,
+"Norm": null,
+"dif": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Emis": "Common_Textures.Stub.StubBlack_Gray",
+"Norm": "Aster_Prop_Rocks.Textures.CaveRock_02_Nrm",
+"dif": "Aster_Prop_Rocks.Textures.CaveRock_02_Dif"
+})
+texture_object_classes = Dictionary[String, String]({
+"Emis": "Texture2D",
+"Norm": "Texture2D",
+"dif": "Texture2D"
+})
+static_component_masks = Dictionary[String, Vector4]({
+"Emis_Channel": Vector4(1.0, 0.0, 0.0, 0.0)
+})

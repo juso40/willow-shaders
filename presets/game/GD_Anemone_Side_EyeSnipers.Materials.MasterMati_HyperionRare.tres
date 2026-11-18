@@ -1,0 +1,57 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Weapons.Master_Gun.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_Anemone_Side_EyeSnipers.Materials.MasterMati_HyperionRare"
+source_object = "GD_Anemone_Side_EyeSnipers.Materials.MasterMati_HyperionRare"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Weapons.Master_Gun"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_HighlightsIntensity": 2.0,
+"p_ReplaceDecal": 1.0,
+"p_ShadowsIntensity": 2.0,
+"p_UseFullColorDecal": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.660701, 1.0, 0.218084, 1.0),
+"p_AColorMidtone": Vector4(0.192905, 0.359103, 0.073103, 1.0),
+"p_AColorShadow": Vector4(0.141731, 0.15469, 0.096378, 1.0),
+"p_BColorHilight": Vector4(1.0, 0.970237, 0.781313, 1.0),
+"p_BColorMidtone": Vector4(0.102497, 0.107948, 0.127067, 1.0),
+"p_BColorShadow": Vector4(0.153813, 0.244675, 0.4033, 1.0),
+"p_CColorHilight": Vector4(1.846881, 1.846881, 1.846881, 1.0),
+"p_CColorMidtone": Vector4(1.425174, 1.425174, 1.425174, 1.0),
+"p_CColorShadow": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_DColor": Vector4(0.077345, 0.077345, 0.077345, 1.0),
+"p_DecalChannel": Vector4(1.0, 0.0, 0.0, 0.0),
+"p_DecalColor": Vector4(2.3204, 1.561515, 0.0, 0.6683),
+"p_DecalScalePosition": Vector4(0.0971, 0.0315, 0.5355, 0.5083),
+"p_ReflectColor": Vector4(1.0, 0.653378, 0.408862, 1.0),
+"p_ReflectionChannelScale": Vector4(0.7, 1.0, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"P_SimpleReflect": null,
+"p_Decal": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_NormalScopesEmissive": null
+})
+texture_object_paths = Dictionary[String, String]({
+"P_SimpleReflect": "GD_Anemone_Side_EyeSnipers.Textures.GlossyB",
+"p_Decal": "GD_Anemone_Side_EyeSnipers.Textures.Pattern_HyperionStripeUncommon",
+"p_Diffuse": "GD_Anemone_Side_EyeSnipers.Textures.SNIPER_Hyperion_Dif",
+"p_Masks": "GD_Anemone_Side_EyeSnipers.Textures.SNIPER_Hyperion_Comp",
+"p_NormalScopesEmissive": "GD_Anemone_Side_EyeSnipers.Textures.SNIPER_Hyperion_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"P_SimpleReflect": "Texture2D",
+"p_Decal": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_NormalScopesEmissive": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Vehicle.Master_Vehicle.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Veh_Runner.Materials.Mati_Runner"
+source_object = "Veh_Runner.Materials.Mati_Runner"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Vehicle.Master_Vehicle"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.580089, 0.223146, 0.149973, 1.0),
+"p_AColorMidtone": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_AColorShadow": Vector4(1.0, 0.959287, 0.962863, 1.0),
+"p_BColorHilight": Vector4(0.475121, 0.203433, 0.198998, 1.0),
+"p_BColorMidtone": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_BColorShadow": Vector4(0.0, 1.0, 0.022866, 1.0),
+"p_CColorHilight": Vector4(0.342529, 0.106458, 0.107681, 1.0),
+"p_CColorMidtone": Vector4(0.339223, 0.106156, 0.106156, 1.0),
+"p_CColorShadow": Vector4(1.0, 0.90043, 0.95931, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Veh_Runner.Textures.Runner_Dif",
+"p_Masks": "Veh_Runner.Textures.Runner_Comp"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

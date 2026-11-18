@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_Aster_Spider.Materials.Mat_SpiderWeb_Dungeon_Master.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_Dungeon.Materials.Mati_SpiderWeb_MeshDungBright"
+source_object = "Env_Dungeon.Materials.Mati_SpiderWeb_MeshDungBright"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_Aster_Spider.Materials.Mat_SpiderWeb_Dungeon_Master"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Tex_Tile_X": 1.0,
+"Tex_Tile_Y": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Color": Vector4(0.4647, 0.955766, 0.839083, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

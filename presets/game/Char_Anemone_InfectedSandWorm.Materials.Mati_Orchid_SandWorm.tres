@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Char_Anemone_InfectedShared.Materials.Master_Creature_Infected.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Anemone_InfectedSandWorm.Materials.Mati_Orchid_SandWorm"
+source_object = "Char_Anemone_InfectedSandWorm.Materials.Mati_Orchid_SandWorm"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Char_Anemone_InfectedShared.Materials.Master_Creature_Infected"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"WorldDisplacementMult": 0.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(1.0, 0.370189, 0.370189, 1.0),
+"p_AColorMidtone": Vector4(1.1, 0.328282, 0.309974, 1.0),
+"p_AColorShadow": Vector4(1.0, 0.331516, 0.331516, 1.0),
+"p_BColorHilight": Vector4(0.7, 0.8, 0.9, 1.0),
+"p_BColorMidtone": Vector4(0.7, 0.8, 0.9, 1.0),
+"p_BColorShadow": Vector4(0.7, 0.8, 0.9, 1.0),
+"p_CColorHilight": Vector4(1.2, 0.907564, 0.669633, 1.0),
+"p_CColorMidtone": Vector4(1.2, 0.907564, 0.669633, 1.0),
+"p_CColorShadow": Vector4(1.2, 0.907564, 0.669633, 1.0),
+"p_MuscleFat": Vector4(0.0, 0.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_Anemone_InfectedSandWorm.Textures.SandWorm_D",
+"p_Masks": "Char_Anemone_InfectedSandWorm.Textures.SandWorm_Comp",
+"p_Normal": "Char_Anemone_InfectedSandWorm.Textures.SandWorm_N"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

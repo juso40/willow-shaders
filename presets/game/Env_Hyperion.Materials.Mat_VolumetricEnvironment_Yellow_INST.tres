@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Env_Hyperion.Materials.Mat_VolumetricEnvironment_Red_INST.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_Hyperion.Materials.Mat_VolumetricEnvironment_Yellow_INST"
+source_object = "Env_Hyperion.Materials.Mat_VolumetricEnvironment_Yellow_INST"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Env_Hyperion.Materials.Mat_VolumetricEnvironment_Red_INST"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Brightness": 2.0,
+"Opacity": 0.25
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Color": Vector4(1.0, 0.889107, 0.713054, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

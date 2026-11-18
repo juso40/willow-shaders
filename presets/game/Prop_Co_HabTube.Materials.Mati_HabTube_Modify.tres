@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Co_HabTube.Materials.Mati_Hab_Tube_Side_Comp.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Co_HabTube.Materials.Mati_HabTube_Modify"
+source_object = "Prop_Co_HabTube.Materials.Mati_HabTube_Modify"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Co_HabTube.Materials.Mati_Hab_Tube_Side_Comp"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_Color_Emissive1_A": Vector4(0.341837, 1.0, 0.426564, 1.0),
+"p_Color_Emissive1_B": Vector4(1.0, 0.834955, 0.328018, 1.0),
+"p_Color_Emissive1_Base": Vector4(0.26951, 0.681472, 1.635299, 1.0),
+"p_Color_Highlight": Vector4(0.252809, 0.252809, 0.252809, 1.0),
+"p_Color_Spec_1": Vector4(0.664208, 0.910464, 0.85202, 0.1),
+"p_Color_Spec_2": Vector4(0.97069, 0.981179, 0.691464, 0.0),
+"p_Color_Spec_Emissive": Vector4(1.0, 1.5, 2.5, 1.0),
+"p_Color_Texture1_A": Vector4(1.0, 0.891104, 0.758435, 1.0),
+"p_Color_Texture1_B": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_Color_Texture1_Base": Vector4(0.826489, 0.761989, 0.731515, 1.0),
+"p_DiffMod": Vector4(0.070716, 0.070716, 0.070716, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

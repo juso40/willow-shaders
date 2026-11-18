@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_Aster_Dark_Forest.Materials.Mat_BloodPool.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Aster_Dark_Forest.Materials.Mat_OrcTree_BloodPool_INST"
+source_object = "FX_Aster_Dark_Forest.Materials.Mat_OrcTree_BloodPool_INST"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_Aster_Dark_Forest.Materials.Mat_BloodPool"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Bubble_Power": 0.05,
+"DepthBias_Rate": -20.0,
+"Desat_Rate": 0.0,
+"Reflection_Dot_Rate": 1.0,
+"Reflection_Rate": 0.1
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"AlgaeColor_High": Vector4(0.436448, 0.205144, 0.091834, 1.0),
+"Color_High": Vector4(0.386726, 0.0, 0.0, 1.0),
+"Color_Low": Vector4(0.038673, 0.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

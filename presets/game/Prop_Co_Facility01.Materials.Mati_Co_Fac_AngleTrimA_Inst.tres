@@ -1,0 +1,38 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Co_Materials.Materials.Mati_Colorize_Split_Common.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Co_Facility01.Materials.Mati_Co_Fac_AngleTrimA_Inst"
+source_object = "Prop_Co_Facility01.Materials.Mati_Co_Fac_AngleTrimA_Inst"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Co_Materials.Materials.Mati_Colorize_Split_Common"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_SpecMult": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_Color_Emissive1_Base": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_Color_Spec_1": Vector4(3.0, 3.0, 3.0, 10.0),
+"p_Color_Spec_2": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_Color_Spec_Emissive": Vector4(2.5, 0.685776, 0.0, 200.0),
+"p_Color_Texture1_Base": Vector4(0.204412, 0.204412, 0.204412, 1.0),
+"p_Color_Texture2_A": Vector4(0.028991, 0.044553, 0.028991, 1.0),
+"p_Color_Texture2_B": Vector4(0.266029, 0.408825, 0.266029, 1.0),
+"p_DiffMod": Vector4(0.56904, 0.56904, 0.56904, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Prop_Co_Facility01.Texture.AngleTrimA_Dif",
+"p_Masks": "Prop_Co_Facility01.Texture.AngleTrimA_Masks"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

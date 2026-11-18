@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Aliens.Materials.Mat_AlienFloorTile_01.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_Ascent.Materials.Mati_AlienFloorTile_Darker"
+source_object = "Env_Ascent.Materials.Mati_AlienFloorTile_Darker"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Aliens.Materials.Mat_AlienFloorTile_01"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_colormod": Vector4(0.281758, 0.281758, 0.281758, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

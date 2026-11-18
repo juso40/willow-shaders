@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Item_Artifacts.Materials.Mat_ItemArtifact.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_Aster_Shrines.Materials.Mat_ItemArtifact_DamageShrine"
+source_object = "GD_Aster_Shrines.Materials.Mat_ItemArtifact_DamageShrine"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Item_Artifacts.Materials.Mat_ItemArtifact"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_EmissiveColor": Vector4(4.0, 0.25, 0.0, 3.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

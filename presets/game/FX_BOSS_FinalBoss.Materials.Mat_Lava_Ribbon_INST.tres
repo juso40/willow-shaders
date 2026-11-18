@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_BOSS_FinalBoss.Materials.Mat_DynamicAnim.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_BOSS_FinalBoss.Materials.Mat_Lava_Ribbon_INST"
+source_object = "FX_BOSS_FinalBoss.Materials.Mat_Lava_Ribbon_INST"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_BOSS_FinalBoss.Materials.Mat_DynamicAnim"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

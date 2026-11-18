@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_MarshallFriedman.Materials.MarshallFriedman_Mati"
+source_object = "GD_MarshallFriedman.Materials.MarshallFriedman_Mati"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.613237, 0.376635, 0.264281, 1.0),
+"p_AColorMidtone": Vector4(0.469596, 0.256842, 0.203591, 1.0),
+"p_AColorShadow": Vector4(0.325955, 0.147677, 0.212013, 1.0),
+"p_BColorHilight": Vector4(0.88947, 0.785138, 0.668339, 1.0),
+"p_BColorMidtone": Vector4(0.867371, 0.708616, 0.474433, 1.0),
+"p_BColorShadow": Vector4(0.729255, 0.620753, 0.409246, 1.0),
+"p_CColorHilight": Vector4(0.563515, 0.438934, 0.410967, 1.0),
+"p_CColorMidtone": Vector4(0.535892, 0.326002, 0.242791, 1.0),
+"p_CColorShadow": Vector4(0.364627, 0.256783, 0.15146, 1.0),
+"p_ColorD": Vector4(0.867371, 0.735786, 0.507977, 1.0),
+"p_MuscleFat": Vector4(-1.0, -1.0, 0.0, 1.0),
+"p_PatternColor": Vector4(0.0, 0.0, 0.0, 2.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_GenericMale.Textures.GenericMaleBody_Dif",
+"p_Masks": "Char_GenericMale.Textures.GenericMaleBody_Comp",
+"p_Normal": "Char_GenericMale.Textures.GenericMaleBody_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

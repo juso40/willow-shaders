@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_Daisy.Materials.DaisyBody_Mati"
+source_object = "GD_Daisy.Materials.DaisyBody_Mati"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.353969, 0.357851, 0.458547, 1.0),
+"p_AColorMidtone": Vector4(0.420447, 0.37132, 0.513793, 1.0),
+"p_AColorShadow": Vector4(0.25176, 0.24443, 0.309381, 1.0),
+"p_BColorHilight": Vector4(0.405671, 0.448398, 0.464071, 1.0),
+"p_BColorMidtone": Vector4(0.292807, 0.292807, 0.292807, 1.0),
+"p_BColorShadow": Vector4(0.177, 0.229917, 0.270708, 1.0),
+"p_CColorHilight": Vector4(1.0, 0.646249, 0.853578, 1.0),
+"p_CColorMidtone": Vector4(0.900519, 0.564595, 0.83144, 1.0),
+"p_CColorShadow": Vector4(0.911569, 0.489584, 0.82976, 1.0),
+"p_ColorD": Vector4(1.0, 1.0, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_GenericFemale.Textures.GenericFemaleBody_Dif",
+"p_Masks": "Char_GenericFemale.Textures.GenericFemaleBody_Comp",
+"p_Normal": "Char_GenericFemale.Textures.GenericFemaleBody_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

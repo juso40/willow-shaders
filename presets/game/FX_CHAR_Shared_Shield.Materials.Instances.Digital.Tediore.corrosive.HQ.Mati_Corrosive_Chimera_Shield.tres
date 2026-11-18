@@ -1,0 +1,41 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_CHAR_Shared_Shield.Materials.MasterShaders.Mat_Digital_Shield_MS.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_CHAR_Shared_Shield.Materials.Instances.Digital.Tediore.corrosive.HQ.Mati_Corrosive_Chimera_Shield"
+source_object = "FX_CHAR_Shared_Shield.Materials.Instances.Digital.Tediore.corrosive.HQ.Mati_Corrosive_Chimera_Shield"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_CHAR_Shared_Shield.Materials.MasterShaders.Mat_Digital_Shield_MS"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_AlphaPower": 1.0,
+"p_BaseTexMultiplier": 1.5,
+"p_ColorGradientPower": 2.25,
+"p_InternalTexMultiplier": 1.5,
+"p_InternalTexPanX": 0.0,
+"p_InternalTexPanY": 0.0,
+"p_InternalTexScaleX": 1.0,
+"p_InternalTexScaleY": 1.0,
+"p_MaskPower": 4.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_GradientColor_01": Vector4(1.0, 20.0, 50.0, 1.0),
+"p_GradientColor_02": Vector4(1.0, 30.0, 1.0, 1.0),
+"p_InternalTexColor": Vector4(1.0, 1.0, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_BaseTex": null,
+"p_InternalTex": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_BaseTex": "FX_CHAR_Shared_Shield.Textures.BasicHex_Diff",
+"p_InternalTex": "FX_ENV_Misc.Textures.Caustic_Dif"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_BaseTex": "Texture2D",
+"p_InternalTex": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

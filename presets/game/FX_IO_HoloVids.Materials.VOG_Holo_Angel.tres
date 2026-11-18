@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_IO_HoloVids.Materials.VOG_Holo_Angel"
+source_object = "FX_IO_HoloVids.Materials.VOG_Holo_Angel"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"p_fade": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_color": Vector4(0.3, 1.84, 1.82, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Echo_Masks": null,
+"Lilith_Ethereal": null,
+"VOG_static": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Echo_Masks": "FX_ENV_VOG.Textures.Echo_Masks",
+"Lilith_Ethereal": "FX_ENV_VOG.Textures.electric_light",
+"VOG_static": "FX_ENV_VOG.Textures.electric_light"
+})
+texture_object_classes = Dictionary[String, String]({
+"Echo_Masks": "Texture2D",
+"Lilith_Ethereal": "Texture2D",
+"VOG_static": "Texture2D"
+})

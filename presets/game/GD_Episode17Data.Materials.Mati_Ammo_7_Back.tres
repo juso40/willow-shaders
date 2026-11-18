@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/GD_Episode17Data.Materials.Mati_Ammo_7.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_Episode17Data.Materials.Mati_Ammo_7_Back"
+source_object = "GD_Episode17Data.Materials.Mati_Ammo_7_Back"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "GD_Episode17Data.Materials.Mati_Ammo_7"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"IconColor": Vector4(0.058437, 0.15493, 0.44, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

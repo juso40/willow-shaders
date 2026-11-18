@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Zed.Materials.Mati_CChar_Zed_Body"
+source_object = "Char_Zed.Materials.Mati_CChar_Zed_Body"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.887534, 1.395161, 1.212062, 1.0),
+"p_AColorMidtone": Vector4(0.347526, 0.803371, 0.720358, 1.0),
+"p_AColorShadow": Vector4(0.266697, 0.348315, 0.326795, 1.0),
+"p_BColorHilight": Vector4(1.328358, 1.203107, 0.986615, 1.0),
+"p_BColorMidtone": Vector4(2.918033, 2.653081, 2.429071, 1.0),
+"p_BColorShadow": Vector4(0.511236, 0.450282, 0.402693, 1.0),
+"p_CColorHilight": Vector4(0.898876, 0.755838, 0.728846, 1.0),
+"p_CColorMidtone": Vector4(0.398876, 0.318242, 0.318242, 1.0),
+"p_CColorShadow": Vector4(0.016068, 0.013473, 0.011881, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_Zed.Textures.ZedID1_Dif",
+"p_Masks": "Char_Zed.Textures.ZedID1_Comp",
+"p_Normal": "Char_Zed.Textures.ZedID1_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

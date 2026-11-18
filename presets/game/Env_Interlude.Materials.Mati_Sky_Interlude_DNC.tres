@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Sky.Mat_SkyTimeOfDay_Master.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_Interlude.Materials.Mati_Sky_Interlude_DNC"
+source_object = "Env_Interlude.Materials.Mati_Sky_Interlude_DNC"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Sky.Mat_SkyTimeOfDay_Master"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Sun_spot_brightness": 6.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Horizion_track_color_multiplier": Vector4(0.201087, 0.201087, 0.201087, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Masks": null,
+"Transition_Track": null,
+"clouds": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Masks": "Prop_Skybox.Textures.Sky_Multi2",
+"Transition_Track": "Prop_Skybox.Textures.Sky_TransitionBL2Default_Dif",
+"clouds": "Prop_Skybox.Textures.Clouds_01"
+})
+texture_object_classes = Dictionary[String, String]({
+"Masks": "Texture2D",
+"Transition_Track": "Texture2D",
+"clouds": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

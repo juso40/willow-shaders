@@ -1,0 +1,53 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Vehicle.Master_Vehicle.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "CD_Skins_Hovercraft_Orchid.Mati_TerqDark_Body"
+source_object = "CD_Skins_Hovercraft_Orchid.Mati_TerqDark_Body"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Vehicle.Master_Vehicle"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.046149, 0.197516, 0.176774, 1.0),
+"p_AColorMidtone": Vector4(0.067725, 0.069727, 0.113921, 1.0),
+"p_AColorShadow": Vector4(0.113921, 0.378676, 0.284452, 1.0),
+"p_BColorHilight": Vector4(0.035614, 0.163641, 0.119264, 1.0),
+"p_BColorMidtone": Vector4(0.067725, 0.084642, 0.086901, 1.0),
+"p_BColorShadow": Vector4(0.144972, 0.130352, 0.280124, 1.0),
+"p_CColorHilight": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_ColorD": Vector4(0.288816, 0.302125, 0.373615, 1.0),
+"p_DecalChannel": Vector4(0.0, 1.0, 1.0, 0.5),
+"p_DecalColor": Vector4(0.056374, 0.176774, 0.166872, 1.0),
+"p_DecalScalePosition": Vector4(50.0, 3.0, -0.3, -0.09),
+"p_PatternChannelScale": Vector4(0.5, 0.5, 0.0, 0.0),
+"p_PatternColor": Vector4(0.56681, 2.26, 3.23, 1.0),
+"p_PatternScalePosition": Vector4(40.0, 1.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_CustomPattern": null,
+"p_Decal": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_CustomPattern": "CD_Skins_BanditTech_MainGame.Textures.Decal_TechnicalPollock",
+"p_Decal": "CD_Skins_Siren_MainGame.Textures.Logo_Wasp",
+"p_Diffuse": "Orchid_Veh_Hovercraft.Textures.Orchid_Hovercraft_D",
+"p_Masks": "Orchid_Veh_Hovercraft.Textures.Orchid_Hovercraft_Comp",
+"p_Normal": "Common_Textures.Stub.StubFlat_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_CustomPattern": "Texture2D",
+"p_Decal": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Char_Crystalisk.Materials.Mati_Crystalisk_Explosive.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Crystalisk.Materials.Mati_Crystals_Explosive_NoShimmer"
+source_object = "Char_Crystalisk.Materials.Mati_Crystals_Explosive_NoShimmer"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Char_Crystalisk.Materials.Mati_Crystalisk_Explosive"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_PatternIntensity": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.52809, 0.485186, 0.338215, 1.0),
+"p_AColorMidtone": Vector4(0.353933, 0.29846, 0.12328, 1.0),
+"p_AColorShadow": Vector4(0.353933, 0.29846, 0.12328, 1.0),
+"p_BColorHilight": Vector4(0.780899, 0.733903, 0.314647, 1.0),
+"p_BColorMidtone": Vector4(1.0, 0.297132, 0.0, 1.0),
+"p_BColorShadow": Vector4(0.97191, 0.809326, 0.118411, 1.0),
+"p_CColorHilight": Vector4(1.0, 0.668202, 0.20517, 1.0),
+"p_CColorMidtone": Vector4(5.0, 0.2, 0.0, 1.0),
+"p_CColorShadow": Vector4(2.0, 0.668202, 0.20517, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_Crystalisk.CrystaliskCrystals_Dif",
+"p_Masks": "Char_Crystalisk.Crystalisk_CrystalsColor_Comp",
+"p_Normal": "Char_Crystalisk.CrystaliskCrystals_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

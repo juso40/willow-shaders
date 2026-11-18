@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_JohnMamaril.Materials.MamarilBody_Mati"
+source_object = "GD_JohnMamaril.Materials.MamarilBody_Mati"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.519318, 0.441072, 0.206335, 1.0),
+"p_AColorMidtone": Vector4(0.441973, 0.264762, 0.109895, 1.0),
+"p_AColorShadow": Vector4(0.215462, 0.18501, 0.080101, 1.0),
+"p_BColorHilight": Vector4(0.881352, 0.911569, 0.905683, 1.0),
+"p_BColorMidtone": Vector4(0.716438, 0.763305, 0.795551, 1.0),
+"p_BColorShadow": Vector4(0.54368, 0.659166, 0.674008, 1.0),
+"p_CColorHilight": Vector4(0.392251, 0.188548, 0.132205, 1.0),
+"p_CColorMidtone": Vector4(0.458547, 0.108949, 0.108949, 1.0),
+"p_CColorShadow": Vector4(0.342529, 0.19871, 0.239459, 1.0),
+"p_ColorD": Vector4(0.72373, 0.584658, 0.343886, 1.0),
+"p_MuscleFat": Vector4(-1.1, 0.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_GenericMale.Textures.GenericMaleBody_Dif",
+"p_Masks": "Char_GenericMale.Textures.GenericMaleBody_Comp",
+"p_Normal": "Char_GenericMale.Textures.GenericMaleBody_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

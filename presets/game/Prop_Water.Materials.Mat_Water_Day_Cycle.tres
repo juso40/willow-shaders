@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Water.Materials.Mat_Water_Day_Cycle"
+source_object = "Prop_Water.Materials.Mat_Water_Day_Cycle"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"arid_water_tod_1": 1.0,
+"arid_water_tod_2": 0.0,
+"arid_water_tod_brightness": 0.2,
+"arid_water_tod_desaturation": 0.5,
+"arid_water_tod_opacity": -120.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

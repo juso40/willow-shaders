@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Env_Ice.Materials.Mati_Sky_Ice_DNC.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Ice_Light.TheWorld:PersistentLevel.Main_Sequence.WillowSeqAct_DayNightCycle_1.InterpGroupInst_8.InterpTrackInstFloatMaterialParam_7.MaterialInstanceConstant_79"
+source_object = "Ice_Light.TheWorld:PersistentLevel.Main_Sequence.WillowSeqAct_DayNightCycle_1.InterpGroupInst_8.InterpTrackInstFloatMaterialParam_7.MaterialInstanceConstant_79"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Env_Ice.Materials.Mati_Sky_Ice_DNC"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Brightness": 2.0,
+"Fog_Intensity": 0.0,
+"Sun_spot_brightness": 50.0,
+"Time_of_Day": 75.0,
+"cloud_cap_opacity": 1.0,
+"p_CouldBrightness": 0.3,
+"p_DarkColor": -0.1,
+"p_lightDesat": 0.3,
+"p_moonTime": 0.0,
+"sky_brightness": 5.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"MoonBase_Color": Vector4(0.57, 0.84, 1.0, 1.0),
+"RimLight_Color": Vector4(0.0, 0.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

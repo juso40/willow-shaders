@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_Aster_Mines.Materials.Mat_Aster_FloatingRocks.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_Aster_Plot_Mission03Data.Materials.Mati_PuzzleBlock_Glow_L1"
+source_object = "GD_Aster_Plot_Mission03Data.Materials.Mati_PuzzleBlock_Glow_L1"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_Aster_Mines.Materials.Mat_Aster_FloatingRocks"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Clamp_Min": 0.1,
+"Emissive_Scale": 0.0,
+"Flicker>Pulse": 0.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Diff_ColorMod": Vector4(1.0, 1.0, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Emis": null,
+"Norm": null,
+"dif": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Emis": "Aster_Prop_FartRune.Textures.Rune_E",
+"Norm": "Aster_Prop_PuzzleBlock.Textures.PuzzleBlock_N",
+"dif": "Aster_Prop_PuzzleBlock.Textures.PuzzleBlock_D"
+})
+texture_object_classes = Dictionary[String, String]({
+"Emis": "Texture2D",
+"Norm": "Texture2D",
+"dif": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

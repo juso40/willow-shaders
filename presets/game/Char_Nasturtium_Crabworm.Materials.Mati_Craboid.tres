@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Nasturtium_Crabworm.Materials.Mati_Craboid"
+source_object = "Char_Nasturtium_Crabworm.Materials.Mati_Craboid"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.325843, 0.269476, 0.199504, 1.0),
+"p_AColorMidtone": Vector4(0.095506, 0.045749, 0.040241, 1.0),
+"p_AColorShadow": Vector4(1.0, 0.457345, 0.309418, 1.0),
+"p_BColorHilight": Vector4(0.219101, 0.129181, 0.107189, 1.0),
+"p_BColorMidtone": Vector4(0.38764, 0.317296, 0.096029, 1.0),
+"p_BColorShadow": Vector4(0.078652, 0.038867, 0.021606, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_Nasturtium_Crabworm.Textures.Creat_Tex_Crab_Body_Diff",
+"p_Masks": "Char_Nasturtium_Crabworm.Textures.creat_tex_crab_body_Comp",
+"p_Normal": "Char_Nasturtium_Crabworm.Textures.Creat_Tex_Crab_Body_Norm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

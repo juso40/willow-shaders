@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Orchid_Pirate_Queen.Materials.Mati_Pirate_Queen_Body"
+source_object = "Char_Orchid_Pirate_Queen.Materials.Mati_Pirate_Queen_Body"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(1.0, 0.907803, 0.861884, 1.0),
+"p_AColorMidtone": Vector4(1.0, 0.779994, 0.672442, 1.0),
+"p_AColorShadow": Vector4(0.629811, 0.492355, 0.423894, 1.0),
+"p_BColorHilight": Vector4(0.357941, 0.473853, 0.574564, 1.0),
+"p_BColorMidtone": Vector4(0.209433, 0.278292, 0.337004, 1.0),
+"p_BColorShadow": Vector4(0.090065, 0.119315, 0.143641, 1.0),
+"p_CColorHilight": Vector4(0.438986, 0.47928, 0.563515, 1.0),
+"p_CColorMidtone": Vector4(0.4033, 0.390091, 0.369325, 1.0),
+"p_CColorShadow": Vector4(0.65191, 0.343219, 0.128703, 1.0),
+"p_MuscleFat": Vector4(0.0, 0.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Jenw.Pirate_Queen_Body_Test",
+"p_Masks": "",
+"p_Normal": "Char_Orchid_Pirate_Queen.Textures.Pirate_Queen_Body_N"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

@@ -1,0 +1,37 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Environment.Master_Rocks.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_PandoraPark.Materials.Mati_SlateRockMoss"
+source_object = "Env_PandoraPark.Materials.Mati_SlateRockMoss"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Environment.Master_Rocks"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_SnowNoiseUVScale": 1.0,
+"p_SnowUVScale": 4.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_Normal_UVMod": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_SnowAmount": Vector4(1.0, 1.0, 1.25, 1.0),
+"p_SnowColor": Vector4(0.32541, 0.325955, 0.307338, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Normal": null,
+"p_SnowDiffuse": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Prop_Rocks.Textures.SlateRock_Dif",
+"p_Normal": "Prop_Rocks.Textures.SlateRock_Nrm",
+"p_SnowDiffuse": "Prop_Terrain.Textures.GrasslandsSlateMoss_Dif"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Normal": "Texture2D",
+"p_SnowDiffuse": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

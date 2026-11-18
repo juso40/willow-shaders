@@ -1,0 +1,71 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Char_Sage_CesiumHarvester.Material.CesiumHarvester.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Sage_CesiumHarvester.Material.CesiumHarvester_SideQuest"
+source_object = "Char_Sage_CesiumHarvester.Material.CesiumHarvester_SideQuest"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Char_Sage_CesiumHarvester.Material.CesiumHarvester"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"AcidFX": 1.0,
+"BurnFX": 0.0,
+"Fade": 0.0,
+"Mask1_Use_Spec_Power_Mask": 0.0,
+"MoonLightIntensity": 8.0,
+"Primary color brightness": 1.0,
+"PrimaryMask_desaturation": 1.0,
+"Secondary color brightness": 1.0,
+"SecondaryMask_desaturation": 1.0,
+"ShockFX": 0.0,
+"SpecDesature": 0.0,
+"SpecDull": 2.0,
+"SpecIntensity": 2.0,
+"SpecShiny": 15.0,
+"Spec_Contrast": 1.0,
+"Third color brightness": 1.0,
+"ThirdMask_desaturation": 1.0,
+"Use_Alpha_Mask": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"PrimaryColor": Vector4(0.188689, 0.065361, 0.012505, 0.0),
+"SecondaryColor": Vector4(0.49, 0.145984, 0.100548, 0.0),
+"ThirdColor": Vector4(0.284026, 0.167339, 0.042604, 0.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"ColorVariationMask": null,
+"Diffuse": null,
+"Effects_01": null,
+"Effects_02": null,
+"Mask1": null,
+"Mask2_Alpha": null,
+"Normal": null,
+"Primary_Normal": null,
+"Spec": null
+})
+texture_object_paths = Dictionary[String, String]({
+"ColorVariationMask": "Char_Sage_CesiumHarvester.Textures.Creat_CesiumHarvester_Mask_02",
+"Diffuse": "Char_Sage_CesiumHarvester.Textures.Creat_CesiumHarvester_Diff",
+"Effects_01": "FX_Shared_Energy.GreyPack.T_Pyro_Energy_GP_09",
+"Effects_02": "FX_Shared_Energy.GreyPack.T_BanditEffects_GP_02",
+"Mask1": "Char_Sage_CesiumHarvester.Textures.Creat_CesiumHarvester_Mask_02",
+"Mask2_Alpha": "Common_Textures.Textures.TexGray_Dif",
+"Normal": "Char_Sage_CesiumHarvester.Textures.Creat_CesiumHarvester_Norm",
+"Primary_Normal": "Char_Sage_CesiumHarvester.Textures.Creat_CesiumHarvester_Norm",
+"Spec": "Common_Textures.Textures.TexGray_Dif"
+})
+texture_object_classes = Dictionary[String, String]({
+"ColorVariationMask": "Texture2D",
+"Diffuse": "Texture2D",
+"Effects_01": "Texture2D",
+"Effects_02": "Texture2D",
+"Mask1": "Texture2D",
+"Mask2_Alpha": "Texture2D",
+"Normal": "Texture2D",
+"Primary_Normal": "Texture2D",
+"Spec": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

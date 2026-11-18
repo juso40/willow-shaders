@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_VOG_Chamber.Materials.Mat_DigiFade_Master"
+source_object = "Env_VOG_Chamber.Materials.Mat_DigiFade_Master"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"fade_EdgeBrightness": 5.0,
+"p_fade": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"DigistructColor": Vector4(0.095801, 0.680688, 0.944717, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Diffuse": null,
+"Emissive": null,
+"Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Diffuse": "Prop_HyperionArchitecture.Textures.HyperionEchoKiosk_Diff",
+"Emissive": "Prop_HyperionArchitecture.Textures.HyperionEchoKiosk_Comp",
+"Normal": "EngineMaterials.DefaultNormal"
+})
+texture_object_classes = Dictionary[String, String]({
+"Diffuse": "Texture2D",
+"Emissive": "Texture2D",
+"Normal": "Texture2D"
+})
+static_switches = Dictionary[String, bool]({
+"bUseEmissiveMap": true,
+"bUseNormalMap": false
+})
+notes = "Conflicting expression defaults for Diffuse. First recorded node used for named lookup. Not recovered shader wiring."

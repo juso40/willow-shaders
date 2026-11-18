@@ -1,0 +1,75 @@
+[gd_scene format=3 uid="uid://2ha3d6b0wcuv"]
+
+[ext_resource type="PackedScene" path="res://scenes/ui/parameters/parameter_control.tscn" id="1"]
+[ext_resource type="Script" uid="uid://bfkd15w7ttkd1" path="res://scripts/ui/parameters/color_parameter.gd" id="2"]
+
+[node name="ColorParameter" unique_id=1018406999 instance=ExtResource("1")]
+script = ExtResource("2")
+parameter_property = &"VectorParameterValues"
+
+[node name="Value" type="ColorPickerButton" parent="." index="1" unique_id=1216930264]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(58, 29)
+layout_mode = 2
+tooltip_text = "sRGB picker. The resource stores linear colors. Raw… edits exact HDR values."
+
+[node name="Raw" type="Button" parent="." index="2" unique_id=1049062393]
+layout_mode = 2
+text = "Raw…"
+
+[node name="RawDialog" type="AcceptDialog" parent="." index="3" unique_id=1185035754]
+unique_name_in_owner = true
+size = Vector2i(340, 240)
+
+[node name="Grid" type="GridContainer" parent="RawDialog" unique_id=1780035086]
+columns = 2
+
+[node name="RLabel" type="Label" parent="RawDialog/Grid" index="0" unique_id=1928005480]
+layout_mode = 2
+text = "Linear R"
+
+[node name="R" type="SpinBox" parent="RawDialog/Grid" index="1" unique_id=1363658514]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(220, 0)
+layout_mode = 2
+step = 1e-06
+allow_greater = true
+allow_lesser = true
+
+[node name="GLabel" type="Label" parent="RawDialog/Grid" index="2" unique_id=172842224]
+layout_mode = 2
+text = "Linear G"
+
+[node name="G" type="SpinBox" parent="RawDialog/Grid" index="3" unique_id=564208061]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(220, 0)
+layout_mode = 2
+step = 1e-06
+allow_greater = true
+allow_lesser = true
+
+[node name="BLabel" type="Label" parent="RawDialog/Grid" index="4" unique_id=1047095988]
+layout_mode = 2
+text = "Linear B"
+
+[node name="B" type="SpinBox" parent="RawDialog/Grid" index="5" unique_id=1260970029]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(220, 0)
+layout_mode = 2
+step = 1e-06
+allow_greater = true
+allow_lesser = true
+
+[node name="ALabel" type="Label" parent="RawDialog/Grid" index="6" unique_id=390182759]
+layout_mode = 2
+text = "Alpha"
+
+[node name="A" type="SpinBox" parent="RawDialog/Grid" index="7" unique_id=448908959]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(220, 0)
+layout_mode = 2
+step = 1e-06
+allow_greater = true
+allow_lesser = true
+
+[connection signal="pressed" from="Raw" to="." method="_on_raw_pressed"]

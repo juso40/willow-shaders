@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Aster_SwirlingClouds.Materials.Mat_SwirlingCloud"
+source_object = "FX_Aster_SwirlingClouds.Materials.Mat_SwirlingCloud"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"Light_Power": 10.0,
+"Scroll": 0.5,
+"Vortex_Distortion": 0.5
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Cloud Color": Vector4(0.27, 0.23, 0.2, 1.0),
+"Light_Color": Vector4(3.0, 6.0, 18.0, 1.0),
+"cloud Highlight": Vector4(0.23, 0.23, 0.23, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

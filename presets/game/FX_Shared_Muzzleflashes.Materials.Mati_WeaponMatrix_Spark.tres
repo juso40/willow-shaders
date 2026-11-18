@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_Shared_Materials.Materials.WeaponMatrix_MasterMaterial.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Shared_Muzzleflashes.Materials.Mati_WeaponMatrix_Spark"
+source_object = "FX_Shared_Muzzleflashes.Materials.Mati_WeaponMatrix_Spark"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_Shared_Materials.Materials.WeaponMatrix_MasterMaterial"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"emissiveOpacityInput": null
+})
+texture_object_paths = Dictionary[String, String]({
+"emissiveOpacityInput": "FX_Shared_Energy.GreyPack.Tex_Spark_8"
+})
+texture_object_classes = Dictionary[String, String]({
+"emissiveOpacityInput": "Texture2D"
+})

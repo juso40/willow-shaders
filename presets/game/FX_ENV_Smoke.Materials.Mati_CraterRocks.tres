@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_Shared_MasterShaders.Materials.Translucent.Mesh.FX_Tran_Mesh_FakeLit_MS.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_ENV_Smoke.Materials.Mati_CraterRocks"
+source_object = "FX_ENV_Smoke.Materials.Mati_CraterRocks"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_Shared_MasterShaders.Materials.Translucent.Mesh.FX_Tran_Mesh_FakeLit_MS"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_reflecBrightnessVal": 0.65
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_colorizeCubeMap": Vector4(0.0, 0.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Diffuse": null,
+"Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Diffuse": "Prop_Rocks_03.Textures.Volcanic_Dif",
+"Normal": "Prop_Rocks_03.Textures.Volcanic_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"Diffuse": "Texture2D",
+"Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

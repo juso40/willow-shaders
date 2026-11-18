@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Aster_WizardSpells.Materials.Mat_DarkSoul"
+source_object = "FX_Aster_WizardSpells.Materials.Mat_DarkSoul"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"SmokeColor": Vector4(0.013721, 0.0, 0.552466, 1.0),
+"SmokeHighlight_Color": Vector4(0.149166, 0.081055, 0.004592, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

@@ -1,0 +1,50 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_CreatureDigistruct.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_BattleDroid.Materials.Mati_Loader_GUN_DigistructArms"
+source_object = "Char_BattleDroid.Materials.Mati_Loader_GUN_DigistructArms"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_CreatureDigistruct"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_DigiStructEnable": 0.0,
+"p_DigistructThreshold": -1.0,
+"p_HighlightsIntensity": 2.0,
+"p_ShadowsIntensity": 4.0,
+"p_fade": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.332856, 0.430923, 0.140477, 1.0),
+"p_AColorMidtone": Vector4(0.055247, 0.0493, 0.04432, 1.0),
+"p_AColorShadow": Vector4(0.038673, 0.029513, 0.015171, 1.0),
+"p_BColorHilight": Vector4(0.22331, 0.20471, 0.166872, 1.0),
+"p_BColorMidtone": Vector4(0.065754, 0.054592, 0.046149, 1.0),
+"p_BColorShadow": Vector4(0.026549, 0.026549, 0.026549, 1.0),
+"p_CColorHilight": Vector4(0.370152, 0.140298, 0.087947, 1.0),
+"p_CColorMidtone": Vector4(0.607712, 0.34042, 0.036994, 1.0),
+"p_CColorShadow": Vector4(0.24861, 0.114153, 0.019048, 1.0),
+"p_ColorD": Vector4(0.391943, 0.397775, 0.365186, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_CustomPattern": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_CustomPattern": "CentralMissingArtRedirects.Texture.MissingTexture",
+"p_Diffuse": "Char_BattleDroid.Textures.BattleDroid_Dif",
+"p_Masks": "Char_BattleDroid.Textures.BattleDroid_Comp",
+"p_Normal": "Char_BattleDroid.Textures.BattleDroid_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_CustomPattern": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

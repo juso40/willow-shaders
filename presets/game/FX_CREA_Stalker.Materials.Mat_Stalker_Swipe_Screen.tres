@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_CREA_Stalker.Materials.Mat_Stalker_Swipe_Screen"
+source_object = "FX_CREA_Stalker.Materials.Mat_Stalker_Swipe_Screen"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+static_switches = Dictionary[String, bool]({
+"p_GlowSwipe": false
+})

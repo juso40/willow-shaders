@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Vehicle.Master_Vehicle.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Veh_Bandit_Technical.Materials.Mati_Technical_Turret"
+source_object = "Veh_Bandit_Technical.Materials.Mati_Technical_Turret"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Vehicle.Master_Vehicle"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.071581, 0.114346, 0.193363, 1.0),
+"p_AColorMidtone": Vector4(0.179775, 0.044233, 0.0, 0.0),
+"p_AColorShadow": Vector4(0.483146, 0.118876, 0.0, 0.0),
+"p_BColorHilight": Vector4(0.095506, 0.065733, 0.033714, 0.0),
+"p_BColorMidtone": Vector4(0.179775, 0.044233, 0.0, 0.0),
+"p_BColorShadow": Vector4(0.179775, 0.044233, 0.0, 0.0),
+"p_CColorHilight": Vector4(0.712681, 0.550945, 0.429194, 1.0),
+"p_CColorMidtone": Vector4(0.348053, 0.228764, 0.196146, 1.0),
+"p_CColorShadow": Vector4(0.198888, 0.175779, 0.174714, 1.0),
+"p_ColorD": Vector4(0.567416, 0.464289, 0.451642, 1.0),
+"p_PatternChannelScale": Vector4(0.8, 0.8, 0.2, 0.0),
+"p_PatternColor": Vector4(2.350533, 1.233746, 1.233746, 1.0),
+"p_PatternScalePosition": Vector4(2.913, 2.59366, 1.193738, 0.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Veh_Bandit_Technical.Textures.BanditTechnical_D",
+"p_Masks": "Veh_Bandit_Technical.Textures.BanditTechnical_Comp",
+"p_Normal": "Veh_Bandit_Technical.Textures.BanditTechnical_N"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

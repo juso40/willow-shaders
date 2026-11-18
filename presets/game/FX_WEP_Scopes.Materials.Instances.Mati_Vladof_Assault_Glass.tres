@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_WEP_Scopes.Materials.Mat_Scope_Glass_MS.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_WEP_Scopes.Materials.Instances.Mati_Vladof_Assault_Glass"
+source_object = "FX_WEP_Scopes.Materials.Instances.Mati_Vladof_Assault_Glass"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_WEP_Scopes.Materials.Mat_Scope_Glass_MS"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"CenterGradientIntensity": 6.0,
+"GlassDensity": 0.025,
+"ReflectionMulitplier": 5.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"normal_Multiplier": Vector4(1.0, 1.0, 0.025, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"GP_Tex": null
+})
+texture_object_paths = Dictionary[String, String]({
+"GP_Tex": "FX_Shared_Smoke.Textures.Tex_Disturbance_B"
+})
+texture_object_classes = Dictionary[String, String]({
+"GP_Tex": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

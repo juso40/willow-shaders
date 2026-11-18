@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Iris_Walkways.Materials.Mat_New_Cheap_Stairs.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Iris_Walkways.Materials.Mat_New_Cheap_Stairs_Slate"
+source_object = "Prop_Iris_Walkways.Materials.Mat_New_Cheap_Stairs_Slate"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Iris_Walkways.Materials.Mat_New_Cheap_Stairs"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.392251, 0.318571, 0.318571, 1.0),
+"p_AColorMidtone": Vector4(0.126393, 0.242202, 0.325955, 1.0),
+"p_AColorShadow": Vector4(0.067397, 0.113761, 0.127067, 1.0),
+"p_BColorHilight": Vector4(0.411877, 0.458093, 0.508269, 1.0),
+"p_BColorMidtone": Vector4(0.248282, 0.324842, 0.458547, 1.0),
+"p_BColorShadow": Vector4(0.287282, 0.116211, 0.250484, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"P_Grp_Texture": null
+})
+texture_object_paths = Dictionary[String, String]({
+"P_Grp_Texture": "Prop_Iris_Walkways.Textures.New_Cheap_Stairs_Grp"
+})
+texture_object_classes = Dictionary[String, String]({
+"P_Grp_Texture": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

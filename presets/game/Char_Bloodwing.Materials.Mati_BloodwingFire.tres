@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Char_Bloodwing.Materials.Mat_Bloodwing.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Bloodwing.Materials.Mati_BloodwingFire"
+source_object = "Char_Bloodwing.Materials.Mati_BloodwingFire"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Char_Bloodwing.Materials.Mat_Bloodwing"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_FxScaleFire": 4.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"TintColor": Vector4(3.0, 1.0, 0.0, 1.0),
+"TintDiffuse": Vector4(5.0, 2.0, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

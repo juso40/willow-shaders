@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_CREA_Drone.Materials.Mat_Drone_Shield_Mesh_Plane.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Missions.Materials.Mati_Ep11_Beacon_Shield"
+source_object = "FX_Missions.Materials.Mati_Ep11_Beacon_Shield"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_CREA_Drone.Materials.Mat_Drone_Shield_Mesh_Plane"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_color": Vector4(1.0, 0.2, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Environment.Master_World.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Iris_Generic.Materials.Mati_LongContainer_Red"
+source_object = "Prop_Iris_Generic.Materials.Mati_LongContainer_Red"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Environment.Master_World"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(1.0, 0.895703, 0.77709, 1.0),
+"p_AColorMidtone": Vector4(1.0, 0.418663, 0.43514, 1.0),
+"p_AColorShadow": Vector4(1.0, 0.0, 0.032924, 1.0),
+"p_BColorHilight": Vector4(0.907101, 0.893638, 1.0, 1.0),
+"p_BColorMidtone": Vector4(0.561798, 0.409166, 0.291116, 1.0),
+"p_BColorShadow": Vector4(0.052731, 0.082826, 0.337079, 1.0),
+"p_CColorHilight": Vector4(0.902581, 1.0, 0.977544, 1.0),
+"p_CColorMidtone": Vector4(0.219101, 0.219101, 0.219101, 1.0),
+"p_CColorShadow": Vector4(0.629214, 0.355343, 0.050008, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Specular": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Prop_Iris_Generic.Textures.LongContainer_Dif",
+"p_Masks": "Prop_Iris_Generic.Textures.LongContainerColor_Comp",
+"p_Specular": ""
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Specular": ""
+})
+notes = "Instance native static permutation data is not exposed by this dump."

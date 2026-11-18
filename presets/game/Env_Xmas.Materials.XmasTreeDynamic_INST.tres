@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Env_Xmas.Materials.XmasTreeDynamic_Mat.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_Xmas.Materials.XmasTreeDynamic_INST"
+source_object = "Env_Xmas.Materials.XmasTreeDynamic_INST"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Env_Xmas.Materials.XmasTreeDynamic_Mat"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"FresnelStrength": 0.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"P_VertexBloat": Vector4(0.0, 0.0, 0.0, 0.0),
+"p_SnowAmount": Vector4(1.5, 1.5, 1.5, 0.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

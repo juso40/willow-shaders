@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_VEH_Shared.Materials.Mat_SmokeFireball_NoDistortion.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_BulletImpacts_Alien.Materials.Mat_SmokeFireball_NoDistortion_INST"
+source_object = "FX_BulletImpacts_Alien.Materials.Mat_SmokeFireball_NoDistortion_INST"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_VEH_Shared.Materials.Mat_SmokeFireball_NoDistortion"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"sw_DepthBias_Rate": -50.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

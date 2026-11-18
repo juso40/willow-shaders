@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Items.Master_ClassMod_02.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Item_ClassMods.Mat.Mati_ClassMod_Soldier_Gunner"
+source_object = "Item_ClassMods.Mat.Mati_ClassMod_Soldier_Gunner"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Items.Master_ClassMod_02"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_AColorMidtone": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_AColorShadow": Vector4(0.209937, 0.209937, 0.209937, 1.0),
+"p_BColorHilight": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_BColorMidtone": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_BColorShadow": Vector4(0.32043, 0.32043, 0.32043, 1.0),
+"p_CColorHilight": Vector4(0.326252, 0.483736, 0.519318, 1.0),
+"p_CColorMidtone": Vector4(1.520979, 0.45276, 0.040186, 1.0),
+"p_CColorShadow": Vector4(0.726346, 0.401057, 1.0, 1.0),
+"p_DecalChannel": Vector4(1.0, 1.0, 0.0, 0.0),
+"p_DecalColor": Vector4(0.632532, 0.64086, 0.607473, 1.0),
+"p_DecalScalePosition": Vector4(5.0, 2.0, 0.0, 0.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Decal": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Decal": "Common_GunMaterials.Patterns.Pattern_DahlLegendCamo1",
+"p_Diffuse": "Item_ClassMods.Textures.SoldierClassMod01_Diff",
+"p_Masks": "Item_ClassMods.Textures.SoldierClassMod01_Msk",
+"p_Normal": "Item_ClassMods.Textures.SoldierClassMod01_Norm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Decal": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

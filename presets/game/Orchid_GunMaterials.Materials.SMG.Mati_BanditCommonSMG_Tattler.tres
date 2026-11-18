@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Orchid_GunMaterials.Materials.SMG.Mati_HyperionCommonSMG_Actualizer.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Orchid_GunMaterials.Materials.SMG.Mati_BanditCommonSMG_Tattler"
+source_object = "Orchid_GunMaterials.Materials.SMG.Mati_BanditCommonSMG_Tattler"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Orchid_GunMaterials.Materials.SMG.Mati_HyperionCommonSMG_Actualizer"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_DecalRotate": 0.1204,
+"p_ReplacePattern": 0.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_BColorHilight": Vector4(1.388726, 1.392288, 1.115379, 1.0),
+"p_BColorMidtone": Vector4(1.691546, 1.413517, 0.757024, 1.0),
+"p_DecalColor": Vector4(10.643279, 10.643279, 10.643279, 1.0),
+"p_DecalScalePosition": Vector4(3.7145, 11.116, 0.5033, 0.5233),
+"p_PatternChannelScale": Vector4(1.0, 0.5, 0.6, 0.0),
+"p_PatternColor": Vector4(0.337041, 0.835975, 1.0, 1.0),
+"p_PatternScalePosition": Vector4(3.5353, 5.0, 0.3715, 0.0),
+"p_ReflectColor": Vector4(2.999843, 3.553454, 3.934357, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Decal": null,
+"p_Pattern": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Decal": "Common_GunMaterials.Patterns.Patterns_General_1",
+"p_Pattern": "Common_GunMaterials.Patterns.Pattern_BanditRare"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Decal": "Texture2D",
+"p_Pattern": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

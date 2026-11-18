@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_Shared_Mesh.Materials.Mat_VolumetricLightCone.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Background.Materials.Mat_VolumetricLightCone_INST"
+source_object = "Prop_Background.Materials.Mat_VolumetricLightCone_INST"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_Shared_Mesh.Materials.Mat_VolumetricLightCone"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Contrast": 0.5,
+"SmokePanSpeed": 1e-05
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

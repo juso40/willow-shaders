@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_MoonBase.Materials.Mati_Moon.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Ice_Light.TheWorld:PersistentLevel.Main_Sequence.WillowSeqAct_DayNightCycle_1.InterpGroupInst_3.InterpTrackInstFloatMaterialParam_0.MaterialInstanceConstant_68"
+source_object = "Ice_Light.TheWorld:PersistentLevel.Main_Sequence.WillowSeqAct_DayNightCycle_1.InterpGroupInst_3.InterpTrackInstFloatMaterialParam_0.MaterialInstanceConstant_68"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_MoonBase.Materials.Mati_Moon"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Time_of_Day": 60.0,
+"p_DarkColor": 0.0,
+"p_moonTime": 0.0,
+"p_moonTimeBaseShadow": 0.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Horizion_track_color_multiplier": Vector4(14.0, 14.0, 14.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

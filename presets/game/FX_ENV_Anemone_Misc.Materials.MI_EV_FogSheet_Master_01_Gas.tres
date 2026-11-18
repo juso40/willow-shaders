@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/EngineVolumetrics.Fogsheet.Materials.M_EV_FogSheet_Master_01.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_ENV_Anemone_Misc.Materials.MI_EV_FogSheet_Master_01_Gas"
+source_object = "FX_ENV_Anemone_Misc.Materials.MI_EV_FogSheet_Master_01_Gas"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "EngineVolumetrics.Fogsheet.Materials.M_EV_FogSheet_Master_01"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Color": Vector4(0.637985, 1.0, 0.405293, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

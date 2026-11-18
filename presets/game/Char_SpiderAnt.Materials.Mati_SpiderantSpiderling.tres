@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_SpiderAnt.Materials.Mati_SpiderantSpiderling"
+source_object = "Char_SpiderAnt.Materials.Mati_SpiderantSpiderling"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_HighlightsIntensity": 20.0,
+"p_PatternIntensity": 1.0,
+"p_ShadowsIntensity": 20.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.304348, 0.214717, 0.19518, 1.0),
+"p_AColorMidtone": Vector4(0.168478, 0.118118, 0.120662, 1.0),
+"p_AColorShadow": Vector4(0.11413, 0.06227, 0.056777, 1.0),
+"p_BColorHilight": Vector4(0.413043, 0.330312, 0.323251, 1.0),
+"p_BColorMidtone": Vector4(0.516304, 0.324542, 0.2806, 1.0),
+"p_BColorShadow": Vector4(0.597826, 0.464148, 0.454868, 1.0),
+"p_CColorHilight": Vector4(1.0, 0.683617, 0.66136, 1.0),
+"p_CColorMidtone": Vector4(1.0, 0.798564, 0.777174, 1.0),
+"p_CColorShadow": Vector4(0.836957, 0.836957, 0.836957, 1.0),
+"p_EmissiveScale": Vector4(0.022099, 0.006471, 0.00171, 1.0),
+"p_PatternColor": Vector4(0.271739, 0.190448, 0.177221, 2.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_CustomPattern": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_CustomPattern": "",
+"p_Diffuse": "Char_SpiderAnt.Textures.SpiderAnt_Dif",
+"p_Masks": "Char_SpiderAnt.Textures.SpiderAntColor_Comp",
+"p_Normal": "Char_SpiderAnt.Textures.SpiderAnt_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_CustomPattern": "",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

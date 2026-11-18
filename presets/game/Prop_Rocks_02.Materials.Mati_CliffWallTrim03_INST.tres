@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Environment.Master_Rocks.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Rocks_02.Materials.Mati_CliffWallTrim03_INST"
+source_object = "Prop_Rocks_02.Materials.Mati_CliffWallTrim03_INST"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Environment.Master_Rocks"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_DiffMod": Vector4(1.404643, 1.270522, 1.5, 1.0),
+"p_Diff_UVMod": Vector4(0.5, 0.5, 1.5, 1.5),
+"p_DiffuseFadeUVMod": Vector4(0.5, 0.5, 1.0, 1.0),
+"p_Normal_UVMod": Vector4(0.5, 0.5, 1.5, 1.5),
+"p_VertexPaintDifMod": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_VertexPaintNoiseMod": Vector4(6.0, -1.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_DiffuseFade": null,
+"p_DiffuseVertexPaint": null,
+"p_Normal": null,
+"p_NormalB": null,
+"p_VertexPaintNoise": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Prop_Rocks_02.Meshes.DigPitWall_Dif",
+"p_DiffuseFade": "Prop_Rocks_02.Meshes.DigPitWall_Dif",
+"p_DiffuseVertexPaint": "Prop_Zone3Terrain.Textures.VolcanicGround_Dif",
+"p_Normal": "Prop_Rocks_02.Meshes.DigPitWall_Nrm",
+"p_NormalB": "Prop_Zone3Terrain.Textures.VolcanicGround_Nrm",
+"p_VertexPaintNoise": "Prop_Zone3Terrain.Textures.VolcanicGround_Dif"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_DiffuseFade": "Texture2D",
+"p_DiffuseVertexPaint": "Texture2D",
+"p_Normal": "Texture2D",
+"p_NormalB": "Texture2D",
+"p_VertexPaintNoise": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Aster_Prop_Castle.Material.Mat_Castle_Spec"
+source_object = "Aster_Prop_Castle.Material.Mat_Castle_Spec"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"CastleBrightness": 1.0,
+"P_Spec_Intensity": 4.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Aster_Prop_Castle.Textures.Floor_01"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D"
+})
+static_switches = Dictionary[String, bool]({
+"P_Enable_Grunge": false
+})

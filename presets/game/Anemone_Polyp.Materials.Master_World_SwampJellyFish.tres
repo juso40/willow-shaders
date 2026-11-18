@@ -1,0 +1,55 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Anemone_Polyp.Materials.Master_World_SwampJellyFish"
+source_object = "Anemone_Polyp.Materials.Master_World_SwampJellyFish"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"GasSkillOverlay": 0.0,
+"P_DeathsValue": 0.0,
+"p_DigiStructEnable": 0.0,
+"p_DigistructMultiplier": 1.0,
+"p_DigistructThreshold": 1.0,
+"p_HighlightsIntensity": 2.0,
+"p_ShadowsIntensity": 2.0,
+"p_fade": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_AColorMidtone": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_AColorShadow": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_BColorHilight": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_BColorMidtone": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_BColorShadow": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_CColorHilight": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_CColorMidtone": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_CColorShadow": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_DissolveColor": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_ElementalDeathColor": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_EmissiveScale": Vector4(1.0, 1.0, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_emissive": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Common_Textures.Stub.StubGray_Gray",
+"p_Masks": "Common_Textures.Stub.StubBlack_Gray",
+"p_emissive": "Common_Textures.Stub.StubWhite_Gray"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_emissive": "Texture2D"
+})
+static_component_masks = Dictionary[String, Vector4]({
+"chan_EmissiveMask": Vector4(1.0, 0.0, 0.0, 0.0)
+})
+static_switches = Dictionary[String, bool]({
+"sw_Colorize": false,
+"sw_Emissive": false
+})

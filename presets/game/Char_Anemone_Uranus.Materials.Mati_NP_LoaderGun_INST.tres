@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Char_Anemone_Uranus.Materials.Mati_Loader_Uranus_INST.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Anemone_Uranus.Materials.Mati_NP_LoaderGun_INST"
+source_object = "Char_Anemone_Uranus.Materials.Mati_NP_LoaderGun_INST"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Char_Anemone_Uranus.Materials.Mati_Loader_Uranus_INST"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorMidtone": Vector4(0.393088, 0.488275, 0.756878, 1.0),
+"p_AColorShadow": Vector4(0.596663, 0.177054, 0.078437, 1.0),
+"p_BColorHilight": Vector4(0.247454, 0.273705, 0.370152, 1.0),
+"p_BColorMidtone": Vector4(0.84531, 0.912287, 1.0, 1.0),
+"p_BColorShadow": Vector4(0.276233, 0.104986, 0.088524, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Masks": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Masks": "Char_Anemone_Uranus.T_BattleDroid_NP_Comp"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Masks": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

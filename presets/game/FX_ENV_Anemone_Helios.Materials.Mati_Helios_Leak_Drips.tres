@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_GOR_Materials.Materials.Mat_Blood_Cubed_Master.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_ENV_Anemone_Helios.Materials.Mati_Helios_Leak_Drips"
+source_object = "FX_ENV_Anemone_Helios.Materials.Mati_Helios_Leak_Drips"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_GOR_Materials.Materials.Mat_Blood_Cubed_Master"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_depthbiasalpha": -64.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"CubeColor": Vector4(0.0, 0.87815, 2.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Mask": null,
+"Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Mask": "FX_GOR_Textures.Textures.Squish_Blood_Tex",
+"Normal": "FX_GOR_Textures.Textures.Squish_Blood_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"Mask": "Texture2D",
+"Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

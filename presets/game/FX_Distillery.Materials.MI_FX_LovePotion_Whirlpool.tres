@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_Distillery.Materials.M_FX_Whiskey_Whirlpool.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Distillery.Materials.MI_FX_LovePotion_Whirlpool"
+source_object = "FX_Distillery.Materials.MI_FX_LovePotion_Whirlpool"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_Distillery.Materials.M_FX_Whiskey_Whirlpool"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Color": Vector4(4.0, 2.0, 2.0, 1.0),
+"Color_Dark": Vector4(1.0, 0.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

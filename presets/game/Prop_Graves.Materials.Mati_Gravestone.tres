@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Graves.Materials.Mat_Gravestone.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Graves.Materials.Mati_Gravestone"
+source_object = "Prop_Graves.Materials.Mati_Gravestone"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Graves.Materials.Mat_Gravestone"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

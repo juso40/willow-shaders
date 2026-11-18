@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Craig_Flax_Halloween.Materials.Mat_Mossy_Rock.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Craig_Flax_Halloween.Materials.Mati_Mossy_Rock_TopMossRedux"
+source_object = "Craig_Flax_Halloween.Materials.Mati_Mossy_Rock_TopMossRedux"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Craig_Flax_Halloween.Materials.Mat_Mossy_Rock"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"TopPower": 40.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_CreatureShock.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Aster_Prop_Armor.Materials.Mati_Armor_Blue_Shock"
+source_object = "Aster_Prop_Armor.Materials.Mati_Armor_Blue_Shock"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_CreatureShock"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_FxScaleShock": 1.25
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_AColorMidtone": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_AColorShadow": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_BColorHilight": Vector4(0.326906, 0.361026, 0.469596, 1.0),
+"p_BColorMidtone": Vector4(0.274903, 0.330996, 0.629811, 1.0),
+"p_BColorShadow": Vector4(0.127067, 0.079699, 0.023017, 1.0),
+"p_CColorHilight": Vector4(0.740304, 0.683553, 0.38448, 1.0),
+"p_CColorMidtone": Vector4(0.712681, 0.64087, 0.429194, 1.0),
+"p_CColorShadow": Vector4(0.353578, 0.339172, 0.130718, 1.0),
+"p_ColorD": Vector4(0.381201, 0.194194, 0.079402, 1.0),
+"p_DissolveColor": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_ElementalDeathColor": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_EmissiveScale": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_PatternColor": Vector4(0.501804, 0.500864, 0.502744, 2.0),
+"p_ShockColor": Vector4(0.086142, 0.8, 5.0, 5.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Aster_Prop_Armor.Textures.PyschoArmor_Diff",
+"p_Masks": "Aster_Prop_Armor.Textures.PsychoArmor_Comp",
+"p_Normal": "Aster_Prop_Armor.Textures.PyschoArmor_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Trees_Allium.Materials.Mat_AlliumFlowers.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Trees_Allium.Materials.Mati_TreeBranchFallLeaves"
+source_object = "Prop_Trees_Allium.Materials.Mati_TreeBranchFallLeaves"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Trees_Allium.Materials.Mat_AlliumFlowers"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(1.0, 0.45908, 0.334458, 1.0),
+"p_AColorMidtone": Vector4(1.0, 0.12753, 0.436813, 1.0),
+"p_AColorShadow": Vector4(0.505432, 0.001687, 0.378676, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Prop_Trees_Allium.Textures.TreeBranchFallLeaves_Dif"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D"
+})

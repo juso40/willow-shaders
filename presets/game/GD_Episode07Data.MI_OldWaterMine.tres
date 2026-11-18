@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Weapons.Materials.Mat_OldWaterMine.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_Episode07Data.MI_OldWaterMine"
+source_object = "GD_Episode07Data.MI_OldWaterMine"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Weapons.Materials.Mat_OldWaterMine"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"BlinkSpeed": 0.0,
+"SpeedScale": 0.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

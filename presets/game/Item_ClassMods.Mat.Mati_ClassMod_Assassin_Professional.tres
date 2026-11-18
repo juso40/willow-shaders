@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Items.Master_ClassMod_02.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Item_ClassMods.Mat.Mati_ClassMod_Assassin_Professional"
+source_object = "Item_ClassMods.Mat.Mati_ClassMod_Assassin_Professional"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Items.Master_ClassMod_02"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.778291, 1.0, 0.972011, 1.0),
+"p_AColorMidtone": Vector4(0.89951, 1.0, 0.947196, 1.0),
+"p_AColorShadow": Vector4(0.266491, 0.280751, 0.281758, 1.0),
+"p_BColorHilight": Vector4(0.788248, 1.0, 0.712168, 1.0),
+"p_BColorMidtone": Vector4(0.784501, 0.593388, 0.199967, 1.0),
+"p_BColorShadow": Vector4(0.220986, 0.220986, 0.220986, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Item_ClassMods.Textures.AssassinClassMod01_Dif",
+"p_Masks": "Item_ClassMods.Textures.AssassinClassMod01_Msk",
+"p_Normal": "Item_ClassMods.Textures.AssassinClassMod01_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

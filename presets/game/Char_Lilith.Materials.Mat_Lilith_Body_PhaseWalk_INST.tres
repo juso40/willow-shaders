@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Char_Lilith.Materials.Mat_Lilith_PhaseWalk.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Lilith.Materials.Mat_Lilith_Body_PhaseWalk_INST"
+source_object = "Char_Lilith.Materials.Mat_Lilith_Body_PhaseWalk_INST"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Char_Lilith.Materials.Mat_Lilith_PhaseWalk"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"PhaseFadeIn": 0.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

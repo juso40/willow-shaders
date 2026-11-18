@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_RatChef.Materials.Mati_TunnelRat_ClanFlint"
+source_object = "GD_RatChef.Materials.Mati_TunnelRat_ClanFlint"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_ShadowsIntensity": 2.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.891304, 0.739564, 0.522196, 1.0),
+"p_AColorMidtone": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_AColorShadow": Vector4(1.0, 0.954149, 0.75365, 1.0),
+"p_BColorHilight": Vector4(1.0, 0.962526, 0.89681, 1.0),
+"p_BColorMidtone": Vector4(1.0, 0.992216, 0.905641, 1.0),
+"p_BColorShadow": Vector4(0.696107, 0.696107, 0.696107, 1.0),
+"p_CColorHilight": Vector4(1.0, 0.930358, 0.880757, 1.0),
+"p_CColorMidtone": Vector4(1.0, 0.979738, 0.819207, 1.0),
+"p_CColorShadow": Vector4(0.696138, 0.862272, 1.0, 1.0),
+"p_ColorD": Vector4(1.0, 0.992687, 0.7969, 1.0),
+"p_PatternColor": Vector4(0.010849, 0.010829, 0.01087, 2.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_CustomPattern": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_CustomPattern": "",
+"p_Diffuse": "Char_TunnelRat.Textures.TunnelRat_Dif",
+"p_Masks": "Char_TunnelRat.Textures.TunnelRatColor_Comp",
+"p_Normal": "Char_TunnelRat.Textures.TunnelRat_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_CustomPattern": "",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

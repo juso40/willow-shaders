@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_ENV_Sanctuary.Materials.Mat_OMG_IM_BEING_TELEPORTED.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_ENV_Sanctuary.Materials.Mati_Player_PhasePort"
+source_object = "FX_ENV_Sanctuary.Materials.Mati_Player_PhasePort"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_ENV_Sanctuary.Materials.Mat_OMG_IM_BEING_TELEPORTED"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Dissolve_Control": 0.0,
+"Phase": 0.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Color": Vector4(0.3, 0.0, 2.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Diffuse": null,
+"Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Diffuse": "Char_Soldier.Textures.SoldierBody_Dif",
+"Normal": "Char_Soldier.Textures.SoldierBody_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"Diffuse": "Texture2D",
+"Normal": "Texture2D"
+})

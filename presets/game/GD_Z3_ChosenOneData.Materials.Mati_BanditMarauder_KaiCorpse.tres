@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Char_Bandit_Marauder.Materials.Mati_BanditMarauder_Green.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_Z3_ChosenOneData.Materials.Mati_BanditMarauder_KaiCorpse"
+source_object = "GD_Z3_ChosenOneData.Materials.Mati_BanditMarauder_KaiCorpse"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Char_Bandit_Marauder.Materials.Mati_BanditMarauder_Green"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_PatternIntensity": 1.75
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.778977, 0.778977, 0.124833, 1.0),
+"p_AColorMidtone": Vector4(1.2, 1.2, 0.192302, 1.0),
+"p_AColorShadow": Vector4(0.778977, 0.778977, 0.124833, 1.0),
+"p_BColorHilight": Vector4(1.0, 0.673942, 0.302383, 1.0),
+"p_BColorMidtone": Vector4(0.678652, 0.457372, 0.205212, 1.0),
+"p_BColorShadow": Vector4(0.364045, 0.245345, 0.110081, 1.0),
+"p_CColorHilight": Vector4(0.444011, 0.512755, 1.0, 1.0),
+"p_CColorMidtone": Vector4(0.374751, 0.392734, 0.813483, 1.0),
+"p_CColorShadow": Vector4(0.172332, 0.186085, 0.507865, 1.0),
+"p_MuscleFat": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_PatternColor": Vector4(0.18427, 0.020932, 0.012009, 2.0),
+"p_PatternScalePosition": Vector4(3.5, 3.5, 0.0, 0.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_CustomPattern": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_CustomPattern": "Common_GunMaterials.Patterns.Pattern_JacobsCommonMetal"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_CustomPattern": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

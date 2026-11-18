@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Char_Anemone_InfectedShared.Materials.Master_Creature_Infected.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Anemone_NewPandora.Materials.MIC_NewPandoranGear"
+source_object = "Char_Anemone_NewPandora.Materials.MIC_NewPandoranGear"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Char_Anemone_InfectedShared.Materials.Master_Creature_Infected"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"WorldDisplacementMult": 0.0,
+"p_PatternIntensity": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"EmissiveColor": Vector4(1.312268, 2.0, 0.210583, 1.0),
+"p_AColorHilight": Vector4(0.404494, 0.370846, 0.327231, 1.0),
+"p_AColorMidtone": Vector4(0.207865, 0.151375, 0.100429, 1.0),
+"p_AColorShadow": Vector4(0.123596, 0.123596, 0.123596, 1.0),
+"p_BColorHilight": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_BColorMidtone": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_BColorShadow": Vector4(0.269663, 0.269663, 0.269663, 1.0),
+"p_CColorHilight": Vector4(0.241573, 0.241573, 0.241573, 1.0),
+"p_CColorMidtone": Vector4(0.140449, 0.028406, 0.028406, 1.0),
+"p_CColorShadow": Vector4(0.05618, 0.05618, 0.05618, 1.0),
+"p_PatternColor": Vector4(0.453022, 0.0, 0.015382, 2.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"EmissivePurpleMask": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"EmissivePurpleMask": "Char_Anemone_NewPandora.T_NewPandoraSoldier_E",
+"p_Diffuse": "Char_Anemone_NewPandora.T_NewPandoraSoldier_D",
+"p_Masks": "Char_Anemone_NewPandora.T_NewPandoraSoldier_Col",
+"p_Normal": "Char_Anemone_NewPandora.T_NewPandoraSoldier_N"
+})
+texture_object_classes = Dictionary[String, String]({
+"EmissivePurpleMask": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

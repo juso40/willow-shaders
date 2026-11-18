@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_MoonBase.Materials.Mat_MoonBase_02a.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_Easter_bjacobs.Materials.Mati_MoonBase_02a"
+source_object = "Env_Easter_bjacobs.Materials.Mati_MoonBase_02a"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_MoonBase.Materials.Mat_MoonBase_02a"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Brightness": 2.0,
+"Fog_Intensity": 0.5
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"MoonBase_Color": Vector4(0.57, 0.84, 1.0, 1.0),
+"RimLight_Color": Vector4(0.0, 0.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

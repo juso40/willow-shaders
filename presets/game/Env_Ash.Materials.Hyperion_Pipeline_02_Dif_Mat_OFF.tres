@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_HyperionArchitecture.Materials.Hyperion_Pipeline_02_Dif_Mat.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_Ash.Materials.Hyperion_Pipeline_02_Dif_Mat_OFF"
+source_object = "Env_Ash.Materials.Hyperion_Pipeline_02_Dif_Mat_OFF"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_HyperionArchitecture.Materials.Hyperion_Pipeline_02_Dif_Mat"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Euridium Flow": 0.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

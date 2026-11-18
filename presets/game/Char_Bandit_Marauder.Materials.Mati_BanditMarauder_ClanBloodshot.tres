@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Char_Bandit_Marauder.Materials.Mati_BanditMarauder.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Bandit_Marauder.Materials.Mati_BanditMarauder_ClanBloodshot"
+source_object = "Char_Bandit_Marauder.Materials.Mati_BanditMarauder_ClanBloodshot"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Char_Bandit_Marauder.Materials.Mati_BanditMarauder"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(1.0, 0.278634, 0.256392, 1.0),
+"p_AColorMidtone": Vector4(0.662959, 0.286525, 0.185403, 1.0),
+"p_AColorShadow": Vector4(0.432799, 0.535892, 0.430728, 1.0),
+"p_BColorHilight": Vector4(0.718206, 0.194674, 0.132232, 1.0),
+"p_BColorMidtone": Vector4(0.533708, 0.100967, 0.102872, 1.0),
+"p_BColorShadow": Vector4(0.331479, 0.320117, 0.118814, 1.0),
+"p_CColorHilight": Vector4(0.682116, 0.751354, 0.506446, 1.0),
+"p_CColorMidtone": Vector4(0.682116, 0.751354, 0.506446, 1.0),
+"p_CColorShadow": Vector4(0.906421, 0.8, 0.5, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

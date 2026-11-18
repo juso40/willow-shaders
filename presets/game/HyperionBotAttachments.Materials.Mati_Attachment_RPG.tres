@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_CreatureDigistruct.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "HyperionBotAttachments.Materials.Mati_Attachment_RPG"
+source_object = "HyperionBotAttachments.Materials.Mati_Attachment_RPG"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_CreatureDigistruct"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_DigiStructEnable": 0.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.213483, 0.183876, 0.091938, 1.0),
+"p_AColorMidtone": Vector4(0.117978, 0.101025, 0.048384, 1.0),
+"p_AColorShadow": Vector4(0.108696, 0.093621, 0.046811, 1.0),
+"p_BColorHilight": Vector4(0.348959, 0.241632, 0.0, 1.0),
+"p_BColorMidtone": Vector4(0.151685, 0.104541, 0.046017, 1.0),
+"p_BColorShadow": Vector4(0.065217, 0.048637, 0.029845, 1.0),
+"p_CColorHilight": Vector4(0.137255, 0.141176, 0.156863, 1.0),
+"p_CColorMidtone": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_CColorShadow": Vector4(0.05231, 0.053804, 0.059783, 1.0),
+"p_ColorD": Vector4(0.140449, 0.140449, 0.140449, 1.0),
+"p_EmissiveScale": Vector4(0.0, 0.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "HyperionBotAttachments.Tex.HyperionBotAttachments_Dif",
+"p_Masks": "HyperionBotAttachments.Tex.HyperionBotAttachments_Comp",
+"p_Normal": "HyperionBotAttachments.Tex.HyperionBotAttachments_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

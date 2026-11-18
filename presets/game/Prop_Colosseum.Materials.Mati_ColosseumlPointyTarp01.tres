@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Tarps.Materials.Mati_PointyTarp.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Colosseum.Materials.Mati_ColosseumlPointyTarp01"
+source_object = "Prop_Colosseum.Materials.Mati_ColosseumlPointyTarp01"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Tarps.Materials.Mati_PointyTarp"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_WaveScale": 0.5,
+"p_WindSpeed": 1.0,
+"p_WindWaveLength": 0.5
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Tarp_Color": Vector4(1.0, 0.293216, 0.113921, 1.0),
+"p_TransmissionColor": Vector4(2.0, 1.0, 0.75, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

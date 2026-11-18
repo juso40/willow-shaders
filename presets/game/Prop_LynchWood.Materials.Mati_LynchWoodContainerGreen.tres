@@ -1,0 +1,41 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Environment.Master_World.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_LynchWood.Materials.Mati_LynchWoodContainerGreen"
+source_object = "Prop_LynchWood.Materials.Mati_LynchWoodContainerGreen"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Environment.Master_World"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_ShadowsIntensity": 2.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.932584, 0.817321, 0.817321, 1.0),
+"p_AColorMidtone": Vector4(0.453661, 0.928143, 0.426419, 1.0),
+"p_AColorShadow": Vector4(0.933667, 0.505537, 0.537548, 1.0),
+"p_BColorHilight": Vector4(0.530367, 0.270284, 0.0, 1.0),
+"p_BColorMidtone": Vector4(0.268294, 0.276233, 0.273602, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null,
+"p_Specular": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Prop_LynchWood.Textures.LynchWoodContainerTex1_Dif",
+"p_Masks": "Prop_LynchWood.Textures.LynchWoodContainer_Comp",
+"p_Normal": "Common_Textures.Stub.StubFlat_Nrm",
+"p_Specular": ""
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D",
+"p_Specular": ""
+})
+notes = "Instance native static permutation data is not exposed by this dump."

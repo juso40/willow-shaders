@@ -1,0 +1,53 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "HyperionBotAttachments.Materials.Mati_Attachment_BadassPlaythough2"
+source_object = "HyperionBotAttachments.Materials.Mati_Attachment_BadassPlaythough2"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_HighlightsIntensity": 2.0,
+"p_PatternIntensity": 1.0,
+"p_PatternInvert": 1.0,
+"p_ShadowsIntensity": 2.0,
+"p_UVChannelSelect": 2.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(1.0, 0.257978, 0.0, 1.0),
+"p_AColorMidtone": Vector4(0.494382, 0.139609, 0.0, 1.0),
+"p_AColorShadow": Vector4(0.241573, 0.09255, 0.0, 1.0),
+"p_BColorHilight": Vector4(0.910958, 1.0, 0.963771, 1.0),
+"p_BColorMidtone": Vector4(0.932734, 1.0, 0.918071, 1.0),
+"p_BColorShadow": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_CColorHilight": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_CColorMidtone": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_CColorShadow": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_ColorD": Vector4(0.01317, 0.012608, 0.016854, 1.0),
+"p_EmissiveScale": Vector4(0.061798, 0.061798, 0.061798, 1.0),
+"p_PatternColor": Vector4(0.073034, 0.029859, 0.0, 2.0),
+"p_PatternScalePosition": Vector4(1.0, 1.0, 0.0, 0.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_CustomPattern": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_CustomPattern": "FX_Shared_Tech.Textures.Tex_Shield_Hex_Pattern_Diff",
+"p_Diffuse": "HyperionBotAttachments.Tex.HyperionBotAttachments_Dif",
+"p_Masks": "HyperionBotAttachments.Tex.HyperionBotAttachments_Comp",
+"p_Normal": "HyperionBotAttachments.Tex.HyperionBotAttachments_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_CustomPattern": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

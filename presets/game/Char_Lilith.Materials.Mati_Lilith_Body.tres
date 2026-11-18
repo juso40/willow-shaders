@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Char_Lilith.Materials.Mat_MasterPCBody.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Lilith.Materials.Mati_Lilith_Body"
+source_object = "Char_Lilith.Materials.Mati_Lilith_Body"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Char_Lilith.Materials.Mat_MasterPCBody"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(1.289855, 0.615233, 0.536232, 1.0),
+"p_AColorMidtone": Vector4(1.0, 0.12451, 0.08427, 1.0),
+"p_AColorShadow": Vector4(0.769663, 0.546068, 0.281768, 1.0),
+"p_BColorHilight": Vector4(1.0, 0.078652, 0.130137, 1.0),
+"p_BColorMidtone": Vector4(1.171053, 0.798737, 0.085526, 1.0),
+"p_BColorShadow": Vector4(0.55618, 0.483187, 0.253059, 1.0),
+"p_CColorHilight": Vector4(1.0, 0.290947, 0.09937, 1.0),
+"p_CColorMidtone": Vector4(1.711538, 0.666675, 0.383311, 1.0),
+"p_CColorShadow": Vector4(0.853933, 0.507167, 0.407777, 1.0),
+"p_Tat_Color": Vector4(0.0, 0.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_Lilith.Textures.Lilith_Body_D",
+"p_Masks": "Char_Lilith.Textures.Lilith_Body_Comp",
+"p_Normal": "Char_Lilith.Textures.Lilith_Body_N"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

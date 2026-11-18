@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Aster_Skybox.Materials.Mat_Skydome_CastleKeep"
+source_object = "FX_Aster_Skybox.Materials.Mat_Skydome_CastleKeep"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"FadeToStorm": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"BottomColor": Vector4(0.037029, 0.010398, 0.002586, 1.0),
+"TopColor": Vector4(0.099444, 0.03346, 0.017584, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"SunnySky": null
+})
+texture_object_paths = Dictionary[String, String]({
+"SunnySky": "FX_Aster_Skybox.Textures.SunnySkybox"
+})
+texture_object_classes = Dictionary[String, String]({
+"SunnySky": "Texture2D"
+})

@@ -1,0 +1,41 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Environment.Master_World.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Weapons.Materials.Mati_BanditBomb"
+source_object = "Prop_Weapons.Materials.Mati_BanditBomb"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Environment.Master_World"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_HighlightsIntensity": 25.0,
+"p_ShadowsIntensity": 25.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(1.0, 0.929586, 0.178293, 1.0),
+"p_AColorMidtone": Vector4(0.301567, 0.646067, 0.14161, 1.0),
+"p_AColorShadow": Vector4(0.542306, 0.589888, 0.394363, 1.0),
+"p_BColorHilight": Vector4(1.0, 0.820456, 0.218919, 1.0),
+"p_BColorMidtone": Vector4(0.629214, 0.479585, 0.219164, 1.0),
+"p_BColorShadow": Vector4(0.516854, 0.391008, 0.22939, 1.0),
+"p_EmissiveScale": Vector4(25.0, 0.0, 0.0, 0.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_emissive": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Prop_Weapons.Textures.BanditBomb_Dif",
+"p_Masks": "Prop_Weapons.Textures.BanditBomb_Comp",
+"p_emissive": "Prop_Weapons.CrimsonLanceBomb_Emis"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_emissive": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

@@ -1,0 +1,40 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Environment.Master_Barrel.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Barrels.Materials.Mati_HyperionBarrelShockOn"
+source_object = "Prop_Barrels.Materials.Mati_HyperionBarrelShockOn"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Environment.Master_Barrel"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_FxScaleShock": 3.0,
+"p_SymbolSelect": 4.0,
+"p_UseDecal": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(2.399186, 2.670523, 2.872818, 1.0),
+"p_AColorMidtone": Vector4(0.331899, 0.665951, 1.625203, 1.0),
+"p_AColorShadow": Vector4(0.269228, 0.425083, 0.696107, 1.0),
+"p_BColorHilight": Vector4(1.251739, 1.212245, 1.014929, 1.0),
+"p_BColorMidtone": Vector4(0.781413, 0.748063, 0.999956, 1.0),
+"p_BColorShadow": Vector4(0.370152, 0.367271, 0.335225, 1.0),
+"p_DecalPositionScale": Vector4(-0.0214, -0.6, 7.078, 1.22),
+"p_SymbolColorA": Vector4(0.0, 0.570541, 0.795551, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Prop_Barrels.Textures.HyperionBarrel_Dif",
+"p_Masks": "Prop_Barrels.Textures.HyperionBarrel_Comp"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

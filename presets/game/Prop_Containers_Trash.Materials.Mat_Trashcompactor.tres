@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Containers_Trash.Materials.Mat_Trashcompactor"
+source_object = "Prop_Containers_Trash.Materials.Mat_Trashcompactor"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"Spec_Contrast": 1.3,
+"Spec_Power": 12.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Tint": Vector4(1.0, 1.0, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+static_component_masks = Dictionary[String, Vector4]({
+"Tint_Mask": Vector4(1.0, 0.0, 0.0, 0.0)
+})

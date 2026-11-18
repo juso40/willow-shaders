@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_Wizard_DeadBrotherEdgar_Proto2.Materials.Mati_GenericMaleAtt_Edgar"
+source_object = "GD_Wizard_DeadBrotherEdgar_Proto2.Materials.Mati_GenericMaleAtt_Edgar"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.635336, 0.608038, 0.322876, 1.0),
+"p_AColorMidtone": Vector4(1.0, 0.85958, 0.448418, 1.0),
+"p_AColorShadow": Vector4(0.331479, 0.289275, 0.081219, 1.0),
+"p_BColorHilight": Vector4(1.077378, 0.628045, 0.165555, 1.0),
+"p_BColorMidtone": Vector4(0.72373, 0.627614, 0.240864, 1.0),
+"p_BColorShadow": Vector4(0.325955, 0.296286, 0.139085, 1.0),
+"p_CColorHilight": Vector4(0.701632, 0.241825, 0.155077, 1.0),
+"p_CColorMidtone": Vector4(0.756878, 0.144211, 0.079476, 1.0),
+"p_CColorShadow": Vector4(0.270708, 0.214322, 0.137323, 1.0),
+"p_MuscleFat": Vector4(0.0, 0.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_Aster_GenericMale.Textures.GenericMaleAtt_Diff",
+"p_Masks": "Char_Aster_GenericMale.Textures.GenericMaleAtt_Comp",
+"p_Normal": "Char_Aster_GenericMale.Textures.GenericMaleAtt_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

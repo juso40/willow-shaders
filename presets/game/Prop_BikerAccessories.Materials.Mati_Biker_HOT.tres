@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_BikerAccessories.Materials.Mati_Biker_HOT"
+source_object = "Prop_BikerAccessories.Materials.Mati_Biker_HOT"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_HighlightsIntensity": 0.75,
+"p_ShadowsIntensity": 4.0,
+"p_fade": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(1.757233, 0.968513, 0.068022, 1.0),
+"p_AColorMidtone": Vector4(0.795551, 0.00786, 0.0, 1.0),
+"p_AColorShadow": Vector4(0.050562, 0.038586, 0.019835, 1.0),
+"p_BColorHilight": Vector4(0.23756, 0.162975, 0.119855, 1.0),
+"p_BColorMidtone": Vector4(0.110493, 0.092185, 0.076919, 1.0),
+"p_BColorShadow": Vector4(0.033148, 0.033148, 0.033148, 1.0),
+"p_CColorHilight": Vector4(0.370152, 0.140298, 0.087947, 1.0),
+"p_CColorMidtone": Vector4(0.607712, 0.276442, 0.060797, 1.0),
+"p_CColorShadow": Vector4(0.24861, 0.114153, 0.019048, 1.0),
+"p_ColorD": Vector4(0.027218, 0.027623, 0.02536, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Prop_BikerAccessories.Textures.Biker_Armor_Dif",
+"p_Masks": "Prop_BikerAccessories.Textures.Biker_Armor_Comp",
+"p_Normal": "Prop_BikerAccessories.Textures.Biker_Armor_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

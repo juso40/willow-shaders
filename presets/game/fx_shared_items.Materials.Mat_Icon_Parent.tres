@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "fx_shared_items.Materials.Mat_Icon_Parent"
+source_object = "fx_shared_items.Materials.Mat_Icon_Parent"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"ToggleSlash": 0.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"IconSlash": null,
+"Icon_Texture": null
+})
+texture_object_paths = Dictionary[String, String]({
+"IconSlash": "fx_shared_items.Textures.Slash_Dif",
+"Icon_Texture": "fx_shared_items.Textures.ItemCards.repeater"
+})
+texture_object_classes = Dictionary[String, String]({
+"IconSlash": "Texture2D",
+"Icon_Texture": "Texture2D"
+})

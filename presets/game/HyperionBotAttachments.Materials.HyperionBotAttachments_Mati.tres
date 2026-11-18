@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_CreatureDigistruct.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "HyperionBotAttachments.Materials.HyperionBotAttachments_Mati"
+source_object = "HyperionBotAttachments.Materials.HyperionBotAttachments_Mati"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_CreatureDigistruct"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(1.354784, 1.38587, 0.804221, 1.0),
+"p_AColorMidtone": Vector4(2.5, 1.754566, 0.182872, 1.0),
+"p_AColorShadow": Vector4(0.184253, 0.205797, 0.673913, 1.0),
+"p_BColorHilight": Vector4(1.0, 0.68994, 0.418478, 1.0),
+"p_BColorMidtone": Vector4(1.293478, 1.109907, 0.801394, 1.0),
+"p_BColorShadow": Vector4(0.233696, 0.163049, 0.107957, 1.0),
+"p_CColorHilight": Vector4(0.967391, 0.668032, 0.465792, 1.0),
+"p_CColorMidtone": Vector4(2.429348, 2.429348, 2.429348, 1.0),
+"p_CColorShadow": Vector4(0.141688, 0.668478, 0.165426, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "HyperionBotAttachments.Tex.HyperionBotAttachments_Dif",
+"p_Masks": "HyperionBotAttachments.Tex.HyperionBotAttachments_Comp",
+"p_Normal": "HyperionBotAttachments.Tex.HyperionBotAttachments_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_Episode17Data.Materials.Mat_Ammo"
+source_object = "GD_Episode17Data.Materials.Mat_Ammo"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"IconColor": Vector4(0.0, 1.0, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"IconTexture": null
+})
+texture_object_paths = Dictionary[String, String]({
+"IconTexture": "fx_shared_items.Textures.ItemCards.Ammo_CombatRifle"
+})
+texture_object_classes = Dictionary[String, String]({
+"IconTexture": "Texture2D"
+})

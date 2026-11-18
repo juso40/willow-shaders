@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_ENV_Fire.Materials.Mat_Dark_Smoke_Master.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_BulletImpacts.Materials.Mati_Thick_Smoke_Colored_Blue"
+source_object = "FX_BulletImpacts.Materials.Mati_Thick_Smoke_Colored_Blue"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_ENV_Fire.Materials.Mat_Dark_Smoke_Master"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Color": Vector4(0.0, 0.04321, 0.419874, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Mask": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Mask": "FX_ENV_Smoke.Textures.SubUV_2X2_GenericSmoke2_Dif"
+})
+texture_object_classes = Dictionary[String, String]({
+"Mask": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

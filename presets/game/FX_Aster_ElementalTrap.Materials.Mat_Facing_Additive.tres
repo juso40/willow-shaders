@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Aster_ElementalTrap.Materials.Mat_Facing_Additive"
+source_object = "FX_Aster_ElementalTrap.Materials.Mat_Facing_Additive"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"DepthBias_Rate": -50.0,
+"ShimmerAmount": 0.08,
+"Speed": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Mask": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Mask": "FX_Shared_Water.Textures.SubUV_2X2_WaterSplash_Dif"
+})
+texture_object_classes = Dictionary[String, String]({
+"Mask": "Texture2D"
+})
+static_switches = Dictionary[String, bool]({
+"sw_DepthBias": false
+})

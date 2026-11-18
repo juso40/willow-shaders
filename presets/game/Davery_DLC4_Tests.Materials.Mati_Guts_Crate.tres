@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Davery_DLC4_Tests.Materials.Mat_Guts.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Davery_DLC4_Tests.Materials.Mati_Guts_Crate"
+source_object = "Davery_DLC4_Tests.Materials.Mati_Guts_Crate"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Davery_DLC4_Tests.Materials.Mat_Guts"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Movement": Vector4(0.0, 0.0, 0.5, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

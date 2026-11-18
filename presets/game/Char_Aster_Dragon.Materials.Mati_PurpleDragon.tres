@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_CreatureCorrosive.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Aster_Dragon.Materials.Mati_PurpleDragon"
+source_object = "Char_Aster_Dragon.Materials.Mati_PurpleDragon"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_CreatureCorrosive"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_FxScaleCorrosive": 4.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.485083, 0.161646, 0.876405, 1.0),
+"p_AColorMidtone": Vector4(0.720098, 0.086682, 0.842697, 1.0),
+"p_BColorHilight": Vector4(0.353335, 0.785682, 1.0, 1.0),
+"p_BColorMidtone": Vector4(0.300334, 0.582686, 1.0, 1.0),
+"p_BColorShadow": Vector4(0.0, 0.139078, 0.314906, 1.0),
+"p_CColorHilight": Vector4(0.770055, 0.203721, 0.786517, 1.0),
+"p_CColorMidtone": Vector4(0.62753, 0.125311, 0.702247, 1.0),
+"p_CColorShadow": Vector4(0.780899, 0.0, 0.771138, 1.0),
+"p_ColorD": Vector4(4.765759, 0.0, 10.0, 1.0),
+"p_CorrosiveColor": Vector4(0.463233, 0.0, 0.967391, 1.0),
+"p_DissolveColor": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_ElementalDeathColor": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_EmissiveScale": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_PatternColor": Vector4(0.010849, 0.010829, 0.01087, 2.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_Aster_Dragon.Textures.Dragon_Diff",
+"p_Masks": "Char_Aster_Dragon.Textures.Dragon_Comp",
+"p_Normal": "Char_Aster_Dragon.Textures.Dragon_Normals"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

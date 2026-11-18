@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_MarshalPose.Materials.ExCrim_Armor_Marshal"
+source_object = "GD_MarshalPose.Materials.ExCrim_Armor_Marshal"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.917093, 0.785361, 0.785971, 1.0),
+"p_AColorMidtone": Vector4(0.8066, 0.632602, 0.41526, 1.0),
+"p_AColorShadow": Vector4(0.552466, 0.4609, 0.4609, 1.0),
+"p_BColorHilight": Vector4(0.751354, 0.751354, 0.751354, 1.0),
+"p_BColorMidtone": Vector4(0.375677, 0.375677, 0.375677, 1.0),
+"p_BColorShadow": Vector4(0.049722, 0.040932, 0.040932, 1.0),
+"p_CColorHilight": Vector4(1.350729, 1.350729, 1.350729, 1.0),
+"p_CColorMidtone": Vector4(0.773452, 0.773452, 0.773452, 1.0),
+"p_CColorShadow": Vector4(0.364627, 0.032244, 0.032244, 1.0),
+"p_ColorD": Vector4(1.0, 1.0, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_GenericMale.Textures.ExCrimson_Armor_Dif",
+"p_Masks": "Char_GenericMale.Textures.ExCrimson_Armor_Comp",
+"p_Normal": "Char_GenericMale.Textures.ExCrimson_Armor_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

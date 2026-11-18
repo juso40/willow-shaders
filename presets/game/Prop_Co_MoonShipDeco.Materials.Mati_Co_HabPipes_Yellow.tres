@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Co_Materials.Materials.Mati_Colorize_Split_Common.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Co_MoonShipDeco.Materials.Mati_Co_HabPipes_Yellow"
+source_object = "Prop_Co_MoonShipDeco.Materials.Mati_Co_HabPipes_Yellow"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Co_Materials.Materials.Mati_Colorize_Split_Common"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_Color_Emissive1_Base": Vector4(4.0, 0.482281, 0.0, 1.0),
+"p_Color_Spec_1": Vector4(0.461077, 0.632021, 0.591451, 0.1),
+"p_Color_Texture1_A": Vector4(0.72373, 0.329893, 0.0, 1.0),
+"p_Color_Texture1_B": Vector4(1.0, 0.450395, 0.0, 1.0),
+"p_Color_Texture1_Base": Vector4(0.061876, 0.061876, 0.061876, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Prop_Co_HabPipes.Textures.Habitat_Pipe_Diff",
+"p_Masks": "Prop_Co_HabPipes.Textures.Habitat_Pipe_Masks"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

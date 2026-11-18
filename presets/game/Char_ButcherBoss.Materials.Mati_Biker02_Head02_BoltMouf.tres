@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_ButcherBoss.Materials.Mati_Biker02_Head02_BoltMouf"
+source_object = "Char_ButcherBoss.Materials.Mati_Biker02_Head02_BoltMouf"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.4566, 0.505618, 0.301891, 1.0),
+"p_AColorMidtone": Vector4(0.203, 0.41573, 0.186845, 1.0),
+"p_AColorShadow": Vector4(0.116147, 0.179775, 0.150579, 1.0),
+"p_BColorHilight": Vector4(0.325843, 0.124777, 0.111665, 1.0),
+"p_BColorMidtone": Vector4(0.230337, 0.046647, 0.050442, 1.0),
+"p_BColorShadow": Vector4(0.106805, 0.118057, 0.134831, 1.0),
+"p_CColorHilight": Vector4(0.168539, 0.131554, 0.126878, 1.0),
+"p_CColorMidtone": Vector4(0.033708, 0.016533, 0.008683, 1.0),
+"p_CColorShadow": Vector4(0.073034, 0.057065, 0.052929, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_ButcherBoss.Texture.Biker02_Head02_BoltMouf_Dif",
+"p_Masks": "Char_ButcherBoss.Texture.Biker02_Head02_BoltMouf_Comp",
+"p_Normal": "Char_ButcherBoss.Texture.Biker02_Head02_BoltMouf_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

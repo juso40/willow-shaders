@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Environment.Master_WorldMasked.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_Easter.Materials.Mati_OrcHut_Blue"
+source_object = "Env_Easter.Materials.Mati_OrcHut_Blue"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Environment.Master_WorldMasked"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.928143, 0.69161, 0.508996, 1.0),
+"p_AColorMidtone": Vector4(0.133867, 0.636412, 1.0, 1.0),
+"p_AColorShadow": Vector4(0.414349, 0.117028, 0.075619, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masked": null,
+"p_Masks": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Env_Easter.Textures.OrcHut",
+"p_Masked": "Env_Easter.Textures.OrcHut_Comp",
+"p_Masks": "Env_Easter.Textures.OrcHut_Comp_02"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masked": "Texture2D",
+"p_Masks": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

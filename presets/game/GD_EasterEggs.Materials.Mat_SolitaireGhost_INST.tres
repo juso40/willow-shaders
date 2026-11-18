@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/GD_EasterEggs.Materials.Mat_SolitaireGhost.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_EasterEggs.Materials.Mat_SolitaireGhost_INST"
+source_object = "GD_EasterEggs.Materials.Mat_SolitaireGhost_INST"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "GD_EasterEggs.Materials.Mat_SolitaireGhost"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Fade": 1.0,
+"p_FxScaleSlag": 20.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"FresnelColor": Vector4(0.52, 0.783952, 1.988878, 0.0),
+"p_SlagColor": Vector4(1.650718, 2.979209, 5.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

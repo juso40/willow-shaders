@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_Shared_Fire.Materials.Mat_FireToSmoke.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_BOSS_FinalBoss.Materials.Mat_AnimExplode_DB"
+source_object = "FX_BOSS_FinalBoss.Materials.Mat_AnimExplode_DB"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_Shared_Fire.Materials.Mat_FireToSmoke"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"DepthBiasRate": -50.0,
+"Fire_Multiply": 20.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

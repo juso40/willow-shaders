@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Allium_Xmas.Materials.M_FX_IceShardCluster"
+source_object = "FX_Allium_Xmas.Materials.M_FX_IceShardCluster"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"Emis_Strength": 1.0,
+"p_ReflectionScale": 0.2,
+"p_UVMod": 1.5
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

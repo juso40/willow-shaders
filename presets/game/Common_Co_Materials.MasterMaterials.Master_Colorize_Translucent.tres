@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Common_Co_Materials.MasterMaterials.Master_Colorize_Translucent"
+source_object = "Common_Co_Materials.MasterMaterials.Master_Colorize_Translucent"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"DistortionScale_A": 20.0,
+"DistortionScale_B": 1.0,
+"GlassOpacity": 0.3,
+"p_EmissiveMult": 0.2,
+"p_FalloffScale": 1.0,
+"p_TranluecencyMult": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_Color_Diffuse_A": Vector4(0.028414, 0.045943, 0.070716, 0.5),
+"p_Color_Diffuse_B": Vector4(0.004893, 0.007647, 0.008839, 0.6),
+"p_Color_Spec_A": Vector4(0.260586, 0.610485, 1.0, 1.0),
+"p_Color_Spec_B": Vector4(0.22335, 0.454784, 0.751354, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Common_Co_Materials.Overlay_MultiColor"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D"
+})
+static_switches = Dictionary[String, bool]({
+"SkipCubeMap": false,
+"sw_Distortion": false
+})

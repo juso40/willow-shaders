@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.NPC.Master_NPC.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Allum_Torgue.Textures.Mati_MrTogueBody"
+source_object = "Char_Allum_Torgue.Textures.Mati_MrTogueBody"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.NPC.Master_NPC"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_Allum_Torgue.Textures.MrTorqueBody_Dif",
+"p_Normal": "Char_Allum_Torgue.Textures.BanditBruiserBody_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

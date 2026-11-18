@@ -1,0 +1,55 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Anemone_GunMaterials.MasterMaterials.Master_Gun_Anemone.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_Anemone_Shields.Materials.Mati_ShieldMaliwanLegendary"
+source_object = "GD_Anemone_Shields.Materials.Mati_ShieldMaliwanLegendary"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Anemone_GunMaterials.MasterMaterials.Master_Gun_Anemone"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_DecalRotate": 0.1,
+"p_ReplaceDecal": 0.0,
+"p_UseFullColorDecal": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.311181, 1.0, 1.0, 1.0),
+"p_AColorMidtone": Vector4(0.173439, 0.625345, 1.0, 1.0),
+"p_AColorShadow": Vector4(0.0, 0.280124, 1.0, 1.0),
+"p_BColorHilight": Vector4(0.394083, 0.394083, 0.394083, 1.0),
+"p_BColorShadow": Vector4(0.103634, 0.103634, 0.098689, 1.0),
+"p_CColorHilight": Vector4(1.0, 0.821327, 0.112834, 1.0),
+"p_CColorMidtone": Vector4(0.430923, 0.163483, 0.052051, 1.0),
+"p_CColorShadow": Vector4(1.0, 0.327653, 0.0, 1.0),
+"p_DecalChannel": Vector4(0.98, 0.0, 0.0, 1.0),
+"p_DecalColor": Vector4(5.483943, 5.483943, 5.483943, 1.0),
+"p_DecalScalePosition": Vector4(2.0, 1.0, 0.25, 0.0),
+"p_EmissiveColor": Vector4(3.616907, 1.947559, 0.041008, 1.0),
+"p_PatternChannelScale": Vector4(1.0, 0.0, 0.0, 0.0),
+"p_PatternColor": Vector4(1.849763, 1.959601, 2.080377, 1.0),
+"p_PatternScalePosition": Vector4(5.0, 5.0, 0.0, 0.0),
+"p_ReflectColor": Vector4(1.48358, 1.48358, 1.48358, 1.0),
+"p_ReflectionChannelScale": Vector4(1.0, 1.0, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"P_SimpleReflect": null,
+"p_Decal": null,
+"p_Diffuse": null,
+"p_Masks": null
+})
+texture_object_paths = Dictionary[String, String]({
+"P_SimpleReflect": "Common_GunMaterials.Env.Chrome",
+"p_Decal": "Common_GunMaterials.Patterns.Pattern_MaliwanLegendaryRL",
+"p_Diffuse": "Item_Shields.Textures.Shield_Dif",
+"p_Masks": "Item_Shields.Textures.Shield_Comp"
+})
+texture_object_classes = Dictionary[String, String]({
+"P_SimpleReflect": "Texture2D",
+"p_Decal": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

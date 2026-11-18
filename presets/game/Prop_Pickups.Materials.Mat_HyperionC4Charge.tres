@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Pickups.Materials.Mat_HyperionC4Charge"
+source_object = "Prop_Pickups.Materials.Mat_HyperionC4Charge"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_color": Vector4(0.077735, 0.716534, 0.719101, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

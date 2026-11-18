@@ -1,0 +1,37 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Environment.Master_World.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Aster_Prop_MagicCrystal.Material.MagicCrystal_Supports_Mati"
+source_object = "Aster_Prop_MagicCrystal.Material.MagicCrystal_Supports_Mati"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Environment.Master_World"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(1.508305, 1.222486, 0.545489, 1.0),
+"p_AColorMidtone": Vector4(0.7141, 0.718206, 0.353164, 1.0),
+"p_AColorShadow": Vector4(0.818892, 1.0, 0.351341, 1.0),
+"p_BColorHilight": Vector4(1.011173, 0.982241, 0.868741, 1.0),
+"p_BColorMidtone": Vector4(1.0, 0.48809, 0.348544, 1.0),
+"p_BColorShadow": Vector4(0.558027, 0.848453, 1.0, 1.0),
+"p_EmissiveScale": Vector4(0.0, 16.445185, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Aster_Prop_MagicCrystal.Textures.MagicCrystal_Supports_Diff",
+"p_Normal": "Aster_Prop_MagicCrystal.Textures.MagicCrystal_Supports_Norm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

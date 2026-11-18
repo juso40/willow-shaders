@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/GD_Butcher.Materials.Master_Allium_Butcher.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_Butcher.Materials.Mati_Nomad_Butcher_Skirt"
+source_object = "GD_Butcher.Materials.Mati_Nomad_Butcher_Skirt"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "GD_Butcher.Materials.Master_Allium_Butcher"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_HighlightsIntensity": 2.0,
+"p_PatternInvert": 1.0,
+"p_ShadowsIntensity": 2.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_MuscleFat": Vector4(2.180628, 2.180628, 2.180628, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"P_MaskedOutBitsTexture": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"P_MaskedOutBitsTexture": "GD_Butcher.Textures.Nomad_MaskSkirt",
+"p_Diffuse": "GD_Butcher.Textures.NomadButcher_Dif",
+"p_Masks": "GD_Butcher.Textures.NomadButcher_Comp",
+"p_Normal": "GD_Butcher.Textures.NomadButcher_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"P_MaskedOutBitsTexture": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

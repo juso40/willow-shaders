@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/TitleCards.Materials.Master_TCTextOverlay.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "TitleCards.Materials.TCT_Sonofcrawmerax"
+source_object = "TitleCards.Materials.TCT_Sonofcrawmerax"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "TitleCards.Materials.Master_TCTextOverlay"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_TopBottom": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_mask": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_mask": "TitleCards.Textures.TC_Name_SonofCrawmerax"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_mask": "Texture2D"
+})

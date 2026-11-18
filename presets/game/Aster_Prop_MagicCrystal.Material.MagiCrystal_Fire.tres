@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Aster_Prop_MagicCrystal.Material.MagiCrystal.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Aster_Prop_MagicCrystal.Material.MagiCrystal_Fire"
+source_object = "Aster_Prop_MagicCrystal.Material.MagiCrystal_Fire"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Aster_Prop_MagicCrystal.Material.MagiCrystal"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Crystal_Charge": 0.0,
+"TurnOnFlashing": 0.0,
+"glow_scale": 0.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Inner_Color": Vector4(1.587247, 0.108227, 0.0, 1.0),
+"Outer_Color": Vector4(1.040228, 0.551599, 0.266389, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

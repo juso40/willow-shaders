@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/GD_Wizard.Materials.Mat_Wizard_Shield.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_Dungeon.Materials.Mati_Wizard_Shield_Dungeon"
+source_object = "Env_Dungeon.Materials.Mati_Wizard_Shield_Dungeon"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "GD_Wizard.Materials.Mat_Wizard_Shield"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_color": Vector4(1.0, 3.0, 0.7, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

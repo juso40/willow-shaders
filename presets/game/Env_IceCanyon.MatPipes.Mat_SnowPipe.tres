@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_IceCanyon.MatPipes.Mat_SnowPipe"
+source_object = "Env_IceCanyon.MatPipes.Mat_SnowPipe"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"COLOR_ADJUSTMENT": Vector4(0.325037, 0.447871, 0.311181, 1.0),
+"p_VertexPaintNoiseMod": Vector4(10.0, -1.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_SnowDiffuse": null,
+"p_VertexPaintNoise": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_SnowDiffuse": "Prop_Terrain.Textures.Snow_Dif",
+"p_VertexPaintNoise": "Prop_Water.Textures.WaterHqNoise_Gray"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_SnowDiffuse": "Texture2D",
+"p_VertexPaintNoise": "Texture2D"
+})
+static_component_masks = Dictionary[String, Vector4]({
+"p_VertexPaintNoiseChan": Vector4(1.0, 0.0, 0.0, 0.0)
+})
+static_switches = Dictionary[String, bool]({
+"sw_EnableSnowOnTop": false
+})

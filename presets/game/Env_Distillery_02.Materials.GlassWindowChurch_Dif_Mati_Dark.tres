@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Env_Distillery_02.Materials.GlassWindowChurch_Dif_Mat_Dark.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_Distillery_02.Materials.GlassWindowChurch_Dif_Mati_Dark"
+source_object = "Env_Distillery_02.Materials.GlassWindowChurch_Dif_Mati_Dark"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Env_Distillery_02.Materials.GlassWindowChurch_Dif_Mat_Dark"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Window Glow Color": Vector4(0.0, 0.0, 0.0, 0.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

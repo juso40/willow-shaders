@@ -1,0 +1,50 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_CreatureDigistruct.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Probe.Material.Mati_ProbeSuicide"
+source_object = "Char_Probe.Material.Mati_ProbeSuicide"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_CreatureDigistruct"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_HighlightsIntensity": 1.0,
+"p_PatternIntensity": 0.8,
+"p_ShadowsIntensity": 0.5,
+"p_UVChannelSelect": 10.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.764045, 0.70998, 0.085848, 1.0),
+"p_AColorMidtone": Vector4(1.0, 0.624466, 0.0, 1.0),
+"p_AColorShadow": Vector4(0.646067, 0.474011, 0.0, 1.0),
+"p_BColorHilight": Vector4(0.904494, 0.62589, 0.162606, 1.0),
+"p_BColorMidtone": Vector4(0.41573, 0.288553, 0.077074, 1.0),
+"p_BColorShadow": Vector4(0.342697, 0.246286, 0.085966, 1.0),
+"p_CColorHilight": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_CColorMidtone": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_CColorShadow": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_PatternColor": Vector4(0.0, 0.0, 0.0, 2.0),
+"p_PatternScalePosition": Vector4(1.0, 1.0, 0.0, 0.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_CustomPattern": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_CustomPattern": "Weap_Materials_Master.Overlays.Tex_Pattern_Stripes",
+"p_Diffuse": "Char_Probe.Texture.Probe_Dif",
+"p_Masks": "Char_Probe.Texture.Probe_Comp",
+"p_Normal": "Char_Probe.Texture.Probe_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_CustomPattern": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Environment.Master_CubeWindows.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_Ash.Environment.Master_CubeWindows_Ash_INST"
+source_object = "Env_Ash.Environment.Master_CubeWindows_Ash_INST"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Environment.Master_CubeWindows"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_color": Vector4(0.124067, 0.29218, 0.701632, 0.27)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_CubeTexture": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_CubeTexture": "Env_Ash.Environment.Ash_CubemapCapture_TexNoFog"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_CubeTexture": "TextureCube"
+})

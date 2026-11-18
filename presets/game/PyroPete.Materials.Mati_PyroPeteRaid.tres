@@ -1,0 +1,38 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "PyroPete.Materials.Mati_PyroPeteRaid"
+source_object = "PyroPete.Materials.Mati_PyroPeteRaid"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(5.0, 1.640596, 4.264038, 1.0),
+"p_AColorMidtone": Vector4(1.0, 0.284194, 0.732073, 1.0),
+"p_AColorShadow": Vector4(1.0, 0.0, 0.493023, 1.0),
+"p_CColorMidtone": Vector4(0.837914, 0.198925, 1.0, 1.0),
+"p_ColorD": Vector4(1.0, 0.461809, 0.886232, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "PyroPete.Texture.PyroPete_Dif",
+"p_Masks": "PyroPete.Texture.PyroPete_Msk",
+"p_Normal": "PyroPete.Texture.PyroPete_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

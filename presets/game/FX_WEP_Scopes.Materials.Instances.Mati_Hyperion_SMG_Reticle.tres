@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_WEP_Scopes.Materials.Mat_Scope_Reticle_MS.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_WEP_Scopes.Materials.Instances.Mati_Hyperion_SMG_Reticle"
+source_object = "FX_WEP_Scopes.Materials.Instances.Mati_Hyperion_SMG_Reticle"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_WEP_Scopes.Materials.Mat_Scope_Reticle_MS"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"AlphaOverlayMultiplier": 4.0,
+"MaskShiftX": -0.5,
+"MaskShiftY": -0.25,
+"RefractionMultiplier": 0.0,
+"ReticleShiftX": 1.0,
+"ReticleShiftY": 1.0,
+"ReticleX": 0.0,
+"ReticleY": 0.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Accuracy": Vector4(1.0, 0.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Texture": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Texture": "FX_WEP_Scopes.Textures.Tex_Hyperion_Sight_SMG"
+})
+texture_object_classes = Dictionary[String, String]({
+"Texture": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

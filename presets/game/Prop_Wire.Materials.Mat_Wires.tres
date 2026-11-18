@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Wire.Materials.Mat_Wires"
+source_object = "Prop_Wire.Materials.Mat_Wires"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"DiffColor": Vector4(0.072589, 0.069837, 0.088395, 1.0),
+"SpecColor": Vector4(0.461519, 0.515188, 0.773452, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_Aster_CastleKeep.Materials.Mat_ScreenDepthFog.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Aster_CastleKeep.Materials.Mat_ScreenDepthFog_INST"
+source_object = "FX_Aster_CastleKeep.Materials.Mat_ScreenDepthFog_INST"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_Aster_CastleKeep.Materials.Mat_ScreenDepthFog"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Opacity": 1.0,
+"Speed": 2.0,
+"Tex2_Tile_U": 0.6,
+"Tex2_Tile_V": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Fog_Color": Vector4(3.0, 0.75, 0.45, 1.0),
+"Lightning_Color": Vector4(5.0, 0.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

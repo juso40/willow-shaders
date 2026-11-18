@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Anemone_Cinematic.Materials.Mat_Steam_Anim_Addative"
+source_object = "FX_Anemone_Cinematic.Materials.Mat_Steam_Anim_Addative"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"NearCulling": 500.0,
+"NearCullingFadeStart": 800.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+static_switches = Dictionary[String, bool]({
+"p_useworldlightcolor_off": true
+})

@@ -1,0 +1,40 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Char_Aster_Golem.Materials.Master_GolemShimmerEmissive.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Aster_Golem.Materials.MIC_GoldGolem_01"
+source_object = "Char_Aster_Golem.Materials.MIC_GoldGolem_01"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Char_Aster_Golem.Materials.Master_GolemShimmerEmissive"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"": Vector4(0.348865, 0.193972, 0.069727, 1.0),
+"None1": Vector4(1.418055, 1.35, 0.312854, 1.0),
+"p_AColorHilight": Vector4(1.0, 1.0, 1.184876, 1.0),
+"p_AColorMidtone": Vector4(0.614491, 0.5, 0.13557, 1.0),
+"p_AColorShadow": Vector4(0.450992, 0.231928, 0.1, 1.0),
+"p_BColorHilight": Vector4(1.0, 0.148474, 0.164949, 1.0),
+"p_BColorMidtone": Vector4(1.0, 0.063338, 0.054004, 1.0),
+"p_BColorShadow": Vector4(1.0, 0.076851, 0.067516, 1.0),
+"p_CColorHilight": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_CColorMidtone": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_CColorShadow": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_DissolveColor": Vector4(5.0, 5.0, 5.0, 1.0),
+"p_EmissiveScale": Vector4(20.0, 5.0, 5.0, 5.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Masks": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Masks": "Char_Aster_Golem.Textures.RockGolem_01_Comp"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Masks": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Aster_Wizard.Materials.Mati_Necromancer"
+source_object = "Char_Aster_Wizard.Materials.Mati_Necromancer"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.455056, 0.327467, 0.219275, 1.0),
+"p_AColorMidtone": Vector4(0.342697, 0.213093, 0.151231, 1.0),
+"p_AColorShadow": Vector4(0.235955, 0.060312, 0.036735, 1.0),
+"p_BColorHilight": Vector4(0.182314, 0.072162, 0.061033, 1.0),
+"p_BColorMidtone": Vector4(0.213483, 0.136585, 0.074501, 1.0),
+"p_BColorShadow": Vector4(0.079912, 0.081178, 0.110493, 1.0),
+"p_CColorHilight": Vector4(0.239125, 0.19033, 0.24861, 1.0),
+"p_CColorMidtone": Vector4(0.530404, 1.0, 0.631617, 1.0),
+"p_CColorShadow": Vector4(0.033708, 0.033708, 0.033708, 1.0),
+"p_MuscleFat": Vector4(0.0, 0.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_Aster_Wizard.Textures.WizardBody_Diff",
+"p_Masks": "Char_Aster_Wizard.Textures.WizardBody_Comp",
+"p_Normal": "Char_Aster_Wizard.Textures.WizardBody_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

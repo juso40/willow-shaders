@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Bandit_Psycho.Materials.Mati_Psycho_ClanCrater"
+source_object = "Char_Bandit_Psycho.Materials.Mati_Psycho_ClanCrater"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_HighlightsIntensity": 10.0,
+"p_PatternIntensity": 2.0,
+"p_UVChannelSelect": 0.5
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(1.0, 0.867945, 0.839785, 1.0),
+"p_AColorMidtone": Vector4(0.825843, 0.629694, 0.600582, 1.0),
+"p_AColorShadow": Vector4(1.0, 0.56131, 0.546978, 1.0),
+"p_BColorHilight": Vector4(0.563515, 0.47209, 0.414359, 1.0),
+"p_BColorMidtone": Vector4(0.078652, 0.078652, 0.078652, 1.0),
+"p_BColorShadow": Vector4(0.48617, 0.242545, 0.010762, 1.0),
+"p_CColorHilight": Vector4(0.61236, 0.561987, 0.560756, 1.0),
+"p_CColorMidtone": Vector4(0.842697, 0.792898, 0.776417, 1.0),
+"p_CColorShadow": Vector4(0.533708, 0.533708, 0.533708, 1.0),
+"p_ColorD": Vector4(0.078652, 0.078652, 0.078652, 1.0),
+"p_DissolveColor": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_PatternColor": Vector4(1.757233, 1.553241, 0.0, 2.0),
+"p_PatternScalePosition": Vector4(0.8066, 0.79048, 0.062416, 0.18)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_CustomPattern": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_CustomPattern": "FX_Shared_Gradients.Textures.Round_Ring_Distortion_Clamped_Dif",
+"p_Diffuse": "Char_Bandit_Psycho.Textures.BanditPsycho_Dif",
+"p_Masks": "Char_Bandit_Psycho.Textures.BanditPsycho_Comp",
+"p_Normal": "Char_Bandit_Psycho.Textures.BanditPsycho_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_CustomPattern": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Env_VOG_Chamber.Materials.Mat_CircuitVOG.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_VOG_Chamber.Materials.Mat_CircuitVOG_INST"
+source_object = "Env_VOG_Chamber.Materials.Mat_CircuitVOG_INST"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Env_VOG_Chamber.Materials.Mat_CircuitVOG"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_brightness": 10.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_base": Vector4(0.001, 0.0, 0.02, 1.0),
+"shield_red": Vector4(0.0, 0.5, 0.8, 0.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

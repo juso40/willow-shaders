@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_CHAR_Shared_Shield.Materials.MasterShaders.Mat_Digital_Shield_MS"
+source_object = "FX_CHAR_Shared_Shield.Materials.MasterShaders.Mat_Digital_Shield_MS"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"InternalTexPanSpeedX": 0.0,
+"InternalTexPanSpeedY": 1.0,
+"p_AlphaPower": 1.0,
+"p_BaseTexMultiplier": 1.0,
+"p_ColorGradientPower": 2.0,
+"p_InternalTexMultiplier": 10.0,
+"p_InternalTexPanX": -0.05,
+"p_InternalTexPanY": -0.05,
+"p_InternalTexScaleX": 0.25,
+"p_InternalTexScaleY": 0.25,
+"p_MaskPower": 3.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_GradientColor_01": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_GradientColor_02": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_InternalTexColor": Vector4(1.0, 1.0, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_BaseTex": null,
+"p_InternalTex": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_BaseTex": "FX_CHAR_Shared_Shield.Textures.Tex_Shield_Hexes_GP",
+"p_InternalTex": "FX_Shared_Smoke.Textures.T_Liquid_Puddle_GP_02"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_BaseTex": "Texture2D",
+"p_InternalTex": "Texture2D"
+})
+static_component_masks = Dictionary[String, Vector4]({
+"p_BaseTexMask": Vector4(0.0, 1.0, 0.0, 0.0),
+"p_InternalTexMask": Vector4(0.0, 1.0, 0.0, 0.0)
+})

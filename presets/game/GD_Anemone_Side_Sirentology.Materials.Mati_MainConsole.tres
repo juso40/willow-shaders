@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Co_Materials_W4.Materials.Mati_Int_Colorize_Split_Common.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_Anemone_Side_Sirentology.Materials.Mati_MainConsole"
+source_object = "GD_Anemone_Side_Sirentology.Materials.Mati_MainConsole"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Co_Materials_W4.Materials.Mati_Int_Colorize_Split_Common"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_Color_Emissive1_A": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_Color_Emissive1_B": Vector4(0.1, 1.0, 3.0, 1.0),
+"p_Color_Highlight": Vector4(0.011049, 0.011049, 0.011049, 1.0),
+"p_Color_Spec_1": Vector4(1.237523, 0.646239, 0.263037, 1.0),
+"p_Color_Texture1_A": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_Color_Texture1_B": Vector4(0.1, 0.1, 0.1, 1.0),
+"p_Color_Texture1_D": Vector4(0.1, 0.1, 0.1, 1.0),
+"p_Color_Texture2_A": Vector4(0.298332, 0.295871, 0.140106, 1.0),
+"p_Color_Texture2_B": Vector4(0.419409, 0.469596, 0.287991, 1.0),
+"p_Color_Texture2_Base": Vector4(0.464071, 0.426787, 0.251802, 1.0),
+"p_GlowColor": Vector4(0.0, 0.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "GD_Anemone_Side_Sirentology.Textures.MainConsole_Dif",
+"p_Masks": "GD_Anemone_Side_Sirentology.Textures.MainConsole_Mask",
+"p_Normal": "GD_Anemone_Side_Sirentology.Textures.MainConsole_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

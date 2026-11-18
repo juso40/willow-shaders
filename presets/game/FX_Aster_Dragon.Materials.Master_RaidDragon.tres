@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Aster_Dragon.Materials.Master_RaidDragon"
+source_object = "FX_Aster_Dragon.Materials.Master_RaidDragon"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"Lava_Pattern_Rate": 0.5,
+"P_DeathsValue": 0.0,
+"Tile_Rate_U": 2.0,
+"Tile_Rate_V": 1.0,
+"p_fade": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_DissolveColor": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_ElementalDeathColor": Vector4(1.0, 1.0, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Masks": "FX_Aster_Dragon.Textures.Dragon_Mask2",
+"p_Normal": "Char_Aster_Dragon.Textures.Dragon_Normals"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})

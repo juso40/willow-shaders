@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Char_Mordecai.Material.Mati_MordecaiBody.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Orchid_Psycho.Materials.Mati_Orchid_PsychoBody_Red"
+source_object = "Char_Orchid_Psycho.Materials.Mati_Orchid_PsychoBody_Red"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Char_Mordecai.Material.Mati_MordecaiBody"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.524843, 0.066332, 0.034317, 1.0),
+"p_AColorMidtone": Vector4(0.475121, 0.0, 0.001609, 1.0),
+"p_AColorShadow": Vector4(0.1691, 0.187213, 0.19, 1.0),
+"p_BColorHilight": Vector4(1.0, 0.913885, 0.872933, 1.0),
+"p_BColorMidtone": Vector4(0.491695, 0.372675, 0.339766, 1.0),
+"p_BColorShadow": Vector4(0.1911, 0.193935, 0.21, 1.0),
+"p_CColorHilight": Vector4(0.18, 0.18, 0.18, 1.0),
+"p_CColorMidtone": Vector4(0.270708, 0.205181, 0.187062, 1.0),
+"p_CColorShadow": Vector4(0.32, 0.32, 0.32, 1.0),
+"p_ColorD": Vector4(0.994382, 0.881829, 0.569814, 1.0),
+"p_DissolveColor": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_ElementalDeathColor": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_EmissiveScale": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_MuscleFat": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_PatternColor": Vector4(0.501804, 0.500864, 0.502744, 2.0),
+"p_PatternScalePosition": Vector4(1.0, 1.0, 0.0, 0.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_Mordecai.Textures.Char_UpdatedMordecaiBody_Dif",
+"p_Masks": "Char_Mordecai.Textures.Char_UpdatedMordecaiBody_Msk",
+"p_Normal": "Char_Mordecai.Textures.Char_UpdatedMordecaiBody_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

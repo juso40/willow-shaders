@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_MainMenu.Materials.Mat_BlackFade.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_MainMenu.Materials.Mati_BlackFade"
+source_object = "FX_MainMenu.Materials.Mati_BlackFade"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_MainMenu.Materials.Mat_BlackFade"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Fade": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Color": Vector4(0.0, 0.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

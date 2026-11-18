@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_ForceField.Materials.Mat_HyperionField.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_Boss_Cliffs.Materials.HyperionField_Blue_Mat"
+source_object = "Env_Boss_Cliffs.Materials.HyperionField_Blue_Mat"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_ForceField.Materials.Mat_HyperionField"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_base": Vector4(0.0, 0.5, 1.0, 1.0),
+"p_edge_color": Vector4(0.198925, 0.599462, 1.0, 1.0),
+"p_logo_color": Vector4(0.05, 0.525, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

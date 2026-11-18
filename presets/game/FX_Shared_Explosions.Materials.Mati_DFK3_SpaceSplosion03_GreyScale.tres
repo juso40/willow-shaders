@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_Shared_MasterShaders.Materials.Additive.SubUV.Mat_FX_Unlit_Add_2-Sided_SubUV_MS.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Shared_Explosions.Materials.Mati_DFK3_SpaceSplosion03_GreyScale"
+source_object = "FX_Shared_Explosions.Materials.Mati_DFK3_SpaceSplosion03_GreyScale"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_Shared_MasterShaders.Materials.Additive.SubUV.Mat_FX_Unlit_Add_2-Sided_SubUV_MS"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"SubUV_Texture": null
+})
+texture_object_paths = Dictionary[String, String]({
+"SubUV_Texture": "FX_Shared_Explosions.Textures.Tex_DFK3_Splosions_01-03-12_SubUV_GP"
+})
+texture_object_classes = Dictionary[String, String]({
+"SubUV_Texture": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_Aster_Environments.Materials.Water.Mat_Opaque_Water.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Aster_Environments.Materials.Water.Mati_Water_Opaque"
+source_object = "FX_Aster_Environments.Materials.Water.Mati_Water_Opaque"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_Aster_Environments.Materials.Water.Mat_Opaque_Water"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Time_of_Day": 20.0,
+"p_HorizonShift": 0.11,
+"p_WaveScale": 200.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

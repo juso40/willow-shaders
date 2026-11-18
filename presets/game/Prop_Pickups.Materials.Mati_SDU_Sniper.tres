@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Pickups.Materials.Master_SDU.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Pickups.Materials.Mati_SDU_Sniper"
+source_object = "Prop_Pickups.Materials.Mati_SDU_Sniper"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Pickups.Materials.Master_SDU"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_IconCOlor": Vector4(0.414349, 0.176262, 0.023816, 1.0),
+"p_colora": Vector4(0.066296, 0.041335, 0.006034, 1.0),
+"p_colorb": Vector4(5.83767, 2.255697, 0.351593, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Icon": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Icon": "fx_shared_items.Textures.Ammo_Sniper_Dif"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Icon": "Texture2D"
+})

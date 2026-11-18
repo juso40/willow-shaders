@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Signs_02.Materials.Mat_RedLightSign"
+source_object = "Prop_Signs_02.Materials.Mat_RedLightSign"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_glow_color": Vector4(2.4, 0.0, 0.0, 1.0),
+"p_glow_color_1": Vector4(1.2, 0.5, 0.0, 1.0),
+"p_glow_color_2": Vector4(1.2, 0.0, 0.0, 1.0),
+"p_glow_core_1": Vector4(1.5, 1.2, 1.5, 1.0),
+"p_glow_core_2": Vector4(0.5, 0.2, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

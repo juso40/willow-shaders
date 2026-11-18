@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Environment.Master_WorldMasked.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Dens.Mati_BanditYurt2"
+source_object = "Prop_Dens.Mati_BanditYurt2"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Environment.Master_WorldMasked"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.380435, 0.150103, 0.086838, 1.0),
+"p_AColorMidtone": Vector4(0.141304, 0.101371, 0.102891, 1.0),
+"p_AColorShadow": Vector4(0.092391, 0.019033, 0.088724, 1.0),
+"p_BColorHilight": Vector4(0.690217, 0.374854, 0.128244, 1.0),
+"p_BColorMidtone": Vector4(0.63587, 0.418902, 0.329527, 1.0),
+"p_BColorShadow": Vector4(0.342391, 0.133979, 0.134882, 1.0),
+"p_CColorHilight": Vector4(0.940217, 0.30129, 0.250384, 1.0),
+"p_CColorMidtone": Vector4(0.36413, 0.067285, 0.076772, 1.0),
+"p_CColorShadow": Vector4(0.125, 0.036543, 0.090612, 1.0),
+"p_SpecColor_SpecPow": Vector4(0.3, 0.3, 0.45, 12.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masked": null,
+"p_Masks": null,
+"p_Normal": null,
+"p_Specular": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Prop_Dens.BanditYurt_Dif",
+"p_Masked": "Prop_Dens.BanditYurt_Alpha",
+"p_Masks": "Prop_Dens.BanditYurtColor_Comp",
+"p_Normal": "Common_Textures.Stub.StubFlat_Nrm",
+"p_Specular": ""
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masked": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D",
+"p_Specular": ""
+})
+notes = "Instance native static permutation data is not exposed by this dump."

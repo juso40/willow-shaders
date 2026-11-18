@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Anemone_Prop_Infection.Materials.Mat_Anemone_InfectionPlants"
+source_object = "Anemone_Prop_Infection.Materials.Mat_Anemone_InfectionPlants"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"Base Radius": 100.0,
+"BaseRadiusEmissive": 100.0,
+"DiffuseUV": 1.0,
+"EmissiveMaskIntensity": 3.0,
+"EmissiveMaskTiling": 1.0,
+"WorldDisplacementMult": 2.0,
+"p_fade": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"ColorMultiply": Vector4(1.0, 1.0, 1.0, 0.0),
+"EmissiveColor": Vector4(0.431399, 0.144972, 0.940601, 1.0),
+"EmissiveMaskColor": Vector4(1.0, 1.0, 1.0, 0.0),
+"p_DissolveColor": Vector4(10.0, 0.329059, 0.0, 1.0),
+"p_ElementalDeathColor": Vector4(1.0, 1.0, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Diffuse": null,
+"EmissiveMask": null,
+"Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Diffuse": "Anemone_Prop_Infection.Textures.Anemone_StalkerNest01_Diff",
+"EmissiveMask": "Common_Textures.Stub.StubBlack_Gray",
+"Normal": "Prop_Stalker.Textures.StalkerNest01_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"Diffuse": "Texture2D",
+"EmissiveMask": "Texture2D",
+"Normal": "Texture2D"
+})
+static_switches = Dictionary[String, bool]({
+"No World Displacement": false,
+"UseObjectRadius": true
+})

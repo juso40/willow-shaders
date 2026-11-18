@@ -1,0 +1,52 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_CreatureDigistruct.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_BattleDroid.Materials.Mati_Loader_PWR"
+source_object = "Char_BattleDroid.Materials.Mati_Loader_PWR"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_CreatureDigistruct"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_DigiStructEnable": 0.0,
+"p_HighlightsIntensity": 2.0,
+"p_PatternIntensity": 1.0,
+"p_ShadowsIntensity": 5.0,
+"p_UVChannelSelect": 2.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.519318, 0.325548, 0.434034, 1.0),
+"p_AColorMidtone": Vector4(0.533708, 0.254475, 0.0, 1.0),
+"p_AColorShadow": Vector4(0.151685, 0.072324, 0.0, 1.0),
+"p_BColorHilight": Vector4(0.3955, 0.446962, 0.480645, 1.0),
+"p_BColorMidtone": Vector4(0.054552, 0.06165, 0.066296, 1.0),
+"p_BColorShadow": Vector4(0.077282, 0.087337, 0.093919, 1.0),
+"p_CColorHilight": Vector4(0.74453, 0.353741, 0.0, 1.0),
+"p_CColorMidtone": Vector4(0.529523, 0.25084, 0.0, 1.0),
+"p_CColorShadow": Vector4(0.151058, 0.071761, 0.0, 1.0),
+"p_ColorD": Vector4(0.077345, 0.077345, 0.077345, 1.0),
+"p_PatternColor": Vector4(0.134831, 0.043093, 0.005129, 2.0),
+"p_PatternScalePosition": Vector4(1.0, 1.0, 0.0, 0.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_CustomPattern": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_CustomPattern": "FX_GOR_Textures.Textures.Blood_Overlay_Dif",
+"p_Diffuse": "Char_BattleDroid.Textures.BattleDroid_Dif",
+"p_Masks": "Char_BattleDroid.Textures.BattleDroid_Comp",
+"p_Normal": "Char_BattleDroid.Textures.BattleDroid_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_CustomPattern": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

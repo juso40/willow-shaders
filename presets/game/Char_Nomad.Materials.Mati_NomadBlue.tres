@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Nomad.Materials.Mati_NomadBlue"
+source_object = "Char_Nomad.Materials.Mati_NomadBlue"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_ShadowsIntensity": 2.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.468147, 0.507883, 0.777174, 1.0),
+"p_AColorMidtone": Vector4(0.327187, 0.430867, 0.722826, 1.0),
+"p_AColorShadow": Vector4(0.117337, 0.191256, 0.331522, 1.0),
+"p_BColorHilight": Vector4(0.393824, 0.43521, 0.663043, 1.0),
+"p_BColorMidtone": Vector4(0.168575, 0.204028, 0.652174, 1.0),
+"p_BColorShadow": Vector4(0.150323, 0.27221, 0.434783, 0.0),
+"p_CColorHilight": Vector4(0.336957, 0.199593, 0.284965, 1.0),
+"p_CColorMidtone": Vector4(0.516304, 0.213151, 0.1208, 1.0),
+"p_CColorShadow": Vector4(0.195652, 0.049291, 0.065173, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_CustomPattern": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_CustomPattern": "",
+"p_Diffuse": "Char_Nomad.Textures.Nomad_Dif",
+"p_Masks": "Char_Nomad.Nomad_Comp",
+"p_Normal": "Char_Nomad.Textures.Nomad_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_CustomPattern": "",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

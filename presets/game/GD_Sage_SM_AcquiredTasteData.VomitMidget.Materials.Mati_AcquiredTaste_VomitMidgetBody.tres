@@ -1,0 +1,40 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_Sage_SM_AcquiredTasteData.VomitMidget.Materials.Mati_AcquiredTaste_VomitMidgetBody"
+source_object = "GD_Sage_SM_AcquiredTasteData.VomitMidget.Materials.Mati_AcquiredTaste_VomitMidgetBody"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.513793, 0.215107, 0.170391, 1.0),
+"p_AColorMidtone": Vector4(0.480645, 0.277007, 0.228781, 1.0),
+"p_AColorShadow": Vector4(0.353578, 0.137995, 0.152959, 1.0),
+"p_BColorHilight": Vector4(0.477528, 0.198002, 0.19584, 1.0),
+"p_BColorMidtone": Vector4(0.5, 0.078002, 0.060425, 1.0),
+"p_BColorShadow": Vector4(0.446678, 0.29949, 0.513793, 1.0),
+"p_ColorD": Vector4(0.859174, 0.371665, 0.372831, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_Sage_Savage.Texture.Savage_Body_Dif",
+"p_Masks": "Char_Sage_Savage.Texture.Savage_Body_Comp",
+"p_Normal": "Char_Sage_Savage.Texture.Savage_Body_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

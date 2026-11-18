@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Environment.Master_World.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_HyperionArchitecture.Materials.Mati_HyperionWall2_Blue2"
+source_object = "Prop_HyperionArchitecture.Materials.Mati_HyperionWall2_Blue2"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Environment.Master_World"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(1.0, 0.881821, 0.720941, 1.0),
+"p_AColorMidtone": Vector4(1.0, 0.784921, 0.369123, 1.0),
+"p_AColorShadow": Vector4(1.0, 0.467556, 0.112404, 1.0),
+"p_BColorHilight": Vector4(1.0, 0.666661, 0.11236, 1.0),
+"p_BColorMidtone": Vector4(1.0, 0.386404, 0.060228, 1.0),
+"p_BColorShadow": Vector4(0.201711, 0.432584, 0.402006, 1.0),
+"p_CColorHilight": Vector4(0.258427, 0.377962, 0.5, 1.0),
+"p_CColorMidtone": Vector4(0.580089, 0.580089, 0.580089, 1.0),
+"p_CColorShadow": Vector4(0.454243, 0.480645, 0.476135, 1.0),
+"p_NormalMod": Vector4(2.0, 2.0, 2.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null,
+"p_Specular": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Prop_HyperionArchitecture.Textures.HyperionWall2_Dif",
+"p_Masks": "Prop_HyperionArchitecture.Textures.HyperionWall2_Comp",
+"p_Normal": "Common_Textures.Stub.StubFlat_Nrm",
+"p_Specular": ""
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D",
+"p_Specular": ""
+})
+notes = "Instance native static permutation data is not exposed by this dump."

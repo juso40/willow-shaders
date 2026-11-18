@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Buildings.Materials.Mat_NewHavenBuilding1.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Buildings.Materials.Mati_NHBuilding1BrightPink"
+source_object = "Prop_Buildings.Materials.Mati_NHBuilding1BrightPink"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Buildings.Materials.Mat_NewHavenBuilding1"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Alpha Strength": 0.25,
+"OverallBrightness": 1.6,
+"Saturation": 0.1
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"BuildingColor": Vector4(0.585973, 0.166872, 0.151058, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

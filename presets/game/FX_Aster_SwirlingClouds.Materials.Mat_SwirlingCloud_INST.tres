@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_Aster_SwirlingClouds.Materials.Mat_SwirlingCloud.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Aster_SwirlingClouds.Materials.Mat_SwirlingCloud_INST"
+source_object = "FX_Aster_SwirlingClouds.Materials.Mat_SwirlingCloud_INST"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_Aster_SwirlingClouds.Materials.Mat_SwirlingCloud"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Light_Power": 2.0,
+"Scroll": -0.5,
+"Vortex_Distortion": 0.1
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Cloud Color": Vector4(0.270708, 0.230217, 0.202401, 1.0),
+"Light_Color": Vector4(12.0, 24.0, 72.0, 1.0),
+"cloud Highlight": Vector4(0.502744, 0.493641, 0.491634, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

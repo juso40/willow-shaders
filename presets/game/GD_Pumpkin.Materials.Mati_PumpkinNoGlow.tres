@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/GD_Pumpkin.Materials.Mat_Pumpkin.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_Pumpkin.Materials.Mati_PumpkinNoGlow"
+source_object = "GD_Pumpkin.Materials.Mati_PumpkinNoGlow"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "GD_Pumpkin.Materials.Mat_Pumpkin"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_light_bright": 0.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

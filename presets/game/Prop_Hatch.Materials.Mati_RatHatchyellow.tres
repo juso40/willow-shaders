@@ -1,0 +1,41 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Environment.Master_World.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Hatch.Materials.Mati_RatHatchyellow"
+source_object = "Prop_Hatch.Materials.Mati_RatHatchyellow"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Environment.Master_World"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_HighlightsIntensity": 10.0,
+"p_ShadowsIntensity": 10.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.719101, 0.715657, 0.686267, 1.0),
+"p_AColorMidtone": Vector4(0.40853, 0.494382, 0.245786, 1.0),
+"p_AColorShadow": Vector4(0.61236, 0.469233, 0.365366, 1.0),
+"p_BColorHilight": Vector4(0.707865, 0.686248, 0.628546, 1.0),
+"p_BColorMidtone": Vector4(0.308989, 0.148885, 0.097603, 1.0),
+"p_BColorShadow": Vector4(0.544944, 0.414138, 0.268127, 1.0),
+"p_EmissiveScale": Vector4(0.325843, 0.037634, 0.02618, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Prop_Hatch.Textures.RatHatch_Dif",
+"p_Masks": "Prop_Hatch.Textures.RatHatch_Comp",
+"p_Normal": "Common_Textures.Stub.StubFlat_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_HandBell.Materials.Mat_HandBell.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_HandBell.Materials.Mati_HandBell_Green"
+source_object = "Prop_HandBell.Materials.Mati_HandBell_Green"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_HandBell.Materials.Mat_HandBell"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_EmissiveColor": Vector4(0.0, 1.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

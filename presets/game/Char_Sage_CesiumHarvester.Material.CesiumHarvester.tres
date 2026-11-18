@@ -1,0 +1,75 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Sage_CesiumHarvester.Material.CesiumHarvester"
+source_object = "Char_Sage_CesiumHarvester.Material.CesiumHarvester"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"AcidFX": 1.0,
+"BurnFX": 0.0,
+"Fade": 0.0,
+"Mask1_Use_Spec_Power_Mask": 0.0,
+"MoonLightIntensity": 8.0,
+"Primary color brightness": 1.0,
+"PrimaryMask_desaturation": 0.0,
+"Secondary color brightness": 1.0,
+"SecondaryMask_desaturation": 0.0,
+"ShockFX": 0.0,
+"SpecDesature": 0.0,
+"SpecDull": 2.0,
+"SpecIntensity": 2.0,
+"SpecShiny": 15.0,
+"Spec_Contrast": 1.0,
+"Third color brightness": 1.0,
+"ThirdMask_desaturation": 0.0,
+"Use_Alpha_Mask": 0.0,
+"p_glow": 0.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"PrimaryColor": Vector4(1.0, 1.0, 1.0, 0.0),
+"SecondaryColor": Vector4(1.0, 1.0, 1.0, 0.0),
+"ThirdColor": Vector4(1.0, 1.0, 1.0, 0.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"ColorVariationMask": null,
+"Diffuse": null,
+"Effects_01": null,
+"Effects_02": null,
+"Mask1": null,
+"Mask2_Alpha": null,
+"Normal": null,
+"Primary_Normal": null,
+"Spec": null
+})
+texture_object_paths = Dictionary[String, String]({
+"ColorVariationMask": "Char_Sage_CesiumHarvester.Textures.Creat_CesiumHarvester_Mask_02",
+"Diffuse": "Char_Sage_CesiumHarvester.Textures.Creat_CesiumHarvester_Diff",
+"Effects_01": "FX_Shared_Energy.GreyPack.T_Pyro_Energy_GP_09",
+"Effects_02": "FX_Shared_Energy.GreyPack.T_BanditEffects_GP_02",
+"Mask1": "Char_Sage_CesiumHarvester.Textures.Creat_CesiumHarvester_Mask_02",
+"Mask2_Alpha": "Common_Textures.Textures.TexGray_Dif",
+"Normal": "Char_Sage_CesiumHarvester.Textures.Creat_CesiumHarvester_Norm",
+"Primary_Normal": "Char_Skag.Skag_Nrm",
+"Spec": "Char_Sage_CesiumHarvester.Textures.Creat_CesiumHarvester_Diff"
+})
+texture_object_classes = Dictionary[String, String]({
+"ColorVariationMask": "Texture2D",
+"Diffuse": "Texture2D",
+"Effects_01": "Texture2D",
+"Effects_02": "Texture2D",
+"Mask1": "Texture2D",
+"Mask2_Alpha": "Texture2D",
+"Normal": "Texture2D",
+"Primary_Normal": "Texture2D",
+"Spec": "Texture2D"
+})
+static_component_masks = Dictionary[String, Vector4]({
+"Mask1_Alpha_Channel": Vector4(0.0, 0.0, 1.0, 0.0),
+"Mask1_Spec_Power_Mask_Channel": Vector4(1.0, 0.0, 0.0, 0.0)
+})
+static_switches = Dictionary[String, bool]({
+"Use_Custom_colors": true
+})

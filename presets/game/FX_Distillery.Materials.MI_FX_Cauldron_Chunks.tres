@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Gold_Cauldron.Materials.M_Cauldron_Gold.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Distillery.Materials.MI_FX_Cauldron_Chunks"
+source_object = "FX_Distillery.Materials.MI_FX_Cauldron_Chunks"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Gold_Cauldron.Materials.M_Cauldron_Gold"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Gold_Glow": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

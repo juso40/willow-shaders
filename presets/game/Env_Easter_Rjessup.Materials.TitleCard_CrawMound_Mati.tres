@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Env_Easter_Joshj.Materials.Mat_Dirt_Mound.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_Easter_Rjessup.Materials.TitleCard_CrawMound_Mati"
+source_object = "Env_Easter_Rjessup.Materials.TitleCard_CrawMound_Mati"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Env_Easter_Joshj.Materials.Mat_Dirt_Mound"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Mesh_Diff": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Mesh_Diff": "Prop_Craters.Textures.WormsquidCrater_Dif"
+})
+texture_object_classes = Dictionary[String, String]({
+"Mesh_Diff": "Texture2D"
+})

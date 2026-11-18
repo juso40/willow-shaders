@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Stalker.Materials.Mati_StalkerNight"
+source_object = "Char_Stalker.Materials.Mati_StalkerNight"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_HighlightsIntensity": 10.0,
+"p_ShadowsIntensity": 10.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(1.0, 0.638639, 0.0, 1.0),
+"p_AColorMidtone": Vector4(0.717391, 0.204741, 0.0, 1.0),
+"p_AColorShadow": Vector4(0.255435, 0.161054, 0.031929, 1.0),
+"p_BColorHilight": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_BColorMidtone": Vector4(0.016777, 0.019776, 0.021739, 1.0),
+"p_BColorShadow": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_CColorHilight": Vector4(0.921348, 0.777879, 0.729832, 1.0),
+"p_CColorMidtone": Vector4(0.483146, 0.2691, 0.182221, 1.0),
+"p_CColorShadow": Vector4(0.140449, 0.013514, 0.001312, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_CustomPattern": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_CustomPattern": "",
+"p_Diffuse": "Char_Stalker.Texture.Stalker_Dif",
+"p_Masks": "Char_Stalker.Texture.StalkerTone_Comp",
+"p_Normal": "Char_Stalker.Texture.Stalker_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_CustomPattern": "",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

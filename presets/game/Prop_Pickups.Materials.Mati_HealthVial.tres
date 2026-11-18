@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Pickups.Materials.Mat_HealthVial.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Pickups.Materials.Mati_HealthVial"
+source_object = "Prop_Pickups.Materials.Mati_HealthVial"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Pickups.Materials.Mat_HealthVial"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Bulb": 1.0,
+"Spec Brightness": 6.0,
+"Spec Color": 0.3,
+"Spec Contrast": 1.5,
+"spec power": 7.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Emissive Color": Vector4(5.0, 0.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Diffuse and Specular": null,
+"Masks": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Diffuse and Specular": "Prop_Pickups.Textures.HealthVial_Dif",
+"Masks": "Prop_Pickups.Textures.HealthVial_Comp"
+})
+texture_object_classes = Dictionary[String, String]({
+"Diffuse and Specular": "Texture2D",
+"Masks": "Texture2D"
+})

@@ -1,0 +1,40 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_ENV_Anemone_Misc.Materials.Mat_Anemone_LightBeam_Master"
+source_object = "FX_ENV_Anemone_Misc.Materials.Mat_Anemone_LightBeam_Master"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"Density": 0.5,
+"Distance": 10.0,
+"FarFadeDistance": 1.0,
+"Opacity": 0.25,
+"PanningSpeed": 1.0,
+"TextureContrast": 5.0,
+"TextureScaleX": 1.0,
+"TextureScaleY": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Color": Vector4(1.0, 0.962223, 0.745866, 0.33)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"FalloffTexture": null,
+"MultiplyTexture1": null
+})
+texture_object_paths = Dictionary[String, String]({
+"FalloffTexture": "EngineVolumetrics.LightBeam.Materials.T_EV_LightBeam_Falloff_01",
+"MultiplyTexture1": "EngineVolumetrics.LightBeam.Materials.T_EV_DustPanner_01"
+})
+texture_object_classes = Dictionary[String, String]({
+"FalloffTexture": "Texture2D",
+"MultiplyTexture1": "Texture2D"
+})
+static_switches = Dictionary[String, bool]({
+"Fade with Distance": false,
+"UseDepthBiasedAlpha": true,
+"UseTextureOverlay": false,
+"UseWorldLightColor": true
+})

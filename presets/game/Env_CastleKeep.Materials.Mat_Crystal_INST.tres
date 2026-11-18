@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Crystal.Materials.Mat_CrystalOpaque.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_CastleKeep.Materials.Mat_Crystal_INST"
+source_object = "Env_CastleKeep.Materials.Mat_Crystal_INST"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Crystal.Materials.Mat_CrystalOpaque"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"glow_scale": 3.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Crystal Color": Vector4(6.0, 6.0, 6.0, 1.0),
+"Glow Color": Vector4(400.0, 400.0, 400.0, 1.0),
+"Rim Color": Vector4(1.0, 1.0, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

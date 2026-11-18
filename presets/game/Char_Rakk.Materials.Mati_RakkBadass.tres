@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Rakk.Materials.Mati_RakkBadass"
+source_object = "Char_Rakk.Materials.Mati_RakkBadass"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(30.172056, 50.0, 19.413626, 1.0),
+"p_AColorMidtone": Vector4(8.649618, 15.744318, 4.818967, 1.0),
+"p_AColorShadow": Vector4(13.756751, 22.919046, 11.832813, 1.0),
+"p_BColorHilight": Vector4(6.678306, 9.663879, 3.692734, 1.0),
+"p_BColorMidtone": Vector4(0.251864, 0.228703, 0.38764, 1.0),
+"p_BColorShadow": Vector4(12.016041, 15.194462, 8.052883, 1.0),
+"p_CColorHilight": Vector4(0.722494, 0.771045, 1.26959, 1.0),
+"p_CColorMidtone": Vector4(0.09118, 0.095506, 0.068142, 1.0),
+"p_CColorShadow": Vector4(10.330819, 11.485423, 16.304928, 1.0),
+"p_ColorD": Vector4(0.071817, 0.077345, 0.075593, 1.0),
+"p_MuscleFat": Vector4(1.0, 1.0, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_Rakk.Textures.Rakk_Diff",
+"p_Masks": "Char_Rakk.Textures.Rakk_Comp",
+"p_Normal": "Char_Rakk.Textures.Rakk_Norm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

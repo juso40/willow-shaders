@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_GunMaterials.Materials.SMG.Mati_MaliwanSMGUnique_GoodTouch.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Iris_GunMaterials.Materials.Shotgun.Mati_HyperionUniqueSG_SlowHand"
+source_object = "Iris_GunMaterials.Materials.Shotgun.Mati_HyperionUniqueSG_SlowHand"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_GunMaterials.Materials.SMG.Mati_MaliwanSMGUnique_GoodTouch"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_DecalRotate": 0.0585,
+"p_HighlightsIntensity": 2.0,
+"p_ShadowsIntensity": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_DecalChannel": Vector4(0.9, 0.012041, 1.0, 1.0),
+"p_DecalScalePosition": Vector4(11.600101, 37.0, 0.6536, 0.5781),
+"p_PatternScalePosition": Vector4(18.812, 18.812, -0.2264, 1.2217),
+"p_ReflectColor": Vector4(2.943038, 1.609934, 2.887948, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"P_SimpleReflect": null,
+"p_Decal": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_NormalScopesEmissive": null
+})
+texture_object_paths = Dictionary[String, String]({
+"P_SimpleReflect": "Common_GunMaterials.Env.GlossyC",
+"p_Decal": "Common_GunMaterials.Logos.Logo_MoxxiText",
+"p_Diffuse": "Common_GunMaterials.CompTextures.Weap_LauncherShotgunPistol_Comp",
+"p_Masks": "Weap_Shotguns.Tex.Weap_Shotgun_Comp",
+"p_NormalScopesEmissive": "Weap_Shotguns.Tex.Weap_Shotgun_Nor"
+})
+texture_object_classes = Dictionary[String, String]({
+"P_SimpleReflect": "Texture2D",
+"p_Decal": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_NormalScopesEmissive": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

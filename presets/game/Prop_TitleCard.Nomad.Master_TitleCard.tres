@@ -1,0 +1,94 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_TitleCard.Nomad.Master_TitleCard"
+source_object = "Prop_TitleCard.Nomad.Master_TitleCard"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"p_DiffusePower": 1.0,
+"p_DigiStructEnable": 0.0,
+"p_DigistructMultiplier": 1.0,
+"p_DigistructThreshold": 0.0,
+"p_FxScaleCorrosive": 1.0,
+"p_FxScaleFire": 1.0,
+"p_FxScaleShock": 1.0,
+"p_GrimeAmount": 0.0,
+"p_HighlightsIntensity": 2.0,
+"p_PatternScale": 1.0,
+"p_PhaseLock": 0.0,
+"p_ShadowsIntensity": 2.0,
+"p_fade": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_AColorMidtone": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_AColorShadow": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_BColorHilight": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_BColorMidtone": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_BColorShadow": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_CColorHilight": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_CColorMidtone": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_CColorShadow": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_ClampMasks": Vector4(0.0, 1.0, 0.0, 1.0),
+"p_ColorD": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_CorrosiveColor": Vector4(0.213609, 0.967391, 0.044759, 1.0),
+"p_CorrosiveColorB": Vector4(0.434783, 0.135269, 0.040442, 1.0),
+"p_DissolveColor": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_EmissiveScale": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_EmissiveScalePos": Vector4(1.0, 1.0, 0.0, 0.0),
+"p_FireColor": Vector4(1.0, 1.0, 1.0, 3.0),
+"p_GrimeCOlor": Vector4(0.010849, 0.010829, 0.01087, 2.0),
+"p_ShockColor": Vector4(0.086142, 1.0, 5.0, 5.0),
+"p_SpecColor": Vector4(1.0, 1.0, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_CorrosiveEffectTexture": null,
+"p_CustomPattern": null,
+"p_Diffuse": null,
+"p_EmissiveMap": null,
+"p_FireEffectTexture": null,
+"p_Masks": null,
+"p_Normal": null,
+"p_ShockEffectTexture": null,
+"p_SpecularMap": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_CorrosiveEffectTexture": "FX_Shared_Smoke.Textures.Tiling_Smoke_Scroller_256_Dif",
+"p_CustomPattern": "Common_Textures.Stub.StubGray_Gray",
+"p_Diffuse": "Common_Textures.Stub.StubGray_Gray",
+"p_EmissiveMap": "Common_Textures.Stub.StubBlack_Gray",
+"p_FireEffectTexture": "FX_Shared_Fire.Textures.Fireball_Tiling_Dif",
+"p_Masks": "Common_Textures.Stub.StubBlack_Gray",
+"p_Normal": "Common_Textures.Stub.StubFlat_Nrm",
+"p_ShockEffectTexture": "FX_Shared_Energy.Textures.Weapons.Tex_RoundLightning_Tex",
+"p_SpecularMap": "Common_Textures.Stub.StubBlack_Gray"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_CorrosiveEffectTexture": "Texture2D",
+"p_CustomPattern": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_EmissiveMap": "Texture2D",
+"p_FireEffectTexture": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D",
+"p_ShockEffectTexture": "Texture2D",
+"p_SpecularMap": "Texture2D"
+})
+static_component_masks = Dictionary[String, Vector4]({
+"mp_EmissiveChannel": Vector4(1.0, 0.0, 0.0, 0.0),
+"mp_PatternSelect": Vector4(1.0, 0.0, 0.0, 0.0),
+"mp_SpecularChannel": Vector4(1.0, 0.0, 0.0, 0.0)
+})
+static_switches = Dictionary[String, bool]({
+"sw_CorrosiveFx": false,
+"sw_Emissive": false,
+"sw_FireFx": false,
+"sw_PatternInvert": false,
+"sw_PositionEmissive": false,
+"sw_ShockFx": false,
+"sw_UseCustomPattern": false,
+"sw_specular": false
+})

@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Env_VOG_Chamber.Materials.Mat_DigiFade_Master.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_VOG_Chamber.Materials.Mat_ConsoleSwitchFade_INST"
+source_object = "Env_VOG_Chamber.Materials.Mat_ConsoleSwitchFade_INST"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Env_VOG_Chamber.Materials.Mat_DigiFade_Master"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"fade_EdgeBrightness": 5.0,
+"p_fade": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"DigistructColor": Vector4(0.095801, 0.680688, 0.944717, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/GD_AngelBoss.Materials.Master_AngleBoss_Bow.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_AngelBoss.Materials.Mati_AngelBoss_FireBow"
+source_object = "GD_AngelBoss.Materials.Mati_AngelBoss_FireBow"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "GD_AngelBoss.Materials.Master_AngleBoss_Bow"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_GlowScale": 0.1,
+"p_HighlightsIntensity": 2.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_EmissiveScale": Vector4(7.238337, 2.7213, 0.0, 1.0),
+"p_GlowColor": Vector4(50.0, 14.267325, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_emissive": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Aster_Prop_Weapons.Textures.Bow_Dif",
+"p_emissive": "Common_Textures.Stub.StubWhite_Gray"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_emissive": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

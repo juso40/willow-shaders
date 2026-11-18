@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Items.Master_ClassMod_02.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Item_ClassMods.Mat.Mati_ClassMod_Siren_Banshee"
+source_object = "Item_ClassMods.Mat.Mati_ClassMod_Siren_Banshee"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Items.Master_ClassMod_02"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_DecalRotate": -0.4778,
+"p_ReplaceDecal": 0.5
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.964186, 1.0, 0.447331, 1.0),
+"p_AColorMidtone": Vector4(3.619651, 2.748214, 0.170451, 1.0),
+"p_AColorShadow": Vector4(0.171264, 0.171264, 0.171264, 1.0),
+"p_BColorHilight": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_BColorMidtone": Vector4(0.684298, 0.751354, 0.558823, 1.0),
+"p_BColorShadow": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_CColorHilight": Vector4(1.0, 0.754155, 0.356293, 1.0),
+"p_CColorMidtone": Vector4(1.0, 0.116135, 0.210231, 1.0),
+"p_CColorShadow": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_ColorD": Vector4(1.0, 0.765908, 0.637509, 1.0),
+"p_DecalColor": Vector4(2.510084, 2.521962, 3.175184, 1.0),
+"p_DecalScalePosition": Vector4(0.8, 0.8, 0.3244, 0.3479)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Decal": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Decal": "Item_ClassMods.Textures.Siren_ClassMod_Decal_02",
+"p_Diffuse": "Item_ClassMods.Textures.SirenClassMod01_Dif",
+"p_Masks": "Item_ClassMods.Textures.SirenClassMod01_Msk",
+"p_Normal": "Item_ClassMods.Textures.SirenClassMod01_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Decal": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

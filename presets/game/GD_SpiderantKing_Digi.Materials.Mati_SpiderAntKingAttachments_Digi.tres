@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/GD_DigiCreaturesShared.Materials.Master_Lobelia_CreatureDigital_Digistruct.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_SpiderantKing_Digi.Materials.Mati_SpiderAntKingAttachments_Digi"
+source_object = "GD_SpiderantKing_Digi.Materials.Mati_SpiderAntKingAttachments_Digi"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "GD_DigiCreaturesShared.Materials.Master_Lobelia_CreatureDigital_Digistruct"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.101145, 0.067185, 0.00703, 1.0),
+"p_AColorMidtone": Vector4(0.580089, 0.308909, 0.036661, 1.0),
+"p_AColorShadow": Vector4(0.961291, 0.541998, 0.304078, 1.0),
+"p_BColorHilight": Vector4(1.988939, 1.115734, 0.538495, 1.0),
+"p_BColorMidtone": Vector4(10.288726, 2.936371, 0.0, 1.0),
+"p_BColorShadow": Vector4(0.119565, 0.094412, 0.055203, 1.0),
+"p_CColorHilight": Vector4(0.033148, 0.021531, 0.005256, 1.0),
+"p_CColorMidtone": Vector4(1.0, 0.545534, 0.022135, 1.0),
+"p_CColorShadow": Vector4(2.413208, 0.983049, 0.0, 1.0),
+"p_ColorD": Vector4(1.0, 0.887573, 0.194605, 1.0),
+"p_DigiColor": Vector4(0.05, 0.2, 3.0, 3.0),
+"p_EmissiveScale": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_PatternColor": Vector4(0.067725, 0.042987, 0.039947, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_SpiderAnt.Textures.SpiderAntAttachment_Dif",
+"p_Masks": "Char_SpiderAnt.Textures.SpiderAntAttachmentTone_Comp",
+"p_Normal": "Char_SpiderAnt.Textures.SpiderAntAttachment_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

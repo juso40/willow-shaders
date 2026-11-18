@@ -1,0 +1,64 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Water.General_WaterFog"
+source_object = "Prop_Water.General_WaterFog"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"CubeClamp": 1.0,
+"CubeContrast": 1.0,
+"CubeScale": 1.0,
+"Cube_desaturation": 0.0,
+"DiffuseStrength": 1.0,
+"Diffuse_A_Speed": 1.0,
+"Diffuse_A_World_Scale": 0.25,
+"Diffuse_B_Speed": 1.2,
+"Diffuse_B_World_Scale": 0.25,
+"Diffuse_Brightness": 50.0,
+"Diffuse_Contrast": 1.0,
+"Diffuse_desaturation": 0.0,
+"InnerBlendMin": 0.0,
+"InnerDepthBias": 0.5,
+"Opacity": 0.9,
+"OuterDepthBias": 0.5,
+"ShadowContrast": 1.6,
+"WaveA_Intensity": 1.0,
+"WaveA_Scale": 1.0,
+"WaveA_Speed": 0.75,
+"WaveB_Intensity": 1.0,
+"WaveB_Scale": 1.25,
+"WaveB_Speed": 1.75
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"CubeColor": Vector4(1.0, 1.0, 1.0, 0.0),
+"DiffuseColor": Vector4(1.0, 1.0, 1.0, 0.0),
+"LightmapColor": Vector4(0.1, 0.07, 0.02, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"CubeMap": null,
+"Difffuse_A": null,
+"Difffuse_B": null,
+"WaterA_NRM": null,
+"WaterB_NRM": null
+})
+texture_object_paths = Dictionary[String, String]({
+"CubeMap": "",
+"Difffuse_A": "",
+"Difffuse_B": "",
+"WaterA_NRM": "",
+"WaterB_NRM": ""
+})
+texture_object_classes = Dictionary[String, String]({
+"CubeMap": "",
+"Difffuse_A": "",
+"Difffuse_B": "",
+"WaterA_NRM": "",
+"WaterB_NRM": ""
+})
+static_switches = Dictionary[String, bool]({
+"UseDiffuses": false,
+"UseLightmap": false
+})

@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Co_Materials.MasterMaterials.Master_Colorize_Translucent.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Common_Co_Materials.Materials.Mati_Glass_Distortion"
+source_object = "Common_Co_Materials.Materials.Mati_Glass_Distortion"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Co_Materials.MasterMaterials.Master_Colorize_Translucent"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"GlassOpacity": 0.3,
+"p_EmissiveMult": 0.25,
+"p_TranluecencyMult": 0.7
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_Color_Diffuse_A": Vector4(0.001796, 0.002554, 0.005, 1.0),
+"p_Color_Spec_A": Vector4(0.208408, 0.258504, 0.335899, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

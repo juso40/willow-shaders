@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_WEP_Decals.Master.DMat_WEP_Impact_Decals_MS"
+source_object = "FX_WEP_Decals.Master.DMat_WEP_Impact_Decals_MS"
+unreal_class = "DecalMaterial"
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Color": Vector4(1.0, 1.0, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Base_Texture": null,
+"Impact_Decal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Base_Texture": "Common_Textures.Stub.StubGray_Gray",
+"Impact_Decal": "FX_WEP_Decals.Textures.Tex_Bullethit_12_Dif"
+})
+texture_object_classes = Dictionary[String, String]({
+"Base_Texture": "Texture2D",
+"Impact_Decal": "Texture2D"
+})
+static_component_masks = Dictionary[String, Vector4]({
+"Decal_Channel": Vector4(1.0, 1.0, 1.0, 0.0)
+})
+static_switches = Dictionary[String, bool]({
+"Base_Texture_Off": false
+})

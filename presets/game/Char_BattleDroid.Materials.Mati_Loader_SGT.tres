@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_CreatureDigistruct.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_BattleDroid.Materials.Mati_Loader_SGT"
+source_object = "Char_BattleDroid.Materials.Mati_Loader_SGT"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_CreatureDigistruct"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_DigiStructEnable": 0.0,
+"p_HighlightsIntensity": 1.0,
+"p_ShadowsIntensity": 4.0,
+"p_fade": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.329729, 0.425905, 0.139022, 1.0),
+"p_AColorMidtone": Vector4(0.054592, 0.047776, 0.042987, 1.0),
+"p_AColorShadow": Vector4(0.038473, 0.028991, 0.014311, 1.0),
+"p_BColorHilight": Vector4(0.399293, 0.373615, 0.325037, 1.0),
+"p_BColorMidtone": Vector4(0.344026, 0.344026, 0.344026, 1.0),
+"p_BColorShadow": Vector4(0.56681, 0.415148, 0.339223, 1.0),
+"p_CColorHilight": Vector4(0.368591, 0.139022, 0.086901, 1.0),
+"p_CColorMidtone": Vector4(0.060032, 0.0, 0.003697, 1.0),
+"p_CColorShadow": Vector4(0.160215, 0.067587, 0.045263, 1.0),
+"p_ColorD": Vector4(0.160215, 0.160215, 0.160215, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_BattleDroid.Textures.BattleDroid_Dif",
+"p_Masks": "Char_BattleDroid.Textures.BattleDroid_Comp",
+"p_Normal": "Char_BattleDroid.Textures.BattleDroid_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

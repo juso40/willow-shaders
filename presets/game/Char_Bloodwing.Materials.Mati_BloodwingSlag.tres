@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Char_Bloodwing.Materials.Mat_Bloodwing.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Bloodwing.Materials.Mati_BloodwingSlag"
+source_object = "Char_Bloodwing.Materials.Mati_BloodwingSlag"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Char_Bloodwing.Materials.Mat_Bloodwing"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"DesatAmount": 0.75,
+"p_FxScaleCorrosive": 2.0,
+"p_FxScaleSlag": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Color1": Vector4(0.01, 0.01, 0.01, 1.0),
+"Color2": Vector4(0.01, 0.0, 0.2, 1.0),
+"TintColor": Vector4(0.15, 0.0, 0.25, 1.0),
+"TintDiffuse": Vector4(0.625, 0.5, 0.75, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

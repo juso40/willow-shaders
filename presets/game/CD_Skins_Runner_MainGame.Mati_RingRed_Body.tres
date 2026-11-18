@@ -1,0 +1,55 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Vehicle.Master_Vehicle.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "CD_Skins_Runner_MainGame.Mati_RingRed_Body"
+source_object = "CD_Skins_Runner_MainGame.Mati_RingRed_Body"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Vehicle.Master_Vehicle"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.0, 0.161376, 0.265184, 1.0),
+"p_AColorMidtone": Vector4(0.110493, 0.088517, 0.088517, 1.0),
+"p_AColorShadow": Vector4(0.304777, 0.182358, 0.56904, 1.0),
+"p_BColorHilight": Vector4(0.348053, 0.063468, 0.063468, 1.0),
+"p_BColorMidtone": Vector4(0.127067, 0.112982, 0.120358, 1.0),
+"p_BColorShadow": Vector4(0.0, 0.443971, 0.72373, 1.0),
+"p_CColorHilight": Vector4(1.625383, 0.107816, 0.230143, 1.0),
+"p_CColorMidtone": Vector4(0.403974, 0.21234, 0.817649, 1.0),
+"p_CColorShadow": Vector4(0.180499, 0.107999, 0.337004, 1.0),
+"p_ColorD": Vector4(0.377233, 0.36253, 0.591138, 1.0),
+"p_DecalChannel": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_DecalColor": Vector4(2.919148, 0.152917, 0.129126, 1.0),
+"p_DecalScalePosition": Vector4(1.0, 1.0, 0.0, 0.0),
+"p_PatternChannelScale": Vector4(0.8, 0.8, 0.0, 1.0),
+"p_PatternColor": Vector4(0.771405, 0.0, 3.85066, 1.0),
+"p_PatternScalePosition": Vector4(2.0, 2.0, -0.0453, -0.1097)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_CustomPattern": null,
+"p_Decal": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_CustomPattern": "FX_Shared_Explosions.Textures.T_Pyro_Energy_GP_08",
+"p_Decal": "CD_Skins_Runner_MainGame.Textures.RunnerDecal10",
+"p_Diffuse": "Veh_Runner.Textures.Runner_Dif",
+"p_Masks": "Veh_Runner.Textures.Runner_Comp",
+"p_Normal": "Veh_Runner.Textures.Runner_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_CustomPattern": "Texture2D",
+"p_Decal": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Aster_CastleKeep.Materials.clouds.Mat_CastleKeep_Clouds_MS"
+source_object = "FX_Aster_CastleKeep.Materials.clouds.Mat_CastleKeep_Clouds_MS"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"UvScale_X": 1.0,
+"UvScale_Y": 1.0,
+"UvShift_X": 0.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Color": Vector4(0.563515, 0.19479, 0.106077, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Tex_Diff": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Tex_Diff": "FX_Aster_CastleKeep.Textures.Castle_Exterior_Cloud_Ring"
+})
+texture_object_classes = Dictionary[String, String]({
+"Tex_Diff": "Texture2D"
+})
+static_component_masks = Dictionary[String, Vector4]({
+"ColorMask": Vector4(1.0, 0.0, 0.0, 0.0)
+})

@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Billboards.Materials.Mati_BillboardSigns_Master.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Billboards.Materials.BillboardSign05_INST"
+source_object = "Billboards.Materials.BillboardSign05_INST"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Billboards.Materials.Mati_BillboardSigns_Master"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"DIff_UVMod": Vector4(1.0, 1.0, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Diffuse": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Diffuse": "Billboards.Textures.Iris_BillboardSign03"
+})
+texture_object_classes = Dictionary[String, String]({
+"Diffuse": "Texture2D"
+})

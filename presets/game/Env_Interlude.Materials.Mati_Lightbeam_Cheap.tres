@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Env_Interlude.Materials.Mat_Lightbeam.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_Interlude.Materials.Mati_Lightbeam_Cheap"
+source_object = "Env_Interlude.Materials.Mati_Lightbeam_Cheap"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Env_Interlude.Materials.Mat_Lightbeam"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Falloff": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Color": Vector4(0.584364, 0.904494, 0.891091, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

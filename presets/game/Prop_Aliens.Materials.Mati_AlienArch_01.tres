@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Aliens.Materials.Mat_AlienPlasterMaster.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Aliens.Materials.Mati_AlienArch_01"
+source_object = "Prop_Aliens.Materials.Mati_AlienArch_01"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Aliens.Materials.Mat_AlienPlasterMaster"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Emissive": 0.0,
+"TextureScaleSwirl": 2.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

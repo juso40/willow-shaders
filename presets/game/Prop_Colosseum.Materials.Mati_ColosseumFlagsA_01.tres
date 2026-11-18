@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Flags.Materials.Mati_BanditFlagsBigDamHorizontal.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Colosseum.Materials.Mati_ColosseumFlagsA_01"
+source_object = "Prop_Colosseum.Materials.Mati_ColosseumFlagsA_01"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Flags.Materials.Mati_BanditFlagsBigDamHorizontal"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_WaveScale": 50.0,
+"p_WindSpeed": 5.0,
+"p_WindWaveLength": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(1.0, 0.0, 0.023626, 1.0),
+"p_AColorMidtone": Vector4(1.0, 0.0, 0.026833, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

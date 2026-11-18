@@ -1,0 +1,58 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Aster_WizardSpells.Materials.Mat_WizardBodyIceTransition"
+source_object = "FX_Aster_WizardSpells.Materials.Mat_WizardBodyIceTransition"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"p_HighlightsIntensity": 2.0,
+"p_IceFade": 0.0,
+"p_PatternIntensity": 0.0,
+"p_PatternInvert": 0.0,
+"p_ShadowsIntensity": 2.0,
+"p_UVChannelSelect": 0.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.803371, 0.698238, 0.390952, 1.0),
+"p_AColorMidtone": Vector4(0.481148, 0.471148, 0.696629, 1.0),
+"p_AColorShadow": Vector4(0.162899, 0.165916, 0.342697, 1.0),
+"p_BColorHilight": Vector4(1.0, 0.330718, 0.085907, 1.0),
+"p_BColorMidtone": Vector4(0.272861, 0.261026, 0.455056, 1.0),
+"p_BColorShadow": Vector4(0.258427, 0.128123, 0.060937, 1.0),
+"p_CColorHilight": Vector4(0.705219, 0.684842, 0.922078, 1.0),
+"p_CColorMidtone": Vector4(1.219178, 1.153221, 1.057118, 1.0),
+"p_CColorShadow": Vector4(0.178587, 0.195928, 0.241573, 1.0),
+"p_ColorD": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_PatternColor": Vector4(0.501804, 0.500864, 0.502744, 2.0),
+"p_PatternScalePosition": Vector4(1.0, 1.0, 0.0, 0.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"CubeMap": null,
+"p_CustomPattern": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"CubeMap": "Prop_Skybox.MoveMe.R2Tex_SnowTempCubeStatic",
+"p_CustomPattern": "Common_Textures.Stub.StubGray_Gray",
+"p_Diffuse": "Char_Aster_Wizard.Textures.WizardBody_Diff",
+"p_Masks": "Common_Textures.Stub.StubBlack_Gray",
+"p_Normal": "Char_Aster_Wizard.Textures.WizardBody_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"CubeMap": "TextureCube",
+"p_CustomPattern": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+static_component_masks = Dictionary[String, Vector4]({
+"mp_PatternSelect": Vector4(1.0, 0.0, 0.0, 0.0)
+})
+static_switches = Dictionary[String, bool]({
+"P_PatternSwitch": true
+})

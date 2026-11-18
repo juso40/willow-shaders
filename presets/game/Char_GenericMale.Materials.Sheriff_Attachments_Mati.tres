@@ -1,0 +1,37 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_GenericMale.Materials.Sheriff_Attachments_Mati"
+source_object = "Char_GenericMale.Materials.Sheriff_Attachments_Mati"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(1.0, 0.454927, 0.058652, 1.0),
+"p_BColorHilight": Vector4(0.524843, 0.473019, 0.388563, 1.0),
+"p_BColorMidtone": Vector4(0.364627, 0.251793, 0.175565, 1.0),
+"p_BColorShadow": Vector4(0.13933, 0.133484, 0.254134, 1.0),
+"p_CColorHilight": Vector4(1.0, 0.842297, 0.75139, 1.0),
+"p_CColorMidtone": Vector4(0.618762, 0.556107, 0.45366, 1.0),
+"p_CColorShadow": Vector4(0.685058, 0.488665, 0.401204, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_GenericMale.Textures.Sheriff_Attachments_Dif",
+"p_Masks": "Char_GenericMale.Textures.Sheriff_Attachments_Comp"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

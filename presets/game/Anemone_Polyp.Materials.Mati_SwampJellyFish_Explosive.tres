@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Anemone_Polyp.Materials.Master_World_SwampJellyFish.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Anemone_Polyp.Materials.Mati_SwampJellyFish_Explosive"
+source_object = "Anemone_Polyp.Materials.Mati_SwampJellyFish_Explosive"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Anemone_Polyp.Materials.Master_World_SwampJellyFish"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.339717, 1.0, 0.378727, 1.0),
+"p_AColorMidtone": Vector4(0.012419, 1.0, 0.426967, 1.0),
+"p_AColorShadow": Vector4(0.063548, 0.071821, 0.042183, 1.0),
+"p_BColorHilight": Vector4(1.0, 0.85958, 0.448418, 1.0),
+"p_BColorMidtone": Vector4(0.111853, 0.226511, 0.172547, 1.0),
+"p_BColorShadow": Vector4(0.341599, 0.662959, 0.282554, 1.0),
+"p_CColorShadow": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_DissolveColor": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_ElementalDeathColor": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_EmissiveScale": Vector4(1.0, 0.763927, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_emissive": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Anemone_Polyp.Textures.SwampJelly_D",
+"p_Masks": "Anemone_Polyp.Textures.SwampJellyfish_Comp",
+"p_emissive": "Anemone_Polyp.Textures.SwampJellyfish_E"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_emissive": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

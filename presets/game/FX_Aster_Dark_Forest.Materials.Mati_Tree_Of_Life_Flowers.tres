@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_Aster_Dark_Forest.Materials.Mat_Tree_Of_Life_Flowers.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Aster_Dark_Forest.Materials.Mati_Tree_Of_Life_Flowers"
+source_object = "FX_Aster_Dark_Forest.Materials.Mati_Tree_Of_Life_Flowers"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_Aster_Dark_Forest.Materials.Mat_Tree_Of_Life_Flowers"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Obj Sway Wind Speed Mult": 0.158,
+"Object Radius Offset": 12.0,
+"Object Sway Amount": 0.00028,
+"Object Sway World Sine Divider": 50.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

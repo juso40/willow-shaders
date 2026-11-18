@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_Darkness.Materials.Mat_Darkness_Fog"
+source_object = "GD_Darkness.Materials.Mat_Darkness_Fog"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"BeginFadeDistance": 2500.0,
+"DepthBias": 100.0,
+"FadeLength": 2500.0,
+"p_fade": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Color": Vector4(0.0, 0.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+static_switches = Dictionary[String, bool]({
+"UseDistanceFading": false
+})

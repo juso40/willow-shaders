@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Sage_GunMaterials.Materials.AssaultRifle.Mati_JakobsUniqueAR_DamnedCowboy.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Sage_GunMaterials.Materials.sniper.Mati_JakobsCommonSR_ElephantGun"
+source_object = "Sage_GunMaterials.Materials.sniper.Mati_JakobsCommonSR_ElephantGun"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Sage_GunMaterials.Materials.AssaultRifle.Mati_JakobsUniqueAR_DamnedCowboy"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_DecalScalePosition": Vector4(11.7678, 24.938602, 0.2322, 0.4914),
+"p_PatternChannelScale": Vector4(1.0, 0.3, 0.9, 0.0),
+"p_PatternScalePosition": Vector4(9.656, 5.6502, 2.4273, 0.8474)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_NormalScopesEmissive": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Common_GunMaterials.CompTextures.Weap_AssaultSubSniper_Comp",
+"p_Masks": "Weap_SniperRifles.Tex.Weap_SniperRifle_Comp",
+"p_NormalScopesEmissive": "Weap_SniperRifles.Tex.Weap_SniperRifle_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_NormalScopesEmissive": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

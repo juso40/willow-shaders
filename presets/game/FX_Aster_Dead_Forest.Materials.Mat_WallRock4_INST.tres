@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_Aster_Dead_Forest.Materials.Mat_WallRock.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Aster_Dead_Forest.Materials.Mat_WallRock4_INST"
+source_object = "FX_Aster_Dead_Forest.Materials.Mat_WallRock4_INST"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_Aster_Dead_Forest.Materials.Mat_WallRock"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Dissolve": 0.0,
+"Glow": 0.0,
+"Speed": 1.0,
+"Time_Offset": 0.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

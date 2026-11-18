@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Aster_Prop_Staffs.Materials.Mati_Staff_Wheel.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Aster_Prop_Staffs.Materials.Mati_Staff_Claptrap"
+source_object = "Aster_Prop_Staffs.Materials.Mati_Staff_Claptrap"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Aster_Prop_Staffs.Materials.Mati_Staff_Wheel"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_EmissiveScale": Vector4(2.329458, 2.185953, 2.037006, 0.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

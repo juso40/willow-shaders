@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Aster_Wizard.Materials.Mati_FireMage_Head"
+source_object = "Char_Aster_Wizard.Materials.Mati_FireMage_Head"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_CColorHilight": Vector4(0.264045, 0.264045, 0.264045, 1.0),
+"p_CColorShadow": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_ColorD": Vector4(0.207865, 0.156761, 0.058743, 1.0),
+"p_EmissiveScale": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_PatternColor": Vector4(0.06729, 0.067164, 0.067416, 2.0),
+"p_PatternScalePosition": Vector4(1.0, 1.0, 0.0, 0.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_CustomPattern": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_CustomPattern": "FX_Shared_Corrosive.Textures.AcidGoopTest",
+"p_Diffuse": "Char_TunnelRat.Textures.TunnelRatBits_Dif",
+"p_Masks": "Char_TunnelRat.Textures.TunnelRatBitsColor_Comp",
+"p_Normal": "Char_TunnelRat.Textures.TunnelRatBits_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_CustomPattern": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_Sanctuary.Materials.Master_Sanc_Base_concrete"
+source_object = "Env_Sanctuary.Materials.Master_Sanc_Base_concrete"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"Desaturation": 0.5
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Global_Tint": Vector4(1.0, 1.0, 1.0, 1.0),
+"Top_Layer_Tint": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_UVScalePosition": Vector4(1.0, 1.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"top_layer": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Prop_SanctuaryRoad.Textures.SanctuaryRoad_Dif",
+"top_layer": "TilingMaterials.Textures.RoadRubble_Dif"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"top_layer": "Texture2D"
+})
+static_switches = Dictionary[String, bool]({
+"top_layer": false
+})

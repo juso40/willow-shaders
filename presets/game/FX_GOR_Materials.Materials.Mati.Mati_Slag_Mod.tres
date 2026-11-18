@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_GOR_Materials.Materials.Mat_6X3_Slag_Mod_01.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_GOR_Materials.Materials.Mati.Mati_Slag_Mod"
+source_object = "FX_GOR_Materials.Materials.Mati.Mati_Slag_Mod"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_GOR_Materials.Materials.Mat_6X3_Slag_Mod_01"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"dif": null
+})
+texture_object_paths = Dictionary[String, String]({
+"dif": "FX_GOR_Textures.Textures.Blood_04_Dif"
+})
+texture_object_classes = Dictionary[String, String]({
+"dif": "Texture2D"
+})

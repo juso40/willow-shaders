@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Skybox.Materials.Mat_FalloffSphere"
+source_object = "Prop_Skybox.Materials.Mat_FalloffSphere"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"Bias": 1.0,
+"Distance": 1.0,
+"FalloffExponent": 3.0,
+"Opacity": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Color": Vector4(1.0, 1.0, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

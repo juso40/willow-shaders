@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Anemone_Prop_Infection.Materials.Mat_Anemone_InfectionPlants.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Anemone_Prop_Infection.Materials.Mati_Anemone_StalkerDen"
+source_object = "Anemone_Prop_Infection.Materials.Mati_Anemone_StalkerDen"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Anemone_Prop_Infection.Materials.Mat_Anemone_InfectionPlants"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Base Radius": 0.0,
+"EmissiveMaskIntensity": 2.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"ColorMultiply": Vector4(0.136332, 0.176789, 0.097676, 0.0),
+"EmissiveMaskColor": Vector4(0.721356, 1.0, 0.339361, 0.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Hyperion.Master_FastTravel.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_FastTravel.Materials.Mati_FastTravelBandit"
+source_object = "Prop_FastTravel.Materials.Mati_FastTravelBandit"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Hyperion.Master_FastTravel"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.900519, 0.62685, 0.169185, 1.0),
+"p_AColorMidtone": Vector4(1.0, 0.591479, 0.298368, 1.0),
+"p_AColorShadow": Vector4(0.257804, 0.318678, 0.453022, 1.0),
+"p_BColorHilight": Vector4(1.0, 0.943709, 0.812162, 1.0),
+"p_BColorMidtone": Vector4(0.814236, 0.829335, 0.944717, 1.0),
+"p_BColorShadow": Vector4(0.552466, 0.552466, 0.552466, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

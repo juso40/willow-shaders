@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_CreatureShock.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Stalker.Materials.Mati_StalkerZingAttach"
+source_object = "Char_Stalker.Materials.Mati_StalkerZingAttach"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_CreatureShock"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_FxScaleShock": 20.0,
+"p_ShadowsIntensity": 2.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.113875, 0.156488, 0.247191, 1.0),
+"p_AColorMidtone": Vector4(0.014732, 0.03498, 0.08427, 1.0),
+"p_AColorShadow": Vector4(0.024317, 0.02072, 0.101124, 1.0),
+"p_BColorHilight": Vector4(0.934783, 0.934783, 0.934783, 1.0),
+"p_BColorMidtone": Vector4(0.994565, 0.994565, 0.994565, 1.0),
+"p_BColorShadow": Vector4(0.138099, 0.146739, 0.13326, 0.0),
+"p_CColorHilight": Vector4(0.596326, 0.62208, 0.752809, 1.0),
+"p_CColorMidtone": Vector4(0.026673, 0.065492, 0.146067, 1.0),
+"p_CColorShadow": Vector4(0.317584, 0.538043, 0.111013, 1.0),
+"p_EmissiveScale": Vector4(0.262265, 0.252514, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_CustomPattern": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_CustomPattern": "",
+"p_Diffuse": "Char_Stalker.Texture.StalkerAttachments_Dif",
+"p_Masks": "Char_Stalker.Texture.StalkerAttachments_Comp",
+"p_Normal": "Char_Stalker.Texture.StalkerAttachments_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_CustomPattern": "",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

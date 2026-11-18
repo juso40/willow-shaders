@@ -1,0 +1,41 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Nast_Savage.Materials.MaskTall_Slag"
+source_object = "Char_Nast_Savage.Materials.MaskTall_Slag"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_HighlightsIntensity": 4.0,
+"p_ShadowsIntensity": 4.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.213754, 0.259659, 0.249509, 1.0),
+"p_AColorMidtone": Vector4(0.210246, 0.215174, 0.309381, 1.0),
+"p_AColorShadow": Vector4(0.084671, 0.104969, 0.100481, 1.0),
+"p_BColorHilight": Vector4(0.658222, 0.0, 1.0, 1.0),
+"p_BColorMidtone": Vector4(1.801039, 0.061313, 0.254107, 1.0),
+"p_BColorShadow": Vector4(1.2, 0.56848, 0.437597, 1.0),
+"p_CColorHilight": Vector4(0.0, 0.512844, 1.0, 1.0),
+"p_CColorMidtone": Vector4(0.155328, 0.42159, 0.878421, 1.0),
+"p_CColorShadow": Vector4(0.658222, 0.0, 1.0, 1.0),
+"p_ColorD": Vector4(0.658222, 0.0, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_Nast_Savage.Texture.TallMask_Dif",
+"p_Masks": "Char_Nast_Savage.Texture.TallMask_Comp"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

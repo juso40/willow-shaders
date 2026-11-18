@@ -1,0 +1,53 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Aster_GunMaterials.Materials.Pistol.Mati_Bandit_Quartz_Pistol.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Aster_GunMaterials.Materials.Pistol.Mati_Vladof_Garnet_Pistol"
+source_object = "Aster_GunMaterials.Materials.Pistol.Mati_Vladof_Garnet_Pistol"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Aster_GunMaterials.Materials.Pistol.Mati_Bandit_Quartz_Pistol"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_ReflectColorScale": 0.8,
+"p_ReplaceDecal": 0.0,
+"p_ReplacePattern": 0.0,
+"p_UseFullColorDecal": 0.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(2.29103, 2.29103, 2.29103, 1.0),
+"p_AColorMidtone": Vector4(0.878421, 0.0, 0.049149, 1.0),
+"p_AColorShadow": Vector4(0.036794, 0.039809, 0.193363, 1.0),
+"p_BColorHilight": Vector4(1.292843, 1.292843, 1.292843, 1.0),
+"p_BColorMidtone": Vector4(0.875138, 0.0, 0.047776, 1.0),
+"p_BColorShadow": Vector4(0.035614, 0.038473, 0.190463, 1.0),
+"p_CColorHilight": Vector4(0.089194, 0.103634, 0.201096, 1.0),
+"p_CColorMidtone": Vector4(0.032876, 0.03423, 0.042987, 1.0),
+"p_CColorShadow": Vector4(0.035614, 0.060032, 0.024223, 1.0),
+"p_PatternChannelScale": Vector4(1.0, 1.0, 1.0, 0.0),
+"p_PatternColor": Vector4(0.469596, 0.112215, 0.10898, 1.0),
+"p_PatternScalePosition": Vector4(8.0, 8.0, 0.3853, 0.646),
+"p_ReflectColor": Vector4(2.129323, 0.105952, 0.105952, 1.0),
+"p_ReflectionChannelScale": Vector4(1.0, 1.0, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_NormalScopesEmissive": null,
+"p_Pattern": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Common_GunMaterials.CompTextures.Weap_LauncherShotgunPistol_Comp",
+"p_Masks": "Weap_Pistol.Tex.Weap_Pistols_Comp",
+"p_NormalScopesEmissive": "Weap_Pistol.Tex.Weap_Pistols_Nrm",
+"p_Pattern": "Aster_GunMaterials.Materials.FacetColor"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_NormalScopesEmissive": "Texture2D",
+"p_Pattern": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

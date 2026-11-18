@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Skag.Materials.Mati_Skag_FreeWilly"
+source_object = "Char_Skag.Materials.Mati_Skag_FreeWilly"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_PatternIntensity": 1.0,
+"p_UVChannelSelect": 0.1
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.361609, 0.524843, 0.33927, 1.0),
+"p_AColorMidtone": Vector4(0.423217, 0.552466, 0.421222, 1.0),
+"p_AColorShadow": Vector4(0.098139, 0.123596, 0.096965, 1.0),
+"p_BColorHilight": Vector4(0.91573, 0.852769, 0.673132, 1.0),
+"p_BColorMidtone": Vector4(0.337079, 0.302854, 0.22821, 1.0),
+"p_BColorShadow": Vector4(0.12363, 0.140449, 0.106811, 1.0),
+"p_CColorHilight": Vector4(1.0, 0.996948, 0.924385, 1.0),
+"p_CColorMidtone": Vector4(1.0, 0.985697, 0.916358, 1.0),
+"p_CColorShadow": Vector4(0.161119, 0.173913, 0.157428, 1.0),
+"p_PatternColor": Vector4(0.430923, 0.043103, 0.0, 2.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_CustomPattern": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_CustomPattern": "FX_GOR_Textures.Textures.Blood_Overlay_Dif",
+"p_Diffuse": "Char_Skag.Skag_Dif",
+"p_Masks": "Char_Skag.Skag_Comp",
+"p_Normal": "Char_Skag.Skag_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_CustomPattern": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

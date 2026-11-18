@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_CreatureDigistruct.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_Episode06Data.Materials.Mati_LoaderCinematic"
+source_object = "GD_Episode06Data.Materials.Mati_LoaderCinematic"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_CreatureDigistruct"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_DigistructThreshold": 0.0,
+"p_HighlightsIntensity": 1.5,
+"p_ShadowsIntensity": 2.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.318144, 0.370725, 0.480645, 1.0),
+"p_AColorMidtone": Vector4(1.214756, 0.674894, 0.051324, 1.0),
+"p_AColorShadow": Vector4(0.342529, 0.137882, 0.034075, 1.0),
+"p_BColorHilight": Vector4(0.351079, 0.419121, 0.447497, 1.0),
+"p_BColorMidtone": Vector4(0.034674, 0.04043, 0.044197, 1.0),
+"p_BColorShadow": Vector4(0.138116, 0.12717, 0.085641, 1.0),
+"p_CColorHilight": Vector4(1.321152, 0.903342, 0.0, 1.0),
+"p_CColorMidtone": Vector4(1.4375, 1.4375, 1.4375, 1.0),
+"p_CColorShadow": Vector4(0.15469, 0.105675, 0.0, 1.0),
+"p_ElementalDeathColor": Vector4(0.071857, 0.079242, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_CustomPattern": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_CustomPattern": "CentralMissingArtRedirects.Texture.MissingTexture",
+"p_Diffuse": "Char_BattleDroid.Textures.BattleDroid_Dif",
+"p_Masks": "Char_BattleDroid.Textures.BattleDroid_Comp",
+"p_Normal": "Char_BattleDroid.Textures.BattleDroid_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_CustomPattern": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

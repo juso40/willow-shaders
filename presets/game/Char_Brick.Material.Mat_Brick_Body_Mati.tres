@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Char_Lilith.Materials.Mat_MasterPCBody.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Brick.Material.Mat_Brick_Body_Mati"
+source_object = "Char_Brick.Material.Mat_Brick_Body_Mati"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Char_Lilith.Materials.Mat_MasterPCBody"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.310845, 0.321274, 0.331461, 1.0),
+"p_AColorMidtone": Vector4(0.38764, 0.686199, 1.0, 1.0),
+"p_AColorShadow": Vector4(0.721774, 1.0, 0.455056, 1.0),
+"p_BColorHilight": Vector4(0.27345, 0.49962, 0.640449, 1.0),
+"p_BColorMidtone": Vector4(1.080771, 1.148387, 1.042902, 1.0),
+"p_BColorShadow": Vector4(0.714431, 0.762919, 0.797753, 1.0),
+"p_CColorHilight": Vector4(0.600492, 0.848315, 0.814559, 1.0),
+"p_CColorMidtone": Vector4(0.861809, 0.890016, 1.155844, 1.0),
+"p_CColorShadow": Vector4(0.921348, 0.874458, 0.903526, 1.0),
+"p_Tat_Color": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_fresnelColor": Vector4(0.0, 0.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null,
+"p_Tat_Mask": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_Brick.Textures.Brick_ID1_Diff",
+"p_Masks": "Char_Brick.Textures.Brick_ID1_Comp",
+"p_Normal": "Char_Brick.Textures.Brick_ID1_Nmap",
+"p_Tat_Mask": "Char_Brick.Textures.Brick_ID1_M"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D",
+"p_Tat_Mask": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

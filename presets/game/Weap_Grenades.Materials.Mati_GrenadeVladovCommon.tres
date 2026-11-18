@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Items.Master_ShieldGrenade.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Weap_Grenades.Materials.Mati_GrenadeVladovCommon"
+source_object = "Weap_Grenades.Materials.Mati_GrenadeVladovCommon"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Items.Master_ShieldGrenade"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_HighlightsIntensity": 0.5,
+"p_ShadowsIntensity": 1.5
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(1.850978, 1.955841, 2.381458, 1.0),
+"p_AColorMidtone": Vector4(2.29103, 2.027857, 1.544258, 1.0),
+"p_AColorShadow": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_BColorHilight": Vector4(3.016443, 2.75957, 2.299855, 1.0),
+"p_BColorMidtone": Vector4(1.096966, 0.993118, 0.997035, 1.0),
+"p_BColorShadow": Vector4(1.222963, 0.98301, 0.774036, 1.0),
+"p_CColorHilight": Vector4(0.602188, 0.584958, 0.517365, 1.0),
+"p_CColorMidtone": Vector4(0.33968, 0.32324, 0.397775, 1.0),
+"p_CColorShadow": Vector4(0.171264, 0.171264, 0.171264, 1.0),
+"p_ColorD": Vector4(0.84531, 0.867465, 1.0, 1.0),
+"p_EmissiveColor": Vector4(1.392452, 2.002341, 2.180628, 1.0),
+"p_PatternChannelScale": Vector4(1.0, 0.95, 0.0, 0.0),
+"p_PatternColor": Vector4(2.350533, 2.350533, 2.350533, 1.0),
+"p_PatternScalePosition": Vector4(2.0, 2.0, 0.33, 0.03)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_CustomPattern": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_CustomPattern": "Common_GunMaterials.Patterns.VladovMetalCommon_Dif",
+"p_Diffuse": "Weap_Grenades.Textures.Grenades_Dif",
+"p_Masks": "Weap_Grenades.Textures.Grenades_Comp",
+"p_Normal": "Weap_Grenades.Textures.Grenades_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_CustomPattern": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

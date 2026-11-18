@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Char_Anemone_SandWormBoss.Materials.Mati_SandwormBossBody_INST.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Anemone_SandWormBoss.Materials.Mati_SandwormBossHead_INST"
+source_object = "Char_Anemone_SandWormBoss.Materials.Mati_SandwormBossHead_INST"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Char_Anemone_SandWormBoss.Materials.Mati_SandwormBossBody_INST"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"EmissiveColor": Vector4(1.083686, 0.955261, 0.231349, 1.0),
+"p_AColorShadow": Vector4(1.0, 1.0, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"EmissivePurpleMask": null,
+"p_Diffuse": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"EmissivePurpleMask": "Char_Anemone_SandWormBoss.T_SandwormHead_Em",
+"p_Diffuse": "Char_Anemone_SandWormBoss.T_SandwormHead_D",
+"p_Normal": "Char_Anemone_SandWormBoss.T_SandwormHead_N"
+})
+texture_object_classes = Dictionary[String, String]({
+"EmissivePurpleMask": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

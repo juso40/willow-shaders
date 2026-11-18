@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_GunMaterials.MasterMaterials.Jakobs.MasterMati_JakobsUncommon.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Common_GunMaterials.Materials.sniper.Mati_JakobsUniqueSR_Tresspasser"
+source_object = "Common_GunMaterials.Materials.sniper.Mati_JakobsUniqueSR_Tresspasser"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_GunMaterials.MasterMaterials.Jakobs.MasterMati_JakobsUncommon"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(1.846881, 0.444671, 0.36739, 1.0),
+"p_AColorMidtone": Vector4(0.303856, 0.011034, 0.008197, 1.0),
+"p_AColorShadow": Vector4(0.364627, 0.049075, 0.059789, 1.0),
+"p_BColorHilight": Vector4(0.646385, 0.59908, 0.335703, 1.0),
+"p_BColorMidtone": Vector4(0.718206, 0.381433, 0.142869, 1.0),
+"p_BColorShadow": Vector4(0.4033, 0.283903, 0.133701, 1.0),
+"p_CColorHilight": Vector4(0.135703, 0.171264, 0.042584, 1.0),
+"p_CColorMidtone": Vector4(0.048037, 0.110493, 0.015265, 1.0),
+"p_CColorShadow": Vector4(0.425399, 0.29946, 0.141027, 1.0),
+"p_DColor": Vector4(0.058607, 0.089905, 0.132592, 1.0),
+"p_DecalChannel": Vector4(0.0, 1.0, 0.0, 1.0),
+"p_DecalColor": Vector4(3.486322, 3.58527, 3.647005, 1.0),
+"p_DecalScalePosition": Vector4(4.0, 4.0, 0.1, 0.0),
+"p_PatternColor": Vector4(1.86592, 1.86592, 1.86592, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Decal": null,
+"p_Masks": null,
+"p_NormalScopesEmissive": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Decal": "Common_GunMaterials.Patterns.Pattern_DahlUncommon",
+"p_Masks": "Weap_SniperRifles.Tex.Weap_SniperRifle_Comp",
+"p_NormalScopesEmissive": "Weap_SniperRifles.Tex.Weap_SniperRifle_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Decal": "Texture2D",
+"p_Masks": "Texture2D",
+"p_NormalScopesEmissive": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

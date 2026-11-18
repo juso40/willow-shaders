@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_WEP_Alien.Materials.Muzzle_FlashHider.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_WEP_Alien.Materials.Muzzle_FlashHider_INST"
+source_object = "FX_WEP_Alien.Materials.Muzzle_FlashHider_INST"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_WEP_Alien.Materials.Muzzle_FlashHider"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Distortion_Multiply": 2.0,
+"Distortion_Tile_U": 2.0,
+"Distortion_Tile_V": 2.0,
+"Muzzle_Offset_U": -0.05,
+"Muzzle_Offset_V": -0.05,
+"Muzzle_Tile_U": 1.0,
+"Muzzle_Tile_V": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Distortion_Texture_Name": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Distortion_Texture_Name": "FX_Shared_Smoke.Textures.Tiling_Dust_Dif"
+})
+texture_object_classes = Dictionary[String, String]({
+"Distortion_Texture_Name": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

@@ -1,0 +1,40 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Sage_Prop_Generic.Materials.Master_World_SwampJellyFish.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Sage_Prop_Generic.Materials.Mati_SwampJellyFish_SideQuest"
+source_object = "Sage_Prop_Generic.Materials.Mati_SwampJellyFish_SideQuest"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Sage_Prop_Generic.Materials.Master_World_SwampJellyFish"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.103285, 0.0, 0.425399, 1.0),
+"p_AColorMidtone": Vector4(0.056337, 0.0, 0.232036, 1.0),
+"p_AColorShadow": Vector4(0.006756, 0.0, 0.027623, 1.0),
+"p_BColorHilight": Vector4(0.580089, 0.0, 0.449121, 1.0),
+"p_BColorMidtone": Vector4(0.24861, 0.0, 0.19248, 1.0),
+"p_BColorShadow": Vector4(0.071821, 0.0, 0.055605, 1.0),
+"p_EmissiveScale": Vector4(0.0, 1.0, 0.980028, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_emissive": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Sage_Prop_Generic.Textures.SwampJelly_D",
+"p_Masks": "Sage_Prop_Generic.Textures.SwampJellyfish_Comp",
+"p_emissive": "Sage_Prop_Generic.Textures.SwampJellyfish_E"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_emissive": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

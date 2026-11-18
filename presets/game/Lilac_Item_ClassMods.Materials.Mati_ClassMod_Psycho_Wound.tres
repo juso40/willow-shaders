@@ -1,0 +1,56 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Items.Master_ClassMod_02.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Lilac_Item_ClassMods.Materials.Mati_ClassMod_Psycho_Wound"
+source_object = "Lilac_Item_ClassMods.Materials.Mati_ClassMod_Psycho_Wound"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Items.Master_ClassMod_02"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_ReplaceDecal": 5.0,
+"p_ShadowsIntensity": 0.5,
+"p_UseFullColorDecal": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.16574, 0.16574, 0.16574, 1.0),
+"p_AColorMidtone": Vector4(0.277058, 0.281758, 0.278947, 0.0),
+"p_AColorShadow": Vector4(0.019279, 0.032769, 0.044197, 1.0),
+"p_BColorHilight": Vector4(0.609243, 0.599725, 0.618762, 1.0),
+"p_BColorMidtone": Vector4(0.707156, 0.707156, 0.707156, 0.0),
+"p_BColorShadow": Vector4(0.033148, 0.033148, 0.033148, 1.0),
+"p_CColorHilight": Vector4(0.530367, 0.450225, 0.312203, 1.0),
+"p_CColorMidtone": Vector4(0.037601, 0.058316, 0.093919, 1.0),
+"p_CColorShadow": Vector4(0.192607, 0.26062, 0.397775, 1.0),
+"p_DecalChannel": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_DecalScalePosition": Vector4(0.4719, 0.5339, 0.5457, 0.4983),
+"p_EmissiveColor": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_PatternChannelScale": Vector4(1.0, 1.0, 1.0, 0.0),
+"p_PatternColor": Vector4(2.262395, 2.262395, 2.262395, 1.0),
+"p_PatternScalePosition": Vector4(1.0, 1.0, 0.0, 0.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"P_SimpleReflect": null,
+"p_Decal": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"P_SimpleReflect": "Common_GunMaterials.Env.Chrome",
+"p_Decal": "Lilac_Item_ClassMods.Textures.Psycho_ClassMod_Decal_02",
+"p_Diffuse": "Lilac_Item_ClassMods.Textures.Psycho_ClassMod_D",
+"p_Masks": "Lilac_Item_ClassMods.Textures.Psycho_ClassMod_Comp",
+"p_Normal": "Lilac_Item_ClassMods.Textures.Psycho_ClassMod_N"
+})
+texture_object_classes = Dictionary[String, String]({
+"P_SimpleReflect": "Texture2D",
+"p_Decal": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

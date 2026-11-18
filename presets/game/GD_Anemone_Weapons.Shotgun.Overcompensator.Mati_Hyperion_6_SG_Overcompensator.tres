@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_GunMaterials.MasterMaterials.Hyperion.MasterMati_HyperionUncommon.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_Anemone_Weapons.Shotgun.Overcompensator.Mati_Hyperion_6_SG_Overcompensator"
+source_object = "GD_Anemone_Weapons.Shotgun.Overcompensator.Mati_Hyperion_6_SG_Overcompensator"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_GunMaterials.MasterMaterials.Hyperion.MasterMati_HyperionUncommon"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(1.0, 0.271056, 0.184115, 1.0),
+"p_AColorMidtone": Vector4(1.0, 0.008322, 0.0, 1.0),
+"p_AColorShadow": Vector4(0.751354, 0.0, 0.00228, 1.0),
+"p_BColorMidtone": Vector4(0.152235, 0.176066, 0.259659, 1.0),
+"p_DecalColor": Vector4(2.999615, 1.696153, 0.0, 1.0),
+"p_DecalScalePosition": Vector4(10.0, 22.0, 0.55, 0.55)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_NormalScopesEmissive": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Common_GunMaterials.CompTextures.Weap_LauncherShotgunPistol_Comp",
+"p_Masks": "Weap_Shotguns.Tex.Weap_Shotgun_Comp",
+"p_NormalScopesEmissive": "Weap_Shotguns.Tex.Weap_Shotgun_Nor"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_NormalScopesEmissive": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_Shared_MasterShaders.Materials.Decals.Decal_Parent_FakeLit_Tran_SingleGP.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_CREA_SpiderAnt.Decals.Mati_SpiderAnt_Web_Decal"
+source_object = "FX_CREA_SpiderAnt.Decals.Mati_SpiderAnt_Web_Decal"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_Shared_MasterShaders.Materials.Decals.Decal_Parent_FakeLit_Tran_SingleGP"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Opacity": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Color_Mod": Vector4(2.0, 2.0, 2.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"CubeMap": null,
+"Decal_GP": null,
+"Decal_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"CubeMap": "FX_Shared_CubeMaps.CubeMaps.EnergyOrbReflect_Cube",
+"Decal_GP": "FX_CREA_SpiderAnt.Textures.Tex_SpiderAnt_Web_Decal_GP",
+"Decal_Normal": "FX_CREA_SpiderAnt.Textures.Tex_SpiderAnt_Web_Decal_N"
+})
+texture_object_classes = Dictionary[String, String]({
+"CubeMap": "TextureCube",
+"Decal_GP": "Texture2D",
+"Decal_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

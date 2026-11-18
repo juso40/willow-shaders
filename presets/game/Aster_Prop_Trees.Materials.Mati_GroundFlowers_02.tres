@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Aster_Prop_Trees.Materials.Mat_AsterFlowers.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Aster_Prop_Trees.Materials.Mati_GroundFlowers_02"
+source_object = "Aster_Prop_Trees.Materials.Mati_GroundFlowers_02"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Aster_Prop_Trees.Materials.Mat_AsterFlowers"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"AlphaFadeFlowers": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(1.0, 0.666117, 0.645555, 1.0),
+"p_AColorMidtone": Vector4(1.0, 0.442323, 0.535642, 1.0),
+"p_AColorShadow": Vector4(0.84337, 0.154152, 0.284452, 1.0),
+"p_BColorHilight": Vector4(1.0, 0.348865, 0.306635, 1.0),
+"p_BColorMidtone": Vector4(1.0, 0.154152, 0.259027, 1.0),
+"p_BColorShadow": Vector4(0.442323, 0.039947, 0.453456, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Aster_Prop_Trees.Textures.Flowers_Dif",
+"p_Masks": "Aster_Prop_Trees.Textures.Flowers_Comp"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D"
+})

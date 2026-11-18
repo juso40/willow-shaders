@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Meshes.FogSheets.Mat_Fogsheet.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_IceCanyon.Materials.Fogsheet_Icecave_Thick"
+source_object = "Env_IceCanyon.Materials.Fogsheet_Icecave_Thick"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Meshes.FogSheets.Mat_Fogsheet"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"BeginFadeDistance": 5000.0,
+"DepthBias": 6000.0,
+"FadeLength": 100.0,
+"Opacity": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Color": Vector4(0.0, 0.362031, 0.696107, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

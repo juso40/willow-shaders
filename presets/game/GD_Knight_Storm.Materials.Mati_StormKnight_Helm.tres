@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_CreatureShock.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_Knight_Storm.Materials.Mati_StormKnight_Helm"
+source_object = "GD_Knight_Storm.Materials.Mati_StormKnight_Helm"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_CreatureShock"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_FxScaleShock": 2.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_ColorD": Vector4(0.310445, 0.379512, 2.0, 1.0),
+"p_DissolveColor": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_ElementalDeathColor": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_EmissiveScale": Vector4(15.469044, 0.0, 0.0, 1.0),
+"p_ShockColor": Vector4(0.086142, 0.8, 5.0, 5.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_Nomad.Textures.FlyntHat_Diff",
+"p_Normal": "Char_Nomad.Textures.Flynthat_Normals"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

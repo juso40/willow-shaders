@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Co_Materials.Materials.Mati_Colorize_Split_Common.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Co_HabWall.Materials.Mati_Co_HabWall_Neutral"
+source_object = "Prop_Co_HabWall.Materials.Mati_Co_HabWall_Neutral"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Co_Materials.Materials.Mati_Colorize_Split_Common"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_SpecMult": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_Color_Emissive1_A": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_Color_Emissive1_B": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_Color_Emissive1_Base": Vector4(1.0, 0.952295, 0.489353, 1.0),
+"p_Color_Highlight": Vector4(0.075135, 0.064165, 0.019391, 1.0),
+"p_Color_Spec_1": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_Color_Spec_2": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_Color_Spec_Emissive": Vector4(0.0, 0.0, 0.0, 200.0),
+"p_Color_Texture1_A": Vector4(0.182314, 0.173414, 0.169284, 1.0),
+"p_Color_Texture1_B": Vector4(0.6497, 0.6497, 0.6497, 1.0),
+"p_Color_Texture1_Base": Vector4(1.616516, 1.882804, 1.854529, 1.0),
+"p_Color_Texture1_C": Vector4(0.430923, 0.426335, 0.403792, 1.0),
+"p_Color_Texture1_D": Vector4(0.215764, 0.2468, 0.2468, 1.0),
+"p_Color_Texture2_A": Vector4(0.353615, 0.639904, 1.0, 1.0),
+"p_Color_Texture2_B": Vector4(0.624323, 0.64502, 1.0, 1.0),
+"p_DiffMod": Vector4(0.291702, 0.291702, 0.291702, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Prop_Co_HabWall.Textures.HabWall_Diff",
+"p_Masks": "Prop_Co_HabWall.Textures.HabWall_Masks"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

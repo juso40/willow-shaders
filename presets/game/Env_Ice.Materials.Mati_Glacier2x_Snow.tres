@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Glacier.Materials.Mati_GlacierRocks.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_Ice.Materials.Mati_Glacier2x_Snow"
+source_object = "Env_Ice.Materials.Mati_Glacier2x_Snow"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Glacier.Materials.Mati_GlacierRocks"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_SnowNoiseUVScale": 1.0,
+"p_SnowUVScale": 3.0,
+"p_VertexNoiseUVMod": 2.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_DiffMod": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_Diff_UVMod": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_NormalMod": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_Normal_UVMod": Vector4(1.0, 1.0, 1.0, 2.0),
+"p_SnowAmount": Vector4(0.0, 2.0, 2.0, 2.0),
+"p_SnowColor": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_VertexPaintNoiseMod": Vector4(2.0, -1.5, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Normal": null,
+"p_SnowDiffuse": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Prop_Glacier.Textures.GlacierFront_Dif",
+"p_Normal": "Prop_Glacier.Textures.GlacierFront_Nrm",
+"p_SnowDiffuse": "Prop_Terrain.Textures.Snow_Dif"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Normal": "Texture2D",
+"p_SnowDiffuse": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

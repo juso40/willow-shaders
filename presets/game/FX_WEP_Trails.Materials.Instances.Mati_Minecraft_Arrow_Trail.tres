@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_WEP_Trails.Materials.MasterShaders.Mat_Bullet_Tracer_MS.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_WEP_Trails.Materials.Instances.Mati_Minecraft_Arrow_Trail"
+source_object = "FX_WEP_Trails.Materials.Instances.Mati_Minecraft_Arrow_Trail"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_WEP_Trails.Materials.MasterShaders.Mat_Bullet_Tracer_MS"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Desat": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Texture": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Texture": "FX_WEP_Trails.Textures.Tex_Minecraft_Arrow_Trail"
+})
+texture_object_classes = Dictionary[String, String]({
+"Texture": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

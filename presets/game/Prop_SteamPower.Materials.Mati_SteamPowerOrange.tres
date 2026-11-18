@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Environment.Master_World.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_SteamPower.Materials.Mati_SteamPowerOrange"
+source_object = "Prop_SteamPower.Materials.Mati_SteamPowerOrange"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Environment.Master_World"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.308989, 0.243529, 0.192684, 1.0),
+"p_AColorMidtone": Vector4(0.123596, 0.111933, 0.109014, 1.0),
+"p_AColorShadow": Vector4(0.179775, 0.100997, 0.156412, 1.0),
+"p_BColorHilight": Vector4(0.853933, 0.465007, 0.331019, 1.0),
+"p_BColorMidtone": Vector4(0.58427, 0.240339, 0.150991, 1.0),
+"p_BColorShadow": Vector4(0.320225, 0.165509, 0.243199, 1.0),
+"p_CColorHilight": Vector4(0.865169, 0.732764, 0.661028, 1.0),
+"p_CColorMidtone": Vector4(0.455056, 0.268621, 0.264373, 1.0),
+"p_CColorShadow": Vector4(0.280899, 0.128103, 0.177147, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Prop_SteamPower.Textures.SteamPower_Dif",
+"p_Masks": "Prop_SteamPower.Textures.SteamPowerColor_Comp"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

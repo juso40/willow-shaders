@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Aliens.Materials.Mat_AlienSwirlPlaster_02.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Aliens.Materials.Mati_AlienTempleRuinsWalls_03"
+source_object = "Prop_Aliens.Materials.Mati_AlienTempleRuinsWalls_03"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Aliens.Materials.Mat_AlienSwirlPlaster_02"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"DetailSizeX": 1.6891,
+"DetailSizeX2": 1.2,
+"DetailSizeY": 1.8048,
+"DetailSizeY2": 1.2,
+"Move Y": -1.65,
+"MoveDetailX": -0.5544,
+"MoveDetailX2": -0.49,
+"MoveDetailY": 0.5251,
+"MoveDetailY2": -0.48,
+"MoveIce Y": 2.0,
+"MoveIceX": 12.75,
+"MoveX": 4.6481,
+"SizeIceX": 2.0,
+"SizeX": 1.0,
+"size Y": 1.0,
+"sizeIceY": 2.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"1": null,
+"2": null
+})
+texture_object_paths = Dictionary[String, String]({
+"1": "Prop_Aliens.Textures.AlienPlasterSwirl_Dif",
+"2": "Prop_Aliens.Textures.IceCrete_01_Dif"
+})
+texture_object_classes = Dictionary[String, String]({
+"1": "Texture2D",
+"2": "Texture2D"
+})

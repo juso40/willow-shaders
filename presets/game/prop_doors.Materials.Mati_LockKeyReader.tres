@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/prop_doors.Materials.Mat_LockKeyReader.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "prop_doors.Materials.Mati_LockKeyReader"
+source_object = "prop_doors.Materials.Mati_LockKeyReader"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "prop_doors.Materials.Mat_LockKeyReader"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Door_Locked(0)_Unlocked(1)": 0.0,
+"UnitPower_On(1)_Off(0)": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"": Vector4(1.0, 0.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

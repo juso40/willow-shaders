@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Aster_Prop_Ruins.Materials.Ruins_Set_Master.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Aster_Prop_Ruins.Materials.Mati_Ruins_Mausoleum_Small"
+source_object = "Aster_Prop_Ruins.Materials.Mati_Ruins_Mausoleum_Small"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Aster_Prop_Ruins.Materials.Ruins_Set_Master"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"ColorMap_Coordinate": Vector4(0.5, 0.5, 0.0, 0.5)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Normal": "Aster_Prop_Ruins.Textures.Mausoleum_Small_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

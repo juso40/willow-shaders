@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Aster_Prop_FantasyFastTravel.Material.Master_AsterFastTravel.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Aster_Prop_FantasyFastTravel.Material.Mati_AsterFastTravel"
+source_object = "Aster_Prop_FantasyFastTravel.Material.Mati_AsterFastTravel"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Aster_Prop_FantasyFastTravel.Material.Master_AsterFastTravel"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_BColorHilight": Vector4(1.0, 0.646422, 0.716059, 1.0),
+"p_BColorMidtone": Vector4(1.15286, 0.589695, 0.776042, 1.0),
+"p_BColorShadow": Vector4(0.408825, 0.310869, 0.408002, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

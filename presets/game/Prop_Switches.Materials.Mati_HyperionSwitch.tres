@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Lootables.Materials.Mati_EpicBanditLocker.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Switches.Materials.Mati_HyperionSwitch"
+source_object = "Prop_Switches.Materials.Mati_HyperionSwitch"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Lootables.Materials.Mati_EpicBanditLocker"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_EmissiveScale": Vector4(0.0, 0.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Normal": null,
+"p_emissive": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Prop_Switches.Textures.HyperionButton_Dif",
+"p_Normal": "Prop_Switches.Textures.HyperionButton_Nrm",
+"p_emissive": "Prop_Switches.Textures.HyperionButtonR_Emis"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Normal": "Texture2D",
+"p_emissive": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

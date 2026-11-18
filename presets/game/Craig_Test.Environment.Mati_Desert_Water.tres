@@ -1,0 +1,37 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Environment.Master_Water.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Craig_Test.Environment.Mati_Desert_Water"
+source_object = "Craig_Test.Environment.Mati_Desert_Water"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Environment.Master_Water"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_WaveScale": 6.0,
+"p_WaveSpeed": 0.8,
+"s_DepthBiasScale": 100.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_DeepWaterColor": Vector4(0.297753, 0.960807, 1.0, 1.0),
+"p_FogColor": Vector4(0.434794, 0.673101, 0.781751, 8.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"P_SimpleReflect": null,
+"Transition_Track": null,
+"WaterA_NRM": null
+})
+texture_object_paths = Dictionary[String, String]({
+"P_SimpleReflect": "FX_Shared_CubeMaps.Textures.BlueSky_PosZ_Tex",
+"Transition_Track": "Craig_Test.Textures.Sky_Craig_TransitionBL2Default_Dif",
+"WaterA_NRM": "FX_Shared_Water.Textures.Tex_Water2_Nm"
+})
+texture_object_classes = Dictionary[String, String]({
+"P_SimpleReflect": "Texture2D",
+"Transition_Track": "Texture2D",
+"WaterA_NRM": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

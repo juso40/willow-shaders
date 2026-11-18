@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Char_Bandit_Psycho.Materials.Mati_PsychoStandard.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Aster_Knight.Materials.Mati_KnightBody_Blue"
+source_object = "Char_Aster_Knight.Materials.Mati_KnightBody_Blue"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Char_Bandit_Psycho.Materials.Mati_PsychoStandard"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.4033, 0.251772, 0.162666, 1.0),
+"p_AColorMidtone": Vector4(0.48617, 0.311962, 0.20952, 1.0),
+"p_AColorShadow": Vector4(0.404494, 0.222099, 0.114842, 1.0),
+"p_BColorHilight": Vector4(0.752809, 0.70597, 0.717526, 1.0),
+"p_BColorMidtone": Vector4(0.263175, 0.2468, 0.25084, 1.0),
+"p_BColorShadow": Vector4(0.08427, 0.079027, 0.08032, 1.0),
+"p_CColorHilight": Vector4(0.073171, 0.14675, 0.281758, 1.0),
+"p_CColorMidtone": Vector4(0.063737, 0.081488, 0.198888, 1.0),
+"p_CColorShadow": Vector4(0.015946, 0.035365, 0.12753, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_Aster_Knight.Textures.KnightBody_Dif",
+"p_Masks": "Char_Aster_Knight.Textures.KnightBody_Comp"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

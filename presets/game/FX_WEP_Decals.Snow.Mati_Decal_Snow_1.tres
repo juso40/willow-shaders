@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_Shared_MasterShaders.Materials.Decals.Decal_Parent_Lit_Masked.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_WEP_Decals.Snow.Mati_Decal_Snow_1"
+source_object = "FX_WEP_Decals.Snow.Mati_Decal_Snow_1"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_Shared_MasterShaders.Materials.Decals.Decal_Parent_Lit_Masked"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Desaturation": 1.0,
+"TextureBooster": 5.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"DecalTint": Vector4(0.752809, 0.842963, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Decal_Diffuse": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Decal_Diffuse": "FX_WEP_Decals.Textures.Bullethit_13_Dif"
+})
+texture_object_classes = Dictionary[String, String]({
+"Decal_Diffuse": "Texture2D"
+})

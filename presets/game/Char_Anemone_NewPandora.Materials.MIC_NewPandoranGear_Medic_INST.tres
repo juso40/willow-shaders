@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Char_Anemone_NewPandora.Materials.MIC_NewPandoranGear.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Anemone_NewPandora.Materials.MIC_NewPandoranGear_Medic_INST"
+source_object = "Char_Anemone_NewPandora.Materials.MIC_NewPandoranGear_Medic_INST"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Char_Anemone_NewPandora.Materials.MIC_NewPandoranGear"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.752809, 0.200677, 0.1734, 1.0),
+"p_AColorMidtone": Vector4(0.691011, 0.01941, 0.021776, 1.0),
+"p_AColorShadow": Vector4(0.224719, 0.044843, 0.036612, 1.0),
+"p_CColorHilight": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_CColorMidtone": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_CColorShadow": Vector4(0.44382, 0.44382, 0.44382, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

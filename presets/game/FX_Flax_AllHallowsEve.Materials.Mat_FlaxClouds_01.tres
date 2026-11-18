@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_Flax_AllHallowsEve.Materials.Mat_FlaxClouds_MS.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Flax_AllHallowsEve.Materials.Mat_FlaxClouds_01"
+source_object = "FX_Flax_AllHallowsEve.Materials.Mat_FlaxClouds_01"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_Flax_AllHallowsEve.Materials.Mat_FlaxClouds_MS"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Color": Vector4(0.075, 0.0175, 0.0025, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Tex_Diff": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Tex_Diff": "FX_Flax_AllHallowsEve.Textures.Castle_Keep_Cloud_Left_02"
+})
+texture_object_classes = Dictionary[String, String]({
+"Tex_Diff": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

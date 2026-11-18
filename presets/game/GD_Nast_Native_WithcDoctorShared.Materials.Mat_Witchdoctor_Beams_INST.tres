@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_CREA_Constructor.Materials.Mat_Constructor_Beams.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_Nast_Native_WithcDoctorShared.Materials.Mat_Witchdoctor_Beams_INST"
+source_object = "GD_Nast_Native_WithcDoctorShared.Materials.Mat_Witchdoctor_Beams_INST"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_CREA_Constructor.Materials.Mat_Constructor_Beams"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Color": Vector4(4.0, 3.968043, 0.814543, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

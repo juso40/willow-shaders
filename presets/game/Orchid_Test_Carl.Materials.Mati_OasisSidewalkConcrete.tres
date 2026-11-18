@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Environment.Master_World.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Orchid_Test_Carl.Materials.Mati_OasisSidewalkConcrete"
+source_object = "Orchid_Test_Carl.Materials.Mati_OasisSidewalkConcrete"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Environment.Master_World"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_DiffMod": Vector4(1.1, 1.1, 1.1, 0.7),
+"p_NormalMod": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_SpecColor_SpecPow": Vector4(1.0, 1.0, 1.0, 20.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Normal": null,
+"p_Specular": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Env_Sanctuary.Textures.SanctuarySidewalk_Dif_02",
+"p_Normal": "",
+"p_Specular": ""
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Normal": "",
+"p_Specular": ""
+})
+notes = "Instance native static permutation data is not exposed by this dump."

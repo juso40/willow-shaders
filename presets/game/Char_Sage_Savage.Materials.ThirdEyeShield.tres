@@ -1,0 +1,41 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Sage_Savage.Materials.ThirdEyeShield"
+source_object = "Char_Sage_Savage.Materials.ThirdEyeShield"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorMidtone": Vector4(0.960674, 0.256598, 0.282358, 1.0),
+"p_BColorHilight": Vector4(0.838057, 0.897451, 0.938202, 1.0),
+"p_BColorMidtone": Vector4(0.52677, 0.770782, 0.938202, 1.0),
+"p_BColorShadow": Vector4(0.501536, 0.733859, 0.893258, 1.0),
+"p_CColorHilight": Vector4(0.752809, 0.682674, 0.594947, 1.0),
+"p_CColorMidtone": Vector4(0.646067, 0.585877, 0.510589, 1.0),
+"p_CColorShadow": Vector4(0.432584, 0.392283, 0.341873, 1.0),
+"p_ColorD": Vector4(0.331461, 0.290652, 0.226207, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_Sage_Savage.Texture.ThirdEyeShield_D",
+"p_Masks": "Char_Sage_Savage.Texture.ThirdEyeShield_Comp",
+"p_Normal": "Char_Sage_Savage.Texture.ThirdEyeShield_N"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

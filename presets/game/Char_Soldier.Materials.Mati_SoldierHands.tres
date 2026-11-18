@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Player.Master_Player.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Soldier.Materials.Mati_SoldierHands"
+source_object = "Char_Soldier.Materials.Mati_SoldierHands"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Player.Master_Player"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.657303, 0.376599, 0.184636, 1.0),
+"p_AColorMidtone": Vector4(0.421348, 0.181249, 0.099419, 1.0),
+"p_AColorShadow": Vector4(1.0, 0.606813, 0.061132, 1.0),
+"p_BColorHilight": Vector4(0.393258, 0.359608, 0.176745, 1.0),
+"p_BColorMidtone": Vector4(0.2506, 0.258427, 0.092918, 1.0),
+"p_BColorShadow": Vector4(0.118131, 0.151685, 0.071582, 1.0),
+"p_CColorHilight": Vector4(0.358654, 0.235834, 0.116865, 1.0),
+"p_CColorMidtone": Vector4(0.455056, 0.256795, 0.125451, 1.0),
+"p_CColorShadow": Vector4(0.11236, 0.090073, 0.082692, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_Soldier.Textures.SoldierHands_Dif",
+"p_Masks": "Char_Soldier.Textures.SoldierHands_Msk",
+"p_Normal": "Char_Soldier.Textures.SoldierHands_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

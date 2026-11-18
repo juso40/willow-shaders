@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Items.Master_ShieldGrenade.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Item_Shields.Materials.Mati_ShieldPangolinCommon"
+source_object = "Item_Shields.Materials.Mati_ShieldPangolinCommon"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Items.Master_ShieldGrenade"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(1.377918, 2.047646, 2.262395, 1.0),
+"p_AColorMidtone": Vector4(0.591175, 1.0, 0.862639, 1.0),
+"p_AColorShadow": Vector4(0.147306, 0.156637, 0.209937, 1.0),
+"p_BColorHilight": Vector4(1.222963, 1.074583, 0.966218, 1.0),
+"p_BColorMidtone": Vector4(0.464071, 0.448875, 0.34003, 1.0),
+"p_BColorShadow": Vector4(0.366647, 0.388302, 0.502744, 1.0),
+"p_CColorHilight": Vector4(0.466855, 0.507922, 0.635336, 1.0),
+"p_CColorMidtone": Vector4(0.175818, 0.331479, 0.31616, 1.0),
+"p_CColorShadow": Vector4(0.137915, 0.140303, 0.15469, 1.0),
+"p_EmissiveColor": Vector4(1.392452, 2.002341, 2.180628, 1.0),
+"p_PatternChannelScale": Vector4(1.0, 1.0, 1.0, 0.0),
+"p_PatternScalePosition": Vector4(12.0, 12.0, 0.8, 0.03)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Item_Shields.Textures.Shield_Dif",
+"p_Masks": "Item_Shields.Textures.Shield_Comp",
+"p_Normal": "Item_Shields.Textures.Shield_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

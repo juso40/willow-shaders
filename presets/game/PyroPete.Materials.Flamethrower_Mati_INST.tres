@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/HyperionBotAttachments.Materials.HyperionBotAttachments_Mati.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "PyroPete.Materials.Flamethrower_Mati_INST"
+source_object = "PyroPete.Materials.Flamethrower_Mati_INST"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "HyperionBotAttachments.Materials.HyperionBotAttachments_Mati"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorMidtone": Vector4(0.463552, 0.481012, 0.519663, 1.0),
+"p_AColorShadow": Vector4(0.032256, 0.036027, 0.117978, 1.0),
+"p_BColorMidtone": Vector4(1.082743, 0.224634, 0.0, 1.0),
+"p_CColorMidtone": Vector4(2.429348, 0.265467, 0.0, 1.0),
+"p_CColorShadow": Vector4(0.174157, 0.003674, 0.0, 1.0),
+"p_ColorD": Vector4(0.039226, 0.073777, 0.11236, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

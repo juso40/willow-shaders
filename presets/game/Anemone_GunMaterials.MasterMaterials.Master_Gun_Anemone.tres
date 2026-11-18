@@ -1,0 +1,76 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Anemone_GunMaterials.MasterMaterials.Master_Gun_Anemone"
+source_object = "Anemone_GunMaterials.MasterMaterials.Master_Gun_Anemone"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"p_DecalRotate": 0.0,
+"p_DigiStruct": 0.0,
+"p_EmissiveScale": 1.0,
+"p_HighlightsIntensity": 2.0,
+"p_ReflectColorScale": 1.0,
+"p_ReplaceDecal": 0.0,
+"p_ReplacePattern": 0.0,
+"p_ShadowsIntensity": 2.0,
+"p_UseFullColorDecal": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_AColorMidtone": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_AColorShadow": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_BColorHilight": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_BColorMidtone": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_BColorShadow": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_CColorHilight": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_CColorMidtone": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_CColorShadow": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_DColor": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_DecalChannel": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_DecalColor": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_DecalScalePosition": Vector4(1.0, 1.0, 0.0, 0.0),
+"p_DigiStructColor": Vector4(0.399341, 1.158091, 1.828227, 1.0),
+"p_EmissiveColor": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_PatternChannelScale": Vector4(0.0, 0.0, 0.0, 0.0),
+"p_PatternColor": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_PatternScalePosition": Vector4(1.0, 1.0, 0.0, 0.0),
+"p_ReflectColor": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_ReflectionChannelScale": Vector4(1.0, 1.0, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"P_SimpleReflect": null,
+"p_Decal": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_NormalScopesEmissive": null,
+"p_Pattern": null
+})
+texture_object_paths = Dictionary[String, String]({
+"P_SimpleReflect": "Common_Textures.Stub.StubBlack_Gray",
+"p_Decal": "Common_Textures.Stub.StubBlack_Gray",
+"p_Diffuse": "Common_Textures.Stub.StubGray_Gray",
+"p_Masks": "Common_Textures.Stub.StubBlack_Gray",
+"p_NormalScopesEmissive": "Common_Textures.Stub.StubBlack_Gray",
+"p_Pattern": "Common_Textures.Stub.StubWhite_Gray"
+})
+texture_object_classes = Dictionary[String, String]({
+"P_SimpleReflect": "Texture2D",
+"p_Decal": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_NormalScopesEmissive": "Texture2D",
+"p_Pattern": "Texture2D"
+})
+static_component_masks = Dictionary[String, Vector4]({
+"p_DecalChannel": Vector4(1.0, 1.0, 1.0, 0.0),
+"p_PatternChannel": Vector4(1.0, 0.0, 0.0, 0.0),
+"p_WeapClassSelect": Vector4(1.0, 0.0, 0.0, 0.0)
+})
+static_switches = Dictionary[String, bool]({
+"RainbowWeapon": true,
+"sw_FlipDecalOnRightSide": false
+})
+notes = "Conflicting expression defaults for p_NormalScopesEmissive. First recorded node used for named lookup. Not recovered shader wiring."

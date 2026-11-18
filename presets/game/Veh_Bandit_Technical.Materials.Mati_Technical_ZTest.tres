@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Vehicle.Master_Vehicle.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Veh_Bandit_Technical.Materials.Mati_Technical_ZTest"
+source_object = "Veh_Bandit_Technical.Materials.Mati_Technical_ZTest"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Vehicle.Master_Vehicle"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.675694, 0.732808, 0.867371, 1.0),
+"p_AColorMidtone": Vector4(0.635336, 0.128283, 0.064818, 1.0),
+"p_AColorShadow": Vector4(0.965751, 1.334339, 1.241869, 1.0),
+"p_BColorHilight": Vector4(0.675694, 0.732808, 0.867371, 1.0),
+"p_BColorMidtone": Vector4(0.762403, 0.016292, 0.0, 1.0),
+"p_BColorShadow": Vector4(0.74647, 1.148136, 1.047367, 1.0),
+"p_ColorD": Vector4(0.751354, 0.64518, 0.557347, 1.0),
+"p_PatternChannelScale": Vector4(0.906044, 0.0, 0.0, 1.0),
+"p_PatternColor": Vector4(4.762498, 3.129966, 0.0, 1.0),
+"p_PatternScalePosition": Vector4(3.059815, 3.067563, 2.070605, 0.15)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_CustomPattern": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_CustomPattern": "CentralMissingArtRedirects.Texture.MissingTexture",
+"p_Diffuse": "Veh_Bandit_Technical.Textures.BanditTechnical_D",
+"p_Masks": "Veh_Bandit_Technical.Textures.BanditTechnical_Comp",
+"p_Normal": "Veh_Bandit_Technical.Textures.BanditTechnical_N"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_CustomPattern": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Tarps_Px.Materials.Mat_FlatTarp_Parent.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Tarps_Px.Materials.Mati_FlatTarp_FridgeRed"
+source_object = "Prop_Tarps_Px.Materials.Mati_FlatTarp_FridgeRed"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Tarps_Px.Materials.Mat_FlatTarp_Parent"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"DeSat_Percent": 0.3
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Tarp_Color": Vector4(2.0, 0.5, 0.5, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_WEP_Trails_Alien.Materials.Mat_Beam_Trail.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_WEP_Trails_Alien.Materials.Mat_BlasterTrail_INST_Green"
+source_object = "FX_WEP_Trails_Alien.Materials.Mat_BlasterTrail_INST_Green"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_WEP_Trails_Alien.Materials.Mat_Beam_Trail"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"BeamTexture_Tile_U": 2.0,
+"Distortion_Tile_U": 2.0,
+"Maskout_Strength": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Beam_Color": Vector4(0.252287, 0.613237, 0.098621, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

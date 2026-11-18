@@ -1,0 +1,59 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Anemone_GunMaterials.MasterMaterials.Master_Gun_Anemone.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_Anemone_Weapons.AssaultRifle.Toothpick.MasterMati_DahlEpic"
+source_object = "GD_Anemone_Weapons.AssaultRifle.Toothpick.MasterMati_DahlEpic"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Anemone_GunMaterials.MasterMaterials.Master_Gun_Anemone"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_DecalRotate": 0.5,
+"p_HighlightsIntensity": 4.0,
+"p_ReplaceDecal": 1.0,
+"p_ShadowsIntensity": 4.0,
+"p_UseFullColorDecal": 0.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.519318, 0.47606, 0.256639, 1.0),
+"p_AColorMidtone": Vector4(1.66051, 1.66051, 1.66051, 1.0),
+"p_AColorShadow": Vector4(0.685094, 0.780919, 1.0, 1.0),
+"p_BColorHilight": Vector4(0.309381, 0.225263, 0.089326, 1.0),
+"p_BColorMidtone": Vector4(0.171264, 0.171264, 0.171264, 1.0),
+"p_BColorShadow": Vector4(0.196419, 0.231199, 0.303856, 1.0),
+"p_CColorHilight": Vector4(1.090358, 0.707465, 0.295209, 1.0),
+"p_CColorMidtone": Vector4(0.55799, 0.55799, 0.55799, 1.0),
+"p_CColorShadow": Vector4(0.204412, 0.204412, 0.204412, 1.0),
+"p_DColor": Vector4(0.132592, 0.132592, 0.132592, 0.0),
+"p_DecalChannel": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_DecalColor": Vector4(2.701323, 1.249426, 0.0, 1.0),
+"p_DecalScalePosition": Vector4(12.165449, 15.576323, 0.5433, 0.3774),
+"p_PatternChannelScale": Vector4(1.0, 0.0, 0.0, 0.0),
+"p_PatternColor": Vector4(1.283675, 1.283675, 1.283675, 1.0),
+"p_PatternScalePosition": Vector4(4.6, 4.6, 0.5381, 0.68)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Decal": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_NormalScopesEmissive": null,
+"p_Pattern": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Decal": "Common_GunMaterials.Logos.Logo_TorgueHyperionDahl_Comp",
+"p_Diffuse": "Common_GunMaterials.CompTextures.Weap_AssaultSubSniper_Comp",
+"p_Masks": "Weap_AssaultRifles.Tex.Weap_AssaultRifle_Comp",
+"p_NormalScopesEmissive": "Weap_AssaultRifles.Tex.Weap_AssaultRifle_Nrm",
+"p_Pattern": "Common_GunMaterials.Patterns.DahlEpicPattern2"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Decal": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_NormalScopesEmissive": "Texture2D",
+"p_Pattern": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

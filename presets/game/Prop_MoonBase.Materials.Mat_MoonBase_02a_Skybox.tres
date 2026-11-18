@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_MoonBase.Materials.Mat_MoonBase_02a_Skybox"
+source_object = "Prop_MoonBase.Materials.Mat_MoonBase_02a_Skybox"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"Brightness": 0.75,
+"Emissive_Mult": 10.0,
+"Fog_Intensity": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Fog": Vector4(0.027533, 0.053546, 0.060771, 1.0),
+"MoonBase_Color": Vector4(0.11766, 0.33898, 0.762403, 1.0),
+"RimLight_Color": Vector4(1.0, 1.0, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

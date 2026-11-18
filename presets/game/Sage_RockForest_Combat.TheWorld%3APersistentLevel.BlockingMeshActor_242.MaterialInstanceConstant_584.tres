@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Sage_RockForest_Combat.TheWorld:PersistentLevel.BlockingMeshActor_242.MaterialInstanceConstant_584"
+source_object = "Sage_RockForest_Combat.TheWorld:PersistentLevel.BlockingMeshActor_242.MaterialInstanceConstant_584"
+unreal_class = "MaterialInstanceConstant"
+ScalarParameterValues = Dictionary[String, float]({
+"Bullets": 0.0,
+"EnemyPawns": 1.0,
+"EnemyVehicles": 0.0,
+"FriendlyPawns": 0.0,
+"Opacity": 0.2,
+"PlayerVehicles": 0.0,
+"Players": 1.0,
+"RocketsAndGrenades": 0.0,
+"TossedItems": 0.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Color": Vector4(1.0, 1.0, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Char_GenericFemale.Materials.GenericNPC_Attachments_Mati01.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_MadDog.Materials.Mati_MadDog_Hair"
+source_object = "GD_MadDog.Materials.Mati_MadDog_Hair"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Char_GenericFemale.Materials.GenericNPC_Attachments_Mati01"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.859551, 0.782224, 0.709854, 1.0),
+"p_AColorMidtone": Vector4(5.0, 5.0, 5.0, 1.0),
+"p_AColorShadow": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_BColorHilight": Vector4(0.842697, 0.782817, 0.758896, 0.0),
+"p_BColorMidtone": Vector4(0.893258, 0.878915, 0.873185, 0.0),
+"p_BColorShadow": Vector4(0.758427, 0.669054, 0.632725, 0.0),
+"p_CColorHilight": Vector4(0.91573, 0.91573, 0.91573, 1.0),
+"p_CColorMidtone": Vector4(0.926966, 0.881993, 0.869682, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Weap_Materials_Master.Overlays.Tex_Pattern_Wood"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

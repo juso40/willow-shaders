@@ -1,0 +1,37 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Environment.Master_WorldMasked.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Machines.Materials.Mati_RadarDish"
+source_object = "Prop_Machines.Materials.Mati_RadarDish"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Environment.Master_WorldMasked"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_SpecColor_SpecPow": Vector4(1.0, 1.0, 1.0, 25.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masked": null,
+"p_Normal": null,
+"p_Specular": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Prop_Machines.Textures.RadarDish_Dif",
+"p_Masked": "Prop_Machines.Textures.RadarDish_Alpha",
+"p_Normal": "Common_Textures.Stub.StubFlat_Nrm",
+"p_Specular": ""
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masked": "Texture2D",
+"p_Normal": "Texture2D",
+"p_Specular": ""
+})
+notes = "Instance native static permutation data is not exposed by this dump."

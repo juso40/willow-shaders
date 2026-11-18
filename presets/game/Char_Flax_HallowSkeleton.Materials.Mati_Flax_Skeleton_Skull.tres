@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Char_Flax_HallowSkeleton.Materials.Master_Flax_Skeleton.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Flax_HallowSkeleton.Materials.Mati_Flax_Skeleton_Skull"
+source_object = "Char_Flax_HallowSkeleton.Materials.Mati_Flax_Skeleton_Skull"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Char_Flax_HallowSkeleton.Materials.Master_Flax_Skeleton"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_ColorD": Vector4(0.94382, 0.94382, 0.94382, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_Flax_HallowSkeleton.Textures.SkeletonWarrior_Skull_Dif",
+"p_Masks": "Char_Flax_HallowSkeleton.Textures.SkeletonWarrior_Skull_Comp",
+"p_Normal": "Char_Flax_HallowSkeleton.Textures.SkeletonWarrior_Skull_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

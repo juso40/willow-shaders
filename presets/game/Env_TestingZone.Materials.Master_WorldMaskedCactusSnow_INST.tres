@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_TestingZone.Materials.Master_WorldMaskedCactusSnow_INST"
+source_object = "Env_TestingZone.Materials.Master_WorldMaskedCactusSnow_INST"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Env_TestingZone.Materials.Master_WorldMaskedCactusSnow_INST"
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_SnowAmount": Vector4(6.037695, 6.799616, 6.245344, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masked": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Prop_Plants.Textures.DesertCactus_Dif",
+"p_Masked": "Prop_Plants.Textures.DesertCactus_Alpha",
+"p_Normal": "Prop_Plants.Textures.DesertCactus_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masked": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump.\nSource parent cycle: original parent_object_path retained, cyclic runtime reference omitted."

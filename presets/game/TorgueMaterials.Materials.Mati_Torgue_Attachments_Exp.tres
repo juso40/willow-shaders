@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/TorgueMaterials.Materials.Mati_Torgue_Attachments_Master.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "TorgueMaterials.Materials.Mati_Torgue_Attachments_Exp"
+source_object = "TorgueMaterials.Materials.Mati_Torgue_Attachments_Exp"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "TorgueMaterials.Materials.Mati_Torgue_Attachments_Master"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.747191, 0.549512, 0.465945, 1.0),
+"p_AColorMidtone": Vector4(0.432584, 0.27859, 0.201711, 1.0),
+"p_AColorShadow": Vector4(0.134831, 0.071537, 0.023416, 1.0),
+"p_BColorHilight": Vector4(0.910112, 0.798545, 0.850848, 1.0),
+"p_BColorMidtone": Vector4(0.505618, 0.505618, 0.505618, 1.0),
+"p_BColorShadow": Vector4(0.303371, 0.303371, 0.303371, 1.0),
+"p_CColorHilight": Vector4(1.0, 1.0, 0.0, 1.0),
+"p_CColorMidtone": Vector4(2.0, 2.0, 0.0, 1.0),
+"p_CColorShadow": Vector4(0.410112, 0.285002, 0.030071, 1.0),
+"p_ColorD": Vector4(1.0, 1.0, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Environment.Master_Barrel2Sided.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_Z1_ChildrenOfPhoenixData.Materials.Mati_FireEffigyOnFire"
+source_object = "GD_Z1_ChildrenOfPhoenixData.Materials.Mati_FireEffigyOnFire"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Environment.Master_Barrel2Sided"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_FxScaleFire": 3.0,
+"p_SymbolSelect": 2.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(1.49584, 0.149579, 0.0, 1.0),
+"p_AColorMidtone": Vector4(1.75355, 0.608209, 0.295037, 1.0),
+"p_AColorShadow": Vector4(0.626199, 0.599474, 0.801333, 1.0),
+"p_BColorHilight": Vector4(0.668521, 0.652583, 0.587112, 1.0),
+"p_BColorMidtone": Vector4(0.55772, 0.36455, 0.274248, 1.0),
+"p_BColorShadow": Vector4(0.370152, 0.367271, 0.335225, 1.0),
+"p_DecalPositionScale": Vector4(0.1547, -0.6117, 6.0, 1.14),
+"p_SymbolColorA": Vector4(0.0, 0.0, 0.0, 0.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Env_IceCanyon.Textures.Phoenix",
+"p_Masks": "FX_Shared_Fire.Textures.Fire_Panner_2_Tex"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

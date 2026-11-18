@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_WEP_Explosions.Materials.Mat_AcidSprayGoop_Twosided.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_BOSS_FinalBoss.Materials.Mat_Lava_Splash"
+source_object = "FX_BOSS_FinalBoss.Materials.Mat_Lava_Splash"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_WEP_Explosions.Materials.Mat_AcidSprayGoop_Twosided"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Texture_Tile_U": 16.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Shader_Color": Vector4(10.0, 0.831697, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Texture_Name": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Texture_Name": "FX_BOSS_FinalBoss.Textures.Horizontal_LavaSplash"
+})
+texture_object_classes = Dictionary[String, String]({
+"Texture_Name": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

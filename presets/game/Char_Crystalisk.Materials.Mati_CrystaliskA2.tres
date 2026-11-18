@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Crystalisk.Materials.Mati_CrystaliskA2"
+source_object = "Char_Crystalisk.Materials.Mati_CrystaliskA2"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_PatternIntensity": 1.0,
+"p_ShadowsIntensity": 2.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.095265, 0.226205, 0.544944, 1.0),
+"p_AColorMidtone": Vector4(0.138225, 0.563274, 1.0, 1.0),
+"p_AColorShadow": Vector4(0.108696, 0.041596, 0.019494, 1.0),
+"p_BColorHilight": Vector4(0.05884, 0.308756, 0.780899, 1.0),
+"p_BColorMidtone": Vector4(0.165729, 0.546481, 1.0, 1.0),
+"p_BColorShadow": Vector4(0.044866, 0.091027, 0.266304, 1.0),
+"p_CColorHilight": Vector4(1.0, 0.779605, 0.586957, 1.0),
+"p_CColorMidtone": Vector4(0.297121, 0.674063, 1.0, 1.0),
+"p_CColorShadow": Vector4(0.320652, 0.090092, 0.137109, 1.0),
+"p_DissolveColor": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_PatternColor": Vector4(0.820652, 0.273504, 0.205163, 2.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_Crystalisk.CrystaliskBody_Dif",
+"p_Masks": "Char_Crystalisk.CrystaliskBodyColor_Comp",
+"p_Normal": "Char_Crystalisk.CrystaliskBody_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

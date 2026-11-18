@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Allium_SandPirates.Materials.Mati_PirateHat"
+source_object = "Char_Allium_SandPirates.Materials.Mati_PirateHat"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.388489, 0.381603, 0.519318, 1.0),
+"p_AColorMidtone": Vector4(0.180674, 0.195506, 0.269663, 1.0),
+"p_AColorShadow": Vector4(0.101124, 0.101124, 0.101124, 1.0),
+"p_BColorHilight": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_BColorMidtone": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_BColorShadow": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_CColorHilight": Vector4(0.383775, 0.378676, 0.517401, 1.0),
+"p_CColorMidtone": Vector4(0.180144, 0.193972, 0.267358, 1.0),
+"p_CColorShadow": Vector4(0.098689, 0.098689, 0.098689, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_Allium_SandPirates.Texture.PirateHat_Diff",
+"p_Masks": "Char_Allium_SandPirates.Texture.PirateHat_Comp"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

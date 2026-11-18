@@ -1,0 +1,50 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Player.Master_Player.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "CD_Skins_Mercenary_MainGame.Mati_CyanC_Body"
+source_object = "CD_Skins_Mercenary_MainGame.Mati_CyanC_Body"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Player.Master_Player"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_DecalIntensity": 1.0,
+"p_EnablePowerEmissive": 0.0,
+"p_HighlightsIntensity": 1.5
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.135525, 0.220986, 0.188193, 1.0),
+"p_AColorMidtone": Vector4(0.034526, 0.160215, 0.14388, 1.0),
+"p_AColorShadow": Vector4(0.026335, 0.030381, 0.038673, 1.0),
+"p_BColorHilight": Vector4(0.099162, 0.276233, 0.211485, 1.0),
+"p_BColorMidtone": Vector4(0.044103, 0.303856, 0.281384, 1.0),
+"p_BColorShadow": Vector4(0.032209, 0.03479, 0.038673, 1.0),
+"p_CColorHilight": Vector4(0.033894, 0.041111, 0.055247, 1.0),
+"p_CColorMidtone": Vector4(0.00906, 0.008791, 0.016574, 1.0),
+"p_CColorShadow": Vector4(0.008451, 0.011049, 0.010514, 1.0),
+"p_DecalChannelScale": Vector4(1.0, 0.0, 1.0, 0.0),
+"p_DecalColor": Vector4(0.202694, 0.99643, 1.0, 1.0),
+"p_DecalScalePosition": Vector4(7.6188, 7.631, -0.2748, 0.3126)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Decal": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Decal": "CD_Skins_Siren_MainGame.Textures.Logo_Sword",
+"p_Diffuse": "Char_Merc.Textures.MercBody_Dif",
+"p_Masks": "Char_Merc.Textures.MercBody_Msk",
+"p_Normal": "Char_Merc.Textures.MercBody_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Decal": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

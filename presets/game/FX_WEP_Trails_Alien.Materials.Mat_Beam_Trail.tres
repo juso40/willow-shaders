@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_WEP_Trails_Alien.Materials.Mat_Beam_Trail"
+source_object = "FX_WEP_Trails_Alien.Materials.Mat_Beam_Trail"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"BeamTexture_Tile_U": 30.0,
+"Distortion_Tile_U": 10.0,
+"Maskout_Strength": 12.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Beam_Color": Vector4(0.15, 0.3, 3.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

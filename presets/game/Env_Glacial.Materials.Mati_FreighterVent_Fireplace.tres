@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Vents.Materials.Mat_FreighterVent_Parent.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_Glacial.Materials.Mati_FreighterVent_Fireplace"
+source_object = "Env_Glacial.Materials.Mati_FreighterVent_Fireplace"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Vents.Materials.Mat_FreighterVent_Parent"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"animated_noise": 2.0,
+"p_emissive": 200.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Color": Vector4(1.0, 0.121512, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

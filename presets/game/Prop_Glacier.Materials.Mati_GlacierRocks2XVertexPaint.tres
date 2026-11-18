@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Glacier.Materials.Mati_GlacierRocks.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Glacier.Materials.Mati_GlacierRocks2XVertexPaint"
+source_object = "Prop_Glacier.Materials.Mati_GlacierRocks2XVertexPaint"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Glacier.Materials.Mati_GlacierRocks"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_VertexNoiseUVMod": 2.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_Diff_UVMod": Vector4(2.0, 2.0, 2.0, 2.0),
+"p_Normal_UVMod": Vector4(2.0, 2.0, 2.0, 2.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_DiffuseVertexPaint": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_DiffuseVertexPaint": "Prop_Terrain.Textures.Snow_Dif"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_DiffuseVertexPaint": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

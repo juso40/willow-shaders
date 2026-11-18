@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Co_Materials.Materials.Mati_Colorize_Split_SMH.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_CO_HeliosArchitecture.Materials.Mati_HyperionWall2_A1"
+source_object = "Prop_CO_HeliosArchitecture.Materials.Mati_HyperionWall2_A1"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Co_Materials.Materials.Mati_Colorize_Split_SMH"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_AColorMidtone": Vector4(0.938124, 0.9792, 1.0, 1.0),
+"p_AColorShadow": Vector4(0.709863, 0.760193, 0.682917, 1.0),
+"p_BColorHilight": Vector4(3.491584, 1.999436, 0.0, 1.0),
+"p_BColorMidtone": Vector4(10.0, 6.396248, 0.15008, 1.0),
+"p_BColorShadow": Vector4(10.0, 7.095129, 0.0, 1.0),
+"p_CColorHilight": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_CColorMidtone": Vector4(10.0, 10.0, 10.0, 1.0),
+"p_CColorShadow": Vector4(10.0, 10.0, 10.0, 1.0),
+"p_Color_D": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_Color_Emissive1_A": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_Color_Emissive1_B": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_Color_Emissive1_Base": Vector4(0.0, 0.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Prop_CO_HeliosArchitecture.Textures.HyperionWall2_Dif",
+"p_Masks": "Prop_CO_HeliosArchitecture.Textures.HyperionWall2_Masks"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

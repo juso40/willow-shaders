@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Flags.Materials.Mat_BanditFlags.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Flags.Materials.Mati_BanditFlag_Crate"
+source_object = "Prop_Flags.Materials.Mati_BanditFlag_Crate"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Flags.Materials.Mat_BanditFlags"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"AlphaBrightness": 2.0,
+"Saturation": 0.6,
+"Wave Strength": 0.2
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"FlagColor": Vector4(0.867136, 0.38891, 0.001687, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"BanditIcon": null
+})
+texture_object_paths = Dictionary[String, String]({
+"BanditIcon": "Prop_Decals.Textures.Time2Crate01_Dif"
+})
+texture_object_classes = Dictionary[String, String]({
+"BanditIcon": "Texture2D"
+})

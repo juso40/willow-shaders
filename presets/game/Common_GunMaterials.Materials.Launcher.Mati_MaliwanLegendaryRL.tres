@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_GunMaterials.MasterMaterials.Maliwan.MasterMati_MaliwanLegendary.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Common_GunMaterials.Materials.Launcher.Mati_MaliwanLegendaryRL"
+source_object = "Common_GunMaterials.Materials.Launcher.Mati_MaliwanLegendaryRL"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_GunMaterials.MasterMaterials.Maliwan.MasterMati_MaliwanLegendary"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(1.222963, 1.049923, 0.993244, 1.0),
+"p_AColorMidtone": Vector4(1.231282, 0.510497, 0.175075, 1.0),
+"p_AColorShadow": Vector4(0.028211, 0.074049, 0.243085, 1.0),
+"p_BColorHilight": Vector4(0.168489, 0.186404, 0.220986, 1.0),
+"p_BColorMidtone": Vector4(0.028135, 0.046958, 0.16574, 1.0),
+"p_BColorShadow": Vector4(0.001687, 0.000493, 0.003697, 1.0),
+"p_CColorHilight": Vector4(4.021775, 0.649986, 0.248323, 1.0),
+"p_CColorMidtone": Vector4(0.170629, 0.156586, 0.24861, 1.0),
+"p_DecalColor": Vector4(0.459097, 0.477556, 0.491695, 1.0),
+"p_PatternChannelScale": Vector4(0.91, 1.0, 0.0, 0.0),
+"p_PatternColor": Vector4(2.180628, 1.397558, 1.397558, 1.0),
+"p_PatternScalePosition": Vector4(13.651902, 12.2816, 0.0, 0.0),
+"p_ReflectionChannelScale": Vector4(0.8, 0.8, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"P_SimpleReflect": null,
+"p_Pattern": null
+})
+texture_object_paths = Dictionary[String, String]({
+"P_SimpleReflect": "Common_GunMaterials.Patterns.DahlEpicPattern2",
+"p_Pattern": "Common_GunMaterials.Patterns.Patter_MaliwanFire"
+})
+texture_object_classes = Dictionary[String, String]({
+"P_SimpleReflect": "Texture2D",
+"p_Pattern": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

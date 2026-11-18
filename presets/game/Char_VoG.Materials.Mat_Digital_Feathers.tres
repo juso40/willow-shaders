@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_VoG.Materials.Mat_Digital_Feathers"
+source_object = "Char_VoG.Materials.Mat_Digital_Feathers"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"p_fade": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"FeatherColor_Base": Vector4(0.356127, 0.633515, 0.906044, 1.0),
+"FeatherColor_Tip": Vector4(0.549439, 0.357194, 0.906044, 1.0),
+"FeatherColor_WingEnd": Vector4(0.906044, 0.613179, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

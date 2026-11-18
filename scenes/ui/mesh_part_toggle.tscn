@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://qa22pce3blfv"]
+
+[ext_resource type="Script" uid="uid://u6qtdgh6hep3" path="res://scripts/ui/mesh_part_toggle.gd" id="1"]
+
+[node name="MeshPartToggle" type="CheckBox" unique_id=898572742]
+script = ExtResource("1")
+
+[connection signal="toggled" from="." to="." method="_on_toggled"]

@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Player.Master_Player.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "CD_Skins_Soldier_MainGame.Mati_PinkD_Head"
+source_object = "CD_Skins_Soldier_MainGame.Mati_PinkD_Head"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Player.Master_Player"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_HighlightsIntensity": 1.0,
+"p_ShadowsIntensity": 2.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.492536, 0.530605, 0.546941, 1.0),
+"p_AColorMidtone": Vector4(0.580089, 0.254184, 0.569501, 1.0),
+"p_AColorShadow": Vector4(0.320758, 0.441692, 0.756878, 1.0),
+"p_BColorHilight": Vector4(0.696107, 0.619192, 0.690645, 1.0),
+"p_BColorMidtone": Vector4(0.392251, 0.268729, 0.375988, 1.0),
+"p_BColorShadow": Vector4(0.823174, 0.723123, 0.81568, 1.0),
+"p_CColorHilight": Vector4(0.23337, 0.209604, 0.469596, 1.0),
+"p_CColorShadow": Vector4(0.267111, 0.419562, 1.707503, 1.0),
+"p_EmissiveColor": Vector4(9.047319, 7.626249, 0.023174, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_Soldier.Textures.SoldierHead_Dif",
+"p_Masks": "Char_Soldier.Textures.SoldierHead_Msk",
+"p_Normal": "Char_Soldier.Textures.SoldierHead_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

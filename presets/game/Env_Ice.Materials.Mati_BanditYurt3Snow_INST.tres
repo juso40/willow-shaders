@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Dens.Mati_BanditYurt3.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_Ice.Materials.Mati_BanditYurt3Snow_INST"
+source_object = "Env_Ice.Materials.Mati_BanditYurt3Snow_INST"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Dens.Mati_BanditYurt3"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

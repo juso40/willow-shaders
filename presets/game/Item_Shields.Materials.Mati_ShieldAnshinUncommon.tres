@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Items.Master_ShieldGrenade.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Item_Shields.Materials.Mati_ShieldAnshinUncommon"
+source_object = "Item_Shields.Materials.Mati_ShieldAnshinUncommon"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Items.Master_ShieldGrenade"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.138542, 0.445819, 1.774459, 1.0),
+"p_AColorMidtone": Vector4(0.126586, 0.495108, 0.745829, 1.0),
+"p_AColorShadow": Vector4(0.498966, 0.3791, 0.508269, 1.0),
+"p_BColorHilight": Vector4(0.743823, 1.270347, 1.40308, 1.0),
+"p_BColorMidtone": Vector4(0.107992, 0.12958, 0.160215, 1.0),
+"p_BColorShadow": Vector4(0.060439, 0.12688, 0.16574, 1.0),
+"p_CColorHilight": Vector4(1.9052, 1.848267, 0.153722, 1.0),
+"p_CColorMidtone": Vector4(1.49584, 0.844125, 0.412377, 1.0),
+"p_CColorShadow": Vector4(0.541417, 0.08904, 0.083772, 1.0),
+"p_EmissiveColor": Vector4(0.0, 3.290632, 0.051761, 1.0),
+"p_PatternChannelScale": Vector4(0.9, 0.8, 0.8, 0.8),
+"p_PatternColor": Vector4(1.675884, 1.675884, 1.675884, 1.0),
+"p_PatternScalePosition": Vector4(4.0, 4.0, 0.0, 0.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Item_Shields.Textures.Shield_Dif",
+"p_Masks": "Item_Shields.Textures.Shield_Comp",
+"p_Normal": "Item_Shields.Textures.Shield_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

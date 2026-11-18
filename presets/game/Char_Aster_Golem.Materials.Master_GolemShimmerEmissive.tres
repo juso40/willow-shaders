@@ -1,0 +1,41 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Aster_Golem.Materials.Master_GolemShimmerEmissive"
+source_object = "Char_Aster_Golem.Materials.Master_GolemShimmerEmissive"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"P_DeathsValue": 0.0,
+"p_HighlightsIntensity": 2.0,
+"p_ShadowsIntensity": 2.0,
+"p_fade": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"None1": Vector4(1.418055, 1.35, 0.312854, 1.0),
+"p_AColorHilight": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_AColorMidtone": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_AColorShadow": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_BColorHilight": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_BColorMidtone": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_BColorShadow": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_CColorHilight": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_CColorMidtone": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_CColorShadow": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_ColorD": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_DissolveColor": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_ElementalDeathColor": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_EmissiveScale": Vector4(1.0, 1.0, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Masks": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Masks": "Common_Textures.Stub.StubBlack_Gray"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Masks": "Texture2D"
+})
+notes = "Conflicting expression defaults for p_Masks. First recorded node used for named lookup. Not recovered shader wiring."

@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Anemone_Prop_Rocks.Materials.Mat_Anemone_Mossy_Rock.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Anemone_Prop_Rocks.Materials.Mati_Anemone_Mossy_Rock_Vista"
+source_object = "Anemone_Prop_Rocks.Materials.Mati_Anemone_Mossy_Rock_Vista"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Anemone_Prop_Rocks.Materials.Mat_Anemone_Mossy_Rock"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"TopMossTile": 3.0,
+"UVTilingDiff": 0.75,
+"UVTilingNrm": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

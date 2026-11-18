@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Env_Xmas.Materials.Mati_FalloffSphere.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "RJ_AlliumTestPackage.Materials.Mati_FalloffSphere_Reveal"
+source_object = "RJ_AlliumTestPackage.Materials.Mati_FalloffSphere_Reveal"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Env_Xmas.Materials.Mati_FalloffSphere"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Bias": -1000.0,
+"Distance": 15.0,
+"FalloffExponent": 6.0,
+"Opacity": 100.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Color": Vector4(0.025804, 0.042885, 0.359103, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

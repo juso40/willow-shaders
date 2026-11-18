@@ -1,0 +1,65 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Common_Materials.Environment.Master_Rocks"
+source_object = "Common_Materials.Environment.Master_Rocks"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"p_FadeHeight": -1.1,
+"p_FadeWidth": 0.0003,
+"p_SnowNoiseUVScale": 1.0,
+"p_SnowUVScale": 1.0,
+"p_VertexNoiseUVMod": 8.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_DiffMod": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_Diff_UVMod": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_DiffuseFadeMod": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_DiffuseFadeUVMod": Vector4(1.0, 1.0, 0.0, 1.0),
+"p_NormalMod": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_Normal_UVMod": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_SnowAmount": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_SnowColor": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_VertexPaintDifMod": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_VertexPaintNoiseMod": Vector4(6.0, -1.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_DiffuseFade": null,
+"p_DiffuseVertexPaint": null,
+"p_Normal": null,
+"p_NormalB": null,
+"p_SnowDiffuse": null,
+"p_VertexPaintNoise": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Common_Textures.Stub.StubGray_Gray",
+"p_DiffuseFade": "Common_Textures.Stub.StubGray_Gray",
+"p_DiffuseVertexPaint": "Common_Textures.Stub.StubGray_Gray",
+"p_Normal": "Common_Textures.Stub.StubFlat_Nrm",
+"p_NormalB": "Common_Textures.Stub.StubFlat_Nrm",
+"p_SnowDiffuse": "Prop_Terrain.Textures.Snow_Dif",
+"p_VertexPaintNoise": "Prop_Water.Textures.WaterHqNoise_Gray"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_DiffuseFade": "Texture2D",
+"p_DiffuseVertexPaint": "Texture2D",
+"p_Normal": "Texture2D",
+"p_NormalB": "Texture2D",
+"p_SnowDiffuse": "Texture2D",
+"p_VertexPaintNoise": "Texture2D"
+})
+static_component_masks = Dictionary[String, Vector4]({
+"p_VertexPaintNoiseChan": Vector4(0.0, 0.0, 1.0, 0.0)
+})
+static_switches = Dictionary[String, bool]({
+"sw_EnableSnowOnTop": false,
+"sw_HeightFade": false,
+"sw_UV2": false,
+"sw_VertexPaint": false
+})
+notes = "Conflicting expression defaults for p_VertexPaintNoiseMod. First recorded node used for named lookup. Not recovered shader wiring."

@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_ENV_Gas.Materials.Mat_Gas_Screen.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_ENV_Gas.Materials.Mati_Gas_Screen_TiledLarger"
+source_object = "FX_ENV_Gas.Materials.Mati_Gas_Screen_TiledLarger"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_ENV_Gas.Materials.Mat_Gas_Screen"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"UVScale": Vector4(4.0, 1.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

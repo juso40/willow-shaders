@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_GunMaterials.MasterMaterials.Jakobs.MasterMati_JakobsRare.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Orchid_GunMaterials.Materials.AssaultRifle.Mati_JakobsUniqueAR_Stinkpot"
+source_object = "Orchid_GunMaterials.Materials.AssaultRifle.Mati_JakobsUniqueAR_Stinkpot"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_GunMaterials.MasterMaterials.Jakobs.MasterMati_JakobsRare"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_ReplaceDecal": 1.0,
+"p_ReplacePattern": 0.0,
+"p_ShadowsIntensity": 3.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.111107, 0.0804, 0.0442, 1.0),
+"p_AColorMidtone": Vector4(0.624286, 0.512307, 0.413981, 1.0),
+"p_AColorShadow": Vector4(0.095727, 0.110493, 0.016859, 1.0),
+"p_BColorHilight": Vector4(0.149166, 0.109958, 0.107961, 1.0),
+"p_BColorMidtone": Vector4(0.337004, 0.091242, 0.092306, 1.0),
+"p_BColorShadow": Vector4(0.012088, 0.0191, 0.033148, 1.0),
+"p_CColorHilight": Vector4(0.614529, 0.861847, 0.271432, 1.0),
+"p_CColorMidtone": Vector4(0.27358, 0.269215, 0.331479, 1.0),
+"p_CColorShadow": Vector4(0.071821, 0.020803, 0.01735, 1.0),
+"p_DecalChannel": Vector4(1.0, 1.0, 1.0, 0.0),
+"p_DecalColor": Vector4(0.441973, 0.202681, 0.202681, 1.0),
+"p_DecalScalePosition": Vector4(7.9791, 18.604799, 0.4338, 0.4963),
+"p_PatternColor": Vector4(2.262395, 1.36247, 1.692874, 1.0),
+"p_PatternScalePosition": Vector4(7.7, 10.650002, 2.7885, 0.08),
+"p_ReflectColor": Vector4(1.096501, 2.585563, 0.836093, 1.0),
+"p_ReflectionChannelScale": Vector4(1.0, 1.0, 2.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"P_SimpleReflect": null,
+"p_Decal": null,
+"p_Pattern": null
+})
+texture_object_paths = Dictionary[String, String]({
+"P_SimpleReflect": "Common_GunMaterials.Env.SkySand",
+"p_Decal": "Orchid_GunMaterials.Orchin_GunLogos.Scarlett_Logo512",
+"p_Pattern": "Common_GunMaterials.Patterns.Pattern_JakobsCommon"
+})
+texture_object_classes = Dictionary[String, String]({
+"P_SimpleReflect": "Texture2D",
+"p_Decal": "Texture2D",
+"p_Pattern": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

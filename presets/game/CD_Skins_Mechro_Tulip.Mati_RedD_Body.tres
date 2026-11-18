@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Player.Master_Player.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "CD_Skins_Mechro_Tulip.Mati_RedD_Body"
+source_object = "CD_Skins_Mechro_Tulip.Mati_RedD_Body"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Player.Master_Player"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_HighlightsIntensity": 1.0,
+"p_ShadowsIntensity": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_AColorMidtone": Vector4(0.761841, 0.790026, 0.770883, 1.0),
+"p_AColorShadow": Vector4(0.180024, 0.181851, 0.204412, 1.0),
+"p_BColorHilight": Vector4(0.740176, 0.874871, 1.090358, 1.0),
+"p_BColorMidtone": Vector4(0.839748, 0.839748, 0.839748, 1.0),
+"p_BColorShadow": Vector4(0.193363, 0.187458, 0.171696, 1.0),
+"p_CColorHilight": Vector4(1.0, 0.20867, 0.069725, 1.0),
+"p_CColorMidtone": Vector4(0.607712, 0.029157, 0.007795, 1.0),
+"p_CColorShadow": Vector4(0.093114, 0.100219, 0.16574, 1.0),
+"p_EmissiveColor": Vector4(0.011651, 4.548485, 0.658267, 1.0),
+"p_PowerEmissiveColor": Vector4(0.0, 14.554461, 20.0, 0.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Decal": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Decal": "Common_Textures.Stub.StubGray_Gray",
+"p_Diffuse": "Tulip_Char_Mechromancer.Textures.MechromancerBody_Dif",
+"p_Masks": "Tulip_Char_Mechromancer.Textures.MechromancerBody_Msk",
+"p_Normal": "Tulip_Char_Mechromancer.Textures.MechromancerBody_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Decal": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

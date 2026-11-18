@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_ENV_Anemone_Helios.Materials.LF_Flicker_Sparks.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_ENV_Anemone_Helios.Materials.LF_Flicker_Sparks_INST"
+source_object = "FX_ENV_Anemone_Helios.Materials.LF_Flicker_Sparks_INST"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_ENV_Anemone_Helios.Materials.LF_Flicker_Sparks"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"PannerSpeed": Vector4(1.15, 0.85, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

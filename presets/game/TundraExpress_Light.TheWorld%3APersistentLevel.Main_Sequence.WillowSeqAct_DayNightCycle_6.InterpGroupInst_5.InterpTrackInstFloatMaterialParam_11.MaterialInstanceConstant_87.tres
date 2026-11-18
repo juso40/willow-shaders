@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Env_Glacial.Materials.Mati_MoonFrost.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "TundraExpress_Light.TheWorld:PersistentLevel.Main_Sequence.WillowSeqAct_DayNightCycle_6.InterpGroupInst_5.InterpTrackInstFloatMaterialParam_11.MaterialInstanceConstant_87"
+source_object = "TundraExpress_Light.TheWorld:PersistentLevel.Main_Sequence.WillowSeqAct_DayNightCycle_6.InterpGroupInst_5.InterpTrackInstFloatMaterialParam_11.MaterialInstanceConstant_87"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Env_Glacial.Materials.Mati_MoonFrost"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Time_of_Day": 60.0,
+"p_DarkColor": -20.0,
+"p_moonTime": -1.5,
+"p_moonTimeBaseShadow": 1.5
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Horizion_track_color_multiplier": Vector4(14.0, 14.0, 14.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

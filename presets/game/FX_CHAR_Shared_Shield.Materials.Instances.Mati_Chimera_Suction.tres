@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_CHAR_Siren.Materials.Mat_SirenSuction.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_CHAR_Shared_Shield.Materials.Instances.Mati_Chimera_Suction"
+source_object = "FX_CHAR_Shared_Shield.Materials.Instances.Mati_Chimera_Suction"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_CHAR_Siren.Materials.Mat_SirenSuction"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"FadeDistance": 15.0,
+"FadeStart": 28.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

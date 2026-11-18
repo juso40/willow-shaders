@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_ENV_Gas.Materials.Decals.Mat_Decal_Gas_Ground_Vines.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_ENV_Gas.Materials.Decals.Mati_Decal_Gas_Ground_Vines_Wall"
+source_object = "FX_ENV_Gas.Materials.Decals.Mati_Decal_Gas_Ground_Vines_Wall"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_ENV_Gas.Materials.Decals.Mat_Decal_Gas_Ground_Vines"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

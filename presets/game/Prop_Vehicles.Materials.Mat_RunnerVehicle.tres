@@ -1,0 +1,59 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Vehicles.Materials.Mat_RunnerVehicle"
+source_object = "Prop_Vehicles.Materials.Mat_RunnerVehicle"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"Backup_Lights": 0.0,
+"Brake_Lights": 0.0,
+"Desaturation": 0.2,
+"Lights": 0.0,
+"Spec_Brightness": 3.0,
+"Spec_Power": 15.0,
+"pattern_lightness": 0.2,
+"pattern_scale": 4.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Decal_(B)_offset": Vector4(0.2, -0.275, 0.0, 1.0),
+"Decal_(B)_scale": Vector4(4.0, 4.0, 0.0, 0.0),
+"Decal_(G)_Scale": Vector4(4.0, 4.0, 0.0, 0.0),
+"Decal_(G)_offset": Vector4(0.2, -0.275, 0.0, 1.0),
+"Decal_(R)_offset": Vector4(0.2, -0.275, 0.0, 1.0),
+"Decal_(R)_scale": Vector4(4.0, 4.0, 0.0, 0.0),
+"Trim_color": Vector4(0.5, 0.3, 0.2, 0.0),
+"Vehicle_Color": Vector4(2.0, 1.0, 0.3, 1.0),
+"decal_color_(G)": Vector4(4.0, 4.0, 4.0, 0.0),
+"decal_color_(R)": Vector4(1.0, 0.0, 0.0, 0.0),
+"decal_color_B": Vector4(0.0, 0.0, 0.0, 0.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Decal": null,
+"Diffuse": null,
+"Emissive": null,
+"Emissive_masks": null,
+"Mask": null,
+"Normal": null,
+"Pattern": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Decal": "Weap_Materials_Master.Overlays.Tex_Pattern_Clear",
+"Diffuse": "Veh_Runner.Textures.Runner_Dif",
+"Emissive": "CentralMissingArtRedirects.Texture.MissingTexture",
+"Emissive_masks": "Prop_Vehicles.Textures.CheetahPawEmissiveMask_Comp",
+"Mask": "CentralMissingArtRedirects.Texture.MissingTexture",
+"Normal": "Veh_Runner.Textures.Runner_Nrm",
+"Pattern": "Weap_Materials_Master.Overlays.Tex_Pattern_Clear"
+})
+texture_object_classes = Dictionary[String, String]({
+"Decal": "Texture2D",
+"Diffuse": "Texture2D",
+"Emissive": "Texture2D",
+"Emissive_masks": "Texture2D",
+"Mask": "Texture2D",
+"Normal": "Texture2D",
+"Pattern": "Texture2D"
+})

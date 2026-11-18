@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_WEP_Scopes.Materials.Mat_Scope_Reticle_MS.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_WEP_Scopes.Materials.Instances.Mati_Torgue_RL_Reticle"
+source_object = "FX_WEP_Scopes.Materials.Instances.Mati_Torgue_RL_Reticle"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_WEP_Scopes.Materials.Mat_Scope_Reticle_MS"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"AlphaOverlayMultiplier": 0.02,
+"RefractionMultiplier": 0.0,
+"ReticleShiftX": 1.3,
+"ReticleShiftY": 1.4,
+"ReticleX": -0.15,
+"ReticleY": 0.65,
+"alphaMaskSize": 3.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Texture": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Texture": "FX_WEP_Scopes.Textures.Tex_Torgue_Sight_RL"
+})
+texture_object_classes = Dictionary[String, String]({
+"Texture": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

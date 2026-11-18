@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_Aster_Dark_Forest.Materials.Mat_BloodBubble_Translucent.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Aster_Dark_Forest.Materials.Mat_BloodBubble_Translucent_INST"
+source_object = "FX_Aster_Dark_Forest.Materials.Mat_BloodBubble_Translucent_INST"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_Aster_Dark_Forest.Materials.Mat_BloodBubble_Translucent"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Spec_Mult": 60.0,
+"Spec_Power": 3.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Color": Vector4(0.662959, 0.140064, 0.047639, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

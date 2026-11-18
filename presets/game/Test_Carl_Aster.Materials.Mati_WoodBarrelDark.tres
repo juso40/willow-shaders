@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Environment.Master_Barrel.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Test_Carl_Aster.Materials.Mati_WoodBarrelDark"
+source_object = "Test_Carl_Aster.Materials.Mati_WoodBarrelDark"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Environment.Master_Barrel"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.160215, 0.10147, 0.039106, 1.0),
+"p_AColorMidtone": Vector4(0.342529, 0.115353, 0.022325, 1.0),
+"p_AColorShadow": Vector4(0.182314, 0.145399, 0.123895, 1.0),
+"p_BColorHilight": Vector4(0.392251, 0.15663, 0.132205, 1.0),
+"p_BColorMidtone": Vector4(1.0, 0.94326, 0.959999, 1.0),
+"p_BColorShadow": Vector4(0.857795, 0.957001, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Prop_Barrels.Textures.WoodenBarrel_Dif",
+"p_Masks": "Prop_Barrels.Textures.WoodenBarrel_Comp"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

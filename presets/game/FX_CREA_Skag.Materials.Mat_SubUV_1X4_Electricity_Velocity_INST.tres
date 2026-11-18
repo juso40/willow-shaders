@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_CREA_Skag.Materials.Mat_SubUV_1X4_Electricity_Velocity.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_CREA_Skag.Materials.Mat_SubUV_1X4_Electricity_Velocity_INST"
+source_object = "FX_CREA_Skag.Materials.Mat_SubUV_1X4_Electricity_Velocity_INST"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_CREA_Skag.Materials.Mat_SubUV_1X4_Electricity_Velocity"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"sw_DepthBias_Rate": -32.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

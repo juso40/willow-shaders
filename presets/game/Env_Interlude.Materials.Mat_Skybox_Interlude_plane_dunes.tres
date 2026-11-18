@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Env_Interlude.Materials.Mat_Skybox_Interlude_plane.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_Interlude.Materials.Mat_Skybox_Interlude_plane_dunes"
+source_object = "Env_Interlude.Materials.Mat_Skybox_Interlude_plane_dunes"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Env_Interlude.Materials.Mat_Skybox_Interlude_plane"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Diffuse_UV": Vector4(50.0, 25.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

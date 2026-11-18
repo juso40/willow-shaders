@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Nasturtium_Goliath.Materials.Mati_GoliathGroom"
+source_object = "Char_Nasturtium_Goliath.Materials.Mati_GoliathGroom"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_PatternIntensity": 0.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.375677, 0.365999, 0.340758, 1.0),
+"p_AColorMidtone": Vector4(0.206633, 0.228197, 0.232036, 1.0),
+"p_AColorShadow": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_BColorHilight": Vector4(1.0, 0.859174, 0.796917, 1.0),
+"p_BColorMidtone": Vector4(1.0, 0.851252, 0.819964, 1.0),
+"p_BColorShadow": Vector4(0.687031, 0.293216, 0.267358, 1.0),
+"p_CColorHilight": Vector4(0.297498, 0.401265, 0.524843, 1.0),
+"p_CColorMidtone": Vector4(0.410142, 0.466381, 0.618762, 1.0),
+"p_CColorShadow": Vector4(0.104334, 0.081901, 0.758427, 1.0),
+"p_PatternColor": Vector4(0.196629, 0.015111, 0.013276, 2.0),
+"p_PatternScalePosition": Vector4(0.848315, 0.848315, 0.081019, 0.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_CustomPattern": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_CustomPattern": "FX_GOR_Textures.Textures.Blood_Overlay_Dif",
+"p_Diffuse": "Char_Nasturtium_Goliath.Textures.GoliathGroom_Dif",
+"p_Masks": "Char_Nasturtium_Goliath.Textures.GoliathGroom_Comp",
+"p_Normal": "Char_Nasturtium_Goliath.Textures.GoliathGroom_Nmap"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_CustomPattern": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

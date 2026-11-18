@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_WEP_Scopes.Materials.Mat_Scope_SceneTex_MS.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_WEP_Scopes.Materials.Instances.Tediore.RL.Mati_RealScope_RL_Tediore_Vladof"
+source_object = "FX_WEP_Scopes.Materials.Instances.Tediore.RL.Mati_RealScope_RL_Tediore_Vladof"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_WEP_Scopes.Materials.Mat_Scope_SceneTex_MS"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"ScanlineColor": Vector4(0.0, 0.0, 0.0, 0.0),
+"SceneTexScale": Vector4(0.15, 0.3, 0.0, 0.0),
+"ScreenGlowColor": Vector4(0.1, 0.0, 0.0, 1.0),
+"UV_Offset": Vector4(1.0, 1.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

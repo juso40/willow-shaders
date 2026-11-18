@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Sage_Crystalisk.Materials.Mati_Crystalisk_Red"
+source_object = "Char_Sage_Crystalisk.Materials.Mati_Crystalisk_Red"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_HighlightsIntensity": 0.0,
+"p_PatternIntensity": 2.0,
+"p_ShadowsIntensity": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(1.0, 0.051759, 0.0, 1.0),
+"p_AColorMidtone": Vector4(4.0, 0.2, 1.0, 1.0),
+"p_AColorShadow": Vector4(1.5, 0.2, 0.5, 1.0),
+"p_BColorHilight": Vector4(0.8066, 0.320875, 0.701048, 1.0),
+"p_BColorMidtone": Vector4(4.0, 0.02, 0.5, 1.0),
+"p_BColorShadow": Vector4(0.266304, 0.010945, 0.08161, 1.0),
+"p_CColorHilight": Vector4(4.0, 0.779605, 0.586957, 1.0),
+"p_CColorMidtone": Vector4(4.0, 0.315104, 0.0, 1.0),
+"p_CColorShadow": Vector4(0.320652, 0.090092, 0.137109, 1.0),
+"p_ColorD": Vector4(3.0, 0.1, 0.5, 1.0),
+"p_DissolveColor": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_PatternColor": Vector4(0.820652, 0.273504, 0.205163, 2.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_Crystalisk.CrystaliskBody_Dif",
+"p_Masks": "Char_Crystalisk.CrystaliskBodyColor_Comp",
+"p_Normal": "Char_Crystalisk.CrystaliskBody_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

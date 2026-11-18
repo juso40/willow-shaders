@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_CreatureFire.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Aster_Dragon.Materials.Mati_DragAtchBridgeBoss"
+source_object = "Char_Aster_Dragon.Materials.Mati_DragAtchBridgeBoss"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_CreatureFire"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(1.0, 0.48313, 0.016043, 1.0),
+"p_AColorMidtone": Vector4(1.0, 0.251162, 0.125211, 1.0),
+"p_AColorShadow": Vector4(0.209937, 0.020871, 0.008066, 1.0),
+"p_BColorHilight": Vector4(0.353335, 0.785682, 1.0, 1.0),
+"p_BColorMidtone": Vector4(0.300334, 0.582686, 1.0, 1.0),
+"p_BColorShadow": Vector4(0.0, 0.139078, 0.314906, 1.0),
+"p_CColorHilight": Vector4(0.208781, 0.314906, 0.278987, 1.0),
+"p_CColorMidtone": Vector4(0.04533, 0.119098, 0.149166, 1.0),
+"p_CColorShadow": Vector4(0.176183, 0.184054, 0.287282, 1.0),
+"p_ColorD": Vector4(1.0, 0.200611, 0.255847, 1.0),
+"p_DissolveColor": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_ElementalDeathColor": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_EmissiveScale": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_PatternColor": Vector4(0.010849, 0.010829, 0.01087, 2.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_Aster_Dragon.Textures.DragonAttach_Dif",
+"p_Masks": "Char_Aster_Dragon.DragonAttach_Comp",
+"p_Normal": "Char_Aster_Dragon.Textures.DragonAttach_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

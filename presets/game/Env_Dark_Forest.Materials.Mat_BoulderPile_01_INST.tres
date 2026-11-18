@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Aster_Prop_Rocks.Materials.Mat_BoulderPile_01.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_Dark_Forest.Materials.Mat_BoulderPile_01_INST"
+source_object = "Env_Dark_Forest.Materials.Mat_BoulderPile_01_INST"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Aster_Prop_Rocks.Materials.Mat_BoulderPile_01"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"": Vector4(0.464071, 0.375706, 0.314596, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Char_Flax_Snowman.Materials.Master_Snowman.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Flax_Snowman.Materials.Mati_RedScarf"
+source_object = "Char_Flax_Snowman.Materials.Mati_RedScarf"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Char_Flax_Snowman.Materials.Master_Snowman"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_DiffuseScale": Vector4(3.0, 3.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Prop_Furniture.RedCarpet_Dif"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D"
+})

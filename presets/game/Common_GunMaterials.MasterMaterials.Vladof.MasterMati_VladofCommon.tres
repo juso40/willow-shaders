@@ -1,0 +1,59 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Weapons.Master_Gun.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Common_GunMaterials.MasterMaterials.Vladof.MasterMati_VladofCommon"
+source_object = "Common_GunMaterials.MasterMaterials.Vladof.MasterMati_VladofCommon"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Weapons.Master_Gun"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_DecalRotate": -0.1,
+"p_HighlightsIntensity": 3.0,
+"p_ReplaceDecal": 0.37,
+"p_ShadowsIntensity": 3.0,
+"p_UseFullColorDecal": 0.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.745829, 0.503625, 0.424434, 1.0),
+"p_AColorMidtone": Vector4(1.330866, 1.266087, 1.147052, 1.0),
+"p_AColorShadow": Vector4(1.206284, 1.265722, 1.146846, 1.0),
+"p_BColorHilight": Vector4(0.579941, 0.632637, 0.690582, 1.0),
+"p_BColorMidtone": Vector4(0.6984, 0.776767, 0.861847, 1.0),
+"p_BColorShadow": Vector4(0.911569, 0.654427, 0.523789, 1.0),
+"p_CColorHilight": Vector4(0.97126, 1.0, 0.990476, 1.0),
+"p_CColorMidtone": Vector4(1.0, 0.784317, 0.607749, 1.0),
+"p_CColorShadow": Vector4(0.624286, 0.500617, 0.417348, 1.0),
+"p_DColor": Vector4(0.466925, 0.524896, 0.657434, 1.0),
+"p_DecalChannel": Vector4(0.0, 1.0, 0.0, 0.0),
+"p_DecalColor": Vector4(2.788232, 3.156355, 3.480451, 1.0),
+"p_DecalScalePosition": Vector4(1.492537, 4.761903, 0.32, 0.265),
+"p_PatternChannelScale": Vector4(0.92, 0.85, 0.85, 0.0),
+"p_PatternColor": Vector4(3.290632, 3.290632, 3.290632, 1.0),
+"p_PatternScalePosition": Vector4(12.0, 12.0, 0.8, 0.03)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Decal": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_NormalScopesEmissive": null,
+"p_Pattern": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Decal": "Common_GunMaterials.Logos.Logo_TedioreMaliwanVladof_Comp",
+"p_Diffuse": "Common_GunMaterials.CompTextures.Weap_AssaultSubSniper_Comp",
+"p_Masks": "Weap_AssaultRifles.Tex.Weap_AssaultRifle_Comp",
+"p_NormalScopesEmissive": "Weap_AssaultRifles.Tex.Weap_AssaultRifle_Nrm",
+"p_Pattern": "Common_GunMaterials.Patterns.VladovMetalCommon_Dif"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Decal": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_NormalScopesEmissive": "Texture2D",
+"p_Pattern": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

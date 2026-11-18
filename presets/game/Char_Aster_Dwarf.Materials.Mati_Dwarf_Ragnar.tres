@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Player.Master_Player.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Aster_Dwarf.Materials.Mati_Dwarf_Ragnar"
+source_object = "Char_Aster_Dwarf.Materials.Mati_Dwarf_Ragnar"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Player.Master_Player"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(2.513749, 2.429271, 1.277752, 1.0),
+"p_AColorMidtone": Vector4(3.231877, 3.075018, 2.249851, 1.0),
+"p_AColorShadow": Vector4(0.220986, 0.209388, 0.168757, 1.0),
+"p_BColorHilight": Vector4(10.052203, 8.880805, 5.468118, 1.0),
+"p_BColorMidtone": Vector4(2.293129, 1.603592, 0.342141, 1.0),
+"p_BColorShadow": Vector4(7.53985, 6.195914, 3.874202, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_Aster_Dwarf.Materials.SalDwarf_Dif",
+"p_Masks": "Char_Aster_Dwarf.Materials.SalDwarf_Comp",
+"p_Normal": "Char_Aster_Dwarf.Textures.SalDwarf_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

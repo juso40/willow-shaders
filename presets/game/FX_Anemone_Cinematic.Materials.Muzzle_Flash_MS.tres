@@ -1,0 +1,37 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Anemone_Cinematic.Materials.Muzzle_Flash_MS"
+source_object = "FX_Anemone_Cinematic.Materials.Muzzle_Flash_MS"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"TexMultiplier": 1.0,
+"TexPower": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Mask": null,
+"Tex_SubUV": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Mask": "FX_WEP_Assault.Textures.GP.Tex_Assault_Muzzle_Flash_Front_DSC_GP",
+"Tex_SubUV": "FX_WEP_Assault.Textures.GP.Tex_Assault_Muzzle_Flash_Side_DSC_GP"
+})
+texture_object_classes = Dictionary[String, String]({
+"Mask": "Texture2D",
+"Tex_SubUV": "Texture2D"
+})
+static_component_masks = Dictionary[String, Vector4]({
+"MaskChannel": Vector4(1.0, 0.0, 0.0, 0.0)
+})
+static_switches = Dictionary[String, bool]({
+"IsMasked": false,
+"OverlayTex": false,
+"Sw_SubUV": false,
+"sw_IsMesh": true
+})

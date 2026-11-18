@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Player.Master_Player.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "CD_Skins_Mechro_Tulip.Mati_RedD_Head"
+source_object = "CD_Skins_Mechro_Tulip.Mati_RedD_Head"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Player.Master_Player"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_HighlightsIntensity": 3.0,
+"p_ShadowsIntensity": 2.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.602188, 0.140682, 0.0, 1.0),
+"p_AColorMidtone": Vector4(0.309381, 0.044104, 0.0, 1.0),
+"p_AColorShadow": Vector4(0.570443, 0.835996, 1.274635, 1.0),
+"p_BColorHilight": Vector4(0.110493, 0.106041, 0.101992, 1.0),
+"p_BColorMidtone": Vector4(0.778977, 0.127402, 0.07319, 1.0),
+"p_BColorShadow": Vector4(1.167735, 0.188725, 0.072101, 1.0),
+"p_CColorHilight": Vector4(0.787968, 0.850797, 0.805824, 1.0),
+"p_CColorMidtone": Vector4(0.97786, 0.955721, 1.0, 1.0),
+"p_CColorShadow": Vector4(1.442663, 1.634285, 1.707503, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Tulip_Char_Mechromancer.Textures.MechromancerHead_Dif",
+"p_Masks": "Tulip_Char_Mechromancer.Textures.MechromancerHead_Msk",
+"p_Normal": "Tulip_Char_Mechromancer.Textures.MechromancerHead_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

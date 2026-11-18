@@ -1,0 +1,56 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Vehicle.Master_Vehicle.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "CD_Skins_BanditTech_MainGame.Mati_S_BluBlk_Body"
+source_object = "CD_Skins_BanditTech_MainGame.Mati_S_BluBlk_Body"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Vehicle.Master_Vehicle"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_HighlightsIntensity": 2.0,
+"p_PatternInvert": 5.0,
+"p_ShadowsIntensity": 10.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.0, 0.359693, 1.0, 1.0),
+"p_AColorMidtone": Vector4(0.147428, 0.155177, 0.193363, 1.0),
+"p_AColorShadow": Vector4(0.185338, 0.24746, 0.254134, 1.0),
+"p_BColorHilight": Vector4(0.0, 0.4983, 1.0, 1.0),
+"p_BColorMidtone": Vector4(0.279564, 0.319741, 0.392251, 1.0),
+"p_BColorShadow": Vector4(0.289133, 0.522838, 0.817649, 1.0),
+"p_CColorHilight": Vector4(0.0, 1.07331, 2.701323, 1.0),
+"p_CColorMidtone": Vector4(0.0, 0.423246, 1.707503, 1.0),
+"p_CColorShadow": Vector4(0.060327, 0.238083, 0.419874, 1.0),
+"p_ColorD": Vector4(0.488169, 0.500807, 0.524843, 1.0),
+"p_DecalColor": Vector4(0.0, 0.951244, 3.722875, 1.0),
+"p_DecalScalePosition": Vector4(3.3696, 3.24, -0.36, -0.379),
+"p_PatternChannelScale": Vector4(0.0, 0.95, 0.0, 1.0),
+"p_PatternColor": Vector4(0.057432, 0.141851, 0.546941, 1.0),
+"p_PatternScalePosition": Vector4(25.0, 25.0, 18.088608, 0.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_CustomPattern": null,
+"p_Decal": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_CustomPattern": "Weap_Materials_Master.Overlays.Tex_Pattern_Stripes",
+"p_Decal": "CD_Skins_Siren_MainGame.Textures.Logo_TedioreAngleSpray",
+"p_Diffuse": "Veh_Bandit_Technical.Textures.BanditTechnical_D",
+"p_Masks": "Veh_Bandit_Technical.Textures.BanditTechnical_Comp",
+"p_Normal": "Veh_Bandit_Technical.Textures.BanditTechnical_N"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_CustomPattern": "Texture2D",
+"p_Decal": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

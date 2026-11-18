@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_Aster_Skybox.Materials.Mat_Skydome_Hurricane.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Aster_Skybox.Materials.Mati_Skydome_Hurricane_01"
+source_object = "FX_Aster_Skybox.Materials.Mati_Skydome_Hurricane_01"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_Aster_Skybox.Materials.Mat_Skydome_Hurricane"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_ColorPower": 1.0,
+"p_TimeMult": 0.055
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"UV_Offset": Vector4(0.015, 0.04, 0.0, 1.0),
+"Uv_Mult": Vector4(1.0, 1.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_texture": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_texture": "FX_Aster_Skybox.Textures.Tex_Hurricane_Cloud_01"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_texture": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

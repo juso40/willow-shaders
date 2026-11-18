@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Env_Ice.Materials.Mati_Sky_Ice_DNC.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "TundraExpress_Light.TheWorld:PersistentLevel.Main_Sequence.WillowSeqAct_DayNightCycle_6.InterpGroupInst_1.InterpTrackInstFloatMaterialParam_0.MaterialInstanceConstant_85"
+source_object = "TundraExpress_Light.TheWorld:PersistentLevel.Main_Sequence.WillowSeqAct_DayNightCycle_6.InterpGroupInst_1.InterpTrackInstFloatMaterialParam_0.MaterialInstanceConstant_85"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Env_Ice.Materials.Mati_Sky_Ice_DNC"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Sun_spot_brightness": 50.0,
+"Time_of_Day": 75.0,
+"cloud_cap_opacity": 1.0,
+"p_CouldBrightness": 0.3,
+"sky_brightness": 5.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

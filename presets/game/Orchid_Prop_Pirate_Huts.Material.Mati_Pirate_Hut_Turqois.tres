@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Environment.Master_World.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Orchid_Prop_Pirate_Huts.Material.Mati_Pirate_Hut_Turqois"
+source_object = "Orchid_Prop_Pirate_Huts.Material.Mati_Pirate_Hut_Turqois"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Environment.Master_World"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_HighlightsIntensity": 2.0,
+"p_ShadowsIntensity": 2.2
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.346145, 0.745829, 0.692892, 1.0),
+"p_AColorMidtone": Vector4(0.398137, 0.466292, 0.327377, 1.0),
+"p_AColorShadow": Vector4(0.7593, 0.378676, 0.394083, 1.0),
+"p_BColorHilight": Vector4(0.774427, 0.813341, 0.853261, 1.0),
+"p_BColorMidtone": Vector4(0.804348, 0.650217, 0.313472, 1.0),
+"p_BColorShadow": Vector4(0.170614, 0.20522, 0.255435, 1.0),
+"p_CColorHilight": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_CColorMidtone": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_CColorShadow": Vector4(0.0, 0.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Orchid_Prop_Pirate_Huts.Textures.Pirate_Hut_D",
+"p_Masks": "Orchid_Prop_Pirate_Huts.Textures.Pirate_Hut_Comp",
+"p_Normal": "prop_containers.Textures.HyperionContainer_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

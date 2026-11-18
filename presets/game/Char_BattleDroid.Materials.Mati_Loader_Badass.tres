@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_CreatureDigistruct.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_BattleDroid.Materials.Mati_Loader_Badass"
+source_object = "Char_BattleDroid.Materials.Mati_Loader_Badass"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_CreatureDigistruct"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_DigiStructEnable": 0.0,
+"p_HighlightsIntensity": 2.0,
+"p_ShadowsIntensity": 4.0,
+"p_fade": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.116633, 0.15469, 0.10698, 1.0),
+"p_AColorMidtone": Vector4(0.011539, 0.038673, 0.014206, 1.0),
+"p_AColorShadow": Vector4(0.149166, 0.130147, 0.104665, 1.0),
+"p_BColorHilight": Vector4(0.121542, 0.121542, 0.121542, 1.0),
+"p_BColorMidtone": Vector4(0.016574, 0.013828, 0.011538, 1.0),
+"p_BColorShadow": Vector4(0.088395, 0.088395, 0.088395, 1.0),
+"p_CColorHilight": Vector4(0.039326, 0.014906, 0.009344, 1.0),
+"p_CColorMidtone": Vector4(0.751354, 0.751354, 0.751354, 1.0),
+"p_CColorShadow": Vector4(0.224719, 0.219919, 0.075429, 1.0),
+"p_ColorD": Vector4(0.381201, 0.211501, 0.183242, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_BattleDroid.Textures.BattleDroid_Dif",
+"p_Masks": "Char_BattleDroid.Textures.BattleDroid_Comp",
+"p_Normal": "Char_BattleDroid.Textures.BattleDroid_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_GunMaterials.MasterMaterials.Bandit.MasterMati_BanditUncommon.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Common_GunMaterials.Materials.Shotgun.Mati_BanditUniqueSG_Teeth"
+source_object = "Common_GunMaterials.Materials.Shotgun.Mati_BanditUniqueSG_Teeth"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_GunMaterials.MasterMaterials.Bandit.MasterMati_BanditUncommon"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_DecalRotate": 0.0645,
+"p_ReplaceDecal": 0.25,
+"p_UseFullColorDecal": 0.99
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.839748, 0.605866, 0.519635, 1.0),
+"p_AColorMidtone": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_AColorShadow": Vector4(0.232036, 0.097807, 0.122747, 1.0),
+"p_CColorHilight": Vector4(0.723772, 0.876405, 0.779297, 1.0),
+"p_CColorMidtone": Vector4(0.24861, 0.04162, 0.03984, 1.0),
+"p_CColorShadow": Vector4(0.33995, 0.390471, 0.52809, 1.0),
+"p_DecalChannel": Vector4(1.0, 0.0, 1.0, 1.0),
+"p_DecalScalePosition": Vector4(3.6579, 11.1307, 0.6836, 0.5429),
+"p_PatternChannelScale": Vector4(1.0, 0.0, 0.0, 0.0),
+"p_PatternColor": Vector4(2.207219, 2.207219, 2.207219, 1.0),
+"p_PatternScalePosition": Vector4(12.68, 12.92, 15.963202, 3.6433)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_NormalScopesEmissive": null,
+"p_Pattern": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Common_GunMaterials.CompTextures.Weap_LauncherShotgunPistol_Comp",
+"p_Masks": "Weap_Shotguns.Tex.Weap_Shotgun_Comp",
+"p_NormalScopesEmissive": "Weap_Shotguns.Tex.Weap_Shotgun_Nor",
+"p_Pattern": "Common_GunMaterials.Patterns.Pattern_BanditUncommon"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_NormalScopesEmissive": "Texture2D",
+"p_Pattern": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

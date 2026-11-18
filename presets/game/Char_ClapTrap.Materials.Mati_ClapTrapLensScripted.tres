@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Hyperion.Master_HyperionEye.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_ClapTrap.Materials.Mati_ClapTrapLensScripted"
+source_object = "Char_ClapTrap.Materials.Mati_ClapTrapLensScripted"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Hyperion.Master_HyperionEye"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_EyeColorA": Vector4(0.07, 1.35, 1.35, 1.0),
+"p_EyeColorC": Vector4(0.0, 0.182314, 0.062448, 1.0),
+"p_EyeColorD": Vector4(0.017603, 0.35, 3.35, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

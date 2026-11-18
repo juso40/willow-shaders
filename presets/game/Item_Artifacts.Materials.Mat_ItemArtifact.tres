@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Item_Artifacts.Materials.Mat_ItemArtifact"
+source_object = "Item_Artifacts.Materials.Mat_ItemArtifact"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Ring_ScaleSpeedOffset": Vector4(2.0, 0.5, 0.0, 1.0),
+"p_EmissiveColor": Vector4(0.076635, 0.231861, 1.0, 3.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

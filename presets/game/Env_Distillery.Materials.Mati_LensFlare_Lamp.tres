@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Env_Fridge.Materials.Mat_LensFlare_Master_Fridge.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_Distillery.Materials.Mati_LensFlare_Lamp"
+source_object = "Env_Distillery.Materials.Mati_LensFlare_Lamp"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Env_Fridge.Materials.Mat_LensFlare_Master_Fridge"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"ColorInner": Vector4(1.531786, 0.849876, 0.736321, 0.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Env_PandoraPark.Materials.Mat_RockBluff.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_PandoraPark.Materials.Mat_RockBluff_INST"
+source_object = "Env_PandoraPark.Materials.Mat_RockBluff_INST"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Env_PandoraPark.Materials.Mat_RockBluff"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_SnowNoiseUVScale": 0.2,
+"p_SnowUVScale": 6.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_SnowAmount": Vector4(1.0, 1.0, 0.9075, 1.0),
+"p_SnowColor": Vector4(0.624286, 0.624286, 0.624286, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_SnowDiffuse": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_SnowDiffuse": "Prop_Terrain.Textures.GrasslandsSlateMoss_Dif"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_SnowDiffuse": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

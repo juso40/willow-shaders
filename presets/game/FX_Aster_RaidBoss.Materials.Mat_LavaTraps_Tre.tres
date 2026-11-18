@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Aster_RaidBoss.Materials.Mat_LavaTraps_Tre"
+source_object = "FX_Aster_RaidBoss.Materials.Mat_LavaTraps_Tre"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"GlowBrightness": 0.0,
+"LavaExponent": 2.0,
+"LavaMultiplier": 0.1,
+"ParamScale": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"GlowColor": Vector4(1.0, 0.076008, 0.053767, 1.0),
+"LavaColor": Vector4(2.0, 0.2, 0.02, 1.0),
+"ParamXYOffset": Vector4(0.0, 0.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

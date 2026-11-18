@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Aster_Dark_Forest.Materials.Mat_Tree_Of_Life_Flowers"
+source_object = "FX_Aster_Dark_Forest.Materials.Mat_Tree_Of_Life_Flowers"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"DeathLerp": 0.0,
+"Obj Sway Wind Speed Mult": 1.0,
+"Object Radius Offset": 0.0,
+"Object Sway Amount": 0.00058,
+"Object Sway World Sine Divider": 256.0,
+"flowerFade": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Object Sway_R_Sine1Rate_G_Sine1Amount_B_Sine2Rate_A_Sine2Amount": Vector4(1.0, 40.0, 1.125, 0.8),
+"p_WindDirection": Vector4(1.0, 1.0, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Tex_Diff": null,
+"tex_Mask": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Tex_Diff": "Prop_Plants.Textures.FlowerYellowPetal_Dif",
+"tex_Mask": "Prop_Plants.Textures.Flowers_Opac"
+})
+texture_object_classes = Dictionary[String, String]({
+"Tex_Diff": "Texture2D",
+"tex_Mask": "Texture2D"
+})
+static_component_masks = Dictionary[String, Vector4]({
+"Tex_Mask_Channel": Vector4(0.0, 1.0, 0.0, 0.0)
+})
+static_switches = Dictionary[String, bool]({
+"Sw_WindDirectionOrWindActor": false
+})

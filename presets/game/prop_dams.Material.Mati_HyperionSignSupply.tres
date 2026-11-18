@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/prop_dams.Material.Master_HyperionSigns.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "prop_dams.Material.Mati_HyperionSignSupply"
+source_object = "prop_dams.Material.Mati_HyperionSignSupply"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "prop_dams.Material.Master_HyperionSigns"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"Sign1_Placement": 0.343,
+"Sign2_Placement": 0.835,
+"V_NumberPlacement": 1.983
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

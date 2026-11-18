@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/TorgueMaterials.Materials.Mati_Torgue_BattleBot_Master.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "TorgueMaterials.Materials.Mati_Torgue_BattleBot_Gun"
+source_object = "TorgueMaterials.Materials.Mati_Torgue_BattleBot_Gun"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "TorgueMaterials.Materials.Mati_Torgue_BattleBot_Master"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.2172, 0.252151, 0.320225, 1.0),
+"p_AColorMidtone": Vector4(0.080021, 0.092898, 0.117978, 1.0),
+"p_AColorShadow": Vector4(0.037029, 0.042987, 0.054592, 1.0),
+"p_BColorHilight": Vector4(0.423366, 0.401868, 0.58427, 1.0),
+"p_BColorMidtone": Vector4(0.05831, 0.06428, 0.117978, 1.0),
+"p_BColorShadow": Vector4(0.08427, 0.08427, 0.08427, 1.0),
+"p_CColorHilight": Vector4(0.2172, 0.252151, 0.320225, 1.0),
+"p_CColorMidtone": Vector4(0.080021, 0.092898, 0.117978, 1.0),
+"p_CColorShadow": Vector4(0.037029, 0.042987, 0.054592, 1.0),
+"p_ColorD": Vector4(0.513867, 0.536407, 0.601124, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_CustomPattern": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_CustomPattern": "Common_Textures.Stub.StubGray_Gray",
+"p_Diffuse": "TorgueMaterials.Textures.TorgueBattleDroid_Dif",
+"p_Masks": "TorgueMaterials.Textures.TorgueBattleDroid_Mask",
+"p_Normal": "Char_BattleDroid.Textures.BattleDroid_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_CustomPattern": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

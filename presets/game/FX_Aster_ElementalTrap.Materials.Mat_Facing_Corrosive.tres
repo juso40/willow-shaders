@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_Aster_ElementalTrap.Materials.Mat_Facing_Translucent.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Aster_ElementalTrap.Materials.Mat_Facing_Corrosive"
+source_object = "FX_Aster_ElementalTrap.Materials.Mat_Facing_Corrosive"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_Aster_ElementalTrap.Materials.Mat_Facing_Translucent"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"ShimmerAmount": 0.03,
+"Speed": 0.5
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

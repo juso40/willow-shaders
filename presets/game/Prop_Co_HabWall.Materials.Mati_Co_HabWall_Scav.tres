@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Co_HabWall.Materials.Mati_Co_HabWall_Neutral.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Co_HabWall.Materials.Mati_Co_HabWall_Scav"
+source_object = "Prop_Co_HabWall.Materials.Mati_Co_HabWall_Scav"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Co_HabWall.Materials.Mati_Co_HabWall_Neutral"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_Color_Emissive1_Base": Vector4(0.513694, 0.752614, 1.0, 1.0),
+"p_Color_Spec_1": Vector4(0.580089, 0.580089, 0.580089, 1.0),
+"p_Color_Spec_2": Vector4(0.033706, 0.067023, 0.265184, 1.0),
+"p_Color_Spec_Emissive": Vector4(0.0, 0.0, 0.0, 200.0),
+"p_Color_Texture1_A": Vector4(0.182314, 0.173414, 0.169284, 1.0),
+"p_Color_Texture1_B": Vector4(0.456747, 0.475121, 0.438374, 1.0),
+"p_Color_Texture1_Base": Vector4(0.13504, 0.177832, 0.298332, 1.0),
+"p_Color_Texture1_C": Vector4(0.573159, 0.147998, 0.046149, 1.0),
+"p_Color_Texture1_D": Vector4(0.215764, 0.2468, 0.2468, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

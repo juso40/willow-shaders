@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_Aster_Dragon.Materials.Master_RaidDragon.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Aster_Dragon.Materials.Mati_DragonAttachment_RedRaid"
+source_object = "Char_Aster_Dragon.Materials.Mati_DragonAttachment_RedRaid"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_Aster_Dragon.Materials.Master_RaidDragon"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_FxScaleFire": 5.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_ElementalDeathColor": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_FireColor": Vector4(1.0, 0.155179, 0.016295, 3.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_FireEffectTexture": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_FireEffectTexture": "",
+"p_Masks": "Char_Aster_Dragon.DragonAttach_Comp",
+"p_Normal": "Char_Aster_Dragon.Textures.DragonAttach_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_FireEffectTexture": "",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

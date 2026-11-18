@@ -1,0 +1,56 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Items.Master_ClassMod_02.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Item_ClassMods.Mat.Mati_ClassMod_Soldier_Rifleman"
+source_object = "Item_ClassMods.Mat.Mati_ClassMod_Soldier_Rifleman"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Items.Master_ClassMod_02"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_ReflectColorScale": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_AColorMidtone": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_AColorShadow": Vector4(0.303856, 0.303856, 0.303856, 1.0),
+"p_BColorHilight": Vector4(0.745533, 0.61311, 0.442507, 1.0),
+"p_BColorMidtone": Vector4(0.244833, 0.298332, 0.261686, 1.0),
+"p_BColorShadow": Vector4(0.281758, 0.281758, 0.281758, 1.0),
+"p_CColorHilight": Vector4(0.051864, 0.102676, 0.138116, 1.0),
+"p_CColorMidtone": Vector4(0.537702, 0.0, 0.00148, 1.0),
+"p_CColorShadow": Vector4(0.618762, 0.296852, 0.562456, 1.0),
+"p_ColorD": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_DecalColor": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_DecalScalePosition": Vector4(3.0, 3.0, 0.0361, 0.8145),
+"p_PatternChannelScale": Vector4(1.0, 0.0, 0.0, 0.0),
+"p_PatternColor": Vector4(2.011036, 2.011036, 2.011036, 1.0),
+"p_PatternScalePosition": Vector4(3.0, 3.0, -0.003, -0.06),
+"p_ReflectColor": Vector4(1.452375, 2.768346, 3.408837, 1.0),
+"p_ReflectionChannelScale": Vector4(0.0, 1.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_CustomPattern": null,
+"p_Decal": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_CustomPattern": "Common_GunMaterials.Patterns.Pattern_JakobsUncommonWood",
+"p_Decal": "",
+"p_Diffuse": "Item_ClassMods.Textures.SoldierClassMod01_Diff",
+"p_Masks": "Item_ClassMods.Textures.SoldierClassMod01_Msk",
+"p_Normal": "Item_ClassMods.Textures.SoldierClassMod01_Norm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_CustomPattern": "Texture2D",
+"p_Decal": "",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

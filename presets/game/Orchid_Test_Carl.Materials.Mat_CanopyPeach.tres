@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Awnings.Materials.Mat_Canopy_Red.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Orchid_Test_Carl.Materials.Mat_CanopyPeach"
+source_object = "Orchid_Test_Carl.Materials.Mat_CanopyPeach"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Awnings.Materials.Mat_Canopy_Red"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Canopy_Color": Vector4(0.84337, 0.197516, 0.130352, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

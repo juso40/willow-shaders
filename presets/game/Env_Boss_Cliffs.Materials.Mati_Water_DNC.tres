@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Env_Boss_Cliffs.Materials.Mat_WaterShallowOpaque.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_Boss_Cliffs.Materials.Mati_Water_DNC"
+source_object = "Env_Boss_Cliffs.Materials.Mati_Water_DNC"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Env_Boss_Cliffs.Materials.Mat_WaterShallowOpaque"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_WaveScale": 20.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

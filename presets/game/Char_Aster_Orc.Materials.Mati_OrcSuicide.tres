@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Aster_Orc.Materials.Mati_OrcSuicide"
+source_object = "Char_Aster_Orc.Materials.Mati_OrcSuicide"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.999809, 1.707176, 1.682756, 1.0),
+"p_AColorMidtone": Vector4(0.605032, 0.711465, 1.124218, 1.0),
+"p_AColorShadow": Vector4(0.756915, 1.0, 0.839218, 1.0),
+"p_BColorHilight": Vector4(0.583539, 0.627097, 0.939192, 1.0),
+"p_BColorMidtone": Vector4(0.134206, 0.284218, 0.519318, 1.0),
+"p_BColorShadow": Vector4(0.119267, 0.255949, 0.325843, 1.0),
+"p_CColorHilight": Vector4(0.688636, 0.510286, 0.393934, 1.0),
+"p_CColorMidtone": Vector4(0.792135, 0.535984, 0.249211, 1.0),
+"p_CColorShadow": Vector4(0.220986, 0.127842, 0.0, 1.0),
+"p_MuscleFat": Vector4(0.0, 0.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_Aster_Orc.Textures.Orc_Diff",
+"p_Masks": "Char_Aster_Orc.Textures.Orc_Mask_01",
+"p_Normal": "Char_Aster_Orc.Textures.Orc_Norm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

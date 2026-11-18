@@ -1,0 +1,41 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_WEP_Trails.Materials.MasterShaders.Mat_Bullet_Trail_MS.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_WEP_Trails_Alien.Materials.Mati_Alien_Sniper_Incendiary"
+source_object = "FX_WEP_Trails_Alien.Materials.Mati_Alien_Sniper_Incendiary"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_WEP_Trails.Materials.MasterShaders.Mat_Bullet_Trail_MS"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"DistanceFAde": 0.0025,
+"PanTexTile_X": 6.0,
+"PanTimeMultiplier": 5.0,
+"StartFadeValue": 0.025,
+"TexPrimaryOffset_Y": 0.0,
+"TexPrimaryTile_X": 12.0,
+"TexPrimaryTile_Y": 1.0,
+"TexSecondaryTile_X": 12.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"TracerColor": Vector4(25.0, 0.25, 0.005, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"TexPan": null,
+"TexPrimary": null,
+"TexSecondary": null
+})
+texture_object_paths = Dictionary[String, String]({
+"TexPan": "FX_IO_Digistruct.Textures.Beam_Wavy2_Dif",
+"TexPrimary": "FX_Shared_Smoke.Textures.Tiling_GenericSmoke3_Dif",
+"TexSecondary": "FX_IO_Digistruct.Textures.Beam_Wavy2_Dif"
+})
+texture_object_classes = Dictionary[String, String]({
+"TexPan": "Texture2D",
+"TexPrimary": "Texture2D",
+"TexSecondary": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

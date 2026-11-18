@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Aster_Will-O-Wisp.Materials.Mat_Fairy_Glow"
+source_object = "FX_Aster_Will-O-Wisp.Materials.Mat_Fairy_Glow"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"P_DeathsValue": 0.0,
+"p_fade": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Rimlight Color": Vector4(0.125, 0.1, 0.5, 1.0),
+"p_DissolveColor": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_ElementalDeathColor": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_FoamColor_ReflScale": Vector4(0.011126, 0.0, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Normal": null,
+"P_SimpleReflect": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Normal": "Char_Siren.Texture.SirenBody_Nrm",
+"P_SimpleReflect": "Prop_Water.Textures.WaterReflectZone2"
+})
+texture_object_classes = Dictionary[String, String]({
+"Normal": "Texture2D",
+"P_SimpleReflect": "Texture2D"
+})

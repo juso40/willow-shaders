@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_GunMaterials.Materials.Pistol.Mati_TedioreEpic.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Aster_GunMaterials.Materials.Shotgun.Mati_Tediore_CubicZerconia_SG"
+source_object = "Aster_GunMaterials.Materials.Shotgun.Mati_Tediore_CubicZerconia_SG"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_GunMaterials.Materials.Pistol.Mati_TedioreEpic"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_ReflectColorScale": 0.25,
+"p_ReplacePattern": 0.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_BColorHilight": Vector4(0.546978, 0.862083, 1.0, 1.0),
+"p_BColorMidtone": Vector4(0.337041, 0.699588, 1.0, 1.0),
+"p_BColorShadow": Vector4(0.042987, 0.030257, 0.21952, 1.0),
+"p_CColorHilight": Vector4(1.167735, 1.167735, 1.167735, 1.0),
+"p_CColorMidtone": Vector4(0.511398, 0.851252, 1.0, 1.0),
+"p_CColorShadow": Vector4(0.263175, 0.666117, 1.0, 1.0),
+"p_DecalChannel": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_DecalColor": Vector4(1.318158, 1.74765, 2.056738, 1.0),
+"p_DecalScalePosition": Vector4(23.514603, 53.012096, 0.3057, 0.5607),
+"p_ReflectColor": Vector4(1.546977, 1.546977, 1.546977, 1.0),
+"p_ReflectionChannelScale": Vector4(0.1, 1.0, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"P_SimpleReflect": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_NormalScopesEmissive": null
+})
+texture_object_paths = Dictionary[String, String]({
+"P_SimpleReflect": "Aster_GunMaterials.Materials.FacetColor",
+"p_Diffuse": "Common_GunMaterials.CompTextures.Weap_LauncherShotgunPistol_Comp",
+"p_Masks": "Weap_Shotguns.Tex.Weap_Shotgun_Comp",
+"p_NormalScopesEmissive": "Weap_Shotguns.Tex.Weap_Shotgun_Nor"
+})
+texture_object_classes = Dictionary[String, String]({
+"P_SimpleReflect": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_NormalScopesEmissive": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

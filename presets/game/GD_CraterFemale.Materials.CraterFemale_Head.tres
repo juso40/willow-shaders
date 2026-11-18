@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_CraterFemale.Materials.CraterFemale_Head"
+source_object = "GD_CraterFemale.Materials.CraterFemale_Head"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_PatternIntensity": 3.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.033148, 0.023025, 0.020146, 1.0),
+"p_AColorMidtone": Vector4(0.093919, 0.064884, 0.059131, 1.0),
+"p_AColorShadow": Vector4(0.143641, 0.019716, 0.0, 1.0),
+"p_BColorHilight": Vector4(0.513453, 0.619976, 0.801075, 1.0),
+"p_BColorMidtone": Vector4(0.510763, 0.59771, 0.900519, 1.0),
+"p_BColorShadow": Vector4(0.330527, 0.446348, 0.983389, 1.0),
+"p_CColorHilight": Vector4(0.497219, 0.209841, 0.076933, 1.0),
+"p_CColorMidtone": Vector4(0.198888, 0.054688, 0.003425, 1.0),
+"p_CColorShadow": Vector4(0.055247, 0.017678, 0.0, 1.0),
+"p_ColorD": Vector4(0.546941, 0.546941, 0.546941, 1.0),
+"p_PatternColor": Vector4(0.397775, 0.03114, 0.0, 1.0),
+"p_PatternScalePosition": Vector4(1.152118, 1.053918, 0.031868, 0.92)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_CustomPattern": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_CustomPattern": "CD_Skins_Siren_MainGame.Textures.FacePaint_SirenDahlEpic",
+"p_Diffuse": "Char_GenericFemale.Textures.GenericFemaleHead_01_Dif",
+"p_Masks": "Char_GenericFemale.Textures.GenericFemaleHead_01_Comp",
+"p_Normal": "Char_GenericFemale.Textures.GenericFemaleHead_01_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_CustomPattern": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

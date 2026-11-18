@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/bsierzega_TestPackage.FogSheets.Mat_Fogsheet_MS.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "bsierzega_TestPackage.Materials.Mati_FogsheetShadowBase"
+source_object = "bsierzega_TestPackage.Materials.Mati_FogsheetShadowBase"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "bsierzega_TestPackage.FogSheets.Mat_Fogsheet_MS"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"BeginFadeDistance": 12.0,
+"DepthBias": 9500.0,
+"FadeLength": 500.0,
+"Opacity": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Color": Vector4(0.033148, 0.016886, 0.006905, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

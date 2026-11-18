@@ -1,0 +1,10 @@
+.godot/
+__pycache__/
+*.pyc
+# Extracted copyrighted assets are local, reproducible inputs, not source code.
+assets/textures/*.png
+assets/models/*.glb
+assets/imported_textures/
+assets/registered_textures/
+artifacts/
+build/

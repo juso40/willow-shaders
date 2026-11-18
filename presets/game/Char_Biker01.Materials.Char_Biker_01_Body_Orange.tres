@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Char_Biker01.Materials.Char_Biker_01_Body_Master.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Biker01.Materials.Char_Biker_01_Body_Orange"
+source_object = "Char_Biker01.Materials.Char_Biker_01_Body_Orange"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Char_Biker01.Materials.Char_Biker_01_Body_Master"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.707865, 0.446696, 0.221252, 1.0),
+"p_AColorMidtone": Vector4(0.72373, 0.220402, 0.043356, 1.0),
+"p_AColorShadow": Vector4(0.961291, 0.770613, 0.0, 1.0),
+"p_BColorHilight": Vector4(0.961291, 0.770613, 0.0, 1.0),
+"p_BColorMidtone": Vector4(0.961291, 0.770613, 0.0, 1.0),
+"p_BColorShadow": Vector4(0.056268, 0.056928, 0.061798, 1.0),
+"p_CColorHilight": Vector4(0.859551, 0.555284, 0.164184, 1.0),
+"p_CColorMidtone": Vector4(0.281758, 0.085805, 0.016879, 1.0),
+"p_CColorShadow": Vector4(0.146889, 0.168539, 0.09455, 1.0),
+"p_ColorD": Vector4(0.795551, 0.520689, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

@@ -1,0 +1,50 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_CreatureFire.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Nomad.Materials.Mati_NomadFlint"
+source_object = "Char_Nomad.Materials.Mati_NomadFlint"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_CreatureFire"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_FxScaleFire": 0.0,
+"p_ShadowsIntensity": 2.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.16574, 0.144791, 0.073259, 1.0),
+"p_AColorMidtone": Vector4(1.0, 0.782019, 0.078652, 1.0),
+"p_AColorShadow": Vector4(0.044197, 0.029233, 0.0, 1.0),
+"p_BColorHilight": Vector4(0.542094, 0.562513, 0.607712, 1.0),
+"p_BColorMidtone": Vector4(0.237598, 0.252908, 0.325955, 1.0),
+"p_BColorShadow": Vector4(0.024224, 0.028702, 0.044197, 0.0),
+"p_CColorHilight": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_CColorMidtone": Vector4(0.179775, 0.179775, 0.179775, 1.0),
+"p_CColorShadow": Vector4(0.067416, 0.067416, 0.067416, 1.0),
+"p_ColorD": Vector4(0.286517, 0.237516, 0.212121, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_CustomPattern": null,
+"p_Diffuse": null,
+"p_FireEffectTexture": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_CustomPattern": "",
+"p_Diffuse": "Char_Nomad.Textures.Nomad_Dif",
+"p_FireEffectTexture": "FX_Shared_Fire.Textures.Fireball_Tiling_Dif",
+"p_Masks": "Char_Nomad.Nomad_Comp",
+"p_Normal": "Char_Nomad.Textures.Nomad_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_CustomPattern": "",
+"p_Diffuse": "Texture2D",
+"p_FireEffectTexture": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

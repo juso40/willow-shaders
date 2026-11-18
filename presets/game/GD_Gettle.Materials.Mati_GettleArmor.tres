@@ -1,0 +1,50 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_Gettle.Materials.Mati_GettleArmor"
+source_object = "GD_Gettle.Materials.Mati_GettleArmor"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_DiffusePower": 1.25,
+"p_HighlightsIntensity": 1.0,
+"p_ShadowsIntensity": 0.5
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.741573, 0.682456, 0.0, 1.0),
+"p_AColorMidtone": Vector4(0.994382, 0.617555, 0.055864, 1.0),
+"p_AColorShadow": Vector4(0.157289, 0.199977, 1.0, 1.0),
+"p_BColorHilight": Vector4(0.5, 0.388425, 0.320652, 1.0),
+"p_BColorMidtone": Vector4(0.391304, 0.37995, 0.367911, 1.0),
+"p_BColorShadow": Vector4(0.555223, 0.559783, 0.520981, 1.0),
+"p_CColorHilight": Vector4(0.92774, 1.0, 0.881345, 1.0),
+"p_CColorMidtone": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_CColorShadow": Vector4(0.0, 0.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_CustomPattern": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null,
+"p_SpecularMap": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_CustomPattern": "",
+"p_Diffuse": "Char_Probe.Texture.Probe_Dif",
+"p_Masks": "Char_Probe.Texture.Probe_Comp",
+"p_Normal": "Char_Probe.Texture.Probe_Nrm",
+"p_SpecularMap": ""
+})
+texture_object_classes = Dictionary[String, String]({
+"p_CustomPattern": "",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D",
+"p_SpecularMap": ""
+})
+notes = "Instance native static permutation data is not exposed by this dump."

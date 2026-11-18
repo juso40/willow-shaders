@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Player.Master_Player.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "CD_Skins_Assassin_nasturtium.Materials.Mati_ZeroEaster_Body"
+source_object = "CD_Skins_Assassin_nasturtium.Materials.Mati_ZeroEaster_Body"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Player.Master_Player"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.116996, 0.117041, 0.160215, 1.0),
+"p_AColorMidtone": Vector4(0.069188, 0.058605, 0.088395, 1.0),
+"p_AColorShadow": Vector4(0.983389, 0.983389, 0.983389, 1.0),
+"p_BColorHilight": Vector4(0.524843, 0.462821, 0.382763, 1.0),
+"p_BColorMidtone": Vector4(0.331479, 0.292594, 0.230757, 1.0),
+"p_BColorShadow": Vector4(0.127067, 0.100007, 0.062068, 1.0),
+"p_CColorHilight": Vector4(0.028897, 0.020467, 0.044197, 1.0),
+"p_CColorMidtone": Vector4(0.028897, 0.020467, 0.044197, 1.0),
+"p_CColorShadow": Vector4(0.028897, 0.020467, 0.044197, 1.0),
+"p_EmissiveColor": Vector4(0.011651, 4.548485, 0.658267, 1.0),
+"p_PatternChannelScale": Vector4(1.0, 1.0, 1.0, 0.0),
+"p_PatternColor": Vector4(1.5, 1.5, 1.5, 1.0),
+"p_PatternScalePosition": Vector4(3.5, 3.5, 0.0872, -0.0408),
+"p_ReflectColor": Vector4(0.414349, 0.414349, 0.414349, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"P_SimpleReflect": null,
+"p_Diffuse": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"P_SimpleReflect": "Common_Textures.Stub.StubBlack_Gray",
+"p_Diffuse": "CD_Skins_Assassin_nasturtium.Textures.ZeroEaster_Body_Dif",
+"p_Normal": "CD_Skins_Assassin_nasturtium.Textures.ZeroEaster_Body_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"P_SimpleReflect": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

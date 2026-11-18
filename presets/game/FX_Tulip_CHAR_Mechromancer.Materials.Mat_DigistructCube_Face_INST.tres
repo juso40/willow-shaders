@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_Tulip_CHAR_Mechromancer.Materials.Mat_DigistructCube_Face.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Tulip_CHAR_Mechromancer.Materials.Mat_DigistructCube_Face_INST"
+source_object = "FX_Tulip_CHAR_Mechromancer.Materials.Mat_DigistructCube_Face_INST"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_Tulip_CHAR_Mechromancer.Materials.Mat_DigistructCube_Face"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Color_Multiply": Vector4(10.0, 3.071704, 0.224485, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

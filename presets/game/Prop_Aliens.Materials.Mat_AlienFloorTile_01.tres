@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Aliens.Materials.Mat_AlienFloorTile_01"
+source_object = "Prop_Aliens.Materials.Mat_AlienFloorTile_01"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_colormod": Vector4(1.0, 1.0, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"TextureAdd": null
+})
+texture_object_paths = Dictionary[String, String]({
+"TextureAdd": "Prop_Aliens.Textures.IceCrete_01_Dif"
+})
+texture_object_classes = Dictionary[String, String]({
+"TextureAdd": "Texture2D"
+})

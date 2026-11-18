@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Orchid_Sandworm.Materials.Mati_Orchid_SandGrub"
+source_object = "Char_Orchid_Sandworm.Materials.Mati_Orchid_SandGrub"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.944022, 1.0, 0.520189, 1.0),
+"p_AColorMidtone": Vector4(0.78, 0.543256, 0.2028, 1.0),
+"p_AColorShadow": Vector4(0.41, 0.2173, 0.2173, 1.0),
+"p_BColorHilight": Vector4(0.514089, 0.86, 0.635158, 1.0),
+"p_BColorMidtone": Vector4(0.853378, 0.908113, 0.91, 1.0),
+"p_BColorShadow": Vector4(0.420044, 0.51167, 0.52, 1.0),
+"p_CColorHilight": Vector4(0.58, 0.544276, 0.277256, 1.0),
+"p_CColorMidtone": Vector4(0.32, 0.306663, 0.162569, 1.0),
+"p_CColorShadow": Vector4(1.2, 0.907564, 0.669633, 1.0),
+"p_ColorD": Vector4(0.65, 0.1495, 0.1495, 1.0),
+"p_MuscleFat": Vector4(1.5, 0.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_Orchid_Sandworm.Textures.SandWorm_D",
+"p_Masks": "Char_Orchid_Sandworm.Textures.SandWorm_Comp",
+"p_Normal": "Char_Orchid_Sandworm.Textures.SandWorm_N"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

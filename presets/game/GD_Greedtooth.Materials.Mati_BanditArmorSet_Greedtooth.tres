@@ -1,0 +1,50 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_Greedtooth.Materials.Mati_BanditArmorSet_Greedtooth"
+source_object = "GD_Greedtooth.Materials.Mati_BanditArmorSet_Greedtooth"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_HighlightsIntensity": 5.0,
+"p_PatternIntensity": 1.0,
+"p_ShadowsIntensity": 4.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(2.129323, 2.03949, 0.894126, 1.0),
+"p_AColorMidtone": Vector4(2.381458, 1.976784, 1.092097, 1.0),
+"p_AColorShadow": Vector4(0.834223, 0.770884, 0.465519, 1.0),
+"p_BColorHilight": Vector4(1.0, 0.917019, 0.629848, 1.0),
+"p_BColorMidtone": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_BColorShadow": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_CColorHilight": Vector4(1.0, 0.898715, 0.580126, 1.0),
+"p_CColorMidtone": Vector4(2.207219, 1.929154, 0.85367, 1.0),
+"p_CColorShadow": Vector4(1.094545, 0.987802, 0.453564, 1.0),
+"p_ColorD": Vector4(0.56904, 0.487812, 0.248377, 1.0),
+"p_PatternColor": Vector4(0.049722, 0.038937, 0.031169, 2.0),
+"p_PatternScalePosition": Vector4(5.322682, 5.322682, 0.0, 0.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_CustomPattern": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_CustomPattern": "FX_Shared_Fire.Textures.Burned_Mask",
+"p_Diffuse": "Prop_Armor.Textures.BanditArmorSet_Dif",
+"p_Masks": "Prop_Armor.Textures.BanditArmorSet_Comp",
+"p_Normal": "Prop_Armor.Textures.BanditArmorSet_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_CustomPattern": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

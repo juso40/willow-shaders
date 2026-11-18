@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Env_Glacial.Materials.Master_SexyClapSelect.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_Glacial.Materials.Mati_SexyClapSelectA"
+source_object = "Env_Glacial.Materials.Mati_SexyClapSelectA"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Env_Glacial.Materials.Master_SexyClapSelect"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_ScaleMove": Vector4(1.29, 1.0, 0.0, 0.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/GD_Anemone_Infected_Badass_Midget.Materials.Mati_MidgetShield.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_Anemone_Infected_Midget.Materials.Mati_Infected_MidgetShield_INST"
+source_object = "GD_Anemone_Infected_Midget.Materials.Mati_Infected_MidgetShield_INST"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "GD_Anemone_Infected_Badass_Midget.Materials.Mati_MidgetShield"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.842697, 0.944683, 1.0, 1.0),
+"p_AColorMidtone": Vector4(1.0, 0.898506, 0.750827, 1.0),
+"p_AColorShadow": Vector4(0.494382, 0.238585, 0.105542, 1.0),
+"p_BColorHilight": Vector4(0.272332, 0.645745, 0.999963, 1.0),
+"p_BColorMidtone": Vector4(0.357101, 0.524426, 1.0, 1.0),
+"p_BColorShadow": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_PatternColor": Vector4(0.466292, 0.321746, 0.243431, 2.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

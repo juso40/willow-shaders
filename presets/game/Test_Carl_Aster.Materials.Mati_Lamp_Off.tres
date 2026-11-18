@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Test_Carl_Aster.Materials.Mat_Lamp.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Test_Carl_Aster.Materials.Mati_Lamp_Off"
+source_object = "Test_Carl_Aster.Materials.Mati_Lamp_Off"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Test_Carl_Aster.Materials.Mat_Lamp"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"LightColor": Vector4(0.0, 0.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

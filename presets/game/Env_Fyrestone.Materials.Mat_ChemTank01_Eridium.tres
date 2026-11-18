@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Tanks.Materials.Mat_ChemTank01.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Env_Fyrestone.Materials.Mat_ChemTank01_Eridium"
+source_object = "Env_Fyrestone.Materials.Mat_ChemTank01_Eridium"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Tanks.Materials.Mat_ChemTank01"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"EmissColorA": Vector4(0.024407, 0.168853, 0.820225, 1.0),
+"EmissColorB": Vector4(1.0, 0.045262, 0.864432, 1.0),
+"Fresnel_Color": Vector4(0.382753, 0.080724, 0.684783, 1.0),
+"p_SpecColor": Vector4(0.266717, 0.145989, 0.488764, 1.0),
+"transmission color": Vector4(0.191215, 0.029793, 0.393258, 1.0),
+"tube color": Vector4(0.071853, 0.259213, 0.589888, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

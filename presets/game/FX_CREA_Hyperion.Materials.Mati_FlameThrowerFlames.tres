@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_Shared_Fire.Materials.Mat_Fire_Intense.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_CREA_Hyperion.Materials.Mati_FlameThrowerFlames"
+source_object = "FX_CREA_Hyperion.Materials.Mati_FlameThrowerFlames"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_Shared_Fire.Materials.Mat_Fire_Intense"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Fire_Color": Vector4(25.0, 3.0, 0.3, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"FireTexture": null,
+"Mask": null,
+"SmokeTexture": null
+})
+texture_object_paths = Dictionary[String, String]({
+"FireTexture": "FX_Shared_Fire.Textures.Fireball_Dif",
+"Mask": "FX_Shared_Smoke.Textures.Tex_SmokeGreyPack",
+"SmokeTexture": "FX_Shared_Smoke.Textures.Basic_Dust_Dif"
+})
+texture_object_classes = Dictionary[String, String]({
+"FireTexture": "Texture2D",
+"Mask": "Texture2D",
+"SmokeTexture": "Texture2D"
+})

@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_Aster_CastleKeep.Materials.Mat_BloodPool_CastleKeep_Directional.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Aster_CastleKeep.Materials.Mat_BloodPool_Directional1"
+source_object = "FX_Aster_CastleKeep.Materials.Mat_BloodPool_Directional1"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_Aster_CastleKeep.Materials.Mat_BloodPool_CastleKeep_Directional"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"DepthBias_Rate": -10.0,
+"Reflection_Dot_Rate": 2.5
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Color_High": Vector4(0.05, 0.0, 0.0, 1.0),
+"Color_Low": Vector4(0.02, 0.0, 0.002, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_BOSS_MidBoss.Materials.Mat_FoliageWPO.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_BOSS_MidBoss.Materials.Mat_FoliageWPO_Subtle_INST"
+source_object = "FX_BOSS_MidBoss.Materials.Mat_FoliageWPO_Subtle_INST"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_BOSS_MidBoss.Materials.Mat_FoliageWPO"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"BaseSwayPower": 0.03,
+"TimeStep": 0.75
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_Anemone_Cinematic.Materials.Mat_Steam_Anim_Addative.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Anemone_Cinematic.Materials.Mati_Steam_Anim_Addative_NearCullingClose"
+source_object = "FX_Anemone_Cinematic.Materials.Mati_Steam_Anim_Addative_NearCullingClose"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_Anemone_Cinematic.Materials.Mat_Steam_Anim_Addative"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"NearCulling": 50.0,
+"NearCullingFadeStart": 100.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

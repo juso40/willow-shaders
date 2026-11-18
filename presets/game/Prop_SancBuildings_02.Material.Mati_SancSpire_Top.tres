@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_SancBuildings_02.Material.Master_SancSpire.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_SancBuildings_02.Material.Mati_SancSpire_Top"
+source_object = "Prop_SancBuildings_02.Material.Mati_SancSpire_Top"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_SancBuildings_02.Material.Master_SancSpire"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Color_UV_Scale & Offset": Vector4(0.34, 1.0, 0.33, 0.0),
+"Emissive_UV_Scale & Offset": Vector4(1.0, 1.0, 0.0, 0.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Color": null,
+"Emissive": null,
+"Luminosity": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Color": "Prop_SancBuildings_02.Textures.SancSpire_Col",
+"Emissive": "Prop_SancBuildings_02.Textures.SancSpire_Ems",
+"Luminosity": "Prop_SancBuildings_02.Textures.SancSpire_Lum"
+})
+texture_object_classes = Dictionary[String, String]({
+"Color": "Texture2D",
+"Emissive": "Texture2D",
+"Luminosity": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

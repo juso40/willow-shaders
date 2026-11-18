@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Crate.Materials.Mat_CoveredCrate_01a.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Crate.Materials.Mati_CoveredCrate_01a"
+source_object = "Prop_Crate.Materials.Mati_CoveredCrate_01a"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Crate.Materials.Mat_CoveredCrate_01a"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_WaveScale": 5.0,
+"p_WindSpeed": 25.0,
+"p_WindWaveLength": 4.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

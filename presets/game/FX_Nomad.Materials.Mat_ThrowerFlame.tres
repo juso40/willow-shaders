@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_BOSS_FinalBoss.Materials.Mat_BossBreath.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Nomad.Materials.Mat_ThrowerFlame"
+source_object = "FX_Nomad.Materials.Mat_ThrowerFlame"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_BOSS_FinalBoss.Materials.Mat_BossBreath"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"AngleFade_Multiply": 6.0,
+"DepthBias_Rate": -150.0,
+"FadeDist": 6000.0,
+"FadeStart": 2048.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

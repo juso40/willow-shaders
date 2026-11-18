@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Flags.Materials.Mat_BanditFlags.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Flags.Materials.Mati_BanditFlag_Grenade"
+source_object = "Prop_Flags.Materials.Mati_BanditFlag_Grenade"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Flags.Materials.Mat_BanditFlags"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"AlphaBrightness": 3.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"FlagColor": Vector4(0.835528, 0.005522, 0.009021, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"BanditIcon": null
+})
+texture_object_paths = Dictionary[String, String]({
+"BanditIcon": "Prop_Decals.Textures.BanditGrenadeHead_Dif"
+})
+texture_object_classes = Dictionary[String, String]({
+"BanditIcon": "Texture2D"
+})

@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_WEP_Scopes.Materials.Mat_Scope_Glass_MS"
+source_object = "FX_WEP_Scopes.Materials.Mat_Scope_Glass_MS"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"CenterGradientIntensity": 5.0,
+"GlassDensity": 0.15,
+"ReflectionMulitplier": 0.2
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"normal_Multiplier": Vector4(1.0, 1.0, 0.2, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"GP_Tex": null,
+"reflectTex": null
+})
+texture_object_paths = Dictionary[String, String]({
+"GP_Tex": "FX_WEP_Scopes.Textures.Tex_Torgue_Glass",
+"reflectTex": "FX_Shared_CubeMaps.Textures.EnergyOrbReflection_Dif"
+})
+texture_object_classes = Dictionary[String, String]({
+"GP_Tex": "Texture2D",
+"reflectTex": "Texture2D"
+})
+static_component_masks = Dictionary[String, Vector4]({
+"OpacityMask": Vector4(0.0, 0.0, 0.0, 1.0)
+})
+static_switches = Dictionary[String, bool]({
+"ToggleCenterGradient": false
+})

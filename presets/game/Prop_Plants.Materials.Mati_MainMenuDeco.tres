@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Plants.Materials.Foliage3TypeCombinerWiggle.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Plants.Materials.Mati_MainMenuDeco"
+source_object = "Prop_Plants.Materials.Mati_MainMenuDeco"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Plants.Materials.Foliage3TypeCombinerWiggle"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_WaveScale": 4.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Diffuse_A_Tint": Vector4(0.585614, 0.524847, 0.412716, 0.0),
+"Diffuse_B_Tint": Vector4(0.552656, 0.690582, 0.569928, 0.0),
+"Diffuse_C_Tint": Vector4(1.40308, 1.354648, 1.069606, 0.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Alpha_A": null,
+"Alpha_B": null,
+"Alpha_C": null,
+"Diffuse_A": null,
+"Diffuse_B": null,
+"Diffuse_C": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Alpha_A": "Prop_Plants.Textures.InterludeDecoTallGrass_Alpha",
+"Alpha_B": "Prop_Plants.Textures.InterludeDecoTallGrass_Alpha",
+"Alpha_C": "Prop_Plants.Textures.InterludeDecoTallGrass_Alpha",
+"Diffuse_A": "Prop_Plants.Textures.InterludeDecoBushThinLeafy_Dif",
+"Diffuse_B": "Prop_Plants.Textures.InterludeDecoShrub_Dif",
+"Diffuse_C": "Prop_Plants.Textures.InterludeDecoTallGrass_Dif"
+})
+texture_object_classes = Dictionary[String, String]({
+"Alpha_A": "Texture2D",
+"Alpha_B": "Texture2D",
+"Alpha_C": "Texture2D",
+"Diffuse_A": "Texture2D",
+"Diffuse_B": "Texture2D",
+"Diffuse_C": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

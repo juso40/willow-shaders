@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/GD_DigiCreaturesShared.Materials.Master_Lobelia_CreatureDigital_Digistruct.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_Nomad_HMG_Digi.Materials.Mati_GoliathStandard_Digi"
+source_object = "GD_Nomad_HMG_Digi.Materials.Mati_GoliathStandard_Digi"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "GD_DigiCreaturesShared.Materials.Master_Lobelia_CreatureDigital_Digistruct"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_PatternIntensity": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.486197, 0.983522, 1.0, 1.0),
+"p_AColorMidtone": Vector4(0.264914, 0.405979, 0.707156, 1.0),
+"p_AColorShadow": Vector4(0.508269, 0.158199, 0.370833, 1.0),
+"p_BColorHilight": Vector4(1.0, 0.862375, 0.800334, 1.0),
+"p_BColorMidtone": Vector4(1.0, 0.857405, 0.823211, 1.0),
+"p_BColorShadow": Vector4(0.690582, 0.294149, 0.269865, 1.0),
+"p_CColorHilight": Vector4(1.0, 1.0, 1.0, 1.0),
+"p_CColorMidtone": Vector4(0.795551, 0.593374, 0.632031, 1.0),
+"p_CColorShadow": Vector4(0.182744, 0.563515, 0.098311, 1.0),
+"p_DigiColor": Vector4(0.048817, 0.220155, 1.0, 3.0),
+"p_PatternColor": Vector4(0.386726, 0.055849, 0.052239, 2.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_Goliath.Textures.Goliath_Dif",
+"p_Masks": "Char_Goliath.Textures.Goliath_Comp",
+"p_Normal": "Char_Goliath.Textures.Goliath_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_Shared_Materials.Materials.Master_Emissive_Additive.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_CREA_Skag.Materials.Mati_FoamRings"
+source_object = "FX_CREA_Skag.Materials.Mati_FoamRings"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_Shared_Materials.Materials.Master_Emissive_Additive"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"masterDiffuseOpacityInput": null
+})
+texture_object_paths = Dictionary[String, String]({
+"masterDiffuseOpacityInput": "FX_Shared_Gradients.Textures.Round_Fire_Mask_Dif"
+})
+texture_object_classes = Dictionary[String, String]({
+"masterDiffuseOpacityInput": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_Flax_AllHallowsEve.Materials.Mat_LavaFlow.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Flax_AllHallowsEve.Materials.Mati_LavaFalls"
+source_object = "FX_Flax_AllHallowsEve.Materials.Mati_LavaFalls"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_Flax_AllHallowsEve.Materials.Mat_LavaFlow"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"FlowSpeed": 0.25,
+"SolidScale": 30.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"LavaColor": Vector4(4.0, 0.6, 0.1, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

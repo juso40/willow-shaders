@@ -1,0 +1,37 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_Aster_ElementalTrap.Materials.Mat_Radial_Elemental.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_Aster_ElementalTrap.Materials.Mat_Radial_Corrosive_INST"
+source_object = "FX_Aster_ElementalTrap.Materials.Mat_Radial_Corrosive_INST"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_Aster_ElementalTrap.Materials.Mat_Radial_Elemental"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"MaskTiling": Vector4(6.0, 1.0, 0.0, 1.0),
+"Strength": Vector4(3.0, 3.0, 3.0, 1.0),
+"Tiling1": Vector4(7.0, 0.5, 0.0, 1.0),
+"Tiling2": Vector4(9.0, 0.5, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Mask": null,
+"Texture2": null,
+"texture1": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Mask": "FX_Aster_ElementalTrap.Textures.Tex_Radial_Corrosive",
+"Texture2": "FX_Shared_Fire.Textures.Molten_Scroll_Dif",
+"texture1": "Prop_Water.Textures.FoamWater"
+})
+texture_object_classes = Dictionary[String, String]({
+"Mask": "Texture2D",
+"Texture2": "Texture2D",
+"texture1": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

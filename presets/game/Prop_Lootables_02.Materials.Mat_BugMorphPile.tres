@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Lootables_02.Materials.Mat_BugMorphPile"
+source_object = "Prop_Lootables_02.Materials.Mat_BugMorphPile"
+unreal_class = "Material"
+ScalarParameterValues = Dictionary[String, float]({
+"Glow": 1.0,
+"p_UVMod": 1.5
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Aster_Prop_Ruins.Materials.Ruins_Set_Master.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Aster_Prop_Ruins.Materials.Mati_Ruins_Brick"
+source_object = "Aster_Prop_Ruins.Materials.Mati_Ruins_Brick"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Aster_Prop_Ruins.Materials.Ruins_Set_Master"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"P_UV_Tiling": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"ColorMap_Coordinate": Vector4(0.0, 0.0, 0.0, 0.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Color_Map": null,
+"Diffuse": null,
+"Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Color_Map": "",
+"Diffuse": "Aster_Prop_Ruins.Textures.Ruins_Floors_Comp",
+"Normal": "Aster_Prop_Ruins.Textures.Ruins_Bricks_Local"
+})
+texture_object_classes = Dictionary[String, String]({
+"Color_Map": "",
+"Diffuse": "Texture2D",
+"Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

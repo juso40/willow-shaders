@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_EngineerArmsShared.Materials.Mati_WeldingMask_Hyperion"
+source_object = "GD_EngineerArmsShared.Materials.Mati_WeldingMask_Hyperion"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_UVChannelSelect": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(1.340724, 1.055937, 0.0, 1.0),
+"p_AColorMidtone": Vector4(3.619651, 3.1675, 0.391201, 1.0),
+"p_AColorShadow": Vector4(0.364627, 0.189217, 0.0, 1.0),
+"p_BColorHilight": Vector4(9.567351, 10.508805, 12.922896, 1.0),
+"p_BColorMidtone": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_BColorShadow": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_CColorHilight": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_CColorMidtone": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_CColorShadow": Vector4(0.0, 0.0, 0.0, 1.0),
+"p_ColorD": Vector4(0.0, 12.062347, 50.0, 1.0),
+"p_EmissiveScale": Vector4(1.350729, 1.350729, 1.350729, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_Scooter.Textures.WeldingMask_Dif",
+"p_Masks": "Char_Scooter.WeldingMask_Comp",
+"p_Normal": "Char_Scooter.Textures.WeldingMask_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

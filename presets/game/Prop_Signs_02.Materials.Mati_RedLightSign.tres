@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Signs_02.Materials.Mat_RedLightSign.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Signs_02.Materials.Mati_RedLightSign"
+source_object = "Prop_Signs_02.Materials.Mati_RedLightSign"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Signs_02.Materials.Mat_RedLightSign"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

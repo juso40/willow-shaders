@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Machines.Materials.Master_SlotMachine.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Prop_Machines.Materials.Mati_SlotMachine"
+source_object = "Prop_Machines.Materials.Mati_SlotMachine"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Machines.Materials.Master_SlotMachine"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

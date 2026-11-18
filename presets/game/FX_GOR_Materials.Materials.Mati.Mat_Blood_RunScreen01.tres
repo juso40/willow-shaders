@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_GOR_Materials.Materials.Mat_Blood_Pool_Master.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_GOR_Materials.Materials.Mati.Mat_Blood_RunScreen01"
+source_object = "FX_GOR_Materials.Materials.Mati.Mat_Blood_RunScreen01"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_GOR_Materials.Materials.Mat_Blood_Pool_Master"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Color": Vector4(0.2, 0.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Emissive": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Emissive": "FX_GOR_Textures.Textures.Blood_Decal_04"
+})
+texture_object_classes = Dictionary[String, String]({
+"Emissive": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_Crystal.Materials.Mat_CrystalOpaque.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_Anemone_Side_Claptocurrency.Materials.Mati_Crystal_BechoWaffer"
+source_object = "GD_Anemone_Side_Claptocurrency.Materials.Mati_Crystal_BechoWaffer"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_Crystal.Materials.Mat_CrystalOpaque"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"base_bright": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"Crystal Color": Vector4(0.0, 4.0, 8.0, 1.0),
+"Glow Color": Vector4(0.0, 4.0, 8.0, 1.0),
+"Rim Color": Vector4(0.0, 4.0, 8.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})

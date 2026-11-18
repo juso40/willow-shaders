@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_CreatureDigistruct.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_Nast_BadassJunkLoader.Materials.Mati_Attachment_Junk"
+source_object = "GD_Nast_BadassJunkLoader.Materials.Mati_Attachment_Junk"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_CreatureDigistruct"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_DigiStructEnable": 0.0,
+"p_PatternIntensity": 10.0,
+"p_UVChannelSelect": 6.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.170626, 0.219056, 0.23756, 1.0),
+"p_AColorMidtone": Vector4(0.209937, 0.153684, 0.103669, 1.0),
+"p_AColorShadow": Vector4(0.74453, 0.259027, 0.20471, 1.0),
+"p_BColorHilight": Vector4(0.182314, 0.136579, 0.11074, 1.0),
+"p_BColorMidtone": Vector4(0.08287, 0.069139, 0.057689, 1.0),
+"p_BColorShadow": Vector4(0.378018, 0.491695, 0.355872, 1.0),
+"p_CColorHilight": Vector4(0.170138, 0.215764, 0.234895, 1.0),
+"p_CColorMidtone": Vector4(0.20836, 0.151058, 0.103634, 1.0),
+"p_CColorShadow": Vector4(0.74453, 0.261788, 0.205691, 1.0),
+"p_ColorD": Vector4(0.314906, 0.279948, 0.267932, 1.0),
+"p_PatternColor": Vector4(0.668484, 0.194493, 0.066427, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_CustomPattern": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_CustomPattern": "FX_Shared_Dirt.Textures.Dirt_Clump_Diff",
+"p_Diffuse": "HyperionBotAttachments.Tex.HyperionBotAttachments_Dif",
+"p_Masks": "HyperionBotAttachments.Tex.HyperionBotAttachments_Comp",
+"p_Normal": "HyperionBotAttachments.Tex.HyperionBotAttachments_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_CustomPattern": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

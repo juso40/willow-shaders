@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_CreatureShock.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Char_Nast_FemaleInLove.Materials.MI_Hair_Shock"
+source_object = "Char_Nast_FemaleInLove.Materials.MI_Hair_Shock"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_CreatureShock"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_FxScaleShock": 0.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.718206, 0.459957, 0.218258, 1.0),
+"p_AColorMidtone": Vector4(0.834223, 0.358086, 0.152121, 1.0),
+"p_AColorShadow": Vector4(0.535892, 0.283851, 0.233909, 1.0),
+"p_BColorHilight": Vector4(0.722672, 0.368591, 0.227137, 0.0),
+"p_BColorMidtone": Vector4(0.722672, 0.368591, 0.227137, 0.0),
+"p_BColorShadow": Vector4(0.722672, 0.370679, 0.2276, 0.0),
+"p_CColorHilight": Vector4(0.55799, 0.37279, 0.286804, 1.0),
+"p_CColorMidtone": Vector4(0.353578, 0.224757, 0.189493, 1.0),
+"p_CColorShadow": Vector4(0.436448, 0.264265, 0.341893, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_GenericMale.Textures.GenericNPC_Attachments_Dif",
+"p_Masks": "Char_GenericMale.Textures.GenericNPC_Attachments_Comp",
+"p_Normal": "Char_GenericMale.Textures.GenericNPC_Attachments_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

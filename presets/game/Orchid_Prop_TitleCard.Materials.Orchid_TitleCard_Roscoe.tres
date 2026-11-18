@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Prop_TitleCard_02.Materials.Master_TitleCard.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Orchid_Prop_TitleCard.Materials.Orchid_TitleCard_Roscoe"
+source_object = "Orchid_Prop_TitleCard.Materials.Orchid_TitleCard_Roscoe"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Prop_TitleCard_02.Materials.Master_TitleCard"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_SplatColor": Vector4(0.0, 0.214432, 1.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_background": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_background": "Orchid_Prop_TitleCard.Textures.Tex_TCBackgrounds_Orchid_Scarlett"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_background": "Texture2D"
+})

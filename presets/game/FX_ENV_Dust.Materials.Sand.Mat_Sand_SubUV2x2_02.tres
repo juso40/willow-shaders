@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/FX_ENV_Dust.Materials.Sand.Mat_InterludeP_Sand.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "FX_ENV_Dust.Materials.Sand.Mat_Sand_SubUV2x2_02"
+source_object = "FX_ENV_Dust.Materials.Sand.Mat_Sand_SubUV2x2_02"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "FX_ENV_Dust.Materials.Sand.Mat_InterludeP_Sand"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"DepthBias": 0.0,
+"MaskDistortionAmount": 0.06,
+"TileSpecs": 3.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"HighlightColor": Vector4(0.0, 0.0, 0.0, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"Mask": null,
+"SpecTex": null
+})
+texture_object_paths = Dictionary[String, String]({
+"Mask": "FX_ENV_Weather.Textures.Snow_Dust_Dif",
+"SpecTex": "FX_ENV_Weather.Textures.Snow_Panner_Dif"
+})
+texture_object_classes = Dictionary[String, String]({
+"Mask": "Texture2D",
+"SpecTex": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

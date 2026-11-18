@@ -1,0 +1,50 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_SmagalNPC.Materials.Mati_Smagal"
+source_object = "GD_SmagalNPC.Materials.Mati_Smagal"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_PatternIntensity": 1.1,
+"p_PatternInvert": 0.8,
+"p_UVChannelSelect": 1.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.539347, 0.646385, 0.348594, 1.0),
+"p_AColorMidtone": Vector4(0.459344, 0.555096, 0.55799, 1.0),
+"p_AColorShadow": Vector4(0.281264, 0.521148, 0.192923, 1.0),
+"p_BColorHilight": Vector4(0.635349, 0.999963, 0.925529, 1.0),
+"p_BColorMidtone": Vector4(0.215853, 0.24861, 0.141478, 1.0),
+"p_BColorShadow": Vector4(0.199232, 0.441973, 0.297494, 1.0),
+"p_CColorHilight": Vector4(0.197195, 0.298332, 0.24243, 1.0),
+"p_CColorMidtone": Vector4(0.277237, 0.342529, 0.334892, 1.0),
+"p_CColorShadow": Vector4(0.224163, 0.281758, 0.279555, 1.0),
+"p_MuscleFat": Vector4(-15.0, -8.0, 0.0, -10.0),
+"p_PatternColor": Vector4(0.071821, 0.071821, 0.071821, 2.0),
+"p_PatternScalePosition": Vector4(1.723764, 1.723764, 0.0, 0.59)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_CustomPattern": null,
+"p_Diffuse": null,
+"p_Masks": null,
+"p_Normal": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_CustomPattern": "FX_GOR_Textures.Textures.Stitch_Overlay",
+"p_Diffuse": "Char_Bandit_Psycho.Textures.BanditPsycho_Dif",
+"p_Masks": "Char_Bandit_Psycho.Textures.BanditPsycho_Comp",
+"p_Normal": "Char_Bandit_Psycho.Textures.BanditPsycho_Nrm"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_CustomPattern": "Texture2D",
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D",
+"p_Normal": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."

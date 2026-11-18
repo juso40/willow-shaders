@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_GunMaterials.MasterMaterials.Dahl.MasterMati_DahlLegendary.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "Common_GunMaterials.Materials.AssaultRifle.Mati_DahlLegendaryAR"
+source_object = "Common_GunMaterials.Materials.AssaultRifle.Mati_DahlLegendaryAR"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_GunMaterials.MasterMaterials.Dahl.MasterMati_DahlLegendary"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+"p_ShadowsIntensity": 0.0
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.363446, 0.04572, 0.552466, 1.0),
+"p_AColorMidtone": Vector4(0.055044, 0.011449, 0.08287, 1.0),
+"p_AColorShadow": Vector4(0.099644, 0.279847, 0.563515, 1.0),
+"p_BColorMidtone": Vector4(0.325955, 0.124024, 0.0999, 1.0),
+"p_CColorHilight": Vector4(3.175184, 0.786448, 0.245702, 1.0),
+"p_CColorMidtone": Vector4(2.778531, 0.179347, 0.0, 1.0),
+"p_CColorShadow": Vector4(0.204412, 0.204412, 0.204412, 1.0),
+"p_DecalColor": Vector4(0.642602, 1.898367, 0.440559, 1.0),
+"p_PatternChannelScale": Vector4(0.0, 0.0, 0.0, 0.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+
+})
+notes = "Instance native static permutation data is not exposed by this dump."

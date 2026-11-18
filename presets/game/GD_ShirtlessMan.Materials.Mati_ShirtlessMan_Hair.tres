@@ -1,0 +1,40 @@
+[gd_resource type="Resource" script_class="MaterialInstanceConstant" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/material_instance_constant.gd" id="script"]
+[ext_resource type="Resource" path="res://presets/game/Common_Materials.Creature.Master_Creature.tres" id="parent"]
+
+[resource]
+script = ExtResource("script")
+resource_name = "GD_ShirtlessMan.Materials.Mati_ShirtlessMan_Hair"
+source_object = "GD_ShirtlessMan.Materials.Mati_ShirtlessMan_Hair"
+unreal_class = "MaterialInstanceConstant"
+parent_object_path = "Common_Materials.Creature.Master_Creature"
+Parent = ExtResource("parent")
+ScalarParameterValues = Dictionary[String, float]({
+
+})
+VectorParameterValues = Dictionary[String, Vector4]({
+"p_AColorHilight": Vector4(0.624286, 0.584884, 0.17592, 1.0),
+"p_AColorMidtone": Vector4(0.64086, 0.412698, 0.135337, 1.0),
+"p_AColorShadow": Vector4(0.099444, 0.071124, 0.046102, 1.0),
+"p_BColorHilight": Vector4(0.722672, 0.368591, 0.227137, 0.0),
+"p_BColorMidtone": Vector4(0.722672, 0.368591, 0.227137, 0.0),
+"p_BColorShadow": Vector4(0.722672, 0.370679, 0.2276, 0.0),
+"p_CColorHilight": Vector4(0.55799, 0.37279, 0.286804, 1.0),
+"p_CColorMidtone": Vector4(0.353578, 0.224757, 0.189493, 1.0),
+"p_CColorShadow": Vector4(0.436448, 0.264265, 0.341893, 1.0),
+"p_ColorD": Vector4(0.375677, 0.249952, 0.097638, 1.0)
+})
+TextureParameterValues = Dictionary[String, Texture2D]({
+"p_Diffuse": null,
+"p_Masks": null
+})
+texture_object_paths = Dictionary[String, String]({
+"p_Diffuse": "Char_GenericMale.Textures.GenericNPC_Attachments_Dif",
+"p_Masks": "Char_GenericMale.Textures.GenericNPC_Attachments_Comp"
+})
+texture_object_classes = Dictionary[String, String]({
+"p_Diffuse": "Texture2D",
+"p_Masks": "Texture2D"
+})
+notes = "Instance native static permutation data is not exposed by this dump."
