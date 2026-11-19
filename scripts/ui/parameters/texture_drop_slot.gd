@@ -9,6 +9,7 @@ var row: TextureParameterControl
 @onready var large_preview: TextureRect = %LargePreview
 @onready var timer: Timer = %Timer
 
+
 func _ready() -> void:
 	mouse_entered.connect(_on_mouse_entered)
 	mouse_entered.connect(timer.stop)
@@ -17,9 +18,11 @@ func _ready() -> void:
 	mouse_exited.connect(timer.start)
 	timer.timeout.connect(preview_popup.hide)
 
+
 func _get_drag_data(_position: Vector2) -> Variant:
 	var data: Variant = row.slot_drag_data() if row else null
-	if not data is Dictionary: return null
+	if not data is Dictionary:
+		return null
 	var preview := TextureRect.new()
 	preview.texture = data.texture_image
 	preview.custom_minimum_size = Vector2(44, 44)
@@ -28,14 +31,19 @@ func _get_drag_data(_position: Vector2) -> Variant:
 	set_drag_preview(preview)
 	return data
 
+
 func _can_drop_data(_position: Vector2, data: Variant) -> bool:
 	return row != null and row.slot_can_drop_data(data)
 
+
 func _drop_data(_position: Vector2, data: Variant) -> void:
-	if row: row.slot_drop_data(data)
+	if row:
+		row.slot_drop_data(data)
+
 
 func _gui_input(event: InputEvent) -> void:
-	if row: row.slot_gui_input(event)
+	if row:
+		row.slot_gui_input(event)
 
 
 func _on_mouse_entered() -> void:

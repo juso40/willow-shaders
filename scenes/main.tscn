@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://d2w8qddc5xt5x" path="res://scenes/preview/preview_pane.tscn" id="4_85g3d"]
 [ext_resource type="Script" uid="uid://clbsi5gctoblc" path="res://scripts/material_session.gd" id="5_choun"]
 [ext_resource type="PackedScene" path="res://scenes/material_files.tscn" id="6_ya4ey"]
+[ext_resource type="Script" path="res://scripts/browser_image_drop.gd" id="7_browser_drop"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tefeu"]
 content_margin_left = 4.0
@@ -67,3 +68,7 @@ script = ExtResource("5_choun")
 
 [node name="Files" parent="." unique_id=1185350286 instance=ExtResource("6_ya4ey")]
 unique_name_in_owner = true
+
+[node name="BrowserDrop" type="Node" parent="."]
+unique_name_in_owner = true
+script = ExtResource("7_browser_drop")

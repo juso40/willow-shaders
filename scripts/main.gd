@@ -7,6 +7,7 @@ signal state_applied
 @onready var sidebar: MaterialSidebar = %Sidebar
 @onready var preview: MaterialPreviewPane = %Preview
 @onready var files: MaterialFiles = %Files
+@onready var browser_drop: BrowserImageDrop = %BrowserDrop
 @onready var layout: HSplitContainer = %Layout
 var _load_serial := 0
 var _pending: Dictionary = {}
@@ -28,7 +29,10 @@ func _ready() -> void:
 	files.model_loaded.connect(_show_model)
 	files.state_loaded.connect(_apply_state)
 	files.notice.connect(preview.set_status)
-	get_window().files_dropped.connect(func(paths): handle_drop(paths))
+	get_window().files_dropped.connect(handle_drop)
+	browser_drop.link_dropped.connect(_offer_browser_image)
+	browser_drop.notice.connect(preview.set_status)
+	session.instance_changed.connect(func(_instance): _clear_pending())
 	sidebar.bind_instance(null)
 	if reopen_last_state: _restore_last_state.call_deferred()
 
@@ -85,11 +89,18 @@ func _apply_state(state: MaterialEditorState, model: Node3D) -> void:
 # since the compositor grabbed it. The application therefore arms a matching
 # zone and the user confirms the target with one click.
 func handle_drop(paths: PackedStringArray) -> void:
+	_clear_pending()
 	if paths.size() != 1:
 		preview.set_status("Drop one model, state file or texture at a time")
 		return
 	var path: String = paths[0]
-	_clear_pending()
+	var url := BrowserImageDrop.image_url(path)
+	if not url.is_empty():
+		_offer_browser_image(url)
+		return
+	if not FileAccess.file_exists(path):
+		preview.set_status("No readable file or image URL. Drag the original image or save it first.")
+		return
 	var is_state := path.get_extension().to_lower() in ["res", "tres"]
 	if OS.has_feature("web"):
 		# Godot unlinks browser drops when files_dropped returns. Keep a copy
@@ -104,6 +115,15 @@ func handle_drop(paths: PackedStringArray) -> void:
 		files.load_state(path)
 		return
 	_begin_drop(path)
+
+func _offer_browser_image(url: String) -> void:
+	_clear_pending()
+	if url.is_empty():
+		preview.set_status(BrowserImageDrop.NO_IMAGE)
+		return
+	_pending = {"kind": "browser_image", "url": url}
+	sidebar.editor.arm_texture_targets(true)
+	preview.set_status("Image from %s: click a texture slot to import. Right-click cancels." % BrowserImageDrop.label(url))
 
 func _begin_drop(path: String) -> void:
 	var kind := "model" if path.get_extension().to_lower() == "glb" else "image"
@@ -125,7 +145,8 @@ func _cancel_pending() -> void:
 	preview.set_status("Drop cancelled")
 
 func _clear_pending() -> void:
-	if OS.has_feature("web") and not _pending.is_empty(): DirAccess.remove_absolute(_pending.path)
+	browser_drop.cancel()
+	if OS.has_feature("web") and _pending.has("path"): DirAccess.remove_absolute(_pending.path)
 	_pending = {}
 	preview.set_pending_model("")
 	sidebar.editor.arm_texture_targets(false)
@@ -141,11 +162,31 @@ func _input(event: InputEvent) -> void:
 		get_viewport().set_input_as_handled()
 		_cancel_pending()
 		return
-	if event.button_index != MOUSE_BUTTON_LEFT or _pending.kind != "image": return
+	if event.button_index != MOUSE_BUTTON_LEFT or _pending.kind not in ["image", "browser_image"]: return
 	var row := sidebar.editor.texture_control_at(event.position)
 	if not row: return
-	var path: String = _pending.path
 	get_viewport().set_input_as_handled()
-	if row.import_image(path): preview.set_status("Loaded image: " + path.get_file())
-	else: preview.set_status("Cannot import " + path.get_file())
+	if _pending.kind == "browser_image":
+		if not row.validate_pending_path():
+			preview.set_status("Correct the texture object path before importing the image")
+			return
+		var url: String = _pending.url
+		_clear_pending()
+		preview.set_status("Loading image from " + BrowserImageDrop.label(url))
+		browser_drop.load_image(url, _assign_browser_image.bind(weakref(row), session.instance))
+		return
+	var path: String = _pending.path
+	if row.import_image(path):
+		preview.set_status("Loaded image: " + path.get_file())
+	else:
+		preview.set_status("Cannot import " + path.get_file())
 	_clear_pending()
+
+func _assign_browser_image(texture: Texture2D, target: WeakRef, source: MaterialInstanceConstant) -> void:
+	var row := target.get_ref() as TextureParameterControl
+	if not row or not source or row.instance != source or source != session.instance: return
+	if not row.validate_pending_path():
+		preview.set_status("Image not applied: the texture object path is invalid")
+		return
+	source.set_texture_parameter_value(row.parameter, texture)
+	preview.set_status("Loaded browser image: " + str(row.parameter))
