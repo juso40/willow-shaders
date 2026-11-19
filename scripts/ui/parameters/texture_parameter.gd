@@ -6,6 +6,7 @@ extends MaterialParameterControl
 @onready var game_path: LineEdit = %GamePath
 const BORDER_COLOR := Color(0.3, 0.34, 0.4, 1.0)
 const HINT_COLOR := Color(0.4, 0.85, 0.5, 1.0)
+const WEB_IMAGE_ACCEPT := ".png,.jpg,.jpeg,.webp,.bmp,.tga,.svg"
 var _invalid_path := false
 var _slot_dragged := false
 
@@ -48,31 +49,44 @@ func slot_gui_input(event: InputEvent) -> void:
 
 func bind_instance(value: MaterialInstanceConstant) -> void:
 	game_path.release_focus()
+	_invalid_path = false
 	super.bind_instance(value)
 
 func _on_inherit() -> void:
+	_invalid_path = false
 	super._on_inherit()
+	if instance: _show_game_path()
 
 func display_value(value: Variant) -> void:
 	summary_preview.texture = value as Texture2D
-	var path: String = instance.resolved_texture_paths().get(parameter, "")
-	var kind: String = instance.resolved_values(&"texture_object_classes").get(str(parameter), "Texture2D")
-	if not game_path.has_focus() and not _invalid_path:
-		game_path.text = GameTextureReference.literal(path, kind) if not path.is_empty() else ""
+	if not game_path.has_focus() and not _invalid_path: _show_game_path()
+
+func _show_game_path() -> void:
+	var paths := instance.resolved_texture_paths()
+	var path: String = paths.get(str(parameter), "")
+	if path.is_empty():
+		game_path.text = "None" if paths.has(str(parameter)) else ""
+	else:
+		var kind: String = instance.resolved_values(&"texture_object_classes").get(str(parameter), "Texture2D")
+		game_path.text = GameTextureReference.literal(path, kind if not kind.is_empty() else "Texture2D")
 
 func set_game_path(text: String) -> bool:
 	if not instance: return false
 	var stripped := text.strip_edges()
-	var path := GameTextureReference.parse(stripped) if not stripped.is_empty() else ""
-	var kind: String = instance.resolved_values(&"texture_object_classes").get(str(parameter), "Texture2D")
-	if not path.is_empty(): kind = GameTextureReference.object_class(stripped, kind if not kind.is_empty() else "Texture2D")
-	# A name change must never select, replace or pin an inherited image.
-	var current: String = instance.resolved_texture_paths().get(parameter, "")
-	var current_kind: String = instance.resolved_values(&"texture_object_classes").get(str(parameter), "Texture2D")
-	if path != current or kind != current_kind:
-		instance.texture_object_paths[str(parameter)] = path
-		instance.texture_object_classes[str(parameter)] = kind
+	var explicit_none := stripped.nocasecmp_to("None") == 0
+	var path := GameTextureReference.parse(stripped) if not explicit_none and not stripped.is_empty() else ""
+	_invalid_path = path.is_empty() and not explicit_none and not stripped.is_empty()
+	if _invalid_path: return false
+	var name := str(parameter)
+	var paths := instance.resolved_texture_paths()
+	var current_kind: String = instance.resolved_values(&"texture_object_classes").get(name, "")
+	var kind := "" if path.is_empty() else GameTextureReference.object_class(stripped, current_kind if not current_kind.is_empty() else "Texture2D")
+	# Editing the identity alone must not select, replace or pin an inherited image.
+	if path != paths.get(name, "") or (paths.has(name) and kind != current_kind) or (explicit_none and not paths.has(name)):
+		instance.texture_object_paths[name] = path
+		instance.texture_object_classes[name] = kind
 		instance.emit_changed()
+	if not game_path.has_focus(): _show_game_path()
 	return true
 
 func validate_pending_path() -> bool:
@@ -88,6 +102,9 @@ func import_image(path: String) -> bool:
 	return true
 
 func _on_load_pressed() -> void:
+	if OS.has_feature("web"):
+		WebFiles.pick_file(WEB_IMAGE_ACCEPT, WebFiles.PICKED, _on_image_selected)
+		return
 	%ImageDialog.popup_centered_ratio(0.75)
 
 func _on_image_selected(path: String) -> bool:
@@ -100,7 +117,10 @@ func _on_path_focus_exited() -> void:
 	validate_pending_path()
 
 func _on_clear_pressed() -> void:
-	if instance and validate_pending_path(): instance.set_texture_parameter_value(parameter, null)
+	if not instance: return
+	_invalid_path = false
+	game_path.text = "None"
+	instance.set_texture_binding(str(parameter), null, "", "")
 
 func _can_drop_data(_position: Vector2, data: Variant) -> bool:
 	return instance != null and data is Dictionary and data.get("files") is PackedStringArray and data.files.size() == 1

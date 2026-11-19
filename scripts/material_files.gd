@@ -10,8 +10,27 @@ var model_bytes := PackedByteArray()
 var model_name := ""
 var _pending_dump := ""
 
-func request_import() -> void: %ImportDialog.popup_centered_ratio(0.75)
-func request_state_open() -> void: %OpenStateDialog.popup_centered_ratio(0.75)
+func _ready() -> void:
+	if not OS.has_feature("web"): return
+	# The engine's save dialog browses the sandboxed virtual filesystem. user://
+	# is its persistent space, and WebFiles.download_file also hands the result
+	# to the browser as a download.
+	(%StateSaveDialog as FileDialog).access = FileDialog.ACCESS_USERDATA
+	%StateSaveDialog.current_file = "material_state.res"
+	(%DumpDialog as FileDialog).access = FileDialog.ACCESS_USERDATA
+
+func request_import() -> void:
+	if OS.has_feature("web"):
+		WebFiles.pick_file(".glb", WebFiles.PICKED, import_model)
+		return
+	%ImportDialog.popup_centered_ratio(0.75)
+
+func request_state_open() -> void:
+	if OS.has_feature("web"):
+		WebFiles.pick_file(".res,.tres", WebFiles.OPENED, load_state)
+		return
+	%OpenStateDialog.popup_centered_ratio(0.75)
+
 func request_state_save() -> void: %StateSaveDialog.popup_centered_ratio(0.75)
 
 func import_model(path: String) -> void:
@@ -55,6 +74,8 @@ func save_state(state: MaterialEditorState, path: String) -> bool:
 	if not error.is_empty():
 		notice.emit(error)
 		return false
+	if OS.has_feature("web"):
+		WebFiles.download_file(path, "text/plain" if path.get_extension().to_lower() == "tres" else "application/octet-stream")
 	_report_success(path)
 	return true
 
@@ -78,6 +99,11 @@ func save_dump(path: String) -> void:
 		notice.emit("Cannot save parameters: " + error_string(FileAccess.get_open_error()))
 		return
 	file.store_string(_pending_dump)
+	file.close()
+	if OS.has_feature("web"):
+		WebFiles.download_file(path, "text/plain")
+		notice.emit("Saved and downloaded " + path.get_file())
+		return
 	notice.emit(path.get_file())
 
 func _on_state_save_selected(path: String) -> void:

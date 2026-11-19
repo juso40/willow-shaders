@@ -28,5 +28,6 @@ theme/custom_font="uid://bn7beoqgur038"
 
 [rendering]
 
+renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
 textures/default_filters/anisotropic_filtering_level=3

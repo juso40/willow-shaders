@@ -5,6 +5,18 @@ extends TextureRect
 
 var row: TextureParameterControl
 
+@onready var preview_popup: PopupPanel = %PreviewPopup
+@onready var large_preview: TextureRect = %LargePreview
+@onready var timer: Timer = %Timer
+
+func _ready() -> void:
+	mouse_entered.connect(_on_mouse_entered)
+	mouse_entered.connect(timer.stop)
+	preview_popup.mouse_entered.connect(timer.stop)
+	preview_popup.mouse_exited.connect(timer.start)
+	mouse_exited.connect(timer.start)
+	timer.timeout.connect(preview_popup.hide)
+
 func _get_drag_data(_position: Vector2) -> Variant:
 	var data: Variant = row.slot_drag_data() if row else null
 	if not data is Dictionary: return null
@@ -24,3 +36,10 @@ func _drop_data(_position: Vector2, data: Variant) -> void:
 
 func _gui_input(event: InputEvent) -> void:
 	if row: row.slot_gui_input(event)
+
+
+func _on_mouse_entered() -> void:
+	preview_popup.position = global_position
+	preview_popup.position.x += get_rect().end.x as int
+	large_preview.texture = texture
+	preview_popup.show()

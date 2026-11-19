@@ -23,7 +23,7 @@ unique_name_in_owner = true
 custom_minimum_size = Vector2(48, 48)
 layout_mode = 2
 tooltip_text = "Click to choose an image, or drag the image onto another texture parameter"
-mouse_filter = 2
+mouse_filter = 1
 
 [node name="Preview" type="TextureRect" parent="Binding/Value/PreviewPanel" index="0" unique_id=1971432287]
 unique_name_in_owner = true
@@ -34,13 +34,37 @@ expand_mode = 1
 stretch_mode = 5
 script = ExtResource("3")
 
+[node name="PreviewPopup" type="PopupPanel" parent="Binding/Value/PreviewPanel/Preview" index="0" unique_id=2008686189]
+unique_name_in_owner = true
+oversampling_override = 1.0
+size = Vector2i(240, 240)
+
+[node name="LargePreview" type="TextureRect" parent="Binding/Value/PreviewPanel/Preview/PreviewPopup" index="1" unique_id=142049948]
+unique_name_in_owner = true
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 236.0
+offset_bottom = 236.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+expand_mode = 2
+
+[node name="Timer" type="Timer" parent="Binding/Value/PreviewPanel/Preview/PreviewPopup" index="2" unique_id=1462055270]
+unique_name_in_owner = true
+wait_time = 0.1
+
 [node name="GamePath" type="LineEdit" parent="Binding/Value" index="1" unique_id=1476620637]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(200, 0)
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 4
-tooltip_text = "Exported game object path. Changing this does not change the image."
+tooltip_text = "Exported game object path or None. Typing here does not change the preview image."
 placeholder_text = "Package.Group.Texture"
 
 [node name="Load" type="Button" parent="Binding/Value" index="2" unique_id=419877829]
@@ -52,7 +76,7 @@ text = "Load…"
 [node name="Clear" type="Button" parent="Binding/Value" index="3" unique_id=252170562]
 layout_mode = 2
 size_flags_vertical = 4
-tooltip_text = "Remove the preview image without changing the object path"
+tooltip_text = "Remove the preview image and set the game reference to None"
 text = "×"
 
 [node name="ImageDialog" type="FileDialog" parent="." index="4" unique_id=1222692642]

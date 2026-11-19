@@ -3,6 +3,19 @@
 [ext_resource type="Script" uid="uid://de5sfvdhhtndf" path="res://scripts/preview/preview_stage.gd" id="1"]
 [ext_resource type="Script" uid="uid://6te2gc3sciin" path="res://scripts/preview/orbit_camera.gd" id="2"]
 
+[sub_resource type="QuadMesh" id="Plane"]
+lightmap_size_hint = Vector2i(9, 9)
+add_uv2 = true
+size = Vector2(1.5, 1.5)
+
+[sub_resource type="BoxMesh" id="Cube"]
+lightmap_size_hint = Vector2i(14, 21)
+add_uv2 = true
+
+[sub_resource type="SphereMesh" id="Sphere"]
+lightmap_size_hint = Vector2i(17, 9)
+add_uv2 = true
+
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ldsvc"]
 
 [sub_resource type="Sky" id="PreviewSky"]
@@ -13,25 +26,18 @@ background_mode = 1
 background_color = Color(0.21, 0.21, 0.21, 1)
 sky = SubResource("PreviewSky")
 ambient_light_source = 2
-ambient_light_color = Color(0.7, 0.7, 0.7, 1)
+ambient_light_color = Color(0.40234375, 0.40234375, 0.40234375, 1)
+ambient_light_energy = 5.0
 tonemap_mode = 2
 ssao_enabled = true
-glow_enabled = true
 glow_intensity = 0.6
 glow_strength = 0.5
 glow_bloom = 0.25
 glow_blend_mode = 0
 adjustment_enabled = true
-
-[sub_resource type="QuadMesh" id="Plane"]
-size = Vector2(1.5, 1.5)
-add_uv2 = true
-
-[sub_resource type="BoxMesh" id="Cube"]
-add_uv2 = true
-
-[sub_resource type="SphereMesh" id="Sphere"]
-add_uv2 = true
+adjustment_brightness = 1.07
+adjustment_contrast = 0.965
+adjustment_saturation = 1.04
 
 [node name="PreviewStage" type="Node3D" unique_id=1977562650]
 script = ExtResource("1")
@@ -42,20 +48,16 @@ sphere = SubResource("Sphere")
 [node name="Environment" type="WorldEnvironment" parent="." unique_id=1520410626]
 environment = SubResource("Environment")
 
-[node name="KeyLight" type="DirectionalLight3D" parent="." unique_id=1850639940]
-transform = Transform3D(-0.8660254, -0.43301275, 0.25000003, -0.095541514, 0.6340992, 0.7673266, -0.490787, 0.64063895, -0.59051675, 0.017432809, -0.0349465, -0.3830608)
-shadow_enabled = true
-
 [node name="Pivot" type="Node3D" parent="." unique_id=1308071980]
 unique_name_in_owner = true
 
 [node name="ModelRoot" type="Node3D" parent="Pivot" unique_id=551142727]
 unique_name_in_owner = true
 
-[node name="CustomMount" type="Node3D" parent="Pivot/ModelRoot"]
+[node name="CustomMount" type="Node3D" parent="Pivot/ModelRoot" unique_id=46922960]
 unique_name_in_owner = true
 
-[node name="Primitive" type="MeshInstance3D" parent="Pivot/ModelRoot"]
+[node name="Primitive" type="MeshInstance3D" parent="Pivot/ModelRoot" unique_id=292014881]
 unique_name_in_owner = true
 visible = false
 
@@ -66,6 +68,11 @@ fov = 38.0
 near = 0.01
 far = 1000.0
 script = ExtResource("2")
-target = NodePath("%Pivot")
+target = NodePath("../Pivot")
+
+[node name="KeyLight" type="DirectionalLight3D" parent="OrbitCamera" unique_id=1850639940]
+transform = Transform3D(0.9713218, -0.18563488, 0.14857203, 0, 0.6248595, 0.7807373, -0.23776871, -0.75834715, 0.6069396, 0.017432809, -0.0349465, -0.3830608)
+light_color = Color(0.765625, 0.70930624, 0.61608887, 1)
+light_energy = 5.0
 
 [connection signal="frame_requested" from="OrbitCamera" to="." method="frame_subject"]

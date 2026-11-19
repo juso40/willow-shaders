@@ -6,10 +6,10 @@ render_mode diffuse_lambert, specular_disabled;
 void fragment() {
     vec3 abc = packed_zones(UV);
     float gray = diffuse_gray(UV);
-    vec3 paint = painted_surface(UV, UV2, gray, material_zones(abc));
+    vec3 paint = painted_surface(UV, UV2, gray, abc);
     vec3 ne = texture(p_NormalScopesEmissive, UV).rgb;
     vec3 normal_ue = gun_tangent_normal(ne.rg);
-    vec3 reflection = reflection_diffuse(abc, gray, normal_ue, VIEW,
+    vec3 reflection = reflection_diffuse(abc, paint, normal_ue, VIEW,
                                          mat3(TANGENT, BINORMAL, NORMAL), NODE_POSITION_WORLD);
     // The cooked material adds the fake reflection to diffuse before lighting.
     ALBEDO = max((paint + reflection) * 0.4, vec3(0.0));

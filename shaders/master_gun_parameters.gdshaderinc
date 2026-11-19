@@ -1,5 +1,3 @@
-// Master_Gun parameters and surface functions. The reflection path follows
-// cooked SM3 bytecode. Paint and decoration still use reconstructed arithmetic.
 group_uniforms Atlas;
 uniform sampler2D p_Diffuse : source_color, filter_linear_mipmap_anisotropic, repeat_enable;
 uniform sampler2D p_Masks : filter_linear_mipmap_anisotropic, repeat_enable;
@@ -33,7 +31,9 @@ uniform vec4 p_PatternChannel = vec4(1.0, 0.0, 0.0, 0.0);
 uniform float p_ReplacePattern = 0.0;
 
 group_uniforms Decal;
-uniform sampler2D p_Decal : source_color, filter_linear_mipmap_anisotropic, repeat_disable;
+// The cooked no-decal stub has zero RGB and alpha. An opaque fallback
+// would cover the paint when full-color decals use alpha for coverage.
+uniform sampler2D p_Decal : source_color, hint_default_transparent, filter_linear_mipmap_anisotropic, repeat_disable;
 uniform vec4 p_DecalColor : source_color = vec4(1.0);
 uniform vec4 p_DecalScalePosition = vec4(1.0, 1.0, 0.0, 0.0);
 uniform vec4 p_DecalChannel = vec4(1.0);
@@ -70,21 +70,15 @@ vec3 packed_zones(vec2 uv) {
     return texture(p_Masks, uv * vec2(1.0, 0.5) + vec2(0.0, 0.5)).rgb;
 }
 vec4 material_zones(vec3 abc) {
-    float total = dot(abc, vec3(1.0));
-    return vec4(abc / max(total, 1.0), max(1.0 - total, 0.0));
+    // Equivalent to mixing D -> A -> B -> C in that order.
+    vec3 inv = 1.0 - abc;
+    return vec4(abc.r * inv.g * inv.b, abc.g * inv.b, abc.b, inv.r * inv.g * inv.b);
 }
 vec3 palette(vec3 high, vec3 mid, vec3 shadow, vec2 hs) {
     vec3 color = mix(mid, high, clamp(hs.x * p_HighlightsIntensity, 0.0, 1.0));
     return mix(color, shadow, clamp(hs.y * p_ShadowsIntensity, 0.0, 1.0));
 }
-vec2 decal_image_uv(vec2 uv, vec4 placement) {
-    // Exported weapon UV2 is centered/signed, not a normalized image UV.
-    // Reference-guided reconstruction: placements are relative to its 0.5 origin.
-    // Convert the image's V convention after positioning. See reconstruction.md.
-    vec2 image_uv = (vec2(0.5) - uv - placement.zw) * placement.xy + vec2(0.5);
-    return vec2(image_uv.x, 1.0 - image_uv.y);
-}
-vec3 selected_pattern_color(vec4 sample_value, vec4 mask) {
+vec3 selected_color(vec4 sample_value, vec4 mask) {
     // A UE component mask selects components. It does NOT sum RGB into opacity.
     // Single-channel output broadcasts as a scalar. RGB output retains color.
     vec3 result = vec3(0.0);
@@ -103,11 +97,11 @@ vec3 gun_tangent_normal(vec2 rg) {
     float z = sqrt(max(1.0 - dot(xy, xy), 0.0));
     return normalize(vec3(xy, 0.8 * z));
 }
-float reflection_weight(vec3 abc) {
-    vec3 weighted = abc * p_ReflectionChannelScale.rgb;
+float zone_coverage(vec3 abc, vec4 scale) {
+    vec3 weighted = abc * scale.rgb;
     return clamp(dot(weighted, weighted), 0.0, 1.0);
 }
-vec3 reflection_diffuse(vec3 abc, float gray, vec3 normal_ue,
+vec3 reflection_diffuse(vec3 abc, vec3 paint, vec3 normal_ue,
                         vec3 view, mat3 tangent_to_view, vec3 object_position) {
     // Project the camera direction into the mesh basis, undoing the port's
     // bitangent sign convention. The lookup uses raw tangent reflection XY.
@@ -117,43 +111,40 @@ vec3 reflection_diffuse(vec3 abc, float gray, vec3 normal_ue,
     // The preview uses meters and Y-up, the game uses centimeters and Z-up.
     vec2 phase = fract(vec2(object_position.x, -object_position.z) * 0.1);
     vec3 lookup = texture(P_SimpleReflect, reflected + phase).rgb;
-    return lookup * p_ReflectColor.rgb * reflection_weight(abc)
-         * mix(1.0, gray, p_ReflectColorScale);
+    return lookup * p_ReflectColor.rgb * zone_coverage(abc, p_ReflectionChannelScale)
+         * mix(vec3(1.0), paint, p_ReflectColorScale);
 }
 vec2 placed_decal_uv(vec2 decoration_uv) {
-    vec2 duv = decal_image_uv(decoration_uv, p_DecalScalePosition) - vec2(0.5);
-    float angle = p_DecalRotate * 6.28318530718;
-    duv = mat2(vec2(cos(angle), sin(angle)), vec2(-sin(angle), cos(angle))) * duv + vec2(0.5);
+    vec2 centered = decoration_uv + p_DecalScalePosition.zw - vec2(0.5);
+    float angle = p_DecalRotate * 3.1415901184;
+    vec2 rotated = mat2(vec2(cos(angle), sin(angle)), vec2(-sin(angle), cos(angle))) * centered;
+    vec2 duv = rotated * p_DecalScalePosition.xy + vec2(0.5);
+    // Preview-only side test. The cooked flip permutation instead uses a
+    // local transform of the skinned tangent basis, not the sign of UV2.
     if (sw_FlipDecalOnRightSide && decoration_uv.x < 0.0) { duv.x = 1.0 - duv.x; }
     return duv;
 }
-float decal_weight(vec2 duv, vec4 decal, vec4 zones) {
-    float bounds = step(0.0, duv.x) * step(duv.x, 1.0) * step(0.0, duv.y) * step(duv.y, 1.0);
-    return selected_channel(decal, p_DecalChannelStaticMask) * bounds * clamp(dot(zones, p_DecalChannel), 0.0, 1.0);
+vec3 decal_coverage(vec4 decal, vec3 selected, vec3 abc) {
+    return mix(selected, vec3(decal.a), p_UseFullColorDecal) * zone_coverage(abc, p_DecalChannel);
 }
-vec3 painted_surface(vec2 uv, vec2 decoration_uv, float gray, vec4 zones) {
+vec3 overlay(vec3 paint, vec3 ink, vec3 coverage, float replace) {
+    vec3 multiply_result = paint * mix(vec3(1.0), ink, coverage);
+    vec3 replace_result = mix(paint, ink, coverage);
+    return mix(multiply_result, replace_result, replace);
+}
+vec3 painted_surface(vec2 uv, vec2 decoration_uv, float gray, vec3 abc) {
+    vec4 zones = material_zones(abc);
     vec2 hs = tone_masks(uv);
     vec3 tint = zones.r * palette(p_AColorHilight.rgb, p_AColorMidtone.rgb, p_AColorShadow.rgb, hs)
               + zones.g * palette(p_BColorHilight.rgb, p_BColorMidtone.rgb, p_BColorShadow.rgb, hs)
               + zones.b * palette(p_CColorHilight.rgb, p_CColorMidtone.rgb, p_CColorShadow.rgb, hs)
               + zones.a * p_DColor.rgb;
-    vec3 base = gray * tint;
-    // No invented enable flags. Textures and original zone/blend parameters
-    // determine whether a layer contributes (stub black / zero weights = none).
-    // Tiling scale/offset is NOT the normalized center-placement transform
-    // used by decals. Sharing that transform displaced the camouflage phase.
     vec2 pattern_uv = decoration_uv * p_PatternScalePosition.xy + p_PatternScalePosition.zw;
-    vec4 pattern_sample = texture(p_Pattern, pattern_uv);
-    float pattern_coverage = clamp(dot(zones, p_PatternChannelScale), 0.0, 1.0);
-    // Black is opaque black pattern ink, not a transparent hole exposing base.
-    // Destination weights control coverage. Source channels control ink values.
-    vec3 pattern_ink = selected_pattern_color(pattern_sample, p_PatternChannel) * p_PatternColor.rgb;
-    vec3 patterned = mix(base * pattern_ink, gray * pattern_ink, p_ReplacePattern);
-    base = mix(base, patterned, pattern_coverage);
+    vec3 pattern_ink = selected_color(texture(p_Pattern, pattern_uv), p_PatternChannel) * p_PatternColor.rgb;
+    vec3 paint = overlay(tint, pattern_ink, vec3(zone_coverage(abc, p_PatternChannelScale)), p_ReplacePattern);
 
-    vec2 duv = placed_decal_uv(decoration_uv);
-    vec4 decal = texture(p_Decal, duv);
-    float decal_coverage = decal_weight(duv, decal, zones);
-    vec3 ink = mix(vec3(1.0), decal.rgb, p_UseFullColorDecal) * p_DecalColor.rgb;
-    return mix(base, mix(base * ink, ink, p_ReplaceDecal), decal_coverage);
+    vec4 decal = texture(p_Decal, placed_decal_uv(decoration_uv));
+    vec3 selected = selected_color(decal, p_DecalChannelStaticMask);
+    vec3 ink = mix(vec3(1.0), selected, p_UseFullColorDecal) * p_DecalColor.rgb;
+    return gray * overlay(paint, ink, decal_coverage(decal, selected, abc), p_ReplaceDecal);
 }

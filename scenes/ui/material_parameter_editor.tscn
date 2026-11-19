@@ -49,10 +49,9 @@ custom_minimum_size = Vector2(0, 128)
 layout_mode = 2
 size_flags_vertical = 3
 theme = ExtResource("2_c0xdy")
-current_tab = 2
+current_tab = 0
 
 [node name="Textures" type="ScrollContainer" parent="Tabs" unique_id=1936161897]
-visible = false
 layout_mode = 2
 theme = ExtResource("2_c0xdy")
 metadata/_tab_index = 0
@@ -75,6 +74,7 @@ layout_mode = 2
 theme = ExtResource("2_c0xdy")
 
 [node name="Vectors" type="ScrollContainer" parent="Tabs" unique_id=2096467848]
+visible = false
 layout_mode = 2
 theme = ExtResource("2_c0xdy")
 metadata/_tab_index = 2
@@ -93,6 +93,7 @@ metadata/_tab_index = 3
 
 [node name="Static" type="VBoxContainer" parent="Tabs/Static" unique_id=1266687499]
 layout_mode = 2
+size_flags_horizontal = 3
 theme = ExtResource("2_c0xdy")
 
 [node name="Masks" parent="Tabs/Static/Static" unique_id=655060770 instance=ExtResource("2")]

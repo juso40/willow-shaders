@@ -89,13 +89,23 @@ func handle_drop(paths: PackedStringArray) -> void:
 		preview.set_status("Drop one model, state file or texture at a time")
 		return
 	var path: String = paths[0]
-	if ["res", "tres"].has(path.get_extension().to_lower()):
+	_clear_pending()
+	var is_state := path.get_extension().to_lower() in ["res", "tres"]
+	if OS.has_feature("web"):
+		# Godot unlinks browser drops when files_dropped returns. Keep a copy
+		# for the confirmation click (or for reopening a state after reload).
+		var directory := WebFiles.OPENED if is_state else WebFiles.DROPPED
+		var staged := directory.path_join(path.get_file().validate_filename())
+		if DirAccess.make_dir_recursive_absolute(directory) != OK or DirAccess.copy_absolute(path, staged) != OK:
+			preview.set_status("Cannot read dropped file: " + path.get_file())
+			return
+		path = staged
+	if is_state:
 		files.load_state(path)
 		return
 	_begin_drop(path)
 
 func _begin_drop(path: String) -> void:
-	_clear_pending()
 	var kind := "model" if path.get_extension().to_lower() == "glb" else "image"
 	_pending = {"kind": kind, "path": path}
 	if kind == "model":
@@ -107,17 +117,16 @@ func _begin_drop(path: String) -> void:
 
 func _resolve_pending_model() -> void:
 	if _pending.is_empty() or _pending.kind != "model": return
-	var path: String = _pending.path
-	_pending = {}
+	files.import_model(_pending.path)
 	_clear_pending()
-	files.import_model(path)
 
 func _cancel_pending() -> void:
-	_pending = {}
 	_clear_pending()
 	preview.set_status("Drop cancelled")
 
 func _clear_pending() -> void:
+	if OS.has_feature("web") and not _pending.is_empty(): DirAccess.remove_absolute(_pending.path)
+	_pending = {}
 	preview.set_pending_model("")
 	sidebar.editor.arm_texture_targets(false)
 
@@ -136,8 +145,7 @@ func _input(event: InputEvent) -> void:
 	var row := sidebar.editor.texture_control_at(event.position)
 	if not row: return
 	var path: String = _pending.path
-	_pending = {}
-	_clear_pending()
 	get_viewport().set_input_as_handled()
 	if row.import_image(path): preview.set_status("Loaded image: " + path.get_file())
-	else: preview.set_status(row.notice.text)
+	else: preview.set_status("Cannot import " + path.get_file())
+	_clear_pending()
