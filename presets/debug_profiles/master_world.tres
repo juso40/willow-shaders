@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="MaterialDebugProfile" format=3 uid="uid://ctub4e2iuolw"]
+
+[ext_resource type="Script" uid="uid://bso251jh738nu" path="res://scripts/preview/material_debug_profile.gd" id="1"]
+[ext_resource type="Shader" uid="uid://dptl8dtr0dca6" path="res://shaders/master_world_diagnostics.gdshader" id="2"]
+
+[resource]
+script = ExtResource("1")
+fixed_texture_paths = Dictionary[String, String]({
+"fixed_glow_noise": "FX_Shared_Smoke.Textures.Noise2_LiquidDev_Dif",
+"fixed_snow_noise": "Prop_Water.Textures.WaterHqNoise_Gray"
+})
+section = "Master_World"
+shader = ExtResource("2")
+views = Dictionary[int, String]({
+30: "Vertex paint blend (RGB)",
+31: "Tangent-space normal",
+32: "Emissive contribution"
+})
+provides_unlit = true

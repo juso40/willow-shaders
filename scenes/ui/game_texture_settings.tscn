@@ -1,0 +1,38 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/game_texture_settings.gd" id="1"]
+
+[node name="GameTextures" type="VBoxContainer"]
+script = ExtResource("1")
+
+[node name="AutoExtract" type="CheckBox" parent="."]
+unique_name_in_owner = true
+text = "Extract missing game textures on MIC selection"
+tooltip_text = "Desktop only. Runs local UE Viewer and reads your installed game. Existing preview images are left alone."
+
+[node name="GameLabel" type="Label" parent="."]
+text = "Borderlands 2 directory"
+
+[node name="GameDirectory" type="LineEdit" parent="."]
+unique_name_in_owner = true
+placeholder_text = "Absolute path to Borderlands 2 or CookedPCConsole"
+
+[node name="ToolLabel" type="Label" parent="."]
+text = "UModel / UE Viewer executable"
+
+[node name="UmodelPath" type="LineEdit" parent="."]
+unique_name_in_owner = true
+placeholder_text = "Blank: search PATH, or enter the absolute executable path"
+
+[node name="ExtractNow" type="Button" parent="."]
+unique_name_in_owner = true
+text = "Extract missing textures now"
+
+[node name="OpenCache" type="Button" parent="."]
+unique_name_in_owner = true
+text = "Open texture cache folder"
+tooltip_text = "Show cached game textures in your system file manager."
+
+[node name="ExtractionStatus" type="Label" parent="."]
+unique_name_in_owner = true
+autowrap_mode = 3

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MaterialDebugProfile" format=3 uid="uid://bx36f4dofkgsq"]
+
+[ext_resource type="Script" uid="uid://bso251jh738nu" path="res://scripts/preview/material_debug_profile.gd" id="1"]
+[ext_resource type="Shader" uid="uid://dwyp0kq5guif5" path="res://shaders/master_player_diagnostics.gdshader" id="2"]
+
+[resource]
+script = ExtResource("1")
+uses_three_uv_sets = true
+fixed_texture_paths = Dictionary[String, String]({
+"fixed_hologram": "FX_Shared_Energy.Textures.Weapons.Tex_TeleportationField_Lightning2_512_Tex",
+"fixed_power_fire": "FX_Shared_Fire.Textures.Fire_Tile_Dif",
+"fixed_transition_lut": "FX_CharacterAbilities.Textures.FastTravel_Enter_LUT"
+})
+section = "Master_Player"
+shader = ExtResource("2")
+views = Dictionary[int, String]({
+30: "Pattern coverage",
+31: "Decal coverage",
+32: "Emissive contribution",
+33: "Digistruct coverage (before clip)"
+})
+provides_unlit = true

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MaterialDebugProfile" format=3 uid="uid://bcu31pqanbglu"]
+
+[ext_resource type="Script" uid="uid://bso251jh738nu" path="res://scripts/preview/material_debug_profile.gd" id="1"]
+[ext_resource type="Shader" uid="uid://cabvqddpv5kop" path="res://shaders/master_world_masked_diagnostics.gdshader" id="2"]
+
+[resource]
+script = ExtResource("1")
+fixed_texture_paths = Dictionary[String, String]({
+"fixed_glow_noise": "FX_Shared_Smoke.Textures.Noise2_LiquidDev_Dif"
+})
+section = "Master_WorldMasked"
+shader = ExtResource("2")
+views = Dictionary[int, String]({
+30: "Opacity channel (before clip)",
+31: "Tangent-space normal",
+32: "Emissive contribution"
+})
+provides_unlit = true

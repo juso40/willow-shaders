@@ -77,4 +77,3 @@ static_component_masks = Dictionary[String, Vector4]({
 static_switches = Dictionary[String, bool]({
 "sw_FlipDecalOnRightSide": false
 })
-notes = "Conflicting expression defaults for p_NormalScopesEmissive. First recorded node used for named lookup. Not recovered shader wiring."

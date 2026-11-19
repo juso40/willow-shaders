@@ -67,4 +67,3 @@ static_switches = Dictionary[String, bool]({
 "P_MuscleFatSwitch": false,
 "P_PatternSwitch": true
 })
-notes = "Conflicting expression defaults for p_Masks. First recorded node used for named lookup. Not recovered shader wiring."

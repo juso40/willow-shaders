@@ -46,4 +46,11 @@ texture_object_classes = Dictionary[String, String]({
 "p_Normal": "Texture2D",
 "p_Specular": ""
 })
-notes = "Instance native static permutation data is not exposed by this dump."
+static_component_masks = Dictionary[String, Vector4]({
+"chan_OpacityMask": Vector4(0, 1, 0, 0),
+"chan_Specular": Vector4(1, 1, 1, 0)
+})
+static_switches = Dictionary[String, bool]({
+"sw_Colorize": true,
+"sw_specular": true
+})

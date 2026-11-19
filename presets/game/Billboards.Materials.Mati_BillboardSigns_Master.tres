@@ -25,4 +25,3 @@ texture_object_classes = Dictionary[String, String]({
 static_switches = Dictionary[String, bool]({
 "TEX_offset": false
 })
-notes = "Conflicting expression defaults for Diffuse. First recorded node used for named lookup. Not recovered shader wiring."

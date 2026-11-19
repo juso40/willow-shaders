@@ -1,4 +1,28 @@
 {
+  "Common_Materials.Creature.Master_Creature": {
+	"shader": "res://shaders/master_creature.gdshader",
+	"debug_profile": "res://presets/debug_profiles/master_creature.tres"
+  },
+  "Common_Materials.Environment.Master_Rocks": {
+	"shader": "res://shaders/master_rocks.gdshader",
+	"debug_profile": "res://presets/debug_profiles/master_rocks.tres"
+  },
+  "Common_Materials.Environment.Master_World": {
+	"shader": "res://shaders/master_world.gdshader",
+	"debug_profile": "res://presets/debug_profiles/master_world.tres"
+  },
+  "Common_Materials.Environment.Master_WorldMasked": {
+	"shader": "res://shaders/master_world_masked.gdshader",
+	"debug_profile": "res://presets/debug_profiles/master_world_masked.tres"
+  },
+  "Common_Materials.NPC.Master_NPC": {
+	"shader": "res://shaders/master_npc.gdshader",
+	"debug_profile": "res://presets/debug_profiles/master_npc.tres"
+  },
+  "Common_Materials.Player.Master_Player": {
+	"shader": "res://shaders/master_player.gdshader",
+	"debug_profile": "res://presets/debug_profiles/master_player.tres"
+  },
   "Common_Materials.Weapons.Master_Gun": {
 	"shader": "res://shaders/master_gun.gdshader",
 	"debug_profile": "res://presets/debug_profiles/master_gun.tres",

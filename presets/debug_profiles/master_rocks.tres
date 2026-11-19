@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MaterialDebugProfile" format=3]
+
+[ext_resource type="Script" path="res://scripts/preview/material_debug_profile.gd" id="1"]
+[ext_resource type="Shader" path="res://shaders/master_rocks_diagnostics.gdshader" id="2"]
+
+[resource]
+script = ExtResource("1")
+section = "Master_Rocks"
+fixed_texture_paths = Dictionary[String, String]({"fixed_snow_noise": "Prop_Water.Textures.WaterHqNoise_Gray"})
+shader = ExtResource("2")
+provides_unlit = true
+views = Dictionary[int, String]({
+30: "Vertex paint blend (RGB)",
+31: "Tangent-space normal",
+32: "Height fade"
+})

@@ -8,6 +8,8 @@
 [ext_resource type="PackedScene" path="res://scenes/material_files.tscn" id="6_ya4ey"]
 [ext_resource type="Script" path="res://scripts/browser_image_drop.gd" id="7_browser_drop"]
 
+[ext_resource type="Script" path="res://scripts/game_texture_extractor.gd" id="8_umodel"]
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tefeu"]
 content_margin_left = 4.0
 content_margin_top = 4.0
@@ -72,3 +74,7 @@ unique_name_in_owner = true
 [node name="BrowserDrop" type="Node" parent="."]
 unique_name_in_owner = true
 script = ExtResource("7_browser_drop")
+
+[node name="TextureExtractor" type="Node" parent="."]
+unique_name_in_owner = true
+script = ExtResource("8_umodel")

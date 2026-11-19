@@ -5,6 +5,19 @@ extends Resource
 ## IDs below 30 belong to the common views. Other IDs are local to this profile.
 
 const FIRST_VIEW := 30
+## Profiles whose decal and pattern need TEXCOORD_1 and TEXCOORD_2 respectively.
+@export var uses_three_uv_sets := false
+## Sampler uniform -> cooked Texture2D object. These are not MIC parameters.
+@export var fixed_texture_paths: Dictionary[String, String] = {}
+## Sampler uniform -> ordered face identities from the cooked TextureCube export.
+@export var fixed_cube_faces: Dictionary[String, PackedStringArray] = {}
+
+func fixed_image_paths() -> Array[String]:
+	var paths: Array[String] = []
+	paths.assign(fixed_texture_paths.values())
+	for faces: PackedStringArray in fixed_cube_faces.values(): paths.append_array(faces)
+	return paths
+
 @export var section := "Material":
 	set(value):
 		section = value

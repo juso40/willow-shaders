@@ -1,6 +1,6 @@
 shader_type spatial;
 render_mode unshaded;
-// Master_Gun reconstruction diagnostics, not exported game parameters.
+
 #include "res://shaders/master_gun_parameters.gdshaderinc"
 uniform int diagnostic_view = 30;
 

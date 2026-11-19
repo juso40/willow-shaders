@@ -1,5 +1,5 @@
 shader_type spatial;
-// The observed cooked map has no material-driven direct specular color.
+
 render_mode diffuse_lambert, specular_disabled;
 #include "res://shaders/master_gun_parameters.gdshaderinc"
 

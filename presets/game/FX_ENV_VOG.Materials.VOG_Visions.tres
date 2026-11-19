@@ -29,4 +29,3 @@ texture_object_classes = Dictionary[String, String]({
 "VOG_Movie": "TextureMovie",
 "VOG_Vision": "Texture2D"
 })
-notes = "Conflicting expression defaults for VOG_Ethereal. First recorded node used for named lookup. Not recovered shader wiring."

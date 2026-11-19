@@ -5,6 +5,7 @@ extends Node
 signal material_changed(value: ShaderMaterial)
 signal instance_changed(value: MaterialInstanceConstant)
 signal selection_changed(value: UnrealMaterialInterface)
+signal library_material_opened
 
 var source: UnrealMaterialInterface
 var instance: MaterialInstanceConstant
@@ -17,6 +18,7 @@ func select_material(value: UnrealMaterialInterface) -> void:
 	edited.source_object = value.source_object
 	edited.resource_name = value.resource_name
 	open_instance(edited)
+	library_material_opened.emit()
 
 func open_instance(value: MaterialInstanceConstant) -> void:
 	if instance and instance.changed.is_connected(_refresh_material):

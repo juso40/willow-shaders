@@ -44,4 +44,3 @@ static_switches = Dictionary[String, bool]({
 "Normal?": true,
 "sw_EnableColorization": true
 })
-notes = "Conflicting expression defaults for p_Normal. First recorded node used for named lookup. Not recovered shader wiring.\nConflicting expression defaults for p_Masks. First recorded node used for named lookup. Not recovered shader wiring."

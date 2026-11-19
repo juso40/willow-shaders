@@ -69,4 +69,3 @@ texture_object_classes = Dictionary[String, String]({
 "Primary_Normal": "Texture2D",
 "Spec": "Texture2D"
 })
-notes = "Instance native static permutation data is not exposed by this dump."

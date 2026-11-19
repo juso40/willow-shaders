@@ -38,7 +38,15 @@ extends Resource
 		texture_object_paths = value
 		emit_changed()
 @export var texture_object_classes: Dictionary[String, String] = {}
-@export_multiline var notes: String
+## Preview-only fixed images, keyed by full cooked object identity.
+@export var fixed_preview_images: Dictionary[String, Texture2D] = {}
+# Transient GPU assemblies. Documents store face images rather than renderer handles.
+var _fixed_cube_bindings: Dictionary[String, FixedCubeBinding] = {}
+
+func preview_cube(sampler: String, faces: PackedStringArray, images: Dictionary) -> Cubemap:
+	if not _fixed_cube_bindings.has(sampler): _fixed_cube_bindings[sampler] = FixedCubeBinding.new()
+	return _fixed_cube_bindings[sampler].resolve(faces, images)
+
 @export_group("Original static parameters / shader binding aliases")
 @export var static_component_masks: Dictionary[String, Vector4] = {}:
 	set(value):

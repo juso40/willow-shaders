@@ -90,7 +90,6 @@ static func _clone_material(entry: UnrealMaterialInterface) -> UnrealMaterialInt
 	clone.resource_name = entry.resource_name
 	clone.unreal_class = entry.unreal_class
 	clone.parent_object_path = entry.parent_object_path
-	clone.notes = entry.notes
 	clone.shader = entry.shader
 	if entry is UnrealMaterial and entry.debug_profile:
 		clone.debug_profile = entry.debug_profile.duplicate()
@@ -101,6 +100,8 @@ static func _clone_material(entry: UnrealMaterialInterface) -> UnrealMaterialInt
 	for name: String in entry.texture_object_paths: clone.texture_object_paths[name] = entry.texture_object_paths[name]
 	for name: String in entry.texture_object_classes: clone.texture_object_classes[name] = entry.texture_object_classes[name]
 	for name: String in entry.static_parameter_bindings: clone.static_parameter_bindings[name] = entry.static_parameter_bindings[name]
+	for id: String in entry.fixed_preview_images:
+		if entry.fixed_preview_images[id]: clone.fixed_preview_images[id] = _embedded_texture(entry.fixed_preview_images[id])
 	for name: String in entry.TextureParameterValues:
 		var texture: Texture2D = entry.TextureParameterValues[name]
 		clone.TextureParameterValues[name] = null if texture == null else _embedded_texture(texture)

@@ -33,4 +33,3 @@ static_switches = Dictionary[String, bool]({
 "bUseEmissiveMap": true,
 "bUseNormalMap": false
 })
-notes = "Conflicting expression defaults for Diffuse. First recorded node used for named lookup. Not recovered shader wiring."

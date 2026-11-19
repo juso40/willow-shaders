@@ -7,7 +7,8 @@ var instance: MaterialInstanceConstant
 var _texture_drag := false
 var _drag_hover: TextureParameterControl
 @onready var tabs: TabContainer = %Tabs
-@onready var master_label: Label = %Master
+@onready var master_label: RichTextLabel = %Master
+@onready var preview_support: RichTextLabel = %PreviewSupport
 @onready var search: LineEdit = %Search
 @onready var overrides: CheckBox = %Overrides
 @onready var textures: MaterialParameterGroup = %Textures
@@ -84,6 +85,7 @@ func _reconcile() -> void:
 	else:
 		master_label.text = "Master: none"
 		master_label.tooltip_text = ""
+	preview_support.visible = instance != null and instance.resolved_shader() == null
 	_apply_filters()
 
 func set_filter(query: String, local_only := false) -> void:

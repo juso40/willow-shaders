@@ -19,6 +19,9 @@ var _wireframe := PreviewWireframe.new()
 @onready var orbit: PreviewOrbitCamera = %OrbitCamera
 @onready var pivot: Node3D = %Pivot
 
+func _ready() -> void:
+	primitive.set_instance_shader_parameter("bl_no_vertex_weights", true)
+
 func set_material(value: ShaderMaterial, mic: UnrealMaterialInterface = null) -> void:
 	diagnostics.set_source(value, mic)
 	_refresh_display()
@@ -37,6 +40,13 @@ func _refresh_display() -> void:
 	if diagnostics.mode == 2: _wireframe.apply(meshes())
 	else: _wireframe.restore()
 	var material := diagnostics.material_for(get_viewport())
+	if diagnostics.profile and diagnostics.profile.uses_three_uv_sets and material is ShaderMaterial:
+		if material == diagnostics.source or material == diagnostics.family_display:
+			material.set_shader_parameter("bl_primitive_uv", shape != "Custom")
+			for node in meshes():
+				var box := node.get_aabb()
+				var center := box.get_center()
+				node.set_instance_shader_parameter("bl_player_bounds", Vector4(center.x, center.y, center.z, box.size.length() * 0.5))
 	if subject: MaterialLibrary.apply_to_tree(subject, material)
 	settings_changed.emit()
 
@@ -46,7 +56,17 @@ func set_subject(node: Node3D) -> void:
 		custom_mount.remove_child(custom_model)
 		custom_model.queue_free()
 	custom_model = node
-	if node: custom_mount.add_child(node)
+	if node:
+		custom_mount.add_child(node)
+		for part in _meshes_of(node):
+			var array_mesh := part.mesh as ArrayMesh
+			if not array_mesh: continue
+			var has_colors := false
+			for surface in range(array_mesh.get_surface_count()):
+				if array_mesh.surface_get_format(surface) & Mesh.ARRAY_FORMAT_COLOR:
+					has_colors = true
+					break
+			part.set_instance_shader_parameter("bl_no_vertex_weights", not has_colors)
 	set_shape("Custom")
 
 func set_shape(value: String) -> void:

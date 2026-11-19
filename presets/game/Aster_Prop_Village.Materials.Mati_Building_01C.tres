@@ -17,4 +17,3 @@ VectorParameterValues = Dictionary[String, Vector4]({
 TextureParameterValues = Dictionary[String, Texture2D]({
 
 })
-notes = "Instance native static permutation data is not exposed by this dump.\nSource parent cycle: original parent_object_path retained, cyclic runtime reference omitted."

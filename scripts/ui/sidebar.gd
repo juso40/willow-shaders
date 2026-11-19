@@ -9,6 +9,7 @@ signal reset_requested
 @onready var source: MaterialSourceSelector = %Source
 @onready var editor: MaterialParameterEditor = %Editor
 @onready var parts: MeshPartsPanel = %Parts
+@onready var game_textures: GameTextureSettings = %GameTextures
 
 func bind_instance(instance: MaterialInstanceConstant) -> void:
 	editor.bind_instance(instance)

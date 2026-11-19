@@ -69,6 +69,7 @@ func _show_game_path() -> void:
 	else:
 		var kind: String = instance.resolved_values(&"texture_object_classes").get(str(parameter), "Texture2D")
 		game_path.text = GameTextureReference.literal(path, kind if not kind.is_empty() else "Texture2D")
+		game_path.set_caret_column(game_path.text.length())
 
 func set_game_path(text: String) -> bool:
 	if not instance: return false

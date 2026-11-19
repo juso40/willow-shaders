@@ -9,6 +9,9 @@ signal state_applied
 @onready var files: MaterialFiles = %Files
 @onready var browser_drop: BrowserImageDrop = %BrowserDrop
 @onready var layout: HSplitContainer = %Layout
+@onready var extractor: GameTextureExtractor = %TextureExtractor
+var _extraction_slots: Dictionary = {}
+var _fixed_requests: Array[String] = []
 var _load_serial := 0
 var _pending: Dictionary = {}
 
@@ -32,9 +35,49 @@ func _ready() -> void:
 	get_window().files_dropped.connect(handle_drop)
 	browser_drop.link_dropped.connect(_offer_browser_image)
 	browser_drop.notice.connect(preview.set_status)
-	session.instance_changed.connect(func(_instance): _clear_pending())
+	session.instance_changed.connect(func(_instance):
+		_clear_pending()
+		_cancel_extraction())
+	session.library_material_opened.connect(_extract_game_textures)
+	sidebar.game_textures.refresh_requested.connect(_extract_game_textures)
+	sidebar.game_textures.configuration_changed.connect(_cancel_extraction)
+	extractor.notice.connect(func(message): sidebar.game_textures.status_label.text = message)
+	extractor.image_ready.connect(_apply_game_texture)
 	sidebar.bind_instance(null)
 	if reopen_last_state: _restore_last_state.call_deferred()
+
+func _cancel_extraction() -> void:
+	extractor.cancel()
+	_extraction_slots.clear()
+	_fixed_requests.clear()
+	sidebar.game_textures.status_label.text = ""
+
+func _extract_game_textures() -> void:
+	var settings := sidebar.game_textures
+	if not OS.has_feature("pc") or not settings.enabled.button_pressed or not session.instance: return
+	_extraction_slots = GameTextureExtractor.missing_slots(session.instance)
+	var requests := _extraction_slots.values()
+	_fixed_requests.clear()
+	var base := MaterialParameterCatalog.master_for(session.instance) as UnrealMaterial
+	if base and base.debug_profile and base.shader == session.instance.resolved_shader():
+		var images := session.instance.resolved_values(&"fixed_preview_images")
+		for id: String in base.debug_profile.fixed_image_paths():
+			if not images.get(id):
+				_fixed_requests.append(id)
+				requests.append(id)
+	extractor.extract(requests, settings.game_directory.text.strip_edges(), settings.executable_path.text.strip_edges())
+
+func _apply_game_texture(identity: String, texture: Texture2D) -> void:
+	var mic := session.instance
+	if identity in _fixed_requests and not mic.resolved_values(&"fixed_preview_images").get(identity):
+		mic.fixed_preview_images[identity] = texture
+		mic.emit_changed()
+	var still_missing := GameTextureExtractor.missing_slots(mic)
+	for slot: String in _extraction_slots:
+		if _extraction_slots[slot] != identity or still_missing.get(slot) != identity: continue
+		var row := sidebar.editor.control_for(slot, &"TextureParameterValues") as TextureParameterControl
+		if row and row.validate_pending_path() and mic.resolved_texture_paths().get(slot) == identity:
+			mic.set_texture_parameter_value(slot, texture)
 
 func _restore_last_state() -> void:
 	var path := MaterialEditorSettings.last_state_path()

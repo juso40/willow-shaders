@@ -1,12 +1,17 @@
-[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="UnrealMaterial" load_steps=4 format=3]
 
 [ext_resource type="Script" path="res://scripts/unreal_material.gd" id="script"]
+
+[ext_resource type="Shader" path="res://shaders/master_creature.gdshader" id="shader"]
+[ext_resource type="Resource" path="res://presets/debug_profiles/master_creature.tres" id="debug_profile"]
 
 [resource]
 script = ExtResource("script")
 resource_name = "Common_Materials.Creature.Master_Creature"
 source_object = "Common_Materials.Creature.Master_Creature"
 unreal_class = "Material"
+shader = ExtResource("shader")
+debug_profile = ExtResource("debug_profile")
 ScalarParameterValues = Dictionary[String, float]({
 "P_DeathsValue": 0.0,
 "p_HighlightsIntensity": 2.0,
@@ -59,4 +64,3 @@ static_switches = Dictionary[String, bool]({
 "P_MuscleFatSwitch": false,
 "P_PatternSwitch": true
 })
-notes = "Conflicting expression defaults for p_Masks. First recorded node used for named lookup. Not recovered shader wiring."

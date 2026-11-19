@@ -23,4 +23,3 @@ texture_object_paths = Dictionary[String, String]({
 texture_object_classes = Dictionary[String, String]({
 "Diffuse Texture": "Texture2D"
 })
-notes = "Conflicting expression defaults for Diffuse Texture. First recorded node used for named lookup. Not recovered shader wiring."

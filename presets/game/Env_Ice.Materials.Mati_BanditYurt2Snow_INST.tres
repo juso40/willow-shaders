@@ -19,4 +19,7 @@ VectorParameterValues = Dictionary[String, Vector4]({
 TextureParameterValues = Dictionary[String, Texture2D]({
 
 })
-notes = "Instance native static permutation data is not exposed by this dump."
+static_switches = Dictionary[String, bool]({
+"sw_Colorize": true,
+"sw_EnableSnowOnTop": true
+})

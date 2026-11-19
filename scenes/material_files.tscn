@@ -1,32 +1,31 @@
-[gd_scene load_steps=2 format=3]
+[gd_scene format=3 uid="uid://cf5oyi5s6mhgo"]
 
-[ext_resource type="Script" path="res://scripts/material_files.gd" id="1"]
+[ext_resource type="Script" uid="uid://choiixhn11rrn" path="res://scripts/material_files.gd" id="1"]
 
-[node name="MaterialFiles" type="Node"]
+[node name="MaterialFiles" type="Node" unique_id=1798773741]
 script = ExtResource("1")
 
-[node name="ImportDialog" type="FileDialog" parent="."]
+[node name="ImportDialog" type="FileDialog" parent="." unique_id=337438862]
 unique_name_in_owner = true
-title = "Import model"
+title = "Open a File"
 file_mode = 0
 access = 2
 filters = PackedStringArray("*.glb ; Model")
 
-[node name="OpenStateDialog" type="FileDialog" parent="."]
+[node name="OpenStateDialog" type="FileDialog" parent="." unique_id=514844753]
 unique_name_in_owner = true
-title = "Open state"
+title = "Open a File"
 file_mode = 0
 access = 2
 filters = PackedStringArray("*.res ; Godot resource", "*.tres ; Godot text resource")
 
-[node name="StateSaveDialog" type="FileDialog" parent="."]
+[node name="StateSaveDialog" type="FileDialog" parent="." unique_id=370821412]
 unique_name_in_owner = true
 title = "Save state"
 access = 2
-current_file = "material_state.res"
 filters = PackedStringArray("*.res ; Godot resource", "*.tres ; Godot text resource")
 
-[node name="DumpDialog" type="FileDialog" parent="."]
+[node name="DumpDialog" type="FileDialog" parent="." unique_id=173357728]
 unique_name_in_owner = true
 title = "Export parameters"
 access = 2

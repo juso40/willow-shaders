@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="MaterialDebugProfile" format=3 uid="uid://8n404wmvkobi"]
+
+[ext_resource type="Script" uid="uid://bso251jh738nu" path="res://scripts/preview/material_debug_profile.gd" id="1"]
+[ext_resource type="Shader" uid="uid://lxw2kln1mhl4" path="res://shaders/master_creature_diagnostics.gdshader" id="2"]
+
+[resource]
+script = ExtResource("1")
+fixed_texture_paths = Dictionary[String, String]({
+"fixed_death": "Common_Materials.Death_Dif"
+})
+fixed_cube_faces = Dictionary[String, PackedStringArray]({
+"fixed_fog": PackedStringArray("FX_Shared_CubeMaps.CubeMaps.Generic_Fog_Cube.CubemapFace0", "FX_Shared_CubeMaps.CubeMaps.Generic_Fog_Cube.CubemapFace1", "FX_Shared_CubeMaps.CubeMaps.Generic_Fog_Cube.CubemapFace2", "FX_Shared_CubeMaps.CubeMaps.Generic_Fog_Cube.CubemapFace3", "FX_Shared_CubeMaps.CubeMaps.Generic_Fog_Cube.CubemapFace4", "FX_Shared_CubeMaps.CubeMaps.Generic_Fog_Cube.CubemapFace5")
+})
+section = "Master_Creature"
+shader = ExtResource("2")
+views = Dictionary[int, String]({
+30: "Pattern blend (RGB)",
+31: "Tangent-space normal",
+32: "Emissive contribution",
+33: "Fade coverage (before clip)",
+34: "Muscle/fat weights (vertex R/G)"
+})
+provides_unlit = true

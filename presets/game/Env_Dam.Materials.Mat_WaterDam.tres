@@ -37,4 +37,3 @@ texture_object_classes = Dictionary[String, String]({
 static_switches = Dictionary[String, bool]({
 "BrightenEdges": false
 })
-notes = "Conflicting expression defaults for Speed. First recorded node used for named lookup. Not recovered shader wiring."

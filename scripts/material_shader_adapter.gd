@@ -10,6 +10,18 @@ static func matching_parameters(source: UnrealMaterialInterface, shader: Shader)
 	var vectors := source.resolved_values(&"VectorParameterValues")
 	var textures := source.resolved_values(&"TextureParameterValues")
 	var switches := source.resolved_static_switches()
+	var cubes: Dictionary[String, Cubemap] = {}
+	var base := MaterialParameterCatalog.master_for(source) as UnrealMaterial
+	if base and base.debug_profile and (shader == base.shader or shader == base.debug_profile.shader):
+		var fixed := source.resolved_values(&"fixed_preview_images")
+		for sampler: String in base.debug_profile.fixed_texture_paths:
+			var image: Texture2D = fixed.get(base.debug_profile.fixed_texture_paths[sampler])
+			textures[sampler] = image
+			switches["has_" + sampler] = image != null
+		for sampler: String in base.debug_profile.fixed_cube_faces:
+			var cube := source.preview_cube(sampler, base.debug_profile.fixed_cube_faces[sampler], fixed)
+			cubes[sampler] = cube
+			switches["has_" + sampler] = cube != null
 	var masks: Dictionary = {}
 	var bindings := source.resolved_values(&"static_parameter_bindings")
 	var source_masks := source.resolved_static_masks()
@@ -23,7 +35,8 @@ static func matching_parameters(source: UnrealMaterialInterface, shader: Shader)
 			TYPE_BOOL:
 				if switches.has(name): result[name] = switches[name]
 			TYPE_OBJECT:
-				if textures.has(name) and (textures[name] == null or uniform.hint_string == "Texture2D"):
+				if cubes.has(name) and uniform.hint_string in ["TextureLayered", "Cubemap"]: result[name] = cubes[name]
+				elif textures.has(name) and (textures[name] == null or uniform.hint_string == "Texture2D"):
 					result[name] = textures[name]
 			TYPE_COLOR, TYPE_VECTOR4, TYPE_VECTOR3, TYPE_VECTOR2:
 				if not vectors.has(name) and not masks.has(name): continue
@@ -45,5 +58,4 @@ static func apply(source: UnrealMaterialInterface, target: ShaderMaterial) -> vo
 	target.set_meta("bl2_parameter_names", PackedStringArray(parameters.keys()))
 	target.set_meta("bl2_source", source.source_object)
 	target.set_meta("bl2_parent_chain", source.inheritance_chain().map(func(entry): return entry.source_object))
-	target.set_meta("bl2_reconstruction", source.notes)
 	target.resource_name = source.resource_name

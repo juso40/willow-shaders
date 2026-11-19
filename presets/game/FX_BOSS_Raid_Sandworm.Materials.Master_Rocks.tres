@@ -62,4 +62,3 @@ static_switches = Dictionary[String, bool]({
 "sw_UV2": false,
 "sw_VertexPaint": false
 })
-notes = "Conflicting expression defaults for p_VertexPaintNoiseMod. First recorded node used for named lookup. Not recovered shader wiring."

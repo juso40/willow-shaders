@@ -44,4 +44,3 @@ texture_object_classes = Dictionary[String, String]({
 static_switches = Dictionary[String, bool]({
 "sw_EnableColorization": true
 })
-notes = "Conflicting expression defaults for p_Masks. First recorded node used for named lookup. Not recovered shader wiring."

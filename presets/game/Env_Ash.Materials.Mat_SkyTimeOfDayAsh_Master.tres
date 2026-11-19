@@ -32,4 +32,3 @@ texture_object_classes = Dictionary[String, String]({
 "Transition_Track": "Texture2D",
 "clouds": "Texture2D"
 })
-notes = "Conflicting expression defaults for Transition_Track. First recorded node used for named lookup. Not recovered shader wiring."

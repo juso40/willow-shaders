@@ -26,4 +26,3 @@ texture_object_classes = Dictionary[String, String]({
 "p_Diffuse": "Texture2D",
 "p_Normal": "Texture2D"
 })
-notes = "Conflicting expression defaults for p_Normal. First recorded node used for named lookup. Not recovered shader wiring."
